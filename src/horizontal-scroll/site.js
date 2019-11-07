@@ -1,5 +1,0 @@
-(function () {
-
-	scrollConverter.activate();
-
-}());
