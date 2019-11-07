@@ -1,0 +1,22 @@
+body {
+	background: #333;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.scroll-container {	
+	width: 900vw;
+	height: 90vh;
+	position: absolute;
+}
+
+.page {
+	width: 100vw;
+	padding: 40px;
+	background: #fff;
+	float: left;
+	margin: 0 200px;
+	position: relative;
+    height: 80vh;
+}
