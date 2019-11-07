@@ -1,1 +1,0 @@
-# pangolin-storybook
