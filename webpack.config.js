@@ -2,19 +2,19 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    home: './public/src/index.js',
-    aboutpangolin: './public/src/aboutpangolin.js',
-    aboutproject: './public/src/aboutproject.js',
-    chapter: './public/src/chapter.js',
-    quiz: './public/src/quiz.js',
+    home: './src/index.js',
+    aboutpangolin: './src/aboutpangolin.js',
+    aboutproject: './src/aboutproject.js',
+    chapter: './src/chapter.js',
+    quiz: './src/quiz.js',
   },
   output: {
     filename: '[name].main.js',
-    path: path.resolve(__dirname, 'public/dist'),
+    path: path.resolve(__dirname, 'dist'),
   },
 
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000
   },
