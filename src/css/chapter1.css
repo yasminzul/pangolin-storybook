@@ -1,4 +1,7 @@
 body
 {
   background-image: url(../gfx/boatman-color.svg);
+  background-size: 100vw;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
