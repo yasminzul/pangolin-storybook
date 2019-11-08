@@ -2,14 +2,11 @@ import _ from 'lodash';
 import css from './css/chapter2.css';
 var $ = require("jquery");
 
-import * as ScrollMagic from "ScrollMagic"; // Or use scrollmagic-with-ssr to avoid server rendering problems
-import { TweenMax, TimelineMax } from "gsap"; // Also works with TweenLite and TimelineLite
-import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+import TweenMax from 'TweenMax';
+import TimelineMax from 'TimelineMax';
+import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';
 import 'debug.addIndicators';
-
-ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
-
 
 $(function () { // wait for document ready
 		// init
