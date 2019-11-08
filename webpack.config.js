@@ -8,6 +8,7 @@ module.exports = {
     chapter: './src/chapter.js',
     quiz: './src/quiz.js',
     chapter1: './src/chapter1.js',
+    chapter2: './src/chapter2.js',
   },
   output: {
     filename: '[name].main.js',
