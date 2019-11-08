@@ -7,6 +7,7 @@ module.exports = {
     aboutproject: './src/aboutproject.js',
     chapter: './src/chapter.js',
     quiz: './src/quiz.js',
+    chapter1: './src/chapter1.js',
   },
   output: {
     filename: '[name].main.js',
