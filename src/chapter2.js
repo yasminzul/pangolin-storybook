@@ -8,33 +8,30 @@ import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';
 import 'debug.addIndicators';
 
-$(function () { // wait for document ready
-		// init
+$(function () { 
 		var controller = new ScrollMagic.Controller();
+		var slides = new TimelineMax()
 
-		// define movement of panels
-		var wipeAnimation = new TimelineMax()
-			// animate to second panel
-			.to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
-			.to("#slideContainer", 1,   {x: "-25%"})	// move in to first panel
-			.to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
-			// animate to third panel
+			.to("#slideContainer", 0.5, {z: -150})		
+			.to("#slideContainer", 1,   {x: "-25%"})	
+			.to("#slideContainer", 0.5, {z: 0})				
+	
 			.to("#slideContainer", 0.5, {z: -150, delay: 1})
 			.to("#slideContainer", 1,   {x: "-50%"})
 			.to("#slideContainer", 0.5, {z: 0})
-			// animate to forth panel
+		
 			.to("#slideContainer", 0.5, {z: -150, delay: 1})
 			.to("#slideContainer", 1,   {x: "-75%"})
-			.to("#slideContainer", 0.5, {z: 0});
+			.to("#slideContainer", 0.5, {z: 0})
 
-		// create scene to pin and link animation
-		new ScrollMagic.Scene({
+
+		var scene = new ScrollMagic.Scene({
 				triggerElement: "#pinContainer",
 				triggerHook: "onLeave",
-				duration: "500%"
+				duration: "400%"
 			})
 			.setPin("#pinContainer")
-			.setTween(wipeAnimation)
-			.addIndicators() // add indicators (requires plugin)
+			.setTween(slides)
+			.addIndicators() 
 			.addTo(controller);
 	});

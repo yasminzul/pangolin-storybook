@@ -6,21 +6,54 @@
 }
 */
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 #pinContainer {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
 	-webkit-perspective: 1000;
-	        perspective: 1000;
+	perspective: 1000;
+}
+	#slideContainer {
+		width: 400%;
+    height: 100%;
+    position: absolute;
 }
 
-#slideContainer {
-	width: 400%; /* to contain 4 panels, each with 100% of window width */
-	height: 100%;
+.page1, .page2, .page3, .page4  {
+  	height: 100%;
+		width: 25%;
+    position: absolute;
+  top: 0;
+}
+	.page1 {
+    background-color: #FF2266; 
 }
 
-.panel {
-	height: 100%;
-	width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
-	float: left;
+	.page2 {
+    background-color: #FFD233; 
+    left: 25%;
+}
+
+.page3{
+    background-color: #DDECCC; 
+    left: 50%;
+}
+
+.page4{
+    background-color: #DEFF22; 
+    left: 75%;
+  
+}
+
+section {
+  padding: 30px;
+  box-sizing: border-box;
+
 }
