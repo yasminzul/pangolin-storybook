@@ -55,7 +55,7 @@ $(function () {
 		  }else if( currentScroll > scrollThreshold.start ){
 		    t.progress(0);
 		  }else if( currentScroll > scrollThreshold.stop){
-		    t.progress(0);
+		    t.progress(1);
 		  }
 		  
 		});
