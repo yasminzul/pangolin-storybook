@@ -3,22 +3,21 @@ p {
     font-style: normal;
     font-weight: 300;
     color: #fff;
-
 }
 
 .chapter-next {
 	position: absolute;
-    width: 65%;
+    width: 57%;
     height: 45px;
-    bottom: 0px;
-    left: 35%;
+    bottom: 5%;
+    padding: 20px;
    	color: #ffffff;
    	text-align: center;
 }
 
 .back-to-home {
     text-align: center;
-    font-family: FranklinGothicURW-Dem;
+    font-family: franklin-gothic-urw, sans-serif;
     font-size: 13.5px;
     line-height: 2.18;
     letter-spacing: 0.85px;
