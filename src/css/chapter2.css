@@ -1,15 +1,12 @@
-/*body
+body
 {
-  background-image: url(../gfx/boatman-color.svg);
-  background-repeat: no-repeat;
+  background: url(../gfx/boatman-color.svg) no-repeat fixed;
   background-size: cover;
 }
-*/
 
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+section {
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 #pinContainer {
@@ -26,14 +23,18 @@ body {
     position: absolute;
 }
 
+.page {
+  background-color: #ffffff00;
+}
+
 .page1, .page2, .page3, .page4  {
   	height: 100%;
 		width: 25%;
     position: absolute;
-  top: 0;
+    top: 0;
 }
 	.page1 {
-    background-color: #FF2266; 
+    border-style: solid;
 }
 
 	.page2 {
@@ -52,8 +53,14 @@ body {
   
 }
 
-section {
-  padding: 30px;
-  box-sizing: border-box;
-
+.row {
+  width: 60%;
+  float: right;
 }
+
+.column {
+    float: left;
+    width: 44%;
+    padding: 20px;
+}
+

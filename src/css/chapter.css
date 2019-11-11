@@ -1,0 +1,50 @@
+p {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+.chapter-next {
+	position: absolute;
+    width: 65%;
+    height: 45px;
+    bottom: 0px;
+    left: 35%;
+   	color: #ffffff;
+   	text-align: center;
+}
+
+.back-to-home {
+    text-align: center;
+    font-family: FranklinGothicURW-Dem;
+    font-size: 13.5px;
+    line-height: 2.18;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow-back, .arrow-forward {
+	color: #102582;
+    width: 15px;
+    padding: 3px;
+    height: 15px;
+    background: #fff;
+    border-radius: 70px;
+}
+
+.arrow-back {
+	float: left;
+}
+
+ .arrow-forward {
+ 	float: right;
+ 	margin-right: 20px;
+ }
+
+ .ion-md-home {
+ 	color: #fff;
+ }
