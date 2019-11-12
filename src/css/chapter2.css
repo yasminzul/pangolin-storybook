@@ -9,7 +9,7 @@ body
 
 .slider{
   position: relative;
-  padding-top: 48%; 
+  padding-top: 47%; 
   margin: 20px;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
@@ -67,7 +67,7 @@ On click the images will be displayed at normal size to complete the effect
   margin: 0;
   font-family: franklin-gothic-urw, sans-serif;
   font-style: italic;
-  font-weight: 400;
-  font-size: 1.5vh;
+  font-weight: 300;
+  font-size: 1.8vh;
 }
 

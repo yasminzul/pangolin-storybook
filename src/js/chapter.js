@@ -35,18 +35,69 @@ $(function () {
 			.addIndicators()
 			.addTo(controller);
 
+// fade-out test 
+
+// var initialAnimation = new TimelineMax();
+
+//   initialAnimation.from($('.row'), 1, {
+//     autoAlpha: 0
+//   });
+
+//   var controller = new ScrollMagic.Controller();
+
+//   var firstSection = new TimelineMax().add([
+//     TweenMax.to('.row', 1, {
+//       autoAlpha: 0
+//     })
+//   ]);
+
+//   var firstSectionScroll = new ScrollMagic.Scene({
+//       triggerElement: '.row',
+//       triggerHook: 0,
+//       duration: '100%'
+//     })
+//     .setTween(firstSection)
+//     .setPin('.row', {
+//       pushFollowers: false
+//     })
+//     .addTo(controller)
+//     .addIndicators();
+
+//   // second top section
+//   var secondTopSection = new TimelineMax().add([
+//     TweenMax.from('.row', 1, {
+//       opacity: 0
+//     })
+//   ]);
+
+//   var secondTopSectionScroll = new ScrollMagic.Scene({
+//       triggerElement: '.row',
+//       triggerHook: 0,
+//       duration: '100%'
+//     })
+//     .setTween(secondTopSection)
+//     .setPin('.row', {
+//       pushFollowers: false
+//     })
+//     .addTo(controller)
+//     .addIndicators();
+
+
+
 
 // fadein
 		// var t = TweenLite.from(".row", 1,{
 		//   autoAlpha:1,
 		//   paused:true, ease:Linear.easeNone
 		// }),
-		//     scrollThreshold = {"start":0, "stop":600};
+		//     scrollThreshold = {"start":0, "stop":250};
 
 		// $(window).on("scroll",function(e){
 		  
 		//   var currentScroll = $(window).scrollTop(),
 		//       currentProgress = ( currentScroll - scrollThreshold.stop ) / ( scrollThreshold.stop - scrollThreshold.start );
+
+		//       console.log(currentScroll);
 		  
 		//   if(currentScroll > scrollThreshold.start && currentScroll < scrollThreshold.stop){
 		//     t.progress(currentProgress);

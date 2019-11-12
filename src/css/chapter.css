@@ -75,11 +75,12 @@ p {
 
 .chapter-next {
 	position: absolute;
-    width: 57%;
+    width: 55%;
     height: 45px;
     bottom: 5%;
     padding: 20px;
    	color: #ffffff;
+    right: 10px;
    	text-align: center;
 }
 
