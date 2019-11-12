@@ -10,6 +10,7 @@ module.exports = {
     quiz: './src/js/quiz.js',
     chapter1: './src/js/chapter1.js',
     chapter2: './src/js/chapter2.js',
+    view: './src/js/view.js',
   },
   output: {
     filename: '[name].main.js',
@@ -63,19 +64,19 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/index.html',
         inject: true,
-        chunks: ['home'],
+        chunks: ['home','view'],
         filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-1.html',
         inject: true,
-        chunks: ['chapter1', 'chapter'],
+        chunks: ['chapter1','view','chapter'],
         filename: 'chapter-1.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-2.html',
         inject: true,
-        chunks: ['chapter2','chapter'],
+        chunks: ['chapter2','view','chapter'],
         filename: 'chapter-2.html'
     })
 ],
