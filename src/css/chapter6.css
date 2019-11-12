@@ -5,3 +5,13 @@ body
   background-size: cover;
 
 }
+
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+
+
+}
