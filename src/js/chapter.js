@@ -37,50 +37,71 @@ $(function () {
 
 // fade-out test 
 
-// var initialAnimation = new TimelineMax();
 
-//   initialAnimation.from($('.row'), 1, {
-//     autoAlpha: 0
-//   });
+  // var initialAnimation = new TimelineMax();
+  // initialAnimation.from($('.hi'), 0.5, {
+  //   autoAlpha: 0
+  // });
+  // initialAnimation.from($('.ibudok'), 1, {
+  //   autoAlpha: 0
+  // });
 
-//   var controller = new ScrollMagic.Controller();
+  // var controller = new ScrollMagic.Controller();
 
-//   var firstSection = new TimelineMax().add([
-//     TweenMax.to('.row', 1, {
-//       autoAlpha: 0
-//     })
-//   ]);
+  // var firstSection = new TimelineMax().add([
+  //   TweenMax.to('.first', 1, {
+  //     autoAlpha: 0
+  //   })
+  // ]);
 
-//   var firstSectionScroll = new ScrollMagic.Scene({
-//       triggerElement: '.row',
-//       triggerHook: 0,
-//       duration: '100%'
-//     })
-//     .setTween(firstSection)
-//     .setPin('.row', {
-//       pushFollowers: false
-//     })
-//     .addTo(controller)
-//     .addIndicators();
+  // var firstSectionScroll = new ScrollMagic.Scene({
+  //     triggerElement: '.first',
+  //     triggerHook: 0,
+  //     duration: '100%'
+  //   })
+  //   .setTween(firstSection)
+  //   .setPin('.first', {
+  //     pushFollowers: false
+  //   })
+  //   .addTo(controller)
+  //   .addIndicators();
 
-//   // second top section
-//   var secondTopSection = new TimelineMax().add([
-//     TweenMax.from('.row', 1, {
-//       opacity: 0
-//     })
-//   ]);
+  // // second top section
+  // var secondTopSection = new TimelineMax().add([
+  //   TweenMax.from('.second', 1, {
+  //     opacity: 0
+  //   })
+  // ]);
 
-//   var secondTopSectionScroll = new ScrollMagic.Scene({
-//       triggerElement: '.row',
-//       triggerHook: 0,
-//       duration: '100%'
-//     })
-//     .setTween(secondTopSection)
-//     .setPin('.row', {
-//       pushFollowers: false
-//     })
-//     .addTo(controller)
-//     .addIndicators();
+  // var secondTopSectionScroll = new ScrollMagic.Scene({
+  //     triggerElement: '.second',
+  //     triggerHook: 0,
+  //     duration: '100%'
+  //   })
+  //   .setTween(secondTopSection)
+  //   .setPin('.second', {
+  //     pushFollowers: false
+  //   })
+  //   .addTo(controller)
+  //   .addIndicators();
+
+  // // third top section
+  // var thirdTopSection = new TimelineMax().add([
+  //   TweenMax.from('.third', 1, {
+  //     opacity: 0
+  //   })
+  // ]);
+
+  // var thirdTopSectionScroll = new ScrollMagic.Scene({
+  //     triggerElement: '.third',
+  //     triggerHook: 0,
+  //     duration: '100%'
+  //   })
+  //   .setTween(thirdTopSection)
+  //   .setPin('.third')
+  //   .addTo(controller)
+  //   .addIndicators();
+
 
 
 
