@@ -13,7 +13,6 @@ $( window ).on( "load", function() {
   $('#burger-icon').on('click', function(e){
     $(this).toggleClass('open-icon');
     $('.menu').toggleClass('open-menu');
-    console.log('toggling');
   });
 
 })
