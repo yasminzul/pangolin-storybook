@@ -69,13 +69,13 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-1.html',
         inject: true,
-        chunks: ['chapter1'],
+        chunks: ['chapter1', 'chapter'],
         filename: 'chapter-1.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-2.html',
         inject: true,
-        chunks: ['chapter2'],
+        chunks: ['chapter2','chapter'],
         filename: 'chapter-2.html'
     })
 ],
