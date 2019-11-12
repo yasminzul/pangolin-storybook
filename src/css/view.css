@@ -1,3 +1,8 @@
+.full-orientation
+{
+  display: none;
+}
+
 /* menu */
 
 .menu
@@ -86,7 +91,7 @@
 
 #burger-icon
 {
-  width: 50px;
+  width: 45px;
   height: 40px;
   position: fixed;
   right: 1vw;
@@ -107,7 +112,7 @@
 {
   display: block;
   position: fixed;
-  height: 6px;
+  height: 5.5px;
   width: 100%;
   background: #b5b5b5;
   border-radius: 9px;
@@ -128,11 +133,11 @@
 }
 
 #burger-icon span:nth-child(2),#burger-icon span:nth-child(3) {
-  top: 15px;
+  top: 10px;
 }
 
 #burger-icon span:nth-child(4) {
-  top: 30px;
+  top: 20px;
 }
 
 #burger-icon.open-icon span:nth-child(1) {
@@ -159,4 +164,37 @@
   top: 18px;
   width: 0%;
   /* right: 52%; */
+}
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+
+
+}
+
+/* mobile and tablet */
+
+@media only screen and (orientation: portrait) {
+
+body
+{
+  background-color: #333;
+}
+
+.menu, #burger-icon
+{
+  display: none;
+}
+
+.full-orientation
+{
+  background-color: #333;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  z-index: 700;
+}
+
 }

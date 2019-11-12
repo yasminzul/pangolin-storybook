@@ -69,3 +69,12 @@ On click the images will be displayed at normal size to complete the effect
   font-weight: 300;
   font-size: 1.2vw;
 }
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+
+
+}
