@@ -3,7 +3,7 @@ section {
   box-sizing: border-box;
 }
 
-#pinContainer {
+/*#pinContainer {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -15,35 +15,13 @@ section {
     width: 400%;
     height: 100%;
     position: absolute;
-}
+}*/
 
 .page {
   background-color: #ffffff00;
 }
 
-.page1, .page2, .page3, .page4  {
-    height: 100%;
-    width: 25%;
-    position: absolute;
-    top: 0;
-}
-    .page1 {
-    /*border-style: solid;*/
-}
 
-    .page2 {
-    left: 25%;
-}
-
-  .page3{
-    left: 50%;
-}
-
-  .page4{
-    background-color: #DEFF22; 
-    left: 75%;
-  
-}
 
 p {
     font-family: franklin-gothic-urw, sans-serif;
@@ -64,14 +42,8 @@ p {
 .row {
     width: 60%;
     float: right;
-    opacity: 1;
 }
 
-.column {
-    float: left;
-    width: 44%;
-    padding: 20px;
-}
 
 .chapter-next {
 	position: absolute;
