@@ -37,26 +37,26 @@ $(function () {
 
 
 // fadein
-		var t = TweenLite.from(".row", 1,{
-		  autoAlpha:1,
-		  paused:true, ease:Linear.easeNone
-		}),
-		    scrollThreshold = {"start":0, "stop":600};
+		// var t = TweenLite.from(".row", 1,{
+		//   autoAlpha:1,
+		//   paused:true, ease:Linear.easeNone
+		// }),
+		//     scrollThreshold = {"start":0, "stop":600};
 
-		$(window).on("scroll",function(e){
+		// $(window).on("scroll",function(e){
 		  
-		  var currentScroll = $(window).scrollTop(),
-		      currentProgress = ( currentScroll - scrollThreshold.stop ) / ( scrollThreshold.stop - scrollThreshold.start );
+		//   var currentScroll = $(window).scrollTop(),
+		//       currentProgress = ( currentScroll - scrollThreshold.stop ) / ( scrollThreshold.stop - scrollThreshold.start );
 		  
-		  if(currentScroll > scrollThreshold.start && currentScroll < scrollThreshold.stop){
-		    t.progress(currentProgress);
-		  }else if( currentScroll > scrollThreshold.start ){
-		    t.progress(0);
-		  }else if( currentScroll > scrollThreshold.stop){
-		    t.progress(1);
-		  }
+		//   if(currentScroll > scrollThreshold.start && currentScroll < scrollThreshold.stop){
+		//     t.progress(currentProgress);
+		//   }else if( currentScroll > scrollThreshold.start ){
+		//     t.progress(0);
+		//   }else if( currentScroll > scrollThreshold.stop){
+		//     t.progress(1);
+		//   }
 		  
-		});
+		// });
 
 	});
 
