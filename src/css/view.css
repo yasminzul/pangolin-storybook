@@ -137,7 +137,7 @@
 #burger-icon.open-icon span:nth-child(1) {
   top: 18px;
   width: 0%;
-  right: 48%;
+  /* right: 52%; */
 }
 
 #burger-icon.open-icon span:nth-child(2) {
@@ -157,5 +157,5 @@
 #burger-icon.open-icon span:nth-child(4) {
   top: 18px;
   width: 0%;
-  right: 48%;
+  /* right: 52%; */
 }
