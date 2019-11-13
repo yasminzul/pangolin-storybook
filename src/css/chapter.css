@@ -69,7 +69,7 @@ p {
 }
 
 .arrow-back, .arrow-forward {
-	color: #102582;
+	  color: #102582;
     width: 15px;
     padding: 3px;
     height: 15px;
@@ -95,6 +95,9 @@ p {
 
 @media only screen and (max-width: 900px) {
 
+  p {
+    font-size: 2vw;
+  }
 
 
 }

@@ -8,6 +8,7 @@ body
 /*photo gallery*/
 
 .slider{
+  width: 95%;
   position: relative;
   padding-top: 47%; 
   margin: 20px;
@@ -35,6 +36,7 @@ body
 
 .slider label img{
   display: block;
+  width: 85px;
 }
 
 /*Time to add the click effects*/
@@ -74,7 +76,15 @@ On click the images will be displayed at normal size to complete the effect
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+  
+  .slider label img {
+    width: 59px;
+  }
 
-
+  .caption {
+    margin-top: 30px;
+    font-size: 1.8vw;
+  }
+  
 
 }
