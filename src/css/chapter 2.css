@@ -1,0 +1,119 @@
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #645d67;
+}
+.wrapper
+{
+  background: url(../gfx/boatman-color.svg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+section {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/*#pinContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+    #slideContainer {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+}*/
+
+.page {
+  background-color: #ffffff00;
+}
+
+
+
+p {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.drop-cap {
+    font-size: 4.5em;
+    float: left;
+    margin-top: .1em;
+    margin-right: .15em;
+    color: #fff;
+}
+
+.row {
+    width: 55%;
+    float: right;
+    padding: 20px;
+}
+
+
+.chapter-next {
+    float: right;
+    width: 57%;
+    padding-bottom: 10px;
+}
+
+/*.back-to-home {
+    text-align: center;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 13.5px;
+    line-height: 2.18;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+*/
+.arrow-back, .arrow-forward {
+	  color: #102582;
+    width: 15px;
+    padding: 3px;
+    height: 15px;
+    background: #fff;
+    border-radius: 70px;
+}
+
+.arrow-back {
+	float: left;
+}
+
+ .arrow-forward {
+ 	float: right;
+ 	margin-right: 20px;
+ }
+
+ .ion-md-home {
+ 	color: #fff;
+ }
+
+ .ion-md-arrow-forward, .ion-md-arrow-back {
+  padding-left: 2px;
+ } 
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+  p {
+    font-size: 2vw;
+  }
+
+
+}
