@@ -1,16 +1,84 @@
-body
-{
-  background-image: url(../gfx/boatman-color.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 
+/*photo gallery*/
+
+.slider{
+  width: 95%;
+  position: relative;
+  padding-top: 47%; 
+  margin: 20px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  margin: 18px 2px;
+  border-style: none;
+  float: left;
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+.slider label img{
+  display: block;
+  width: 85px;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+  border: 2px solid #fff;
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*photo gallery caption*/
+
+.caption{
+  color: #fff;
+  padding: 20px;
+  display: none;
+  margin-top: 40px;
+  position: absolute;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.2vw;
 }
 
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+  
+  .slider label img {
+    width: 38px;
+  }
 
-
+  .caption {
+    margin-top: 30px;
+    font-size: 1.8vw;
+  }
+  
 
 }
