@@ -1,29 +1,13 @@
-html {
-    box-sizing: border-box;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
 
 body {
     height: 100vh;
-    background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(58, 58, 58);
+    background: #645d67;
 }
 
 .container {
     width: 80%;
-    max-width: 600px;
-    min-height: 200px;
+    height: 400px;
     background: #fff;
     position: absolute;
     left: 50%;
@@ -72,6 +56,15 @@ body {
     margin-bottom: 15px;
 }
 
+.question-choice {
+	width: 100%;
+	text-align: left;
+}
+
+.question-choice:hover {
+	background-color: yellow;
+}
+
 .label {
     display: flex;
 }
@@ -80,7 +73,11 @@ body {
     vertical-align: sub;
     margin-right: 10px;
     align-self: center;
-    
+    visibility: hidden;
+}
+
+.label input[type="checkbox"]:checked+span {
+	background-color: lightblue;
 }
 
 
@@ -101,6 +98,9 @@ body {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6)
 }
 
+.nav-button.next {
+	float: right;
+}
 
 /* TEST COMPLETE */
 
