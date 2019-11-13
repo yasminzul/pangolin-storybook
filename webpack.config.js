@@ -169,6 +169,12 @@ module.exports = {
         inject: true,
         chunks: ['chapter15','view','chapter'],
         filename: 'chapter-15.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/quiz.html',
+        inject: true,
+        chunks: ['quiz','view'],
+        filename: 'quiz.html'
     })
 ],
 
