@@ -2,173 +2,163 @@ import _ from 'lodash';
 import css from '../css/quiz.css';
 var $ = require("jquery");
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  const question = document.getElementById("question");
-  const answers = document.getElementById("answers");
-  const options = document.getElementsByClassName("answer");
-  const nextQuestion = document.getElementById("next");
-  const scoreDisplay = document.querySelector(".results-score");
-  let score = document.getElementById("score");
-  let timerDisplay = document.getElementById("time");
-  let matches = [];
-  let choices = [];
-  let answer, currentTimer, playing, points, timer, total;
-  let closeButton = document.getElementById("close-popup");
-  let popup = document.getElementById("popup");
+const questionEl = document.querySelector('.survey-question')
+const surveyNumEl = document.querySelector('.survey-num')
+const choicesEl = document.querySelector('.choices')
+const buttonEl = document.querySelector('.nav-buttons')
+const containerEl = document.querySelector('.container')
 
-  function openPopup() {
-    popup.style.opacity = "1";
-    overlay.style.opacity = "1";
-    popup.style.display = "block";
-    overlay.style.display = "block";
-    closeButton.addEventListener("click", start);
-  }
 
-  function closePopup() {
-    popup.style.opacity = "0";
-    overlay.style.opacity = "0";
-    popup.style.display = "none";
-    overlay.style.display = "none";
-  }
+const survey = [
+    {
+        id: 1,
+        question: 'How many pangolin species are there?',
+        choices: ['4', '6', '8', '10'],
+        correctAnswer: '8',
+        answer: null
+    },
+    {
+        id: 2,
+        question: 'Who was the first American in space?',
+        choices: ['Alan Shepard', 'Yuri Gagarin', 'Tesla', 'Einstein'],
+        correctAnswer: 'Alan Shepard',
+        answer: null
+    },
+    {
+        id: 3,
+        question: 'What is a very cold part of Russia?',
+        choices: ['Antarctica', 'Siberia', 'Grönland', 'Moskov'],
+        correctAnswer: 'Siberia',
+        answer: null
+    }
+]
 
-  fetch(
-    "https://raw.githubusercontent.com/joakimskoog/AnApiOfIceAndFire/master/data/characters.json"
-  )
-    // fetch('js/characters.json')
-    .then(resp => resp.json())
-    .then(data => {
-      let gotData = data;
-      for (let i = 0; i < gotData.length; i++) {
-        if (gotData[i].TvSeries.length === 0) {
-          // Removes 1936 Characters who are not in the TV show.
-          continue;
-        } else if (gotData[i].Aliases.length === 0) {
-          // Removes a further 89 Characters who don't have an alias.
-          continue;
-        } else if (gotData[i].Name == "") {
-          // Removes "The Waif" who doesn't have a "real" name in this fantasy world
-          continue;
-        } else {
-          // Create a new character object
-          let character = {};
-          character.name = gotData[i].Name;
-          character.alias = [];
-          // Check the alias in the data set
-          for (let j = 0; j < gotData[i].Aliases.length; j++) {
-            // Split the alias up into its own array
-            let check = gotData[i].Aliases[j].split(" ");
-            // For each part of the name to remove clues to the answers
-            for (let k = 0; k < check.length; k++) {
-              if (gotData[i].Name.includes(check[k])) {
-                // Skip this Alias if any part matches the character name
-                break;
-                // If all parts of the name have been checked and the loop hasn't exited then we have a match for a game question.
-              } else if (k == check.length - 1) {
-                // console.log('Name: ' + gotData[i].Name + '. AKA: ' + gotData[i].Aliases[j]);
-                character.alias.push(gotData[i].Aliases[j]);
-                // console.log("Match!");
-              }
-            }
-          }
-          if (character.alias.length > 0) {
-            matches.push(character);
-          }
+
+const surveyState = {
+    currentQuestion: 1
+}
+
+
+const navigateButtonClick = (e) => {
+    if(e.target.id == 'next') {
+        surveyState.currentQuestion++
+        initialSurvey()
+    }
+
+    if(e.target.id == 'prev') {
+        surveyState.currentQuestion--
+        initialSurvey()
+    }
+}
+
+const checkBoxHandler = (e, question) => {    
+    //Check if the chekbox has selected before if it is remove selected
+    if(!e.target.checked) {
+        e.target.checked = false
+        question.answer = null
+        return
+    }
+    
+    const allCheckBoxes = choicesEl.querySelectorAll('input')
+    allCheckBoxes.forEach(checkBox => checkBox.checked = false)
+    e.target.checked = true
+    question.answer = e.target.value    
+}
+
+const getResults = () => {
+    const correctAnswerCount = survey.filter(question => question.answer == question.correctAnswer).length
+    const emptyQuestionCount = survey.filter(question => question.answer === null).length
+    const wrongQuestionCount = survey.filter(question => question.answer !== null && question.answer != question.correctAnswer).length
+
+
+    return {
+        correct: correctAnswerCount,
+        empty: emptyQuestionCount,
+        wrong: wrongQuestionCount
+    }
+}
+
+
+const renderQuestion = (question) => {    
+    //Last question of survey
+    const lastQuestion = survey[survey.length - 1]
+
+    //Check if the all questions are answered if then insert some message
+    if(surveyState.currentQuestion > lastQuestion.id) {
+        const results = getResults()
+        containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
+        <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>                        
+        <span class="tick"></span>`
+        return
+                                
+    }
+
+    // Clean innerHTML before append
+    surveyNumEl.innerHTML = ''
+    choicesEl.innerHTML = ''
+    buttonEl.innerHTML = ''
+    // Render question and question id
+    surveyNumEl.textContent = question.id + '-'
+    questionEl.textContent = question.question
+    // Render choices
+    question.choices.forEach(choice => {
+        const questionRowEl = document.createElement('p')
+        questionRowEl.setAttribute('class','question-row')
+        questionRowEl.innerHTML = `<label class="label">                                        
+                                        <span class="choise">${choice}</span>
+                                    </label>`
+        //Create checkbox input
+        const checkBoxEl = document.createElement('input')
+        checkBoxEl.setAttribute('type', 'checkbox')
+        // Bind checkboxHandler with event and current question
+        checkBoxEl.addEventListener('change', (e) => checkBoxHandler(e, question))
+        //Add answer to the input as a value
+        checkBoxEl.value = choice
+        //If question has answer already make it checked again
+        if(question.answer === choice) {
+            checkBoxEl.checked = true
         }
-      }
-      total = matches.length - 1;
-      // console.log(matches);
-      // Added a Codepen thumbnail influencer to make the preview more interesting (See: https://codepen.io/demaine/pen/xNvOzq)
-      if (!location.pathname.match(/fullcpgrid/i)) {
-        openPopup();
-      } else {
-        start();
-      }
-    });
-  // At this point all the potential questions have been found.
-  // console.log(matches);
+        //Insert into question row
+        questionRowEl.firstChild.prepend(checkBoxEl)
+        //Insert row to the wrapper
+        choicesEl.appendChild(questionRowEl)                                    
+    })
 
-  function start() {
-    points = 0;
-    score.innerHTML = points;
-    currentTimer = 60;
-    playing = true;
-    getNewQuestion();
-    timerDisplay.innerHTML = currentTimer;
-    closePopup();
-    timer = setInterval(function() {
-      updateTimer();
-    }, 1000);
-  }
+    //Next & Previous Buttons
+    const prevButton = document.createElement('button')
+    prevButton.classList.add('nav-button')
+    prevButton.classList.add('prev')
+    prevButton.id = 'prev'
+    prevButton.textContent = 'Previous'
+    prevButton.addEventListener('click', navigateButtonClick)
 
-  function updateTimer() {
-    currentTimer--;
-    timerDisplay.innerHTML = currentTimer;
-    if (currentTimer === 0) {
-      playing = false;
-      endGame();
-    }
-  }
+    const nextButton = document.createElement('button')
+    nextButton.classList.add('nav-button')
+    nextButton.classList.add('next')
+    nextButton.id = 'next'
+    nextButton.textContent = 'Next'
+    nextButton.addEventListener('click', navigateButtonClick)
 
-  function endGame() {
-    clearInterval(timer);
-    endRound();
-    scoreDisplay.innerHTML = points;
-    popup = document.getElementById("results");
-    closeButton = document.getElementById("close-results");
-    openPopup();
-  }
 
-  function getNewQuestion() {
-    nextQuestion.style.opacity = 0;
-    // Create a new array using the total of characters
-    const randomOrder = [...Array(total).keys()].map(num => num + 1);
-    randomOrder.sort(() => Math.random() - 0.5);
-    choices = randomOrder.slice(0, 4);
-    answer = choices[Math.floor(Math.random() * choices.length)];
-    let alternatives = matches[answer].alias.length;
-    question.innerHTML =
-      "Who is " +
-      matches[answer].alias[Math.floor(Math.random() * alternatives)] +
-      "?";
-    for (let i = 0; i < choices.length; i++) {
-      options[i].innerHTML = matches[choices[i]].name;
-    }
-  }
 
-  function checkAnswer(choice, id) {
-    if (choice == matches[answer].name) {
-      points += 10;
-      options[id].classList.add("correct");
-      answers.classList.add("disabled");
+    //Display buttons according to survey current question
+    if(question.id == 1){        
+        buttonEl.appendChild(nextButton)
+    } else if (surveyState.currentQuestion == lastQuestion) {
+        buttonEl.appendChild(prevButton)
     } else {
-      points -= 10;
-      options[id].classList.add("wrong");
-    }
-    score.innerHTML = points;
-    nextQuestion.style.opacity = 1;
-  }
+        buttonEl.appendChild(prevButton)
+        buttonEl.appendChild(nextButton)
+    }   
+    
+}
 
-  function endRound() {
-    for (let i = 0; i < options.length; i++) {
-      options[i].classList.remove("correct");
-      options[i].classList.remove("wrong");
-    }
-    if (playing) {
-      getNewQuestion();
-    }
-    answers.classList.remove("disabled");
-  }
+const initialSurvey = () => {
+    //Get the current question
+    const currentQuestion = survey.find(question => question.id === surveyState.currentQuestion)
+    // Render the currentQuestion
+    renderQuestion(currentQuestion)    
 
-  answers.addEventListener("click", event => {
-    const isButton = event.target.nodeName === "BUTTON";
-    if (!isButton) {
-      return;
-    }
-    let chosen = event.target.innerHTML;
-    let id = event.target.id.slice(-1);
-    checkAnswer(chosen, id);
-  });
+}
 
-  closeButton.addEventListener("click", start);
-  nextQuestion.addEventListener("click", endRound);
-});
+initialSurvey()
