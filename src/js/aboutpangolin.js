@@ -12,3 +12,10 @@ import Swiper from './../js/plugin/swiper.min.js';
         prevEl: '.swiper-button-prev',
       },
     });
+
+
+//appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+$("#orangasli-btn").on("click", function() {
+  $("#orangasli-popup").addClass("active");
+  console.log('adding active');
+});

@@ -1,12 +1,18 @@
 body {
   width: 100%;
   height: auto;
+  overflow-x: hidden
 }
 
 .swiper-container {
-      width: 100%;
-      height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
+.swiper-wrapper {
+  margin: 30px;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -30,8 +36,17 @@ body {
   width: 100%;
 }
 
-.popup {
+
+
+#orangasli-popup.active {
+  visibility: visible;
   width: 90%;
   margin: 0 auto;
   height: 80vh;
 }
+
+#orangasli-popup {
+  visibility: hidden;
+}
+
+
