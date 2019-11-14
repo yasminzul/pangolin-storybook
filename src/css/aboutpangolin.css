@@ -26,6 +26,10 @@ body {
   align-items: center;
 }
 
+.swiper-slide img {
+  width: 100%;
+}
+
 .popup {
   width: 90%;
   margin: 0 auto;
