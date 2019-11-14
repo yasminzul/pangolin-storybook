@@ -10,7 +10,7 @@ body {
 }
 
 .swiper-wrapper {
-  margin: 30px;
+  margin: 0px;
 }
 
 .swiper-slide {
@@ -36,17 +36,23 @@ body {
   width: 100%;
 }
 
-
-
 #orangasli-popup.active {
   visibility: visible;
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
+  height:100vh;
 }
 
 #orangasli-popup {
   visibility: hidden;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 47px;
+  margin-top: 6%;
+  z-index: 500;
 }
 
 
