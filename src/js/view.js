@@ -1,7 +1,9 @@
 import _ from 'lodash';
 import css from '../css/view.css';
 import '../css/animsition.min.css';
+import '../css/swiper.min.css';
 import './../js/plugin/animsition.min.js';
+import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 
@@ -40,3 +42,37 @@ $(".animsition").animsition({
   overlayParentElement : 'body',
   transition: function(url){ window.location.href = url; }
 });
+
+// swiper
+ var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  
+  $(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true
+  })
+});
+
+
