@@ -14,7 +14,7 @@ const survey = [
         id: 1,
         question: 'How many pangolin species are there?',
         choices: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
-        correctAnswer: '8',
+        correctAnswer: 'C. 8',
         answer: null
     },
     {
@@ -104,50 +104,62 @@ const reply = [
 
   {
       id:1,
+      correctAnswer: 'C. 8',
       statement: 'There are eight existing pangolin species: the Chinese pangolin, Indian pangolin, Sunda pangolin, Philippine pangolin, tree pangolin, long-tailed pangolin, giant pangolin and Temminck’s ground pangolin.'
   },
   {
       id:2,
+      correctAnswer: 'B. 500,000',
       statement: 'IUCN estimates that over half a million pangolins have been hunted in the three years since the ban of commercial trading of pangolins was enforced in 2017, compared to its previous estimate of one million over a ten-year period between 2004 and 2014.'
   },
   {
       id:3,
+      correctAnswer: 'C. Bite with its sharp teeth',
       statement: 'Pangolins curl up into a ball, and its scales protect it from natural predators. Some species are also good climbers. They do not have teeth so they swallow sand and small stones along with insects to facilitate food digestion.'
   },
   {
       id:4,
+      correctAnswer: 'A. Sunda pangolin',
       statement: 'The Sunda pangolin, also known as the Malayan or Javan pangolin, is found throughout Southeast Asia. It lives in forested habitats and plantations, and spends a large part of its life in trees.'
   },
   {
       id:5,
+      correctAnswer: 'D. Volunteer to babysit a pangolin at a conservation centre',
       statement: 'Pangolins are commonly trafficked for its meat and scales, which are consumed as a delicacy and also for medicinal purposes. Like the popular saying: when the buying stops, the killing can too.'
   },
   {
       id:6,
+      correctAnswer: 'B. Pangolins feed on pollen and help plants to propagate',
       statement: 'Like many other flora and fauna, pangolins are an important part of the forest ecosystem. They are anteaters, and dig burrows that help aerate the forest soil and serve as shelter for other animals.'
   },
   {
       id:7,
+      correctAnswer: 'C. They are popularly kept as pets',
       statement: 'Pangolins’ scales are used as leather and for medicinal purposes, whereas their meat is served as a status symbol delicacy. However, they are not commonly kept as pets, as it is difficult to care for them and pangolins typically cannot survive long in captivity.'
   },
   {
       id:8,
+      correctAnswer: 'D. Elephant',
       statement: 'The folklore tells of an elephant that attempted to get rid of a pangolin in its path, and was suffocated when the pangolin wrapped itself around its trunk. Since then, it is said, elephants have always been afraid of pangolins.'
   },
   {
       id:9,
+      correctAnswer: 'B. Pengguling',
       statement: 'The pangolin comes from the Malay word “pengguling”, which means “one who rolls up”. The animal is called “tenggiling” in Malay.'
   },
   {
       id:10,
+      correctAnswer: 'D. Pangolins can regrow scales if they break off',
       statement: 'Pangolin scales are made of keratin, and are commonly used in traditional Chinese medicine although modern science has yet to confirm its benefits. They also serve as a natural defence mechanism for the animal, but they cannot regrow. Instead, pangolins are born with a set amount of scales that are soft at birth, then harden after two days.'
   },
   {
       id:11,
+      correctAnswer: 'D. Both a source and transit country.',
       statement: 'Pangolins are often hunted in Malaysian forests, but most of the pangolins being smuggled out of Malaysia were first smuggled in from other countries, usually from Indonesia or West Africa.'
   },
   {
       id:12,
+      correctAnswer: 'B. Education to bring awareness to the public, together with legislative change that allows for broader enforcement powers and stiffer penalties.',
       statement: 'According to authorities, wildlife traders are exploiting legal loopholes to stay out of the reach of the law, and many that get arrested simply pay the fines and return to their crimes. However, educating the public about the importance of conservation is still the best long-term strategy.'
   }
 
@@ -159,17 +171,21 @@ const surveyState = {
 }
 
 
-const navigateButtonClick = (e) => {
-    if(e.target.id == 'next') {
+const navigateToAnswer = (e) => {
+
+        initialReply()
+
+}
+
+
+const navigateToQuestion = (e) => {
+
         surveyState.currentQuestion++
         initialSurvey()
-    }
 
-    if(e.target.id == 'prev') {
-        surveyState.currentQuestion--
-        initialSurvey()
-    }
 }
+
+
 
 const checkBoxHandler = (e, question) => {
     //Check if the chekbox has selected before if it is remove selected
@@ -196,6 +212,11 @@ const getResults = () => {
         empty: emptyQuestionCount,
         wrong: wrongQuestionCount
     }
+}
+
+
+const getAnswer = () => {
+    //validate answer here
 }
 
 
@@ -244,32 +265,22 @@ const renderQuestion = (question) => {
         choicesEl.appendChild(questionRowEl)
     })
 
-    //Next & Previous Buttons
-    const prevButton = document.createElement('button')
-    prevButton.classList.add('nav-button')
-    prevButton.classList.add('prev')
-    prevButton.id = 'prev'
-    prevButton.textContent = 'Previous'
-    prevButton.addEventListener('click', navigateButtonClick)
+    //Next Buttons
 
     const nextButton = document.createElement('button')
     nextButton.classList.add('nav-button')
     nextButton.classList.add('next')
     nextButton.id = 'next'
     nextButton.textContent = 'Next'
-    nextButton.addEventListener('click', navigateButtonClick)
+    nextButton.addEventListener('click', navigateToAnswer)
 
 
 
     //Display buttons according to survey current question
-    if(question.id == 1){
-        buttonEl.appendChild(nextButton)
-    } else if (surveyState.currentQuestion == lastQuestion) {
-        buttonEl.appendChild(prevButton)
-    } else {
-        buttonEl.appendChild(prevButton)
-        buttonEl.appendChild(nextButton)
-    }
+    if (surveyState.currentQuestion != lastQuestion)
+      {
+            buttonEl.appendChild(nextButton)
+      }
 
 }
 
@@ -280,5 +291,56 @@ const initialSurvey = () => {
     renderQuestion(currentQuestion)
 
 }
+
+//---------------------------------------------------------------------------
+
+const renderAnswer = (answer) => {
+    //Last element in reply
+    const lastAnswer = reply[reply.length - 1]
+
+    // //Check if the all questions are answered if then insert some message
+    // if(surveyState.currentQuestion > lastQuestion.id) {
+    //     const results = getResults()
+    //     containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
+    //     <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>
+    //     <span class="tick"></span>`
+    //     return
+    //
+    // }
+
+    // Clean innerHTML before append
+    surveyNumEl.innerHTML = ''
+    choicesEl.innerHTML = answer.statement
+    buttonEl.innerHTML = ''
+    surveyNumEl.textContent = ''
+    questionEl.textContent = answer.correctAnswer
+
+
+    //Next Buttons
+
+    const nextButton = document.createElement('button')
+    nextButton.classList.add('nav-button')
+    nextButton.classList.add('next')
+    nextButton.id = 'next'
+    nextButton.textContent = 'Next'
+    nextButton.addEventListener('click', navigateToQuestion)
+
+
+    //Display buttons according to survey current answer
+    if (surveyState.currentQuestion != lastAnswer)
+      {
+            buttonEl.appendChild(nextButton)
+      }
+
+}
+
+const initialReply = () => {
+    //Get the current answer
+    const currentAnswer = reply.find(answer => answer.id === surveyState.currentQuestion)
+    // Render the currentAnswer
+    renderAnswer(currentAnswer)
+}
+
+
 
 initialSurvey()
