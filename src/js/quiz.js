@@ -60,7 +60,7 @@ const survey = [
         question: 'Pangolins are the most trafficked mammal in the world. Which of the following is not a reason for the high global demand for pangolins?',
         choices: ['A. Its scales are used for traditional Chinese medicine', 'B. Its meat is served as a status symbol delicacy', 'C. They are popularly kept as pets', 'D. Its scales are used for leather products'],
         correctAnswer: 'C. They are popularly kept as pets',
-        answer: null	
+        answer: null
     },
     {
     	id: 8,
@@ -100,6 +100,59 @@ const survey = [
 
 ]
 
+const reply = [
+
+  {
+      id:1,
+      statement: 'There are eight existing pangolin species: the Chinese pangolin, Indian pangolin, Sunda pangolin, Philippine pangolin, tree pangolin, long-tailed pangolin, giant pangolin and Temminck’s ground pangolin.'
+  },
+  {
+      id:2,
+      statement: 'IUCN estimates that over half a million pangolins have been hunted in the three years since the ban of commercial trading of pangolins was enforced in 2017, compared to its previous estimate of one million over a ten-year period between 2004 and 2014.'
+  },
+  {
+      id:3,
+      statement: 'Pangolins curl up into a ball, and its scales protect it from natural predators. Some species are also good climbers. They do not have teeth so they swallow sand and small stones along with insects to facilitate food digestion.'
+  },
+  {
+      id:4,
+      statement: 'The Sunda pangolin, also known as the Malayan or Javan pangolin, is found throughout Southeast Asia. It lives in forested habitats and plantations, and spends a large part of its life in trees.'
+  },
+  {
+      id:5,
+      statement: 'Pangolins are commonly trafficked for its meat and scales, which are consumed as a delicacy and also for medicinal purposes. Like the popular saying: when the buying stops, the killing can too.'
+  },
+  {
+      id:6,
+      statement: 'Like many other flora and fauna, pangolins are an important part of the forest ecosystem. They are anteaters, and dig burrows that help aerate the forest soil and serve as shelter for other animals.'
+  },
+  {
+      id:7,
+      statement: 'Pangolins’ scales are used as leather and for medicinal purposes, whereas their meat is served as a status symbol delicacy. However, they are not commonly kept as pets, as it is difficult to care for them and pangolins typically cannot survive long in captivity.'
+  },
+  {
+      id:8,
+      statement: 'The folklore tells of an elephant that attempted to get rid of a pangolin in its path, and was suffocated when the pangolin wrapped itself around its trunk. Since then, it is said, elephants have always been afraid of pangolins.'
+  },
+  {
+      id:9,
+      statement: 'The pangolin comes from the Malay word “pengguling”, which means “one who rolls up”. The animal is called “tenggiling” in Malay.'
+  },
+  {
+      id:10,
+      statement: 'Pangolin scales are made of keratin, and are commonly used in traditional Chinese medicine although modern science has yet to confirm its benefits. They also serve as a natural defence mechanism for the animal, but they cannot regrow. Instead, pangolins are born with a set amount of scales that are soft at birth, then harden after two days.'
+  },
+  {
+      id:11,
+      statement: 'Pangolins are often hunted in Malaysian forests, but most of the pangolins being smuggled out of Malaysia were first smuggled in from other countries, usually from Indonesia or West Africa.'
+  },
+  {
+      id:12,
+      statement: 'According to authorities, wildlife traders are exploiting legal loopholes to stay out of the reach of the law, and many that get arrested simply pay the fines and return to their crimes. However, educating the public about the importance of conservation is still the best long-term strategy.'
+  }
+
+]
+
 
 const surveyState = {
     currentQuestion: 1
@@ -118,18 +171,18 @@ const navigateButtonClick = (e) => {
     }
 }
 
-const checkBoxHandler = (e, question) => {    
+const checkBoxHandler = (e, question) => {
     //Check if the chekbox has selected before if it is remove selected
     if(!e.target.checked) {
         e.target.checked = false
         question.answer = null
         return
     }
-    
+
     const allCheckBoxes = choicesEl.querySelectorAll('input')
     allCheckBoxes.forEach(checkBox => checkBox.checked = false)
     e.target.checked = true
-    question.answer = e.target.value    
+    question.answer = e.target.value
 }
 
 const getResults = () => {
@@ -146,7 +199,7 @@ const getResults = () => {
 }
 
 
-const renderQuestion = (question) => {    
+const renderQuestion = (question) => {
     //Last question of survey
     const lastQuestion = survey[survey.length - 1]
 
@@ -154,10 +207,10 @@ const renderQuestion = (question) => {
     if(surveyState.currentQuestion > lastQuestion.id) {
         const results = getResults()
         containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
-        <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>                        
+        <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>
         <span class="tick"></span>`
         return
-                                
+
     }
 
     // Clean innerHTML before append
@@ -171,7 +224,7 @@ const renderQuestion = (question) => {
     question.choices.forEach(choice => {
         const questionRowEl = document.createElement('p')
         questionRowEl.setAttribute('class','question-row')
-        questionRowEl.innerHTML = `<label class="label">                                        
+        questionRowEl.innerHTML = `<label class="label">
                                         <span class="question-choice">${choice}</span>
                                     </label>`
         //Create checkbox input
@@ -188,7 +241,7 @@ const renderQuestion = (question) => {
         //Insert into question row
         questionRowEl.firstChild.prepend(checkBoxEl)
         //Insert row to the wrapper
-        choicesEl.appendChild(questionRowEl)                                    
+        choicesEl.appendChild(questionRowEl)
     })
 
     //Next & Previous Buttons
@@ -209,22 +262,22 @@ const renderQuestion = (question) => {
 
 
     //Display buttons according to survey current question
-    if(question.id == 1){        
+    if(question.id == 1){
         buttonEl.appendChild(nextButton)
     } else if (surveyState.currentQuestion == lastQuestion) {
         buttonEl.appendChild(prevButton)
     } else {
         buttonEl.appendChild(prevButton)
         buttonEl.appendChild(nextButton)
-    }   
-    
+    }
+
 }
 
 const initialSurvey = () => {
     //Get the current question
     const currentQuestion = survey.find(question => question.id === surveyState.currentQuestion)
     // Render the currentQuestion
-    renderQuestion(currentQuestion)    
+    renderQuestion(currentQuestion)
 
 }
 
