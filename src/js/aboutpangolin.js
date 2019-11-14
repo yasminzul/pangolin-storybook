@@ -3,7 +3,7 @@ import css from '../css/aboutpangolin.css';
 var $ = require("jquery");
 
 import '../css/swiper.min.css';
-import './../js/plugin/swiper.min.js';
+import Swiper from './../js/plugin/swiper.min.js';
 
 
   var swiper = new Swiper('.swiper-container', {
