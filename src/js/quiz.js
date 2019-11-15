@@ -174,7 +174,6 @@ const surveyState = {
 const navigateToAnswer = (e) => {
 
         initialReply()
-
 }
 
 
@@ -217,6 +216,18 @@ const getResults = () => {
 
 const getAnswer = () => {
     //validate answer here
+    if (survey[surveyState.currentQuestion].answer == survey[surveyState.currentQuestion].correctAnswer)
+    {
+      questionEl.innerHTML = 'Correct!'
+    }
+    else if (survey[surveyState.currentQuestion].answer !== null && survey.answer != survey.correctAnswer)
+    {
+      questionEl.innerHTML = 'Wrong!'
+    }
+    else
+    {
+      questionEl.innerHTML = 'You did not answer'
+    }
 }
 
 
@@ -298,22 +309,15 @@ const renderAnswer = (answer) => {
     //Last element in reply
     const lastAnswer = reply[reply.length - 1]
 
-    // //Check if the all questions are answered if then insert some message
-    // if(surveyState.currentQuestion > lastQuestion.id) {
-    //     const results = getResults()
-    //     containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
-    //     <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>
-    //     <span class="tick"></span>`
-    //     return
-    //
-    // }
-
     // Clean innerHTML before append
+    // containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
+    // <p class="results-info"> ${answer.correctAnswer}</p>
+    // <p class="results-info"> ${answer.statement}</p>`
+    getAnswer()
     surveyNumEl.innerHTML = ''
-    choicesEl.innerHTML = answer.statement
+    choicesEl.innerHTML = `<p>${answer.correctAnswer}</p><p>${answer.statement}</p>`
     buttonEl.innerHTML = ''
     surveyNumEl.textContent = ''
-    questionEl.textContent = answer.correctAnswer
 
 
     //Next Buttons
