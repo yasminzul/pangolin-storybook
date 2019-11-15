@@ -173,17 +173,14 @@ const surveyState = {
 
 const navigateToAnswer = (e) => {
 
-        // if (survey[surveyState.currentQuestion].answer == null)
-        // {
-        //   alert("You have to pick an answer")
-        // }
-        // else
-        // {
-        //   initialReply()
-        // }
-
-        initialReply()
-
+        if (survey[surveyState.currentQuestion-1].answer == null)
+        {
+          alert("You have to pick an answer")
+        }
+        else
+        {
+          initialReply()
+        }
 }
 
 
@@ -208,29 +205,44 @@ const checkBoxHandler = (e, question) => {
     allCheckBoxes.forEach(checkBox => checkBox.checked = false)
     e.target.checked = true
     question.answer = e.target.value
+
 }
 
 const getResults = () => {
     const correctAnswerCount = survey.filter(question => question.answer == question.correctAnswer).length
-    const emptyQuestionCount = survey.filter(question => question.answer === null).length
-    const wrongQuestionCount = survey.filter(question => question.answer !== null && question.answer != question.correctAnswer).length
 
-
-    return {
-        correct: correctAnswerCount,
-        empty: emptyQuestionCount,
-        wrong: wrongQuestionCount
+    if (correctAnswerCount >= 10 && correctAnswerCount <= 12)
+    {
+      containerEl.innerHTML = `<h1 class="test-completed">You are a Pangolin Guardian</h1>
+       <p class="results-info">Congratulations! You have excellent knowledge of pangolins and their role in our ecosystem. You have been granted the ultimate pangolin guardian status for your effort. The pangolins are grateful.</p>`
     }
+    else if (correctAnswerCount >= 7 && correctAnswerCount <= 9)
+    {
+      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Advocate</h1>
+       <p class="results-info">Your knowledge of pangolins and the trafficking trade is commendable – well done! As a pangolin advocate, we hope you will use your knowledge to create an impact and spread the word about these important animals.</p>`
+    }
+    else if (correctAnswerCount >= 4 && correctAnswerCount <= 6)
+    {
+      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Defender</h1>
+       <p class="results-info">Good job, pangolin defender! You have proven to have a fair amount of knowledge of pangolins and the trafficking trade, and every bit helps to protect these endangered species. A little refresher wouldn’t hurt though, so head to rage.my/pangolins to learn more.</p>`
+    }
+    else if (correctAnswerCount >= 0 && correctAnswerCount <= 3)
+    {
+      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Ranger</h1>
+       <p class="results-info">Hey pangolin ranger, you can do better! The more people know about these endangered animals, the easier it is to help stop the consumption and illegal trafficking. Go to rage.my/pangolins to learn more about them.</p>`
+    }
+
+    return
 }
 
 
 const getAnswer = () => {
     //validate answer here
-    if (survey[surveyState.currentQuestion].answer == survey[surveyState.currentQuestion].correctAnswer)
+    if (survey[surveyState.currentQuestion-1].answer == survey[surveyState.currentQuestion-1].correctAnswer)
     {
       return 'Correct!'
     }
-    else if (survey[surveyState.currentQuestion].answer !== null && survey.answer != survey.correctAnswer)
+    else if (survey[surveyState.currentQuestion-1].answer !== null && survey[surveyState.currentQuestion-1].answer != survey[surveyState.currentQuestion-1].correctAnswer)
     {
       return 'Wrong!'
     }
@@ -243,11 +255,8 @@ const renderQuestion = (question) => {
 
     //Check if the all questions are answered if then insert some message
     if(surveyState.currentQuestion > lastQuestion.id) {
-        const results = getResults()
-        containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
-        <p class="results-info"> You have <strong>${results.correct}</strong> correct, <strong>${results.wrong}</strong> wrong, <strong>${results.empty}</strong> empty answers</p>
-        <span class="tick"></span>`
-        return
+
+        getResults()
 
     }
 
@@ -350,8 +359,6 @@ const initialReply = () => {
     // Render the currentAnswer
     renderAnswer(currentAnswer)
 }
-
-console.log(survey)
 
 
 initialSurvey()
