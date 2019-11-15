@@ -36,15 +36,20 @@ body {
   width: 100%;
 }
 
-#orangasli-popup.active {
-  visibility: visible;
-  width: 90%;
-  margin: 0 auto;
-  height:100vh;
+.pop
+{
+  display: block;
 }
 
+
 #orangasli-popup {
-  visibility: hidden;
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 700;
+  position: absolute;
+  top: 0;
 }
 
 .close {
@@ -52,7 +57,5 @@ body {
   right: 0;
   margin-right: 47px;
   margin-top: 6%;
-  z-index: 500;
+  z-index: 800;
 }
-
-
