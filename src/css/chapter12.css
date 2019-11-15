@@ -38,13 +38,13 @@ body
   width: 100%;
 }
 
-#lactation-popup.active {
+#lactation-popup.active, #furuncle-popup.active, #arthritis-popup.active, #detox-popup.active {
   visibility: visible;
   width: 100%;
   margin: 20px auto;
 }
 
-#lactation-popup {
+#lactation-popup, #furuncle-popup, #arthritis-popup, #detox-popup {
   visibility: hidden;
 }
 
