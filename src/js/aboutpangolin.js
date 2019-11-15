@@ -14,13 +14,13 @@ import Swiper from './../js/plugin/swiper.min.js';
     });
 
 
-//appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+
 $("#orangasli-btn").on("click", function() {
   $("#orangasli-popup").addClass("active");
   console.log('adding active');
 });
 
-//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+
 $(".close").on("click", function() {
   $("#orangasli-popup").removeClass("active");
   console.log('remove class');
