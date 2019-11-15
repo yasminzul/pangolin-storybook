@@ -37,6 +37,10 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
   align-items: center;
 }
 
+.swiper-slide {
+	width: 100%;
+}
+
 .swiper-slide img {
   width: 100%;
 }
