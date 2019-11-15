@@ -173,7 +173,17 @@ const surveyState = {
 
 const navigateToAnswer = (e) => {
 
+        // if (survey[surveyState.currentQuestion].answer == null)
+        // {
+        //   alert("You have to pick an answer")
+        // }
+        // else
+        // {
+        //   initialReply()
+        // }
+
         initialReply()
+
 }
 
 
@@ -218,15 +228,11 @@ const getAnswer = () => {
     //validate answer here
     if (survey[surveyState.currentQuestion].answer == survey[surveyState.currentQuestion].correctAnswer)
     {
-      questionEl.innerHTML = 'Correct!'
+      return 'Correct!'
     }
     else if (survey[surveyState.currentQuestion].answer !== null && survey.answer != survey.correctAnswer)
     {
-      questionEl.innerHTML = 'Wrong!'
-    }
-    else
-    {
-      questionEl.innerHTML = 'You did not answer'
+      return 'Wrong!'
     }
 }
 
@@ -313,12 +319,12 @@ const renderAnswer = (answer) => {
     // containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
     // <p class="results-info"> ${answer.correctAnswer}</p>
     // <p class="results-info"> ${answer.statement}</p>`
-    getAnswer()
+    const questionResult = getAnswer()
     surveyNumEl.innerHTML = ''
     choicesEl.innerHTML = `<p>${answer.correctAnswer}</p><p>${answer.statement}</p>`
     buttonEl.innerHTML = ''
     surveyNumEl.textContent = ''
-
+    questionEl.innerHTML = `${questionResult}`
 
     //Next Buttons
 
@@ -345,6 +351,7 @@ const initialReply = () => {
     renderAnswer(currentAnswer)
 }
 
+console.log(survey)
 
 
 initialSurvey()
