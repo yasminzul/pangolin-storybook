@@ -12,3 +12,15 @@ import Swiper from './../js/plugin/swiper.min.js';
         prevEl: '.swiper-button-prev',
       },
     });
+
+
+$("#lactation-btn").on("click", function() {
+  $("#lactation-popup").addClass("active");
+  console.log('adding active');
+});
+
+
+$("#lactation-close").on("click", function() {
+  $("#lactation-popup").removeClass("active");
+  console.log('remove class');
+});
