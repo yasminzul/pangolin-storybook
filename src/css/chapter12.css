@@ -1,8 +1,11 @@
 body
 {
-  background-image: url(../gfx/marble-texture/marble-texture.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image: url(../gfx/marble-texture/marble-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -38,14 +41,15 @@ body
   width: 100%;
 }
 
-#lactation-popup.active, #furuncle-popup.active, #arthritis-popup.active, #detox-popup.active {
+.popup.active {
   visibility: visible;
   width: 100%;
   margin: 20px auto;
 }
 
-#lactation-popup, #furuncle-popup, #arthritis-popup, #detox-popup {
+.popup {
   visibility: hidden;
+  position: absolute;
 }
 
 .close {
