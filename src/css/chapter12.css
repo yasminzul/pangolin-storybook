@@ -10,6 +10,10 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
 
 }
 
+button {
+	width: 51%;
+    float: right;
+}
 
 .swiper-container {
   width: 100%;
@@ -73,16 +77,8 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
 	font-size: 25px;
 }
 
-/*main view*/
 
-button {
-	width: 51%;
-    float: right;
-    background-color: #ffffff00;
-    border-style: none;
-}
-
-
+<<<<<<< HEAD
 .b {
 	width: 180px;
     height: 14px;
@@ -114,6 +110,8 @@ button {
 .det {
 	background-color: #a57b4a;
 }
+=======
+>>>>>>> parent of 8fd2185... more css
 
 .top-left {
 	position: absolute;
