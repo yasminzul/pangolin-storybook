@@ -117,12 +117,16 @@ button {
 }
 
 .top-left {
-	position: absolute;
+	position: fixed;
 }
 
 .bottom-right {
-	float: right;
-	position: absolute;
+	position: fixed;
+    right: 0;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    width: 26%;
 }
 
 /* mobile and tablet */
