@@ -66,6 +66,11 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
   margin-right: 2%;
   margin-top: 1%;
   z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
 }
 
 /*main view*/
@@ -79,11 +84,19 @@ button {
 
 
 .b {
-	width: 140px;
+	width: 180px;
     height: 14px;
-    margin: 0 auto;
+    margin-right: 70px;
+    float: right;
     padding: 16px;
     border-radius: 2.5px;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#lactation-btn {
+	margin-top: 10%;
 }
 
 .lac {
@@ -100,6 +113,15 @@ button {
 
 .det {
 	background-color: #a57b4a;
+}
+
+.top-left {
+	position: absolute;
+}
+
+.bottom-right {
+	float: right;
+	position: absolute;
 }
 
 /* mobile and tablet */
