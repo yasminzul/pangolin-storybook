@@ -10,10 +10,6 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
 
 }
 
-button {
-	width: 51%;
-    float: right;
-}
 
 .swiper-container {
   width: 100%;
@@ -72,7 +68,39 @@ button {
   z-index: 800;
 }
 
+/*main view*/
 
+button {
+	width: 51%;
+    float: right;
+    background-color: #ffffff00;
+    border-style: none;
+}
+
+
+.b {
+	width: 140px;
+    height: 14px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 2.5px;
+}
+
+.lac {
+	background-color: #362f2d;
+}
+
+.furn {
+	background-color: #934a0d;
+}
+
+.arth {
+	background-color: #754c24;
+}
+
+.det {
+	background-color: #a57b4a;
+}
 
 /* mobile and tablet */
 
