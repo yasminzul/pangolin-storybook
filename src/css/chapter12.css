@@ -166,6 +166,15 @@ button {
 	font-weight: 600;
 }
 
+.recipe-text {
+	position: absolute;
+    width: 45%;
+    top: 35px;
+    left: 10%;
+    text-align: left;
+    font-family: franklin-gothic-urw, sans-serif;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
