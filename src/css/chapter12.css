@@ -39,6 +39,7 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
 
 .swiper-slide {
 	width: 100%;
+	background-color: #ffffff00;
 }
 
 .swiper-slide img {
@@ -74,6 +75,7 @@ background-image: url(../gfx/marble-texture/marble-texture.png);
   z-index: 700;
   position: absolute;
   top: 0;
+  left: 0;
 }
 
 .close {
