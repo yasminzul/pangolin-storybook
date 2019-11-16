@@ -60,7 +60,7 @@ button {
   height:100vh;
   z-index: 700;
   position: absolute;
-  top: 7%;
+  /*top: 7%;*/
   left: 0;
 }
 
@@ -82,6 +82,7 @@ button {
     float: right;
     background-color: #ffffff00;
     border-style: none;
+    outline: 0;
 }
 
 .b {
@@ -142,6 +143,10 @@ button {
     width: 50%;
     text-align: center;
     font-family: franklin-gothic-urw, sans-serif;
+}
+
+.center-middle img {
+	width: 60%;
 }
 
 .center-bottom {
