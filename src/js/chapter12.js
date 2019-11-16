@@ -20,6 +20,6 @@ $("#lactation-btn, #furuncle-btn, #arthritis-btn, #detox-btn").on("click", funct
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
 $(".close").on("click", function() {
-  $(this).parent('.popup').css('display','none');
+  $(this).closest('.popup').css('display','none');
 });
 
