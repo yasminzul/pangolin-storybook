@@ -77,8 +77,13 @@ button {
 	font-size: 25px;
 }
 
+button {
+	width: 51%;
+    float: right;
+    background-color: #ffffff00;
+    border-style: none;
+}
 
-<<<<<<< HEAD
 .b {
 	width: 180px;
     height: 14px;
@@ -110,8 +115,6 @@ button {
 .det {
 	background-color: #a57b4a;
 }
-=======
->>>>>>> parent of 8fd2185... more css
 
 .top-left {
 	position: absolute;
