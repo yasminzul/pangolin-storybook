@@ -231,4 +231,30 @@ button {
 		font-size: 22px;
 	}
 
+	/*main view*/
+
+	.bottom-right {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0px;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+
+	.bottom-right img {
+		float: right;
+    	width: 20%;
+	}
+
+	.top-left {
+	    position: fixed;
+	    z-index: -1;
+	    width: 100%;
+	}
+
+	.top-left img {
+		width: 60%;
+	}
+
 }
