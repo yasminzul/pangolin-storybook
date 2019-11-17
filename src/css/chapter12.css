@@ -223,4 +223,12 @@ button {
 		display: none;
 	}
 
+	.recipe-text {
+		font-size: 16px;
+	}
+
+	.recipe-title {
+		font-size: 22px;
+	}
+
 }
