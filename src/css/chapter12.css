@@ -83,6 +83,7 @@ button {
     background-color: #ffffff00;
     border-style: none;
     outline: 0;
+    z-index: 800;
 }
 
 .b {
@@ -119,6 +120,7 @@ button {
 
 .top-left {
 	position: fixed;
+	z-index: -1;
 }
 
 .bottom-right {
@@ -180,12 +182,38 @@ button {
 	font-size: 40px;
 }
 
+.mobile {
+	display: none;
+}
+
+.mobile img {
+	margin-left: 50%;
+}
+
+.lactation {
+	background-color: #ffc9ae;
+}
+
+.furuncle {
+	background-color: #f0d1a7;
+}
+
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
 	.popup {
 		top: 0;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
 	}
 
 }
