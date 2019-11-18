@@ -101,19 +101,28 @@ body {
     color: #fff;
 }
 
+.left{
+    position: absolute;
+    width: 25%;
+    top: 35px;
+    left: 5%;
+    text-align: left;
+}
+
 .map-text {
 	position: absolute;
-    width: 40%;
+    width: 25%;
     top: 35px;
-    left: 10%;
+    left: 5%;
     text-align: left;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-size: 14px;
+
 }
 
 .map-title {
-	font-size: 40px;
+	font-size: 100%;
 	font-family: 'IM Fell Double Pica SC', serif;
+	text-transform: uppercase;
+	line-height: 30px;
 }
 
 .mobile {
@@ -122,6 +131,15 @@ body {
 
 .mobile img {
 	margin-left: 50%;
+}
+
+/*slides*/
+
+.legend {
+	position: absolute;
+    width: 35%;
+    bottom: 0;
+    left: 3%;
 }
 
 
