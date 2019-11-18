@@ -73,6 +73,34 @@ body {
 	font-size: 25px;
 }*/
 
+.main-view {
+	width: 100vw;
+	height: 100vh;
+}
+
+.main-map-title {
+	position: relative;
+    padding-top: 10%;
+    width: 55%;
+    text-align: center;
+}
+
+.main-map-title img {
+	width: 60%;
+}
+
+#open-slider {
+	position: relative;
+    left: 19%;
+    width: 18%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: #e89c00;
+    text-align: center;
+    border-style: none;
+    color: #fff;
+}
+
 .map-text {
 	position: absolute;
     width: 40%;
