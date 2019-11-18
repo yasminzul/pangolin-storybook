@@ -1,10 +1,100 @@
 body
 {
-  background-image: url(../gfx/boatman-color.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
+	background-image: url(../gfx/map-main-img/main-img@3x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9cb9c;
 }
+
+.map-wrapper {
+	width: 100vw;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+	width: 100%;
+	background-color: #ffffff00;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  margin-top: 1%;
+  z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
+}
+
+button {
+	width: 24%;
+    float: right;
+    background-color: #ffffff00;
+    border-style: none;
+    outline: 0;
+    z-index: 600;
+}
+
+.map-text {
+	position: absolute;
+    width: 40%;
+    top: 35px;
+    left: 10%;
+    text-align: left;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 14px;
+}
+
 
 
 /* mobile and tablet */
@@ -12,5 +102,21 @@ body
 @media only screen and (max-width: 900px) {
 
 
+	.popup {
+		top: 0;
+		position: fixed;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.map-text {
+		font-size: 16px;
+	}
 
 }
