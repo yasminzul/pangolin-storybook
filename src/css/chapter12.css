@@ -10,6 +10,10 @@ body
     background-color: #f9cb9c;
 }
 
+.recipe-wrapper {
+	width: 100vw;
+}
+
 button {
 	width: 51%;
     float: right;
@@ -212,12 +216,18 @@ button {
 
 @media only screen and (max-width: 900px) {
 
-	body {
-		overflow: visible;
+	.animsition {
+		overflow: scroll;
+	}
+
+	.recipe-wrapper {
+		width: 100vw;
+		height: 100vh;
 	}
 
 	.popup {
 		top: 0;
+		position: fixed;
 	}
 
 	.mobile {
@@ -293,6 +303,10 @@ button {
 		width: 40%;
 	    margin-top: 0;
 	    position: relative;
+	}
+
+	.b {
+		margin-bottom: 10px;
 	}
 
 	#lactation-btn {
