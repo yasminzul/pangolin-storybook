@@ -5,6 +5,14 @@ body {
     background-color: #a1a686;
 }
 
+p {
+	font-family: franklin-gothic-urw, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
 .map-wrapper {
 	background-image: url(../gfx/map-main-img/main-img.png);
 	background-repeat: no-repeat;
@@ -106,16 +114,18 @@ body {
     width: 25%;
     top: 35px;
     left: 5%;
-    text-align: left;
+}
+
+.left-bottom {
+	position: absolute;
+	width: 25%;
+    bottom: 10%;
+    left: 3%;
 }
 
 .map-text {
 	position: absolute;
-    width: 25%;
-    top: 35px;
-    left: 5%;
     text-align: left;
-
 }
 
 .map-title {
@@ -135,11 +145,11 @@ body {
 
 /*slides*/
 
-.legend {
-	position: absolute;
-    width: 35%;
+.slide-footer {
+    position: absolute;
+    width: 100%;
     bottom: 0;
-    left: 3%;
+    left: 0;
 }
 
 
