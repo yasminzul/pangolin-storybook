@@ -63,7 +63,7 @@ button {
   height:100vh;
   z-index: 700;
   position: absolute;
-  /*top: 7%;*/
+  top: 0;
   left: 0;
 }
 
@@ -81,7 +81,7 @@ button {
 }
 
 button {
-	width: 51%;
+	width: 24%;
     float: right;
     background-color: #ffffff00;
     border-style: none;
@@ -90,11 +90,12 @@ button {
 }
 
 .b {
-	width: 180px;
-    height: 14px;
+	width: 155px;
+    height: 25px;
     margin-right: 70px;
     float: right;
-    padding: 16px;
+    font-size: 11px;
+    padding: 13px;
     border-radius: 2.5px;
     font-family: franklin-gothic-urw, sans-serif;
     color: #fff;
@@ -102,7 +103,19 @@ button {
 }
 
 #lactation-btn {
-	margin-top: 10%;
+	margin-top: -30%;
+}
+
+#furuncle-btn {
+	margin-top: -25%;
+}
+
+#arthritis-btn {
+	margin-top: -20%;
+}
+
+#detox-btn {
+	margin-top: -15%;
 }
 
 .lac {
@@ -127,12 +140,8 @@ button {
 }
 
 .bottom-right {
-	position: fixed;
+	position: absolute;
     right: 0;
-    bottom: 0px;
-    margin: 0;
-    padding: 0;
-    width: 26%;
 }
 
 .bottom-right img {
@@ -140,14 +149,13 @@ button {
 }
 
 .center-middle {
-    position: fixed;
-    right: 25%;
-    bottom: 55%;
-    margin: 0;
-    padding: 0;
+	position: relative;
+    margin: 0 auto;
+    padding-top: 10%;
     width: 50%;
     text-align: center;
     font-family: franklin-gothic-urw, sans-serif;
+
 }
 
 .center-middle img {
@@ -155,10 +163,8 @@ button {
 }
 
 .center-bottom {
-    position: fixed;
-    right: 25%;
-    bottom: 15%;
-    margin: 0;
+	position: relative;
+    margin: 0 auto;
     padding: 0;
     width: 50%;
     text-align: center;
@@ -239,6 +245,10 @@ button {
 
 	/*main view*/
 
+	.mobile.main img {
+		margin-left: 0;
+	}
+
 	.bottom-right {
 	    position: fixed;
 	    right: 0;
@@ -300,7 +310,7 @@ button {
 		margin-bottom: 10px;
 	}
 
-	#lactation-btn {
+	#lactation-btn,  #furuncle-btn, #arthritis-btn, #detox-btn{
 		margin-top: 0;
 	}
 
