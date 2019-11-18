@@ -1,13 +1,13 @@
 body
 {
-background-image: url(../gfx/marble-texture/marble-texture.png);
+	background-image: url(../gfx/marble-texture/marble-texture.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     margin: 0;
-
+    background-color: #f9cb9c;
 }
 
 button {
@@ -180,6 +180,7 @@ button {
 
 .recipe-title {
 	font-size: 40px;
+	font-family: 'IM Fell Double Pica SC', serif;
 }
 
 .mobile {
@@ -210,6 +211,10 @@ button {
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+
+	body {
+		overflow: visible;
+	}
 
 	.popup {
 		top: 0;
@@ -248,13 +253,50 @@ button {
 	}
 
 	.top-left {
-	    position: fixed;
+		position: fixed;
+	    right: 0;
+	    bottom: 0px;
+	    margin: 0;
+	    padding: 0;
 	    z-index: -1;
 	    width: 100%;
+	    height: 100vh;
+	    top: 0;
 	}
 
 	.top-left img {
 		width: 60%;
+		margin-left: 0;
+	}
+
+	.center-middle {
+		position: relative;
+	    margin: 0 auto;
+	    padding: 0;
+	    width: 80%;
+	    margin-top: 4%;
+	    text-align: center;
+	    font-family: franklin-gothic-urw, sans-serif;
+	}
+	
+
+	.center-bottom {
+		margin: 0 auto;
+		position: relative;
+		margin-top: 5%;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 5%;
+	}
+
+	button {
+		width: 40%;
+	    margin-top: 0;
+	    position: relative;
+	}
+
+	#lactation-btn {
+		margin-top: 0;
 	}
 
 }
