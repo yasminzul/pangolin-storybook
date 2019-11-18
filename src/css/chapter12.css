@@ -5,7 +5,6 @@ body
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
     background-color: #f9cb9c;
 }
@@ -87,7 +86,7 @@ button {
     background-color: #ffffff00;
     border-style: none;
     outline: 0;
-    z-index: 800;
+    z-index: 600;
 }
 
 .b {
@@ -216,14 +215,6 @@ button {
 
 @media only screen and (max-width: 900px) {
 
-	.animsition {
-		overflow: scroll;
-	}
-
-	.recipe-wrapper {
-		width: 100vw;
-		height: 100vh;
-	}
 
 	.popup {
 		top: 0;
