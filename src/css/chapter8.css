@@ -1,18 +1,15 @@
-body
-{
-	background-image: url(../gfx/map-main-img/main-img@3x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
     width: 100vw;
-    height: 100vh;
+    overflow: hidden;
     margin: 0;
-    background-color: #f9cb9c;
+    background-color: #a1a686;
 }
 
 .map-wrapper {
-	width: 100vw;
+	background-image: url(../gfx/map-main-img/main-img.png);
+	background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 .swiper-container {
   width: 100%;
@@ -57,13 +54,13 @@ body
   width: 100%;
   margin: 0;
   height:100vh;
-  z-index: 700;
+  z-index: 600;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.close {
+/*.close {
   position: absolute;
   right: 0;
   margin-right: 2%;
@@ -74,16 +71,7 @@ body
 
 .close i {
 	font-size: 25px;
-}
-
-button {
-	width: 24%;
-    float: right;
-    background-color: #ffffff00;
-    border-style: none;
-    outline: 0;
-    z-index: 600;
-}
+}*/
 
 .map-text {
 	position: absolute;
@@ -95,6 +83,18 @@ button {
     font-size: 14px;
 }
 
+.map-title {
+	font-size: 40px;
+	font-family: 'IM Fell Double Pica SC', serif;
+}
+
+.mobile {
+	display: none;
+}
+
+.mobile img {
+	margin-left: 50%;
+}
 
 
 /* mobile and tablet */
@@ -117,6 +117,10 @@ button {
 
 	.map-text {
 		font-size: 16px;
+	}
+
+	.map-title {
+		font-size: 22px;
 	}
 
 }
