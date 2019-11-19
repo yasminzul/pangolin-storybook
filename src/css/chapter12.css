@@ -9,6 +9,11 @@ body
     background-color: #f9cb9c;
 }
 
+.main-view
+{
+	height: 100vh;
+}
+
 .recipe-wrapper {
 	width: 100vw;
 }
@@ -81,41 +86,50 @@ button {
 }
 
 button {
-	width: 24%;
-    float: right;
-    background-color: #ffffff00;
-    border-style: none;
-    outline: 0;
-    z-index: 600;
+	width: 15vw;
+	height: 5vh;
+  float: right;
+  border-style: none;
+  outline: 0;
+  z-index: 600;
+	margin: 1vh 0;
+
+	font-size: 11px;
+	padding: 1vw;
+	border-radius: 2.5px;
+	font-family: franklin-gothic-urw, sans-serif;
+	font-size: 700;
+	color: #fff;
+	text-transform: uppercase;
 }
 
-.b {
-	width: 155px;
-    height: 25px;
-    margin-right: 70px;
-    float: right;
-    font-size: 11px;
-    padding: 13px;
-    border-radius: 2.5px;
-    font-family: franklin-gothic-urw, sans-serif;
-    color: #fff;
-    text-transform: uppercase;
+.button-cluster
+{
+position: absolute;
+	width: 15vw;
+	top: 15vh;
+	right: 5vw;
 }
+
 
 #lactation-btn {
-	margin-top: -30%;
+	/* margin-top: -30%; */
+	background-color: #362f2d;
 }
 
 #furuncle-btn {
-	margin-top: -25%;
+	/* margin-top: -25%; */
+	background-color: #934a0d;
 }
 
 #arthritis-btn {
-	margin-top: -20%;
+	/* margin-top: -20%; */
+	background-color: #754c24;
 }
 
 #detox-btn {
-	margin-top: -15%;
+	/* margin-top: -15%; */
+	background-color: #a57b4a;
 }
 
 .lac {
@@ -142,11 +156,12 @@ button {
 .bottom-right {
 	position: absolute;
     right: 0;
+		bottom: 0;
 }
 
-.bottom-right img {
+/* .bottom-right img {
 	float: right;
-}
+} */
 
 .center-middle {
 	position: relative;
@@ -201,7 +216,7 @@ button {
 }
 
 .lactation {
-	background-color: #ffc9ae;
+
 }
 
 .furuncle {
@@ -289,7 +304,7 @@ button {
 	    text-align: center;
 	    font-family: franklin-gothic-urw, sans-serif;
 	}
-	
+
 
 	.center-bottom {
 		margin: 0 auto;

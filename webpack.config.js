@@ -117,7 +117,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-5.html',
         inject: true,
-        chunks: ['chapter5','view','chapter'],
+        chunks: ['chapter5','view'],
         filename: 'chapter-5.html'
     }),
     new HtmlWebpackPlugin({
@@ -135,7 +135,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-8.html',
         inject: true,
-        chunks: ['chapter8','view','chapter'],
+        chunks: ['chapter8','view'],
         filename: 'chapter-8.html'
     }),
     new HtmlWebpackPlugin({
@@ -159,7 +159,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-12.html',
         inject: true,
-        chunks: ['chapter12','view','chapter'],
+        chunks: ['chapter12','view'],
         filename: 'chapter-12.html'
     }),
     new HtmlWebpackPlugin({
@@ -171,7 +171,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-14.html',
         inject: true,
-        chunks: ['chapter14','view','chapter'],
+        chunks: ['chapter14','view'],
         filename: 'chapter-14.html'
     }),
     new HtmlWebpackPlugin({
