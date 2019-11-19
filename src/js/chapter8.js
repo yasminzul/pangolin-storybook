@@ -24,3 +24,12 @@ $("#open-slider").on("click", function() {
 //   $(this).closest('.popup').css('display','none');
 // });
 
+
+
+// find id
+
+// create empty div
+
+// attribute label to div on id click
+
+// this is for mobile only
