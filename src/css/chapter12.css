@@ -1,9 +1,219 @@
 body
 {
-  background-image: url(../gfx/boatman-color.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url(../gfx/marble-texture/marble-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9cb9c;
+}
 
+.recipe-wrapper {
+	width: 100vw;
+}
+
+button {
+	width: 51%;
+    float: right;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+	width: 100%;
+	background-color: #ffffff00;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  margin-top: 1%;
+  z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
+}
+
+button {
+	width: 24%;
+    float: right;
+    background-color: #ffffff00;
+    border-style: none;
+    outline: 0;
+    z-index: 600;
+}
+
+.b {
+	width: 155px;
+    height: 25px;
+    margin-right: 70px;
+    float: right;
+    font-size: 11px;
+    padding: 13px;
+    border-radius: 2.5px;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#lactation-btn {
+	margin-top: -30%;
+}
+
+#furuncle-btn {
+	margin-top: -25%;
+}
+
+#arthritis-btn {
+	margin-top: -20%;
+}
+
+#detox-btn {
+	margin-top: -15%;
+}
+
+.lac {
+	background-color: #362f2d;
+}
+
+.furn {
+	background-color: #934a0d;
+}
+
+.arth {
+	background-color: #754c24;
+}
+
+.det {
+	background-color: #a57b4a;
+}
+
+.top-left {
+	position: fixed;
+	z-index: -1;
+}
+
+.bottom-right {
+	position: absolute;
+    right: 0;
+}
+
+.bottom-right img {
+	float: right;
+}
+
+.center-middle {
+	position: relative;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 50%;
+    text-align: center;
+    font-family: franklin-gothic-urw, sans-serif;
+
+}
+
+.center-middle img {
+	width: 60%;
+}
+
+.center-bottom {
+	position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    font-family: franklin-gothic-urw, sans-serif;
+}
+
+.note-text {
+	font-size: 12px;
+	color: #6c451f;
+	font-weight: 600;
+}
+
+.recipe-text {
+	position: absolute;
+    width: 40%;
+    top: 35px;
+    left: 10%;
+    text-align: left;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 14px;
+}
+
+.recipe-title {
+	font-size: 40px;
+	font-family: 'IM Fell Double Pica SC', serif;
+}
+
+.mobile {
+	display: none;
+}
+
+.mobile img {
+	margin-left: 50%;
+}
+
+.lactation {
+	background-color: #ffc9ae;
+}
+
+.furuncle {
+	background-color: #f0d1a7;
+}
+
+.arthritis {
+	background-color: #fbcd9d;
+}
+
+.detox {
+	background-color: #f1ccc0;
 }
 
 
@@ -12,5 +222,96 @@ body
 @media only screen and (max-width: 900px) {
 
 
+	.popup {
+		top: 0;
+		position: fixed;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.recipe-text {
+		font-size: 16px;
+	}
+
+	.recipe-title {
+		font-size: 22px;
+	}
+
+	/*main view*/
+
+	.mobile.main img {
+		margin-left: 0;
+	}
+
+	.bottom-right {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0px;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+
+	.bottom-right img {
+		float: right;
+    	width: 20%;
+	}
+
+	.top-left {
+		position: fixed;
+	    right: 0;
+	    bottom: 0px;
+	    margin: 0;
+	    padding: 0;
+	    z-index: -1;
+	    width: 100%;
+	    height: 100vh;
+	    top: 0;
+	}
+
+	.top-left img {
+		width: 60%;
+		margin-left: 0;
+	}
+
+	.center-middle {
+		position: relative;
+	    margin: 0 auto;
+	    padding: 0;
+	    width: 80%;
+	    margin-top: 4%;
+	    text-align: center;
+	    font-family: franklin-gothic-urw, sans-serif;
+	}
+	
+
+	.center-bottom {
+		margin: 0 auto;
+		position: relative;
+		margin-top: 5%;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 5%;
+	}
+
+	button {
+		width: 40%;
+	    margin-top: 0;
+	    position: relative;
+	}
+
+	.b {
+		margin-bottom: 10px;
+	}
+
+	#lactation-btn,  #furuncle-btn, #arthritis-btn, #detox-btn{
+		margin-top: 0;
+	}
 
 }
