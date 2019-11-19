@@ -12,12 +12,31 @@ tlPangolin.from("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut})
           .to("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut}, "+=3");
 
 
-var eye = ["#redeye-01_Image", "#redeye-02_Image", "#redeye-03_Image", "#redeye-04_Image", "#redeye-05_Image",
-"#redeye-06_Image", "#redeye-07_Image", "#redeye-08_Image", "#redeye-09_Image", "#redeye-10_Image"]
+var eye1 = ["#redeye-07_Image", "#redeye-04_Image", "#redeye-09_Image"]
 
-// var tlRed = new TimelineMax({repeat:-1});
-// tlRed.from(eye, 0.1, {autoAlpha: 0, delay: 0.3})
-//       .to (eye, 0.1, {autoAlpha: 1, delay: 3});
+var eye2 = ["#redeye-02_Image", "#redeye-05_Image", "#redeye-06_Image"]
+
+var eye3 = ["#redeye-01_Image", "#redeye-08_Image"]
+
+var eye4 = ["#redeye-03_Image", "#redeye-10_Image"]
+
+
+var tlRed1 = new TimelineMax({repeat:-1});
+tlRed1.from(eye1, 0.1, {autoAlpha: 0, delay: 0.3})
+      .to (eye1, 0.1, {autoAlpha: 1, delay: 3});
+
+var tlRed2 = new TimelineMax({repeat:-1});
+tlRed2.from(eye2, 0.1, {autoAlpha: 0, delay: 0.3})
+      .to (eye2, 0.1, {autoAlpha: 1, delay: 5});
+
+var tlRed3 = new TimelineMax({repeat:-1});
+tlRed3.from(eye3, 0.1, {autoAlpha: 0, delay: 0.3})
+      .to (eye3, 0.1, {autoAlpha: 1, delay: 7});
+
+
+var tlRed4 = new TimelineMax({repeat:-1});
+tlRed4.from(eye4, 0.1, {autoAlpha: 0, delay: 0.3})
+      .to (eye4, 0.1, {autoAlpha: 1, delay: 6.4});
 
 // var tlRed = new TimelineMax({repeat:-1});
 // tlRed.staggerFrom(eye,0.2,{opacity:0, cycle:{}})

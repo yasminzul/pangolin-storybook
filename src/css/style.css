@@ -1,13 +1,3 @@
-
-@media only screen and (max-width: 900px) {
-
-  .main-intro
-  {
-    bottom: 0;
-  }
-
-}
-
 body
 {
   margin: 0;
@@ -81,5 +71,40 @@ body
 
 #leaves_02_Image-2
 {
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .main-intro
+  {
+    color: #fff;
+    margin: 5vh 25vw;
+    font-size: 2.45vh;
+    bottom: 4vh;
+  }
+
+  .pangolin-btn
+  {
+    height: 9vh;
+    width: 18vw;
+    border-radius: 1vh;
+    margin: 2vh 0vw;
+
+    font-weight: 700;
+    font-size: 2vh;
+  }
+
+  .story-btn
+  {
+    height: 9vh;
+    width: 18vw;
+    border-radius: 1vh;
+    margin: 2vh 0.5vw;
+
+    font-weight: 700;
+    font-size: 2vh;
+  }
+
 
 }
