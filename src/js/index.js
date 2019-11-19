@@ -6,11 +6,10 @@ import TweenMax from 'TweenMax';
 import TweenLite from 'TweenLite';
 import TimelineMax from 'TimelineMax';
 import TimelineLite from 'TimelineLite';
-import 'gsap';
 
 var tlPangolin = new TimelineMax({repeat:-1, repeatDelay:0.5});
-tlPangolin .from("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut})
-  .to("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut}, "+=3");
+tlPangolin.from("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut})
+          .to("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut}, "+=3");
 
 
 var eye = ["#redeye-01_Image", "#redeye-02_Image", "#redeye-03_Image", "#redeye-04_Image", "#redeye-05_Image",
