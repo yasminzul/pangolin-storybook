@@ -167,22 +167,27 @@ p {
     left: 0;
 }
 
-.ba-btn {
-	text-align: center;
+.before-label {
+    position: absolute;
+    width: 35%;
+    top: 35px;
+    left: 20%;
 }
 
-.stats-before, .stats-after {
-	background-color: #362f2d;
+.before-label span {
+	text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
     color: #fff;
-    height: 34px;
-    width: 119px;
-    border-style: none;
-    border-radius: 2.5px;
-    margin: 10px;
 }
 
-.stats-before:focus, .stats-after:focus{
-	opacity: 0.6;
+.before-text {
+	height: 63px;
+    width: 210px;
+    background-color: #720001;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    margin: 7px auto;
+    font-size: 3em;
 }
 
 
