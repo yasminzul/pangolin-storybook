@@ -154,10 +154,10 @@ p {
 	display: none;
 }
 
-.mobile img {
-	margin-left: 50%;
+/*.mobile img {
+	margin-left: 5%;
 }
-
+*/
 /*slides*/
 
 .slide-footer {
@@ -203,18 +203,52 @@ p {
 
 	.mobile {
 		display: block;
+		background-color: #b1b59d;
 	}
 
 	.desktop {
 		display: none;
 	}
 
-	.map-text {
-		font-size: 16px;
+	.map-title {
+		font-size: 13px;
+   		font-weight: 300;
+    	line-height: 8px;
 	}
 
-	.map-title {
-		font-size: 22px;
+	#open-slider {
+		left: 16%;
+    	width: 23%;
 	}
+
+	#m-1 {
+		width: 25%;
+	    top: 20%;
+	    left: 6%;
+	}
+
+	#m-3 {
+		width: 36%;
+    	bottom: 13%;
+    	left: 7%;
+	}
+
+	#m-3 .map-title {
+		font-size: 13px;
+    	font-weight: 300;
+    	line-height: 8px;
+	}
+
+	#m-4, #m-5 {
+		width: 29%;
+    	right: 5%;
+    	top: 8%;
+	}
+
+	#m-6 {
+		width: 38%;
+    	left: 6%;
+	}
+
 
 }
