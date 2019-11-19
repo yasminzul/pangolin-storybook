@@ -18,6 +18,18 @@ $("#open-slider").on("click", function() {
 
 });
 
+// slide button click
+$('.stats-before').click(function(){
+	console.log('working');
+   $('#ba-toggle').attr('src', './gfx/map-main-img/map-04/04-img@3x.png');
+});
+
+// slide button click
+$('.stats-after').click(function(){
+	console.log('working2');
+   $('#ba-toggle').attr('src', './gfx/map-main-img/map-03/03-img@3x.png');
+});
+
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
 // $(".close").on("click", function() {
 //   $(this).closest('.popup').css('display','none');
