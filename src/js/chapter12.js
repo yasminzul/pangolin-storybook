@@ -19,7 +19,15 @@ $("#lactation-btn, #furuncle-btn, #arthritis-btn, #detox-btn").on("click", funct
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
-$(".close").on("click", function() {
+$(".close").on("click", function(e) {
   $(this).closest('.popup').css('display','none');
+});
+
+
+// close slider on escape key
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('.popup').css('display', 'none');
+  }
 });
 
