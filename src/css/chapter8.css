@@ -121,8 +121,8 @@ svg {
 }
 
 .left-bottom {
-	position: absolute;
-	width: 25%;
+	  position: absolute;
+	  width: 25%;
     bottom: 13%;
     left: 5%;
 }
@@ -139,6 +139,13 @@ svg {
 	width: 25%;
 	right: 5%;
 	top: 30%;
+}
+
+.legend {
+  position: absolute;
+  width: 32%;
+  bottom: 13%;
+  left: 5%;
 }
 
 .map-text {
