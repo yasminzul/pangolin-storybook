@@ -8,7 +8,7 @@ body {
 }
 .wrapper
 {
-  background: url(../gfx/boatman-color.svg) no-repeat fixed;
+  background: url(../gfx/chapter-titles/boatman-color.svg) no-repeat fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
