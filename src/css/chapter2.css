@@ -72,7 +72,7 @@ On click the images will be displayed at normal size to complete the effect
 @media only screen and (max-width: 900px) {
   
   .slider label img {
-    width: 38px;
+    width: 55px;
   }
 
   .caption {
