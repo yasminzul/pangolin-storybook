@@ -194,6 +194,19 @@ svg {
     font-size: 3em;
 }
 
+.route-legend {
+	position: absolute;
+    background-color: #ffffff5e;
+    padding: 5px;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    width: 30%;
+    bottom: 27%;
+    left: 6%;
+    text-transform: uppercase;
+}
 
 /* mobile and tablet */
 

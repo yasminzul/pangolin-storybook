@@ -26,10 +26,40 @@ $("#open-slider").on("click", function() {
 
 
 
-// find id
+// tap to find legend
 
-// create empty div
+$('#purple-temminck_Image').on('click', function (){
+	$('.route-legend span').text("Temminck's Ground Pangolin (vulnerable)");
+});
 
-// attribute label to div on id click
+$('#green-whitebellied_Image').on('click', function (){
+	$('.route-legend span').text("White-bellied Pangolin/Tree Pangolin (vulnerable)");
+});
 
-// this is for mobile only
+$('#yellow-giantground_Image').on('click', function (){
+	$('.route-legend span').text("Giant Ground Pangolin (vulnerable)");
+});
+
+$('#blue-blackbellied_Image').on('click', function (){
+	$('.route-legend span').text("Black-bellied Pangolin/Long-tailed Pangolin (vulnerable)");
+});
+
+$('#red-giantground_Image').on('click', function (){
+	$('.route-legend span').text("Giant Ground Pangolin (extinct)");
+});
+
+$('#violet-indian_Image').on('click', function (){
+	$('.route-legend span').text("Indian Pangolin (endangered)");
+});
+
+$('#orange-chinese_Image').on('click', function (){
+	$('.route-legend span').text("Chinese Pangolin (critically endangered)");
+});
+
+$('#pink-philippine_Image').on('click', function (){
+	$('.route-legend span').text("Philippine Pangolin (endangered)");
+});
+
+$('#green-sunda_Image').on('click', function (){
+	$('.route-legend span').text("Sunda Pangolin (critically endangered)");
+});
