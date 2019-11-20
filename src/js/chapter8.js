@@ -63,3 +63,6 @@ $('#pink-philippine_Image').on('click', function (){
 $('#green-sunda_Image').on('click', function (){
 	$('.route-legend span').text("Sunda Pangolin (critically endangered)");
 });
+
+
+
