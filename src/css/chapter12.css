@@ -112,6 +112,30 @@ position: absolute;
 	right: 5vw;
 }
 
+.swiper-button-next
+{
+	background-image: url(../gfx/next-button.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 5vh;
+	width: 17vw !important;
+	height: 5vh !important;
+	color: #000 !important;
+	bottom: 5vh;
+}
+
+.swiper-button-prev
+{
+	background-image: url(../gfx/previous-button.svg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 5vh;
+	width: 14vw !important;
+	height: 5vh !important;
+	color: #000 !important;
+	bottom: 5vh;
+}
+
 
 #lactation-btn {
 	/* margin-top: -30%; */
@@ -221,7 +245,7 @@ position: absolute;
 }
 
 .lactation {
-
+	background-color: #ffc9ae;
 }
 
 .furuncle {
