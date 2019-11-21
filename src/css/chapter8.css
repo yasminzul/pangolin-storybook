@@ -246,40 +246,35 @@ svg {
     	line-height: 8px;
 	}
 
+  .swiper-slide.mobile.text img {
+    opacity: 0.2;
+  }
+
 	#open-slider {
 		left: 16%;
     	width: 23%;
 	}
 
-	#m-1 {
-		width: 25%;
-	    top: 20%;
-	    left: 6%;
+	#overlay-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffc4;
+    padding: 20px;
 	}
 
-	#m-3 {
-		width: 36%;
-    	bottom: 13%;
-    	left: 7%;
-	}
-
-	#m-4, #m-5 {
-		width: 29%;
-    	right: 5%;
-    	top: 8%;
-	}
-
-	#m-6 {
-		width: 38%;
-    	left: 6%;
-	}
+  .before-label {
+    width: 35%;
+    left: 64%;
+    top: 11%;
+  }
 
 	.before-text {
 		margin: 0 auto;
 	}
 
 	.before-label span {
-		font-size: 13px;
+		font-size: 11px;
 	}
 
 
