@@ -6,6 +6,10 @@ body
 
 }
 
+p {
+	color: #fff;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
