@@ -5,20 +5,17 @@ var $ = require("jquery");
 import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 
-var swiper = new Swiper('.swiper-container', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
 
 // //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
 $("#lactation-btn").on("click", function() {
   $("#lactation-popup").css('display','block');
-  var swiper = new Swiper('.swiper-container', {
+  var s1 = new Swiper('.s1', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
       },
     });
 
@@ -26,20 +23,26 @@ $("#lactation-btn").on("click", function() {
 
 $("#furuncle-btn").on("click", function() {
   $("#furuncle-popup").css('display','block');
-  var swiper = new Swiper('.swiper-container', {
+  var s2 = new Swiper('.s2', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
       },
     });
 });
 
 $("#arthritis-btn").on("click", function() {
   $("#arthritis-popup").css('display','block');
-  var swiper = new Swiper('.swiper-container', {
+  var s3 = new Swiper('.s3', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
       },
     });
 
@@ -47,10 +50,13 @@ $("#arthritis-btn").on("click", function() {
 
 $("#detox-btn").on("click", function() {
   $("#detox-popup").css('display','block');
-  var swiper = new Swiper('.swiper-container', {
+  var s4 = new Swiper('.s4', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
       },
     });
 
