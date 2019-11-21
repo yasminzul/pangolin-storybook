@@ -13,7 +13,7 @@ p, .drop-cap {
   width: 95%;
   position: relative;
   padding-top: 47%; 
-  margin: 20px;
+  margin: 20px auto;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 

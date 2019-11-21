@@ -31,10 +31,6 @@ section {
     position: absolute;
 }*/
 
-.page {
-  background-color: #ffffff00;
-}
-
 
 p {
     font-family: franklin-gothic-urw, sans-serif;
@@ -54,6 +50,12 @@ p {
     width: 50%;
     float: right;
     padding: 20px;
+    background-color: #ffffff00;
+}
+
+.photo-row {
+  width: 100%;
+  display: inline-block
 }
 
 
