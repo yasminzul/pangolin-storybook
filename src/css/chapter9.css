@@ -6,8 +6,8 @@ body
 
 }
 
-p {
-	font: #000;
+p, .drop-cap {
+	color: #000;
 }
 
 

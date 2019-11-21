@@ -6,7 +6,7 @@ body
 
 }
 
-p {
+p, .drop-cap {
 	color: #fff;
 }
 
