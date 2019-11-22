@@ -91,11 +91,11 @@
 
 #burger-icon
 {
-  width: 45px;
+  width: 38px;
   height: 40px;
   position: fixed;
-  right: 1vw;
-  top: 2vh;
+  right: 2vw;
+  top: 3vh;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -112,9 +112,9 @@
 {
   display: block;
   position: fixed;
-  height: 5.5px;
+  height: 3.5px;
   width: 100%;
-  background: #b5b5b5;
+  background: #5a5a5a;
   border-radius: 9px;
   opacity: 1;
   right: 1vw;
@@ -133,11 +133,11 @@
 }
 
 #burger-icon span:nth-child(2),#burger-icon span:nth-child(3) {
-  top: 10px;
+  top: 8px;
 }
 
 #burger-icon span:nth-child(4) {
-  top: 20px;
+  top: 16px;
 }
 
 #burger-icon.open-icon span:nth-child(1) {
