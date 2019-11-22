@@ -19,10 +19,6 @@ body
 	width: 100vw;
 }
 
-button {
-	width: 51%;
-    float: right;
-}
 
 .swiper-container {
   min-width: 100vw;
@@ -92,13 +88,12 @@ button {
 	font-size: 25px;
 }
 
-button {
+.button-cluster button {
 	width: 16vw;
 	height: 7vh;
   float: right;
   border-style: none;
   outline: 0;
-  z-index: 600;
 	margin: 0.5vh 0;
 
 	font-size: 12px;
@@ -108,6 +103,12 @@ button {
 	font-size: 700;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+.close
+{
+		border: none;
+		z-index: 600;
 }
 
 .button-cluster
@@ -236,6 +237,37 @@ position: absolute;
 
 .s4 .swiper-slide {
 	background-color: #f1ccc0;
+}
+
+.prev-next-btn
+{
+	position: absolute;
+	bottom: 5vh;
+	width: 100vw;
+}
+
+#prev-chapter
+{
+	height: 3vh;
+	background-image: url(../gfx/previous-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: left;
+	float: left;
+	padding-left: 4vh;
+	margin-left: 1vw;
+}
+
+#next-chapter
+{
+	height: 3vh;
+	background-image: url(../gfx/next-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: right;
+	float: right;
+	padding-right: 4vh;
+	margin-right: 1vw;
 }
 
 
