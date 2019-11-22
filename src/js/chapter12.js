@@ -7,12 +7,60 @@ import Swiper from './../js/plugin/swiper.min.js';
 
 
 // //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
-$("#lactation-btn, #furuncle-btn, #arthritis-btn, #detox-btn").on("click", function() {
-  $(this).next().css('display','block');
-  var swiper = new Swiper('.swiper-container', {
+$("#lactation-btn").on("click", function() {
+  $("#lactation-popup").css('display','block');
+  var s1 = new Swiper('.s1', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+});
+
+$("#furuncle-btn").on("click", function() {
+  $("#furuncle-popup").css('display','block');
+  var s2 = new Swiper('.s2', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+});
+
+$("#arthritis-btn").on("click", function() {
+  $("#arthritis-popup").css('display','block');
+  var s3 = new Swiper('.s3', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+});
+
+$("#detox-btn").on("click", function() {
+  $("#detox-popup").css('display','block');
+  var s4 = new Swiper('.s4', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
@@ -22,4 +70,3 @@ $("#lactation-btn, #furuncle-btn, #arthritis-btn, #detox-btn").on("click", funct
 $(".close").on("click", function() {
   $(this).closest('.popup').css('display','none');
 });
-

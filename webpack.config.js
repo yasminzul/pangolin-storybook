@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-var ghpages = require('gh-pages'); 
+var ghpages = require('gh-pages');
 ghpages.publish('dist', function(err) {});
 
 module.exports = {
@@ -38,6 +38,7 @@ module.exports = {
       "TweenMax": path.resolve('node_modules', 'gsap/src/minified/TweenMax.min.js'),
       "TimelineLite": path.resolve('node_modules', 'gsap/src/minified/TimelineLite.min.js'),
       "TimelineMax": path.resolve('node_modules', 'gsap/src/minified/TimelineMax.min.js'),
+      "gsap": path.resolve('node_modules', 'gsap/src/minified/jquery.gsap.min.js'),
       "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js'),
       "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'),
       "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js')
@@ -116,7 +117,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-5.html',
         inject: true,
-        chunks: ['chapter5','view','chapter'],
+        chunks: ['chapter5','view'],
         filename: 'chapter-5.html'
     }),
     new HtmlWebpackPlugin({
@@ -134,7 +135,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-8.html',
         inject: true,
-        chunks: ['chapter8','view','chapter'],
+        chunks: ['chapter8','view'],
         filename: 'chapter-8.html'
     }),
     new HtmlWebpackPlugin({
@@ -158,7 +159,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-12.html',
         inject: true,
-        chunks: ['chapter12','view','chapter'],
+        chunks: ['chapter12','view'],
         filename: 'chapter-12.html'
     }),
     new HtmlWebpackPlugin({
@@ -170,7 +171,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-14.html',
         inject: true,
-        chunks: ['chapter14','view','chapter'],
+        chunks: ['chapter14','view'],
         filename: 'chapter-14.html'
     }),
     new HtmlWebpackPlugin({

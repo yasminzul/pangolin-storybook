@@ -1,4 +1,110 @@
 body
 {
-  
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  font-family: franklin-gothic-urw, sans-serif;
+}
+
+.animsition
+{
+  margin: 0;
+  padding: 0;
+}
+
+.main-intro
+{
+  color: #fff;
+  margin: 5vh 32vw;
+  font-size: 2.15vh;
+  text-align: center;
+  font-weight: 300;
+  position: absolute;
+  bottom: 15vh;
+}
+
+.pangolin-btn
+{
+  height: 7vh;
+  width: 13vw;
+  border-radius: 1vh;
+  margin: 2vh 0vw;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5vh;
+  color: #000;
+  cursor: pointer;
+}
+
+.story-btn
+{
+  height: 7vh;
+  width: 13vw;
+  border-radius: 1vh;
+  margin: 2vh 0.5vw;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5vh;
+  color: #fff;
+  background-color: transparent;
+  border: #fff solid 2px;
+  cursor: pointer;
+}
+
+#Title
+{
+
+}
+
+#pangolin_eye_Image
+{
+
+}
+
+#redeye-01_Image, #redeye-02_Image, #redeye-03_Image, #redeye-04_Image, #redeye-05_Image,
+#redeye-06_Image, #redeye-07_Image, #redeye-08_Image, #redeye-09_Image, #redeye-10_Image,
+{
+
+}
+
+#leaves_02_Image-2
+{
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .main-intro
+  {
+    color: #fff;
+    margin: 5vh 25vw;
+    font-size: 2.45vh;
+    bottom: 4vh;
+  }
+
+  .pangolin-btn
+  {
+    height: 9vh;
+    width: 18vw;
+    border-radius: 1vh;
+    margin: 2vh 0vw;
+
+    font-weight: 700;
+    font-size: 2vh;
+  }
+
+  .story-btn
+  {
+    height: 9vh;
+    width: 18vw;
+    border-radius: 1vh;
+    margin: 2vh 0.5vw;
+
+    font-weight: 700;
+    font-size: 2vh;
+  }
+
+
 }
