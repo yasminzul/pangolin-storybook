@@ -25,8 +25,8 @@ button {
 }
 
 .swiper-container {
-  width: 100%;
-  height: auto;
+  min-width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -35,6 +35,9 @@ button {
 }
 
 .swiper-slide {
+	height: 100vh;
+	min-width: 100vw;
+	width: auto;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -54,12 +57,15 @@ button {
 }
 
 .swiper-slide {
-	width: 100%;
-	background-color: #ffffff00;
+	height: 100vh;
+	min-width: 100vw;
+	width: auto;
+	overflow: hidden;
 }
 
 .swiper-slide img {
-  width: 100%;
+	height: 100vh;
+
 }
 
 .popup {
@@ -240,23 +246,19 @@ position: absolute;
 	display: none;
 }
 
-.mobile img {
-	margin-left: 50%;
-}
-
-.lactation {
+.s1 .swiper-slide {
 	background-color: #ffc9ae;
 }
 
-.furuncle {
+.s2 .swiper-slide {
 	background-color: #f0d1a7;
 }
 
-.arthritis {
+.s3 .swiper-slide {
 	background-color: #fbcd9d;
 }
 
-.detox {
+.s4 .swiper-slide {
 	background-color: #f1ccc0;
 }
 
@@ -273,6 +275,12 @@ position: absolute;
 
 	.mobile {
 		display: block;
+	}
+
+	.mobile img {
+		height: 100vh;
+		width: auto;
+		float: right;
 	}
 
 	.desktop {

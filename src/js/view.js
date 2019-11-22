@@ -1,9 +1,7 @@
 import _ from 'lodash';
 import css from '../css/view.css';
 import '../css/animsition.min.css';
-import '../css/swiper.min.css';
 import './../js/plugin/animsition.min.js';
-import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 

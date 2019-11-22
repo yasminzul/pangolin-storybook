@@ -16,6 +16,7 @@ $("#lactation-btn").on("click", function() {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
@@ -30,6 +31,7 @@ $("#furuncle-btn").on("click", function() {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
 });
@@ -43,6 +45,7 @@ $("#arthritis-btn").on("click", function() {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
@@ -57,6 +60,7 @@ $("#detox-btn").on("click", function() {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
