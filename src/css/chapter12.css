@@ -248,26 +248,36 @@ position: absolute;
 
 #prev-chapter
 {
-	height: 3vh;
+	height: 5vh;
 	background-image: url(../gfx/previous-button.svg);
 	background-repeat: no-repeat;
 	background-size: 3vh auto;
-	background-position: left;
+	background-position: 5% center;
 	float: left;
-	padding-left: 4vh;
+	padding: 1.5vh 2vh 1.5vh 6vh;
 	margin-left: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
 }
 
 #next-chapter
 {
-	height: 3vh;
+	height: 5vh;
 	background-image: url(../gfx/next-button.svg);
 	background-repeat: no-repeat;
 	background-size: 3vh auto;
-	background-position: right;
+	background-position: 93% center;
 	float: right;
-	padding-right: 4vh;
+	padding: 1.5vh 6vh 1.5vh 2vh;
 	margin-right: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
 }
 
 
