@@ -6,7 +6,7 @@ body
 
 }
 
-p, .drop-cap, .soundcite {
+p, .drop-cap, .soundcite, .photo-caption {
 	color: #fff;
 }
 
@@ -22,6 +22,17 @@ p, .drop-cap, .soundcite {
 	border-left: .75em double white;
 }
 
+.caption{
+  color: #fff;
+  padding: 20px;
+  display: none;
+  margin-top: 8%;
+  position: absolute;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.2vw;
+}
 
 
 /* mobile and tablet */

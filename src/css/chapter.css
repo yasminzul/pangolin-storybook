@@ -53,11 +53,22 @@ p, .soundcite {
     background-color: #ffffff00;
 }
 
-.photo-row {
-  width: 100%;
+.photo-block {
   display: inline-block
 }
 
+.photo-block img {
+  width: 100%;
+}
+
+.photo-caption{
+    font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    font-style: italic;
+    margin-bottom: 20px;
+}
 
 .chapter-next {
     width: 55%;
@@ -129,12 +140,18 @@ p, .soundcite {
       align-items: center;
     }
 
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
   p {
     font-size: 2vw;
+  }
+
+  .photo-caption {
+    font-size: 1.8vw;
   }
 
 
