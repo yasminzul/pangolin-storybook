@@ -8,6 +8,10 @@ p, .drop-cap {
 }
 
 /*photo gallery*/
+.photo-row {
+  width: 100%;
+  display: inline-block;
+}
 
 .slider{
   width: 95%;
