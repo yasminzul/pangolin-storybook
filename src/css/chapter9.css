@@ -61,6 +61,7 @@ p, a, .drop-cap {
 	color: #fff;
 	font-size: 1vw;
 	font-style: italic;
+  width: 100%;
 }
 
 /* mobile and tablet */

@@ -7,75 +7,58 @@ p, .drop-cap {
   background-size: cover;
 }
 
-/*photo gallery*/
-.photo-row {
-  width: 100%;
-  display: inline-block;
-}
+/*swiper*/
 
-.slider{
-  width: 95%;
+.swiper-container {
+  width: 100%;
+  height: auto;
   position: relative;
-  padding-top: 47%; 
-  margin: 20px auto;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
-.slider>img{
-  position: absolute;
-  left: 0; top: 0;
-  transition: all 0.5s;
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 100%;
+  background-color: #ffffff00;
+}
+
+.swiper-slide img {
   width: 100%;
 }
 
-.slider input[name='slide_switch'] {
-  display: none;
-}
-
-.slider label {
-  margin: 12% 2px;
-  border-style: none;
-  float: left;
-  transition: all 0.5s;
-  opacity: 0.5;
-}
-
-.slider label img{
-  display: block;
-  width: 85px;
-}
-
-/*Time to add the click effects*/
-.slider input[name='slide_switch']:checked+label {
-  border: 2px solid #fff;
-  opacity: 1;
-}
-/*Clicking any thumbnail now should change its opacity(style)*/
-/*Time to work on the main images*/
-.slider input[name='slide_switch'] ~ img {
-  opacity: 0;
-  transform: scale(1.1);
-}
-/*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-.slider input[name='slide_switch']:checked+label+img {
-  opacity: 1;
-  transform: scale(1);
-}
-
-/*photo gallery caption*/
-
-.caption{
-  color: #fff;
-  padding: 20px;
-  display: none;
-  margin-top: 8%;
+.slide-caption {
   position: absolute;
-  font-family: franklin-gothic-urw, sans-serif;
+  bottom: 0;
+  background-color: #00000085;
+  padding: 5px;
+  width: 100%;
+}
+
+.slide-caption p {
+  color: #fff;
+  font-size: 1vw;
   font-style: italic;
-  font-weight: 300;
-  font-size: 1.2vw;
 }
 
 
@@ -87,8 +70,7 @@ On click the images will be displayed at normal size to complete the effect
     width: 55px;
   }
 
-  .caption {
-    margin-top: 30px;
+  .slide-caption p {
     font-size: 1.8vw;
   }
   
