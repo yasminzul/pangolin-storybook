@@ -6,9 +6,22 @@ body
 
 }
 
-p, .drop-cap {
+p, .drop-cap, .soundcite {
 	color: #fff;
 }
+
+.soundcite-loaded {
+	background-color: #ffffff26 !important;
+}
+
+.soundcite-play:before {
+	border-left: 0.75em solid white;
+}
+
+.soundcite-pause:before {
+	border-left: .75em double white;
+}
+
 
 
 /* mobile and tablet */
