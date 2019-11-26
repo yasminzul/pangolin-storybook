@@ -344,7 +344,7 @@ position: absolute;
 		margin-bottom: 5%;
 	}
 
-	button {
+	.button-cluster button {
 		width: 25vw;
 		height: 10vh;
 		float: right;
@@ -368,6 +368,15 @@ position: absolute;
 		height: 30vh;
 		margin: 0 22.5vw;
 		position: static;
+	}
+
+	.prev-next-btn
+	{
+		position: absolute;
+		bottom: 5vh;
+		width: 100vw;
+
+		font-size: 2vh;
 	}
 
 
