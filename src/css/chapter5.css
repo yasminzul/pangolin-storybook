@@ -1,11 +1,7 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/boatman-color.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
   background-size: cover;
-
 }
-
 p, .drop-cap {
 	color: #fff;
 }

@@ -1,13 +1,15 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/twodoctors.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/twodoctors.svg) no-repeat fixed;
   background-size: cover;
-
 }
 
 p, .drop-cap {
 	color: #fff;
+}
+
+.chapter-name {
+	top: 10%;
+    left: 5%;
 }
 
 /* mobile and tablet */

@@ -1,9 +1,11 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/thepoliceman.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
   background-size: cover;
+}
 
+.chapter-name {
+	top: 5%;
+	left: 5%;
 }
 
 p, a, .drop-cap, .soundcite {
@@ -26,6 +28,9 @@ p, a, .drop-cap, .soundcite {
 
 @media only screen and (max-width: 900px) {
 
-
+  .chapter-name {
+    top: 10%;
+  }
+  
 
 }

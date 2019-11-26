@@ -46,6 +46,17 @@ p, .soundcite {
     margin-right: .15em;
 }
 
+/*chapter names*/
+
+.chapter-name {
+  position: fixed;
+  width: 50%;
+}
+
+.chapter-name img{
+  width: 70%;
+}
+
 .row {
     width: 50%;
     float: right;
@@ -147,7 +158,7 @@ p, .soundcite {
 
 @media only screen and (max-width: 900px) {
 
-  p {
+  p, .soundcite {
     font-size: 2vw;
   }
 

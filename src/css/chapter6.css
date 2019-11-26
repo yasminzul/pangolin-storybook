@@ -1,19 +1,30 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/waitingwife.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/waitingwife.svg) no-repeat fixed;
   background-size: cover;
-
 }
+
 
 p, a, .drop-cap {
 	color: #fff;
 }
 
+.chapter-name {
+	top: 13%;
+    left: 24%;
+}
+
+.chapter-name img {
+	width: 45% !important;
+}
+
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
-
+	.chapter-name {
+		left: 20%;
+	}
 
 }

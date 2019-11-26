@@ -7,7 +7,16 @@ body
 }
 
 p, .drop-cap {
-	color: #fff;
+	color: #000;
+}
+
+.chapter-name {
+  top: 48%;
+  left: 16%;
+}
+
+.chapter-name img {
+  width: 60% !important;
 }
 
 /*swiper*/
@@ -69,6 +78,8 @@ p, .drop-cap {
 
 @media only screen and (max-width: 900px) {
 
-
+  .chapter-name {
+    left: 14%;
+  }
 
 }

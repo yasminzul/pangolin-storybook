@@ -1,13 +1,16 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/socialmediastar.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/socialmediastar.svg) no-repeat fixed;
   background-size: cover;
-
 }
+
 
 p, a, .drop-cap {
 	color: #000;
+}
+
+.chapter-name {
+  left: 10%;
+  top: 10%;
 }
 
 /*swiper*/
@@ -68,6 +71,9 @@ p, a, .drop-cap {
 
 @media only screen and (max-width: 900px) {
 
-
+  .chapter-name {
+    left: 5%;
+    top: 5%;
+  }
 
 }

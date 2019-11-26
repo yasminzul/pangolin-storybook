@@ -1,13 +1,15 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/theauthorities.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/theauthorities.svg) no-repeat fixed;
   background-size: cover;
-
 }
 
-p, .drop-cap {
-	color: #fff;
+p, a, .drop-cap {
+	color: #000;
+}
+
+.chapter-name {
+	top: 20%;
+    left: 5%;
 }
 
 

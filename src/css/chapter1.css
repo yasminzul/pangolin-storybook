@@ -1,9 +1,6 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/themiddleman.svg);
-  background-repeat: no-repeat;
+.wrapper {
+  background: url(../gfx/chapter-titles/themiddleman.svg) no-repeat fixed;
   background-size: cover;
-
 }
 
 p, .drop-cap, .soundcite {
@@ -22,11 +19,19 @@ p, .drop-cap, .soundcite {
 	border-left: .75em double white;
 }
 
+.chapter-name {
+	top: 5%;
+	left: 5%;
+}
+
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
-
+.chapter-name {
+	top: 10%;
+	left: 5%;
+	}
 
 }

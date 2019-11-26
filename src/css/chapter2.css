@@ -7,6 +7,11 @@ p, .drop-cap {
   background-size: cover;
 }
 
+.chapter-name {
+  top: 5%;
+  left: 5%;
+}
+
 /*swiper*/
 
 .swiper-container {
@@ -72,6 +77,10 @@ p, .drop-cap {
 
   .slide-caption p {
     font-size: 1.8vw;
+  }
+
+  .chapter-name {
+    top: 10%;
   }
   
 
