@@ -1,30 +1,65 @@
-body
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #7adcb7;
+}
+.wrapper
 {
-  background-image: url(../gfx/chapter-titles/rainiessong.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  height: 100vh;
+  overflow: overlay;
+  background: url(../gfx/chapter-titles/rainiessong.svg) no-repeat fixed;
 }
 
-p, .drop-cap {
-	color: #fff;
+
+p {
+	font-family: 'IM Fell Double Pica SC', serif;
+	color: #000;
+    font-size: 1em;
+    line-height: 11px;
+	text-align: center;
+}
+
+
+.row {
+	width: 25%;
+	padding: 25px;
+	margin-top: 10%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
 
 .chapter-name {
     width: 40%;
-    bottom: 0;
-    margin-left: 30%;
-    margin-right: 30%;
+    position: absolute;
+    bottom: 1%;
+ 	left: 30%;
+    right: 30%;
 }
 
 .chapter-name img {
-	width: 100% !important;
+	width: 100%;
 }
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+	
+	.row {
+		margin-top: 2%;
+	}
 
-
+	p {
+		margin: 0;
+		font-size: 0.9em;
+    	line-height: 16px;
+	}
 
 }
