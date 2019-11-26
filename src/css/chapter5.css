@@ -11,10 +11,86 @@ p, .drop-cap {
     left: 10%;
 }
 
+.trail-btn {
+	position: absolute;
+    left: 18%;
+    bottom: 40%;
+	width: 18%;
+	height: 40px;
+	margin-top: 3%;
+	background-color: #f88401;
+	text-align: center;
+	border-style: none;
+	border-radius: 2.5px;
+	color: #fff;
+}
+
+.trail-btn span {
+	text-align: center;
+	border-style: none;
+	color: #fff;
+}
+
+
+/*swiper*/
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+	width: 100%;
+	background-color: #ffffff00;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
-
+	
+	.trail-btn {
+		bottom: 30%;
+	}
 
 
 }
