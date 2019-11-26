@@ -170,7 +170,11 @@
 
 @media only screen and (max-width: 900px) {
 
-
+  .open-menu
+  {
+    width: 55vw;
+    display: block;
+  }
 
 }
 

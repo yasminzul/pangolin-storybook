@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+var ghpages = require('gh-pages');
+ghpages.publish('dist', function(err) {});
+
 module.exports = {
   entry: {
     home: './src/js/index.js',
@@ -24,6 +27,7 @@ module.exports = {
     chapter14: './src/js/chapter14.js',
     chapter15: './src/js/chapter15.js',
     view: './src/js/view.js',
+    credits: './src/js/credits.js'
   },
   output: {
     filename: '[name].main.js',
@@ -35,6 +39,7 @@ module.exports = {
       "TweenMax": path.resolve('node_modules', 'gsap/src/minified/TweenMax.min.js'),
       "TimelineLite": path.resolve('node_modules', 'gsap/src/minified/TimelineLite.min.js'),
       "TimelineMax": path.resolve('node_modules', 'gsap/src/minified/TimelineMax.min.js'),
+      "gsap": path.resolve('node_modules', 'gsap/src/minified/jquery.gsap.min.js'),
       "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js'),
       "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'),
       "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js')
@@ -81,6 +86,12 @@ module.exports = {
         filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
+        template: './src/about-pangolin.html',
+        inject: true,
+        chunks: ['aboutpangolin','view'],
+        filename: 'about-pangolin.html'
+    }),
+    new HtmlWebpackPlugin({
         template: './src/chapter-1.html',
         inject: true,
         chunks: ['chapter1','view','chapter'],
@@ -107,7 +118,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-5.html',
         inject: true,
-        chunks: ['chapter5','view','chapter'],
+        chunks: ['chapter5','view'],
         filename: 'chapter-5.html'
     }),
     new HtmlWebpackPlugin({
@@ -125,7 +136,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-8.html',
         inject: true,
-        chunks: ['chapter8','view','chapter'],
+        chunks: ['chapter8','view'],
         filename: 'chapter-8.html'
     }),
     new HtmlWebpackPlugin({
@@ -149,7 +160,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-12.html',
         inject: true,
-        chunks: ['chapter12','view','chapter'],
+        chunks: ['chapter12','view'],
         filename: 'chapter-12.html'
     }),
     new HtmlWebpackPlugin({
@@ -161,7 +172,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-14.html',
         inject: true,
-        chunks: ['chapter14','view','chapter'],
+        chunks: ['chapter14','view'],
         filename: 'chapter-14.html'
     }),
     new HtmlWebpackPlugin({
@@ -175,6 +186,12 @@ module.exports = {
         inject: true,
         chunks: ['quiz','view'],
         filename: 'quiz.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/credits.html',
+        inject: true,
+        chunks: ['credits','view'],
+        filename: 'credits.html'
     })
 ],
 

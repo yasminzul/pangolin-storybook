@@ -1,9 +1,283 @@
 body
 {
-  background-image: url(../gfx/chapter-titles/boatman.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url(../gfx/marble-texture/marble-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+		overflow-y: hidden;
+    background-color: #f9cb9c;
+}
 
+.main-view
+{
+	height: 100vh;
+}
+
+.recipe-wrapper {
+	width: 100vw;
+}
+
+
+.swiper-container {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+	height: 100vh;
+	min-width: 100vw;
+	width: auto;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+	height: 100vh;
+	min-width: 100vw;
+	width: auto;
+	overflow: hidden;
+}
+
+.swiper-slide img {
+	height: 100vh;
+
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  margin-top: 1%;
+  z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
+}
+
+.button-cluster button {
+	width: 16vw;
+	height: 7vh;
+  float: right;
+  border-style: none;
+  outline: 0;
+	margin: 0.5vh 0;
+
+	font-size: 12px;
+	padding: 1vw;
+	border-radius: 2.75px;
+	font-family: franklin-gothic-urw, sans-serif;
+	font-size: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.close
+{
+		border: none;
+		z-index: 600;
+}
+
+.button-cluster
+{
+position: absolute;
+	width: 15vw;
+	top: 15vh;
+	right: 5vw;
+}
+
+
+#lactation-btn {
+	/* margin-top: -30%; */
+	background-color: #362f2d;
+}
+
+#furuncle-btn {
+	/* margin-top: -25%; */
+	background-color: #934a0d;
+}
+
+#arthritis-btn {
+	/* margin-top: -20%; */
+	background-color: #754c24;
+}
+
+#detox-btn {
+	/* margin-top: -15%; */
+	background-color: #a57b4a;
+}
+
+.close
+{
+	background-color: transparent;
+	color: #000;
+}
+
+.top-left {
+	position: fixed;
+	z-index: -1;
+	width: 65vw;
+}
+
+.top-left img {
+	width: 65vw;
+}
+
+.bottom-right {
+	position: fixed;
+    right: 0;
+		bottom: 0;
+		width: 25vw;
+}
+
+.bottom-right img {
+		width: 100%;
+		margin: 0;
+		bottom: -2vh;
+		position: relative;
+}
+
+
+.center-middle {
+	position: relative;
+    margin: 0 auto;
+
+    width: 50%;
+    text-align: center;
+    font-family: franklin-gothic-urw, sans-serif;
+
+}
+
+.center-middle img {
+	width: 60%;
+	margin: 15vh auto 5vh auto;
+}
+
+.center-bottom {
+	position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 40%;
+    text-align: center;
+    font-family: franklin-gothic-urw, sans-serif;
+		font-weight: 300;
+		line-height: 1.5;
+}
+
+.note-text {
+	font-size: 12px;
+	color: #6c451f;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.recipe-text {
+	position: absolute;
+    width: 40%;
+    top: 35px;
+    left: 10%;
+    text-align: left;
+    font-family: 'franklin-gothic-urw', sans-serif;
+    font-size: 14px;
+}
+
+.recipe-title {
+	font-size: 40px;
+	font-family: 'IM Fell Double Pica SC', serif;
+}
+
+.mobile {
+	display: none;
+}
+
+.s1 .swiper-slide {
+	background-color: #ffc9ae;
+}
+
+.s2 .swiper-slide {
+	background-color: #f0d1a7;
+}
+
+.s3 .swiper-slide {
+	background-color: #fbcd9d;
+}
+
+.s4 .swiper-slide {
+	background-color: #f1ccc0;
+}
+
+.prev-next-btn
+{
+	position: absolute;
+	bottom: 5vh;
+	width: 100vw;
+}
+
+#prev-chapter
+{
+	height: 5vh;
+	background-image: url(../gfx/previous-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: 5% center;
+	float: left;
+	padding: 1.5vh 2vh 1.5vh 6vh;
+	margin-left: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+#next-chapter
+{
+	height: 5vh;
+	background-image: url(../gfx/next-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: 93% center;
+	float: right;
+	padding: 1.5vh 6vh 1.5vh 2vh;
+	margin-right: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
 }
 
 p, .drop-cap {
@@ -15,6 +289,99 @@ p, .drop-cap {
 
 @media only screen and (max-width: 900px) {
 
+
+	.popup {
+		top: 0;
+		position: fixed;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.mobile img {
+		height: 100vh;
+		width: auto;
+		float: right;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.recipe-text {
+		font-size: 16px;
+	}
+
+	.recipe-title {
+		font-size: 22px;
+	}
+
+	/*main view*/
+
+	.mobile.main img {
+		margin-left: 0;
+	}
+
+	.main-view
+	{
+		overflow-y: scroll;
+		margin-bottom: 5vh;
+	}
+
+
+	.center-middle {
+	    width: 60%;
+	}
+
+	.center-middle img {
+			margin-bottom: 1vh;
+	}
+
+
+	.center-bottom {
+		margin: 0 auto;
+		position: relative;
+		margin-top: 5%;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 5%;
+	}
+
+	.button-cluster button {
+		width: 25vw;
+		height: 10vh;
+		float: right;
+		border-style: none;
+		outline: 0;
+		z-index: 600;
+		margin: 1vh 1vw;
+
+		font-size: 10px;
+		padding: 1vw;
+		border-radius: 2.75px;
+		font-family: franklin-gothic-urw, sans-serif;
+		font-size: 700;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.button-cluster
+	{
+		width: 55vw;
+		height: 30vh;
+		margin: 0 22.5vw;
+		position: static;
+	}
+
+	.prev-next-btn
+	{
+		position: absolute;
+		bottom: 5vh;
+		width: 100vw;
+
+		font-size: 2vh;
+	}
 
 
 }
