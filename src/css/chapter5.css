@@ -1,9 +1,14 @@
 .wrapper {
-  background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
+  background: url(../gfx/chapter-titles/followthetrail.svg) no-repeat fixed;
   background-size: cover;
 }
 p, .drop-cap {
 	color: #fff;
+}
+
+.chapter-name {
+	top: 20%;
+    left: 10%;
 }
 
 /* mobile and tablet */
