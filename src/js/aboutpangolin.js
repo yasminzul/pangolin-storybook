@@ -10,10 +10,10 @@ import Swiper from './../js/plugin/swiper.min.js';
 $("#orangasli-btn").on("click", function() {
   $("#orangasli-popup").css('display','block');
   var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
     });
 
 });
@@ -21,4 +21,22 @@ $("#orangasli-btn").on("click", function() {
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
 $(".close").on("click", function() {
   $("#orangasli-popup").css('display','none');
+});
+
+
+//appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+$("#expert-btn").on("click", function() {
+  $("#expert-popup").css('display','block');
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    });
+
+});
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+$(".close").on("click", function() {
+  $("#expert-popup").css('display','none');
 });
