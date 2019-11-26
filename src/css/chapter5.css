@@ -117,5 +117,9 @@ p, .drop-cap {
 		width: 41%;
 	}
 
+	.trail-text {
+		top: 12%;
+	}
+
 
 }
