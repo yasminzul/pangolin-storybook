@@ -1,0 +1,12 @@
+.wrapper {
+  background: url(../gfx/chapter-titles/credits.svg) no-repeat fixed;
+  background-size: cover;
+}
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+
+}
