@@ -8,9 +8,11 @@ p, a, .drop-cap {
 	color: #000;
 }
 
+
 .chapter-name {
   left: 10%;
   top: 10%;
+  width: 35% !important;
 }
 
 /*swiper*/
@@ -74,6 +76,7 @@ p, a, .drop-cap {
   .chapter-name {
     left: 5%;
     top: 5%;
+    width: 50% !important;
   }
 
 }
