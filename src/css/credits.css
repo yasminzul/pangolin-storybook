@@ -3,10 +3,58 @@
   background-size: cover;
 }
 
+p, span, table{
+	color: #fff;
+	font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+/*
+.credits-wrapper {
+	width: 50%;
+	display: inline-flex;
+}
+
+.credits-left {
+	text-align: right;
+}
+*/
+
+
+table {
+	width: 60%;
+	position: absolute;
+	top: 10%;
+}
+
+* {
+	margin:0; 
+	padding:0;
+}
+.role { 
+	float: right;
+	padding-right: 10%;
+}
+
+.top, .bottom {
+	position: absolute;
+}
+
+.top {
+	top: 0;
+}
+
+.bottom {
+	bottom: 0;
+}
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
+	table {
+		width: 51%;
+		font-size: 1.6vw;
+	}
 
 }
