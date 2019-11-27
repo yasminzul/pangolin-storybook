@@ -9,20 +9,9 @@ p, span, table{
     font-style: normal;
     font-weight: 300;
 }
-/*
-.credits-wrapper {
-	width: 50%;
-	display: inline-flex;
-}
-
-.credits-left {
-	text-align: right;
-}
-*/
-
 
 table {
-	width: 60%;
+	width: 100%;
 	position: absolute;
 	top: 10%;
 }
@@ -37,9 +26,15 @@ table {
 }
 
 .credits-wrapper {
+	width: 50%;
 	height: 90vh;
     position: relative;
 
+}
+
+.name {
+	width: 50%;
+	padding-left: 5%;
 }
 
 .top, .bottom {
@@ -47,32 +42,19 @@ table {
 }
 
 .top {
-	left:23%;
 	top: 5%;
+    text-align: center;
+    width: 100%;
 	text-transform: uppercase;
 	font-size: 1.4vw;
 }
 
-.bottom {
-	position: absolute;
-    bottom: 30%;
-    width: 25%;
-    left: 27%;
-}
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
 	table {
-		width: 51%;
 		font-size: 1.6vw;
 	}
-
-	.bottom {
-		bottom: 0;
-		left: 23%;
-		font-size: 1.6vw;
-	}
-
 }
