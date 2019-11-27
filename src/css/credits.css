@@ -36,6 +36,12 @@ table {
 	padding-right: 10%;
 }
 
+.credits-wrapper {
+	height: 90vh;
+    position: relative;
+
+}
+
 .top, .bottom {
 	position: absolute;
 }
@@ -64,7 +70,7 @@ table {
 	}
 
 	.bottom {
-		bottom: 20%;
+		bottom: 0;
 		left: 23%;
 		font-size: 1.6vw;
 	}
