@@ -20,4 +20,3 @@ $("#open-trail").on("click", function() {
       },
     });
 });
-

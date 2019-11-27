@@ -60,8 +60,9 @@ p, .soundcite {
 .row {
     width: 50%;
     float: right;
-    padding: 20px;
+    padding: 8vh 8vw 10vh 0;
     background-color: #ffffff00;
+    box-sizing: border-box;
 }
 
 
@@ -152,6 +153,43 @@ p, .soundcite {
       align-items: center;
     }
 
+    .prev-next-btn
+    {
+    	margin-top: 5vh;
+    	width: 100%;
+    }
+
+    #prev-chapter
+    {
+    	height: 5vh;
+    	background-image: url(../gfx/previous-button.svg);
+    	background-repeat: no-repeat;
+    	background-size: 3vh auto;
+    	background-position: 5% center;
+    	float: left;
+    	padding: 1.5vh 2vh 1.5vh 6vh;
+    	box-sizing: border-box;
+    	color: #fff;
+    	background-color: rgba(0, 0, 0, 0.3);
+    	text-transform: uppercase;
+    	border-radius: 5px;
+    }
+
+    #next-chapter
+    {
+    	height: 5vh;
+    	background-image: url(../gfx/next-button.svg);
+    	background-repeat: no-repeat;
+    	background-size: 3vh auto;
+    	background-position: 93% center;
+    	float: right;
+    	padding: 1.5vh 6vh 1.5vh 2vh;
+    	box-sizing: border-box;
+    	color: #fff;
+    	background-color: rgba(0, 0, 0, 0.3);
+    	text-transform: uppercase;
+    	border-radius: 5px;
+    }
 
 
 /* mobile and tablet */
@@ -166,5 +204,11 @@ p, .soundcite {
     font-size: 1.8vw;
   }
 
+  .prev-next-btn
+  {
+    width: 100%;
+
+    font-size: 2vh;
+  }
 
 }
