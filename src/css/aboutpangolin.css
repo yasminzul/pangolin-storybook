@@ -1,7 +1,62 @@
 body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page
+{
+  background-image: url(../gfx/aboutpangolin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-content
+{
+  position: absolute;
+  top: 20vh;
+  left: 35vw;
+  width: 35vw;
+}
+
+.main-content p
+{
+  color: #fff;
+  text-align: center;
+  margin: 5vh 0;
+  line-height: 1.8;
+  font-family: franklin-gothic-urw, sans-serif;
+}
+
+.main-content img
+{
   width: 100%;
-  height: auto;
-  overflow-x: hidden
+}
+
+.main-content button
+{
+  width: 25vw;
+  height: 5vh;
+  margin: 1vh 5vw;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#orangasli-btn
+{
+  border: solid 3px #ffffff;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#expert-btn
+{
+  border: solid 3px #ffffff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .swiper-container {
@@ -14,30 +69,145 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+  height: 100vh;
+	min-width: 100vw;
+	width: auto;
   background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+}
+
+.s1
+{
+  font-size: 3vh;
+  font-family: 'IM Fell Double Pica SC', serif;
+  color: #fff;
+}
+
+.s1 p
+{
+  text-align: center;
 }
 
 .swiper-slide img {
   width: 100%;
+  z-index: 700;
 }
 
+.s1-text1, .s1-text6
+{
+  position: absolute;
+  width: 20vw;
+  top: 30vh;
+  left: 5vw;
+}
 
-#orangasli-popup {
+.s1-text2, .s1-text4, .s1-text8
+{
+  position: absolute;
+  width: 25vw;
+  top: 27vh;
+  left: 8vw;
+}
+
+.s1-text3
+{
+  position: absolute;
+  width: 20vw;
+  top: 20vh;
+  left: 5vw;
+}
+
+.s1-text9
+{
+  position: absolute;
+  width: 30vw;
+  top: 50vh;
+  left: 25vw;
+}
+
+.s1-text10
+{
+  position: absolute;
+  width: 25vw;
+  top: 48vh;
+  left: 15vw;
+}
+
+.s2
+{
+  font-size: 3vh;
+  font-family: franklin-gothic-urw, sans-serif;
+  color: #fff;
+}
+
+.s2 p
+{
+  text-align: left;
+}
+
+.s2 p span
+{
+  display: block;
+  font-size: 1.3vh;
+  margin-top: 1vh;
+}
+
+.s2-text1
+{
+  position: absolute;
+  width: 20vw;
+  top: 50vh;
+  left: 20vw;
+}
+
+.s2-text2
+{
+  position: absolute;
+  width: 19vw;
+  top: 35vh;
+  right: 7vw;
+}
+
+.s2-text3
+{
+  position: absolute;
+  width: 23vw;
+  top: 23vh;
+  left: 12vw;
+}
+
+.s2-text4
+{
+  position: absolute;
+  width: 20vw;
+  top: 25vh;
+  left: 12vw;
+}
+
+.s2-text5
+{
+  position: absolute;
+  width: 24vw;
+  top: 23vh;
+  right: 8vw;
+}
+
+.s2-text6
+{
+  position: absolute;
+  width: 36vw;
+  top: 5vh;
+  right: 32vw;
+}
+
+.s2-text8
+{
+  position: absolute;
+  width: 25vw;
+  top: 23vh;
+  right: 8vw;
+}
+
+#orangasli-popup, #expert-popup {
   display: none;
   width: 100%;
   margin: 0;
@@ -50,7 +220,151 @@ body {
 .close {
   position: absolute;
   right: 0;
-  margin-right: 47px;
-  margin-top: 6%;
+  top: 0;
+  margin-right: 3vw;
+  margin-top: 5vh;
   z-index: 800;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+  .main-content
+  {
+    position: absolute;
+    top: 15vh;
+    left: 35vw;
+    width: 35vw;
+  }
+
+  .main-content p
+  {
+    color: #fff;
+    text-align: center;
+    margin: 5vh 0;
+    line-height: 1.5;
+    font-size: 3vh;
+    font-family: franklin-gothic-urw, sans-serif;
+  }
+
+  .main-content button
+  {
+    width: 100%;
+    height: 8vh;
+    margin: 2vh auto;
+    border-radius: 5px;
+    font-size: 2.5vh;
+  }
+
+  .s1
+  {
+    font-size: 4.5vh;
+  }
+
+  .s1 p
+  {
+    text-align: left;
+  }
+
+  .s1-text1
+  {
+    width: 25vw;
+    top: 20vh;
+    left: 5vw;
+  }
+
+  .s1-text2, .s1-text3
+  {
+    width: 28vw;
+    top: 16vh;
+    left: 8vw;
+  }
+
+  .s1-text4, .s1-text6
+  {
+    width: 33vw;
+    top: 12vh;
+    left: 8vw;
+  }
+
+  .s1-text8
+  {
+    width: 32vw;
+    top: 16vh;
+    left: 8vw;
+  }
+
+  .s1-text9
+  {
+    width: 30vw;
+    top: 10vh;
+    left: 33vw;
+  }
+
+  .s1-text10
+  {
+    width: 32vw;
+    top: 25vh;
+    left: 10vw;
+  }
+
+  .s2
+  {
+    font-size: 4.25vh;
+  }
+
+  .s2 p span
+  {
+    font-size: 2.3vh;
+    margin-top: 1.5vh;
+  }
+
+  .s2-text1
+  {
+    width: 33vw;
+    top: 35vh;
+    left: 10vw;
+  }
+
+  .s2-text2
+  {
+    width: 25vw;
+    top: 12vh;
+    right: 5vw;
+  }
+
+  .s2-text3
+  {
+    width: 30vw;
+    top: 15vh;
+    left: 8vw;
+  }
+
+  .s2-text5
+  {
+    width: 35vw;
+    top: 15vh;
+    right: 5vw;
+  }
+
+  .s2-text6
+  {
+    width: 50vw;
+    top: 5vh;
+    right: 25vw;
+  }
+
+  .s2-text8
+  {
+    width: 30vw;
+    top: 10vh;
+    right: 5vw;
+  }
+
 }

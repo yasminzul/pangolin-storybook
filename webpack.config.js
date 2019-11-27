@@ -92,6 +92,12 @@ module.exports = {
         filename: 'about-pangolin.html'
     }),
     new HtmlWebpackPlugin({
+        template: './src/about-project.html',
+        inject: true,
+        chunks: ['aboutproject','view'],
+        filename: 'about-project.html'
+    }),
+    new HtmlWebpackPlugin({
         template: './src/chapter-1.html',
         inject: true,
         chunks: ['chapter1','view','chapter'],
