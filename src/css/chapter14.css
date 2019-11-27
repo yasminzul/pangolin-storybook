@@ -9,7 +9,10 @@ body {
 {
   height: 100vh;
   overflow: overlay;
-  background: url(../gfx/chapter-titles/rainiessong.svg) no-repeat fixed;
+  background-image: url(ad90ff2….svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
 
 
