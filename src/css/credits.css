@@ -41,11 +41,17 @@ table {
 }
 
 .top {
-	top: 0;
+	left:23%;
+	top: 5%;
+	text-transform: uppercase;
+	font-size: 1.4vw;
 }
 
 .bottom {
-	bottom: 0;
+	position: absolute;
+    bottom: 36%;
+    width: 25%;
+    left: 27%;
 }
 
 /* mobile and tablet */
@@ -54,6 +60,12 @@ table {
 
 	table {
 		width: 51%;
+		font-size: 1.6vw;
+	}
+
+	.bottom {
+		bottom: 20%;
+		left: 23%;
 		font-size: 1.6vw;
 	}
 
