@@ -10,6 +10,17 @@ p, .drop-cap {
 	color: #000;
 }
 
+
+.chapter-name {
+  left: 7%;
+  top: 10%;
+}
+
+.chapter-name img {
+    width: 50% !important;
+}
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
