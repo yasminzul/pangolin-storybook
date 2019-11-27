@@ -92,7 +92,7 @@ body {
   z-index: 700;
 }
 
-.s1-text1
+.s1-text1, .s1-text6
 {
   position: absolute;
   width: 20vw;
@@ -100,7 +100,7 @@ body {
   left: 5vw;
 }
 
-.s1-text2
+.s1-text2, .s1-text4, .s1-text8
 {
   position: absolute;
   width: 25vw;
@@ -220,7 +220,151 @@ body {
 .close {
   position: absolute;
   right: 0;
-  margin-right: 47px;
-  margin-top: 6%;
+  top: 0;
+  margin-right: 3vw;
+  margin-top: 5vh;
   z-index: 800;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+  .main-content
+  {
+    position: absolute;
+    top: 15vh;
+    left: 35vw;
+    width: 35vw;
+  }
+
+  .main-content p
+  {
+    color: #fff;
+    text-align: center;
+    margin: 5vh 0;
+    line-height: 1.5;
+    font-size: 3vh;
+    font-family: franklin-gothic-urw, sans-serif;
+  }
+
+  .main-content button
+  {
+    width: 100%;
+    height: 8vh;
+    margin: 2vh auto;
+    border-radius: 5px;
+    font-size: 2.5vh;
+  }
+
+  .s1
+  {
+    font-size: 4.5vh;
+  }
+
+  .s1 p
+  {
+    text-align: left;
+  }
+
+  .s1-text1
+  {
+    width: 25vw;
+    top: 20vh;
+    left: 5vw;
+  }
+
+  .s1-text2, .s1-text3
+  {
+    width: 28vw;
+    top: 16vh;
+    left: 8vw;
+  }
+
+  .s1-text4, .s1-text6
+  {
+    width: 33vw;
+    top: 12vh;
+    left: 8vw;
+  }
+
+  .s1-text8
+  {
+    width: 32vw;
+    top: 16vh;
+    left: 8vw;
+  }
+
+  .s1-text9
+  {
+    width: 30vw;
+    top: 10vh;
+    left: 33vw;
+  }
+
+  .s1-text10
+  {
+    width: 32vw;
+    top: 25vh;
+    left: 10vw;
+  }
+
+  .s2
+  {
+    font-size: 4.25vh;
+  }
+
+  .s2 p span
+  {
+    font-size: 2.3vh;
+    margin-top: 1.5vh;
+  }
+
+  .s2-text1
+  {
+    width: 33vw;
+    top: 35vh;
+    left: 10vw;
+  }
+
+  .s2-text2
+  {
+    width: 25vw;
+    top: 12vh;
+    right: 5vw;
+  }
+
+  .s2-text3
+  {
+    width: 30vw;
+    top: 15vh;
+    left: 8vw;
+  }
+
+  .s2-text5
+  {
+    width: 35vw;
+    top: 15vh;
+    right: 5vw;
+  }
+
+  .s2-text6
+  {
+    width: 50vw;
+    top: 5vh;
+    right: 25vw;
+  }
+
+  .s2-text8
+  {
+    width: 30vw;
+    top: 10vh;
+    right: 5vw;
+  }
+
 }
