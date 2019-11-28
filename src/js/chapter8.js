@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import '../css/font.css';
 import css from '../css/chapter8.css';
 var $ = require("jquery");
 
@@ -17,6 +18,10 @@ $("#open-slider").on("click", function() {
     });
 });
 
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+$(".close").on("click", function(e) {
+  $(this).closest('.popup').css('display','none');
+});
 
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked

@@ -7,13 +7,19 @@
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 	<body>
-		<div class="wrapper animsition">
-			<div class="chapter-name"><img src="gfx/chapter-names/follow-title.svg" alt="">
-			<button class="trail-btn" id="open-trail"><span>TAP TO CONTINUE</span></button>
-			
+		<div class="animsition">
+			<div class="wrapper">
+				<div class="chapter-name"><img src="gfx/chapter-names/follow-title.svg" alt="">
+				<button class="trail-btn" id="open-trail"><span>TAP TO CONTINUE</span></button></div>
+				<div class="prev-next-btn">
+					<a href="chapter-7.html"><div id="prev-chapter">Previous Chapter</div></a>
+					<a href="chapter-9.html"><div id="next-chapter">Next Chapter</div></a>
+				</div>
 			</div>
+		</div>
 			<div class="popup">
 				<div class="swiper-container">
+					<button class="close"><i class="icon ion-md-close"></i></button>
 				    <div class="swiper-wrapper">
 				      	 <div class="swiper-slide">
 				      	 	<div class="trail-text">
@@ -80,6 +86,5 @@
     				<div class="swiper-pagination"></div>
 				</div>
 			</div>
-		</div>
 	</body>
 </html>

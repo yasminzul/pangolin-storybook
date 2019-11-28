@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import '../css/font.css';
 import css from '../css/chapter5.css';
-import '../css/chapter.css';
+
 import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 var $ = require("jquery");
@@ -19,4 +19,9 @@ $("#open-trail").on("click", function() {
         clickable: true,
       },
     });
+});
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+$(".close").on("click", function(e) {
+  $(this).closest('.popup').css('display','none');
 });

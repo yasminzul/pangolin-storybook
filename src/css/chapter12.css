@@ -99,10 +99,17 @@ body
 	text-transform: uppercase;
 }
 
-.close
-{
-		border: none;
-		z-index: 600;
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  z-index: 800;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
 }
 
 .button-cluster
