@@ -11,6 +11,7 @@ import Swiper from './../js/plugin/swiper.min.js';
 
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
+   $('.close').css('display', 'block');
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
@@ -19,29 +20,17 @@ $(".close").on("click", function(e) {
 });
 
 $('#one').on('click', function (){
-	$('.route-legend span').html("<strong>Xiangzhou Port</strong><br>The smugglers embarked from this port on a wooden fishing vessel");
+	$('.route-legend span').html("<strong>SEPT 2012:</strong><br> Police officer Mohammad Norazzuan Ahmad Zahari arrested at an unspecified location in Kedah, in possession of 18 live pangolins.");
 });
 
 $('#two').on('click', function (){
-	$('.route-legend span').html("<strong>First pick-up point</strong><br>The smugglers met with a trawler at this point. The crew transferred a batch of pangolins from the trawler to their boat");
+	$('.route-legend span').html("<strong>NOV 2014:</strong><br> Police officer Mohammad Norazzuan Ahmad Zahari arrested again at the Bukit Kayu Hitam border checkpoint; 43 live pangolins found in the boot of his car.");
 });
 
 $('#three').on('click', function (){
-	$('.route-legend span').html("<strong>Second pick-up point</strong><br>Another batch of pangolins transferred from a trawler here. This time, the pangolins were in white plastic packages.");
+	$('.route-legend span').html("<strong>SEPT 2018:</strong><br> A police officer arrested with 81 live pangolins in a house rented under his name. The trial is ongoing.");
 });
 
 $('#four').on('click', function (){
-	$('.route-legend span').html("<strong>Off the coast of Zhuhai International Airport</strong><br>The final destination of the smugglers. Here they were arrested by customs officers, who received a tip-off about the shipment.");
-});
-
-$('#five').on('click', function (){
-	$('.route-legend span').html("<strong>Feb 2019 seizure: Factory</strong><br>Location where pangolins were allegedly processed. One man was arrested at this location.");
-});
-
-$('#six').on('click', function (){
-	$('.route-legend span').html("<strong>Feb 2019 seizure: WAREHOUSE</strong><br>Location where processed pangolins were found stored in large freezers.");
-});
-
-$('#seven').on('click', function (){
-	$('.route-legend span').html("<strong>Sepanggar Bay Port</strong><br>Sabah’s only international sea port.");
+	$('.route-legend span').html("<strong>FEB 2019:</strong><br> Police officer Ahmad Nasrul Hafifi Mohamad arrested at Sadao customs checkpoint with 47 pangolins in his car, after passing Malaysian border checks.");
 });
