@@ -131,14 +131,18 @@ svg {
 	width: auto;
 }
 
-/*.ww-text {
-	display: none;
-}*/
-
-#text-1, #text-2, #text-3, #text-4, #text-5, #text-6 {
+.ww-text {
 	display: none;
 }
 
+.active {
+	display: block;
+}
+
+/*#text-1, #text-2, #text-3, #text-4, #text-5, #text-6 {
+	display: none;
+}
+*/
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {

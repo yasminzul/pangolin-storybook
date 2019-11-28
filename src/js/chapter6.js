@@ -50,20 +50,40 @@ $('#seven').on('click', function (){
 });
 
 
-// desktop popups
+// desktop popup
 
-$('#_1').on('click', function(){
-	$('#text-1').css('display', 'block');
-	$(this).sibilings().css('display', 'none');
+$("#_1").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-1').addClass("active");   
 });
 
-// $('#_2').on('click', function(){
-// 	$('#text-2').css('display', 'block');
-// });
+$("#_2").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-2').addClass("active");   
+});
 
+$("#_3").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-3').addClass("active");   
+});
 
+$("#_4").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-4').addClass("active");   
+});
 
+$("#_5").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-5').addClass("active");   
+});
 
+$("#_6").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-6').addClass("active");   
+});
 
-
+$("#_7").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-7').addClass("active");   
+});
 
