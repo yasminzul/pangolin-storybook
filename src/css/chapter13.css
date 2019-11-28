@@ -19,6 +19,16 @@ p, .drop-cap {
   width: 60% !important;
 }
 
+.s1 img
+{
+  margin-bottom: 5vh !important;
+}
+
+.s1 .swiper-pagination
+{
+  margin-bottom: 0 !important;
+}
+
 
 /* mobile and tablet */
 
