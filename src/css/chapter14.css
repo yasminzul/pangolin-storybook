@@ -51,10 +51,51 @@ p {
 	width: 100%;
 }
 
+.prev-next-btn
+{
+	position: absolute;
+	bottom: 5vh;
+	width: 100vw;
+}
+
+#prev-chapter
+{
+	height: 5vh;
+	background-image: url(../gfx/previous-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: 5% center;
+	float: left;
+	padding: 1.5vh 2vh 1.5vh 6vh;
+	margin-left: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+#next-chapter
+{
+	height: 5vh;
+	background-image: url(../gfx/next-button.svg);
+	background-repeat: no-repeat;
+	background-size: 3vh auto;
+	background-position: 93% center;
+	float: right;
+	padding: 1.5vh 6vh 1.5vh 2vh;
+	margin-right: 1vw;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
-	
+
 	.row {
 		margin-top: 2%;
 	}
@@ -64,5 +105,12 @@ p {
 		font-size: 0.9em;
     	line-height: 16px;
 	}
+
+  .prev-next-btn
+  {
+    width: 100%;
+
+    font-size: 2vh;
+  }
 
 }
