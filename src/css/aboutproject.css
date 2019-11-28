@@ -9,6 +9,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: overlay;
+  overflow-x: hidden;
+  background-color: #161640;
 }
 
 section {
@@ -16,9 +18,126 @@ section {
   box-sizing: border-box;
 }
 
-p {
+p, table, .row span, .top {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    color: #fff;
+    line-height: 25px;
+}
+
+.row span {
+	padding: 2% 0;
+}
+
+.chapter-name {
+	width: 40%;
+    margin: 4% auto;
+    position: relative;
+}
+
+.chapter-name img{
+  width: 100%;
+}
+
+.row {
+    width: 55%;
+    margin: 5% auto;
+    position: relative;
+}
+
+.image {
+	text-align: center;
+}
+
+.image img {
+	width: 45%;
+}
+
+.logo {
+	width: 100%;
+	background-color: #fff;
+	margin: 2% 0;
+	padding: 20px;
+}
+
+
+/*credits*/
+
+table {
+	width: 100%;
+	margin: 20px 0;
+}
+
+th {
+	text-align: center;
+	width: 100%;
+}
+
+* {
+	margin:0; 
+	padding:0;
+}
+.role { 
+	float: right;
+	padding-right: 5%;
+}
+
+.name {
+	padding-left: 5%;
+	width: 50%;
+}
+
+.credits-wrapper {
+    position: relative;
+
+}
+
+.top {
+	position: relative;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 1.4vw;
+	text-align: center
+}
+
+/*logo*/
+
+.one img {
+	height: 45px;
+	margin: 2%;
+}
+
+ .two img{
+	height: 70px;
+	margin: 2%;
+}
+
+.one {
+	text-align: center;
+}
+
+.two {
+	text-align: center;
+}
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+	table {
+		line-height: 20px;
+	}
+
+	.one img {
+		height: 20px;
+		margin: 1%;
+	}
+
+ 	.two img{
+		height: 40px;
+		margin: 2%;
+	}
+
 }
