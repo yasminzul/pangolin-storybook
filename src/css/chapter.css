@@ -50,8 +50,8 @@ p, .soundcite {
 /*chapter names*/
 
 .chapter-name {
-  position: fixed;
-  width: 50%;
+  position: absolute;
+  width: 35%;
 }
 
 .chapter-name img{
@@ -194,7 +194,6 @@ p, .soundcite {
 
     .slide-caption {
       padding: 2vh 2vw;
-      line-height: 2.5vh;
       text-align: left;
     }
 
@@ -202,6 +201,7 @@ p, .soundcite {
     	font-size: 1vw;
     	font-style: italic;
       width: 100%;
+      line-height: 2.5vh;
       padding-bottom: 2.5vh;
     }
 
@@ -231,6 +231,12 @@ p, .soundcite {
       margin-top: .26em;
       margin-right: .15em;
       line-height: 0.8;
+  }
+
+  .slide-caption p {
+    font-size: 1.6vw;
+    line-height: 1.2;
+    padding-bottom: 5vh;
   }
 
 }
