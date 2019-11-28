@@ -11,10 +11,10 @@ import Swiper from './../js/plugin/swiper.min.js';
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
   var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
     });
 });
 

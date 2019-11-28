@@ -57,7 +57,7 @@ p, .drop-cap {
   margin-top: 5vh;
   z-index: 800;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   background-color: transparent;
   border: none;
 }
@@ -179,6 +179,20 @@ p, .drop-cap {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 100%;
+    border: #000 solid 2.4px;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #000 !important;
 }
 
 /* mobile and tablet */

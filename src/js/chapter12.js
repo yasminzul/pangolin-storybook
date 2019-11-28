@@ -10,10 +10,6 @@ import Swiper from './../js/plugin/swiper.min.js';
 $("#lactation-btn").on("click", function() {
   $("#lactation-popup").css('display','block');
   var s1 = new Swiper('.s1', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -25,10 +21,6 @@ $("#lactation-btn").on("click", function() {
 $("#furuncle-btn").on("click", function() {
   $("#furuncle-popup").css('display','block');
   var s2 = new Swiper('.s2', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -39,10 +31,6 @@ $("#furuncle-btn").on("click", function() {
 $("#arthritis-btn").on("click", function() {
   $("#arthritis-popup").css('display','block');
   var s3 = new Swiper('.s3', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

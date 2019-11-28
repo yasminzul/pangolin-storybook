@@ -85,18 +85,6 @@ svg {
   left: 0;
 }
 
-/*.close {
-  position: absolute;
-  right: 0;
-  margin-right: 2%;
-  margin-top: 1%;
-  z-index: 800;
-  width: 45px;
-}
-
-.close i {
-	font-size: 25px;
-}*/
 
 .main-view {
 	width: 100vw;
@@ -264,6 +252,20 @@ svg {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 100%;
+    border: #fff solid 2.4px;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #fff !important;
 }
 
 /* mobile and tablet */

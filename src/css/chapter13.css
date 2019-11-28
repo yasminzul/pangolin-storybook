@@ -29,6 +29,19 @@ p, .drop-cap {
   margin-bottom: 0 !important;
 }
 
+.swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 100%;
+    border: #000 solid 2.4px;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #000 !important;
+}
 
 /* mobile and tablet */
 
