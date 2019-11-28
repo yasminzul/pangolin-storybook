@@ -119,23 +119,16 @@ p, a, .drop-cap, .soundcite {
 
   .mobile {
   	display: block;
-    text-align: center;
   }
 
-  	.popup {
-		top: 0;
-		position: fixed;
-	}
+  .popup {
+	top: 0;
+	position: fixed;
+  }
 
-	.mobile {
-		display: block;
-		text-align: center;
-    	background-color: #f3f4f6;
-	}
-
-	.desktop {
-		display: none;
-	}
+  .desktop {
+	display: none;
+  }
   
 
 }

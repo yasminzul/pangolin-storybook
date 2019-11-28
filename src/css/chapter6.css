@@ -123,8 +123,8 @@ body {
 
 	.mobile {
 		display: block;
-		text-align: center;
     	background-color: #f3f4f6;
+    	border: none;
 	}
 
 	.desktop {
