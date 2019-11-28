@@ -9,7 +9,7 @@ import Swiper from './../js/plugin/swiper.min.js';
 
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
-  // $('.close').css('display', 'block');
+  $('.close').css('display', 'block');
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
