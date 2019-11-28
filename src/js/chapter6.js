@@ -19,7 +19,7 @@ $(".close").on("click", function(e) {
 });
 
 
-// tap to find legend
+// tap to find mobile legend
 
 $('#one').on('click', function (){
 	$('.route-legend span').html("<strong>Xiangzhou Port</strong><br>The smugglers embarked from this port on a wooden fishing vessel");
@@ -48,4 +48,22 @@ $('#six').on('click', function (){
 $('#seven').on('click', function (){
 	$('.route-legend span').html("<strong>Sepanggar Bay Port</strong><br>Sabah’s only international sea port.");
 });
+
+
+// desktop popups
+
+$('#_1').on('click', function(){
+	$('#text-1').css('display', 'block');
+	$(this).sibilings().css('display', 'none');
+});
+
+// $('#_2').on('click', function(){
+// 	$('#text-2').css('display', 'block');
+// });
+
+
+
+
+
+
 

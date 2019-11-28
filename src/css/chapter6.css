@@ -40,12 +40,13 @@ body {
 }
 
 .close {
-  position: absolute;
+  position: fixed;
   right: 0;
-/*  margin-right: 2%;
-  margin-top: 1%;*/
+  top: 0;
   z-index: 800;
   width: 45px;
+  background-color: #ffffff00;
+  border: none;
 }
 
 .close i {
@@ -128,6 +129,14 @@ svg {
     margin-left: -250px;
 	height: 100vh;
 	width: auto;
+}
+
+/*.ww-text {
+	display: none;
+}*/
+
+#text-1, #text-2, #text-3, #text-4, #text-5, #text-6 {
+	display: none;
 }
 
 /* mobile and tablet */
