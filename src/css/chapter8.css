@@ -1,20 +1,278 @@
-body
-{
-  background-image: url(../gfx/chapter-titles/boatman.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
+body {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    background-color: #a1a686;
 }
 
-p, .drop-cap {
-  color: #fff;
+p {
+	font-family: franklin-gothic-urw, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 0.8em;
 }
 
+svg {
+	width: 100vw;
+}
+
+.map-wrapper {
+	background-image: url(../gfx/map-main-img/main-img.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+	width: 100%;
+	background-color: #ffffff00;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*.close {
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  margin-top: 1%;
+  z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
+}*/
+
+.main-view {
+	width: 100vw;
+	height: 100vh;
+}
+
+.main-map-title {
+    position: relative;
+    padding-top: 10%;
+    width: 55%;
+    text-align: center;
+}
+
+.main-map-title img {
+	width: 60%;
+}
+
+#open-slider {
+	position: relative;
+    left: 19%;
+    width: 18%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: #e89c00;
+    text-align: center;
+    border-style: none;
+    color: #fff;
+}
+
+.left{
+    position: absolute;
+    width: 25%;
+    top: 35px;
+    left: 5%;
+}
+
+.left-bottom {
+	  position: absolute;
+	  width: 25%;
+    bottom: 13%;
+    left: 5%;
+}
+
+.right-top {
+	position: absolute;
+	width: 25%;
+	right: 5%;
+	top: 8%;
+}
+
+.right-center {
+	position: absolute;
+	width: 25%;
+	right: 5%;
+	top: 30%;
+}
+
+.legend {
+  position: absolute;
+  width: 32%;
+  bottom: 13%;
+  left: 5%;
+}
+
+.map-text {
+	position: absolute;
+    text-align: left;
+}
+
+.map-title {
+	font-size: 1em;
+	font-family: IM Fell Double Pica SC, serif;
+	text-transform: uppercase;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.mobile {
+	display: none;
+}
+
+
+/*slides*/
+
+.slide-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.before-label {
+    position: absolute;
+    width: 35%;
+    top: 35px;
+    left: 20%;
+}
+
+.before-label span {
+	text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+}
+
+.before-text {
+	height: 63px;
+    width: 210px;
+    background-color: #720001;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    margin: 7px auto;
+    font-size: 3em;
+}
+
+.route-legend {
+	position: absolute;
+    background-color: #ffffff5e;
+    padding: 5px;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    width: 30%;
+    bottom: 27%;
+    left: 6%;
+    text-transform: uppercase;
+}
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
+
+	.popup {
+		top: 0;
+		position: fixed;
+	}
+
+	.mobile {
+		display: block;
+		background-color: #b1b59d;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.map-text {
+		background-color: #ffffff5e;
+		padding: 5px;
+	}
+
+	.map-title {
+		font-family: franklin-gothic-urw, sans-serif;
+		font-size: 13px;
+   		font-weight: 400;
+    	line-height: 8px;
+	}
+
+  .swiper-slide.mobile.text img {
+    opacity: 0.2;
+  }
+
+	#open-slider {
+		left: 16%;
+    	width: 23%;
+	}
+
+	#overlay-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffc4;
+    padding: 20px;
+	}
+
+  .before-label {
+    width: 35%;
+    left: 64%;
+    top: 11%;
+  }
+
+	.before-text {
+		margin: 0 auto;
+	}
+
+	.before-label span {
+		font-size: 11px;
+	}
 
 
 }
