@@ -28,6 +28,12 @@ p, a, .drop-cap {
     background-color: #000 !important;
 }
 
+.ss
+{
+  margin: 2vh 10vw;
+  width: 50%;
+}
+
 
 /* mobile and tablet */
 
@@ -37,6 +43,12 @@ p, a, .drop-cap {
     left: 5%;
     top: 5%;
     width: 50% !important;
+  }
+
+  .ss
+  {
+    margin: 2vh 5vw;
+    width: 80%;
   }
 
 }

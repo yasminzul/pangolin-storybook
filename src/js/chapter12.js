@@ -42,10 +42,6 @@ $("#arthritis-btn").on("click", function() {
 $("#detox-btn").on("click", function() {
   $("#detox-popup").css('display','block');
   var s4 = new Swiper('.s4', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
