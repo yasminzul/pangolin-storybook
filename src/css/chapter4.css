@@ -1,3 +1,9 @@
+body {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
 .wrapper {
   background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
   background-size: cover;
@@ -24,6 +30,85 @@ p, a, .drop-cap, .soundcite {
 	border-left: .75em double white;
 }
 
+
+/*map*/
+
+.popup {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height:100vh;
+  z-index: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+/*  margin-right: 2%;
+  margin-top: 1%;*/
+  z-index: 800;
+  width: 45px;
+}
+
+.close i {
+	font-size: 25px;
+}
+
+#open-slider {
+	position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    background-color: #e89c00;
+    text-align: center;
+    border-style: none;
+    color: #fff;
+}
+
+.mobile {
+	display: none;
+}
+
+.mobile img {
+	height: 100vh;
+}
+
+
+.route-legend {
+	position: absolute;
+    background-color: #ffffffcc;
+    padding: 5px;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    width: 30%;
+    bottom: 27%;
+    left: 1%;
+    /*text-transform: uppercase;*/
+}
+
+.route-btn{
+	position: absolute;
+    display: grid;
+    right: 0;
+    top: 45px;
+}
+
+.route-btn button {
+    background-color: #ef6737;
+    height: 30px;
+    width: 30px;
+    margin: 7px;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
@@ -31,6 +116,26 @@ p, a, .drop-cap, .soundcite {
   .chapter-name {
     top: 10%;
   }
+
+  .mobile {
+  	display: block;
+    text-align: center;
+  }
+
+  	.popup {
+		top: 0;
+		position: fixed;
+	}
+
+	.mobile {
+		display: block;
+		text-align: center;
+    	background-color: #f3f4f6;
+	}
+
+	.desktop {
+		display: none;
+	}
   
 
 }
