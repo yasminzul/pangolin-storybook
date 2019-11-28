@@ -90,11 +90,12 @@ body
   outline: 0;
 	margin: 0.5vh 0;
 
-	font-size: 12px;
+	font-size: 1.5vh;
 	padding: 1vw;
 	border-radius: 2.75px;
 	font-family: franklin-gothic-urw, sans-serif;
-	font-size: 700;
+	font-weight: 700;
+	font-style: normal;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -178,13 +179,13 @@ position: absolute;
 
     width: 50%;
     text-align: center;
-    font-family: franklin-gothic-urw, sans-serif;
+
 
 }
 
 .center-middle img {
-	width: 60%;
-	margin: 15vh auto 5vh auto;
+	width: 70%;
+	margin: 12vh auto 3vh auto;
 }
 
 .center-bottom {
@@ -192,14 +193,16 @@ position: absolute;
     margin: 0 auto;
     padding: 0;
     width: 40%;
-    text-align: center;
-    font-family: franklin-gothic-urw, sans-serif;
-		font-weight: 300;
+		font-family: franklin-gothic-urw, sans-serif;
+		font-weight: 400;
+		font-size: 2vh;
+		font-style: normal;
+		text-align: center;
 		line-height: 1.5;
 }
 
 .note-text {
-	font-size: 12px;
+	font-size: 1.5vh;
 	color: #6c451f;
 	font-weight: 400;
 	line-height: 1.5;
@@ -262,6 +265,10 @@ position: absolute;
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+
+	font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #next-chapter
@@ -279,6 +286,10 @@ position: absolute;
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+	
+	font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 

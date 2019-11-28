@@ -36,7 +36,7 @@ p, .soundcite {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .drop-cap {
@@ -50,7 +50,7 @@ p, .soundcite {
 /*chapter names*/
 
 .chapter-name {
-  position: absolute;
+  position: fixed;
   width: 35%;
 }
 
@@ -149,6 +149,10 @@ p, .soundcite {
     	background-color: rgba(0, 0, 0, 0.3);
     	text-transform: uppercase;
     	border-radius: 5px;
+
+      font-family: franklin-gothic-urw, sans-serif;
+    	font-weight: 700;
+    	font-style: normal;
     }
 
     #next-chapter
@@ -165,6 +169,10 @@ p, .soundcite {
     	background-color: rgba(0, 0, 0, 0.3);
     	text-transform: uppercase;
     	border-radius: 5px;
+
+      font-family: franklin-gothic-urw, sans-serif;
+    	font-weight: 700;
+    	font-style: normal;
     }
 
     /*swiper*/

@@ -252,6 +252,10 @@ body {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+
+  font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #next-chapter
@@ -269,6 +273,10 @@ body {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+
+  font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .swiper-pagination-bullet {

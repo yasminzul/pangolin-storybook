@@ -17,10 +17,10 @@ p, .drop-cap {
 }
 
 .chapter-name {
-	top: 10%;
-    left: 10%;
+	top: 18%;
+    left: 12%;
     position: absolute;
-    width: 45%;
+    width: 35%;
 }
 
 .chapter-name img
@@ -31,7 +31,7 @@ p, .drop-cap {
 .trail-btn {
 
   width: 65%;
-	height: 40px;
+	height: 6vh;
 	margin-top: 3%;
   margin-left: 15%;
   margin-right: 20%;
@@ -40,6 +40,11 @@ p, .drop-cap {
 	border-style: none;
 	border-radius: 2.5px;
 	color: #fff;
+
+  font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  font-size: 1.5vh;
 }
 
 
@@ -162,6 +167,10 @@ p, .drop-cap {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+
+  font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 #next-chapter
@@ -179,6 +188,10 @@ p, .drop-cap {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
+
+  font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .swiper-pagination-bullet {
