@@ -30,7 +30,7 @@
   	width: 17vw !important;
   	height: 5vh !important;
   	color: #000 !important;
-  	bottom: 5vh;
+    top: 50%;
   }
 
   .swiper-pagination
@@ -47,7 +47,7 @@
   	width: 14vw !important;
   	height: 5vh !important;
   	color: #000 !important;
-  	bottom: 5vh;
+    top: 50%;
   }
 
   .swiper-pagination-bullet-active {

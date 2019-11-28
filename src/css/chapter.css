@@ -40,10 +40,10 @@ p, .soundcite {
 }
 
 .drop-cap {
-    font-size: 4em;
+    font-size: 4.4em;
     float: left;
-    margin-top: .26em;
-    margin-right: .15em;
+    margin-top: .28em;
+    margin-right: .18em;
     line-height: 0.8;
 }
 
@@ -129,31 +129,6 @@ p, .soundcite {
  }
 
 
-/*swiper styles*/
-
-.swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-
     .prev-next-btn
     {
     	margin-top: 5vh;
@@ -192,6 +167,45 @@ p, .soundcite {
     	border-radius: 5px;
     }
 
+    /*swiper*/
+
+    .swiper-container {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .swiper-wrapper {
+      margin-top: 2vh;
+    }
+
+    .swiper-slide {
+      text-align: center;
+          font-size: 18px;
+          background: transparent;
+          align-items: center;
+          height: 100%;
+          padding-bottom: 2vh;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+
+    .slide-caption {
+      padding: 2vh 2vw;
+      line-height: 2.5vh;
+      text-align: left;
+    }
+
+    .slide-caption p {
+    	color: #000;
+    	font-size: 1vw;
+    	font-style: italic;
+      width: 100%;
+      padding-bottom: 2.5vh;
+    }
+
 
 /* mobile and tablet */
 
@@ -210,6 +224,14 @@ p, .soundcite {
     width: 100%;
 
     font-size: 2vh;
+  }
+
+  .drop-cap {
+      font-size: 4em;
+      float: left;
+      margin-top: .26em;
+      margin-right: .15em;
+      line-height: 0.8;
   }
 
 }
