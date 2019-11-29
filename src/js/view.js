@@ -11,21 +11,21 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 <div class=menu>
 <table>
 <tr>
-  <a href=index.html><td><img src=../gfx/menu/home@3x.png></td></a>
-  <a href=about-pangolin.html><td><img src=../gfx/menu/aboutpangolin@3x.png></td></a>
-  <a href=chapter-1.html><td><img src=../gfx/menu/middleman@3x.png></td></a>
-  <a href=chapter-2.html><td><img src=../gfx/menu/boatman@3x.png></td></a>
-  <a href=chapter-3.html><td><img src=../gfx/menu/smuggler@3x.png></td></a>
+  <td><a href=index.html><img src=../gfx/menu/home@3x.png></a></td>
+  <td><a href=about-pangolin.html><img src=../gfx/menu/aboutpangolin@3x.png></a></td>
+  <td><a href=chapter-1.html><img src=../gfx/menu/middleman@3x.png></a></td>
+  <td><a href=chapter-2.html><img src=../gfx/menu/boatman@3x.png></a></td>
+  <td><a href=chapter-3.html><img src=../gfx/menu/smuggler@3x.png></a></td>
 </tr>
 <tr>
-  <a href=chapter-4.html><td><img src=../gfx/menu/policeman@3x.png></td></a>
-  <a href=chapter-5.html><td><img src=../gfx/menu/followtrail@3x.png></td></a>
-  <a href=chapter-6.html><td><img src=../gfx/menu/waitingwife@3x.png></td></a>
-  <a href=chapter-8.html><td><img src=../gfx/menu/routesmap@3x.png></td></a>
-  <a href=chapter-9.html><td><img src=../gfx/menu/socialmedia@3x.png></td></a>
+  <td><a href=chapter-4.html><img src=../gfx/menu/policeman@3x.png></a></td>
+  <td><a href=chapter-5.html><img src=../gfx/menu/followtrail@3x.png></a></td>
+  <td><a href=chapter-6.html><img src=../gfx/menu/waitingwife@3x.png></a></td>
+  <td><a href=chapter-8.html><img src=../gfx/menu/routesmap@3x.png></a></td>
+  <td><a href=chapter-9.html><img src=../gfx/menu/socialmedia@3x.png></a></td>
 </tr>
 <tr>
-  <a href=chapter-10.html><td></td></a>
+  <td><a href=chapter-10.html>Hello</a></td>
   <a href=chapter-11.html><td></td></a>
   <a href=chapter-12.html><td></td></a>
   <a href=chapter-13.html><td></td></a>
