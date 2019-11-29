@@ -160,8 +160,7 @@ svg {
 
 .map-title {
 	font-size: 1em;
-	font-family: IM Fell Double Pica SC, serif;
-	text-transform: uppercase;
+	font-family: 'Averia Serif Libre', cursive;
   line-height: 25px;
   font-weight: 300;
 }
