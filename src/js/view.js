@@ -11,32 +11,32 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 <div class=menu>
 <table>
 <tr>
-  <td><a href=index.html><img src=../gfx/menu/home@3x.png></a></td>
-  <td><a href=about-pangolin.html><img src=../gfx/menu/aboutpangolin@3x.png></a></td>
-  <td><a href=chapter-1.html><img src=../gfx/menu/middleman@3x.png></a></td>
-  <td><a href=chapter-2.html><img src=../gfx/menu/boatman@3x.png></a></td>
-  <td><a href=chapter-3.html><img src=../gfx/menu/smuggler@3x.png></a></td>
+  <td><a href=index.html><img src=home@3x.png></a></td>
+  <td><a href=about-pangolin.html><img src=aboutpangolin@3x.png></a></td>
+  <td><a href=chapter-1.html><img src=middleman@3x.png></a></td>
+  <td><a href=chapter-2.html><img src=boatman@3x.png></a></td>
+  <td><a href=chapter-3.html><img src=smuggler@3x.png></a></td>
 </tr>
 <tr>
-  <td><a href=chapter-4.html><img src=../gfx/menu/policeman@3x.png></a></td>
-  <td><a href=chapter-5.html><img src=../gfx/menu/followtrail@3x.png></a></td>
-  <td><a href=chapter-6.html><img src=../gfx/menu/waitingwife@3x.png></a></td>
-  <td><a href=chapter-8.html><img src=../gfx/menu/routesmap@3x.png></a></td>
-  <td><a href=chapter-9.html><img src=../gfx/menu/socialmedia@3x.png></a></td>
+  <td><a href=chapter-4.html><img src=policeman@3x.png></a></td>
+  <td><a href=chapter-5.html><img src=followtrail@3x.png></a></td>
+  <td><a href=chapter-6.html><img src=waitingwife@3x.png></a></td>
+  <td><a href=chapter-8.html><img src=routesmap@3x.png></a></td>
+  <td><a href=chapter-9.html><img src=socialmedia@3x.png></a></td>
 </tr>
 <tr>
-  <td><a href=chapter-10.html>Hello</a></td>
-  <a href=chapter-11.html><td></td></a>
-  <a href=chapter-12.html><td></td></a>
-  <a href=chapter-13.html><td></td></a>
-  <a href=chapter-14.html><td></td></a>
+  <td><a href=chapter-10.html><img src=authorities@3x.png></a></td>
+  <td><a href=chapter-11.html><img src=twodoctors@3x.png></a></td>
+  <td><a href=chapter-12.html><img src=recipe@3x.png></a></td>
+  <td><a href=chapter-13.html><img src=hunters@3x.png></a></td>
+  <td><a href=chapter-14.html><img src=rainies@3x.png></a></td>
 </tr>
 <tr>
-  <a href=chapter-15.html><td></td></a>
-  <a href=quiz.html><td></td></a>
-  <a href=about-project.html><td></td></a>
-  <a href=https://www.rage.com.my/><td></td></a>
-  <td></td>
+  <td><a href=chapter-15.html><img src=forest@3x.png></a></td>
+  <td><a href=about-project.html><img src=aboutproject@3x.png></a></td>
+  <td><a href=quiz.html><img src=quiz@3x.png></a></td>
+  <td><a href=https://globalstory.pangolinreports.com/><img src=globalstory@3x.png></a></td>
+  <td><img src=share@3x.png></td>
 </tr>
 </table>
   <ul class=menu-footer><a href=https://www.rage.com.my/ target=_blank><li>R.AGE</li></a><li>© 2019 R.AGE</li><a href=http://facebook.com target=_blank><li><i class=ion-logo-facebook></i></li></a><a href=http://twitter.com target=_blank><li><i class=ion-logo-twitter></i></li></a><a href=http://instagram.com target=_blank><li><i class=ion-logo-instagram></i></li></a></ul></li>
