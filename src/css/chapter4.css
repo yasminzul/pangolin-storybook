@@ -23,11 +23,11 @@ p, a, .drop-cap, .soundcite {
 }
 
 .soundcite-play:before {
-	border-left: 0.75em solid white;
+	border-left: 0.75em solid white !important;
 }
 
 .soundcite-pause:before {
-	border-left: .75em double white;
+	border-left: .75em double white !important;
 }
 
 
@@ -45,16 +45,17 @@ p, a, .drop-cap, .soundcite {
 }
 
 .close {
-  position: absolute;
+  position: fixed;
   right: 0;
-/*  margin-right: 2%;
-  margin-top: 1%;*/
+  top: 0;
   z-index: 800;
   width: 45px;
+  background-color: #ffffff00;
+  border: none;
 }
 
 .close i {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 #open-slider {

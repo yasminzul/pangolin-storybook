@@ -17,11 +17,11 @@ p, .drop-cap, .soundcite, .photo-caption {
 }
 
 .soundcite-play:before {
-	border-left: 0.75em solid white;
+	border-left: 0.75em solid white !important;
 }
 
 .soundcite-pause:before {
-	border-left: .75em double white;
+	border-left: .75em double white !important;
 }
 
 .caption{
