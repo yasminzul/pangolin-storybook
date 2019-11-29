@@ -40,11 +40,11 @@ p, .soundcite {
 }
 
 .drop-cap {
-    font-size: 4.4em;
+    font-size: 4.2em;
     float: left;
-    margin-top: .28em;
-    margin-right: .18em;
-    line-height: 0.8;
+    margin-top: .27em;
+    margin-right: .15em;
+    line-height: 0.7;
 }
 
 /*chapter names*/
