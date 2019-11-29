@@ -193,12 +193,9 @@ position: absolute;
     margin: 0 auto;
     padding: 0;
     width: 40%;
-		font-family: franklin-gothic-urw, sans-serif;
-		font-weight: 400;
-		font-size: 2vh;
-		font-style: normal;
-		text-align: center;
-		line-height: 1.5;
+	font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .note-text {
@@ -214,13 +211,14 @@ position: absolute;
     top: 35px;
     left: 10%;
     text-align: left;
-    font-family: 'franklin-gothic-urw', sans-serif;
-    font-size: 14px;
+	font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .recipe-title {
 	font-size: 40px;
-	font-family: 'IM Fell Double Pica SC', serif;
+	font-family: 'Averia Serif Libre', cursive;
 }
 
 .mobile {

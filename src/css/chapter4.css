@@ -60,13 +60,16 @@ p, a, .drop-cap, .soundcite {
 
 #open-slider {
 	position: relative;
-    margin: 0 auto;
-    display: block;
-    height: 40px;
-    background-color: #e89c00;
-    text-align: center;
-    border-style: none;
-    color: #fff;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  background-color: #e89c00;
+  text-align: center;
+  border-style: none;
+  color: #fff;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .mobile {
