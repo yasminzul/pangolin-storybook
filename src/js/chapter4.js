@@ -35,3 +35,37 @@ $('#three').on('click', function (){
 $('#four').on('click', function (){
 	$('.route-legend span').html("<strong>FEB 2019:</strong><br> Police officer Ahmad Nasrul Hafifi Mohamad arrested at Sadao customs checkpoint with 47 pangolins in his car, after passing Malaysian border checks.");
 });
+
+$('#five').on('click', function (){
+	$('.route-legend span').html("All three officers worked at the Kedah state police headquarters (IPK Kedah). Investigations suggest that there is a larger smuggling ring run by members of the police and officers from other enforcement agencies.");
+});
+
+
+
+// desktop popup
+
+$("#_1").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-1').addClass("active");   
+});
+
+$("#_2").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-2').addClass("active");   
+});
+
+$("#_3").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-3').addClass("active");   
+});
+
+$("#_4").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-4').addClass("active");   
+});
+
+$("#_5").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-5').addClass("active");   
+});
+

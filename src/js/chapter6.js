@@ -9,7 +9,7 @@ import Swiper from './../js/plugin/swiper.min.js';
 
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
-  // $('.close').css('display', 'block');
+  $('.close').css('display', 'block');
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
@@ -19,7 +19,7 @@ $(".close").on("click", function(e) {
 });
 
 
-// tap to find legend
+// tap to find mobile legend
 
 $('#one').on('click', function (){
 	$('.route-legend span').html("<strong>Xiangzhou Port</strong><br>The smugglers embarked from this port on a wooden fishing vessel");
@@ -47,5 +47,43 @@ $('#six').on('click', function (){
 
 $('#seven').on('click', function (){
 	$('.route-legend span').html("<strong>Sepanggar Bay Port</strong><br>Sabah’s only international sea port.");
+});
+
+
+// desktop popup
+
+$("#_1").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-1').addClass("active");   
+});
+
+$("#_2").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-2').addClass("active");   
+});
+
+$("#_3").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-3').addClass("active");   
+});
+
+$("#_4").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-4').addClass("active");   
+});
+
+$("#_5").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-5').addClass("active");   
+});
+
+$("#_6").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-6').addClass("active");   
+});
+
+$("#_7").click(function () {
+    $(".ww-text").removeClass("active");
+    $('#text-7').addClass("active");   
 });
 
