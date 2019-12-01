@@ -89,6 +89,10 @@ th {
 	width: 50%;
 }
 
+/*.name.last {
+	width: 100%;
+}*/
+
 .credits-wrapper {
     position: relative;
 

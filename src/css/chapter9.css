@@ -28,10 +28,20 @@ p, a, .drop-cap {
     background-color: #000 !important;
 }
 
-.ss
+/*.ss
 {
   margin: 2vh 10vw;
   width: 50%;
+}*/
+
+.s1 img
+{
+  margin-bottom: 5vh !important;
+}
+
+.s1 .swiper-pagination
+{
+  margin-bottom: 0 !important;
 }
 
 
