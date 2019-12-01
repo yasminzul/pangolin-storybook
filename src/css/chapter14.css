@@ -31,20 +31,16 @@ p {
 	margin-top: 10%;
 }
 
-.left {
-	float: left;
-}
-
 .right {
 	float: right;
+	margin-right: 18%;
 }
 
 .chapter-name {
-    width: 40%;
+	width: 25%;
     position: absolute;
-    bottom: 1%;
- 	left: 30%;
-    right: 30%;
+    top: 10%;
+    right: 20%;
 }
 
 .chapter-name img {
@@ -103,7 +99,11 @@ p {
 @media only screen and (max-width: 900px) {
 
 	.row {
-		margin-top: 2%;
+		margin-top: 10%;
+	}
+
+	.right {
+		margin-right: 16%;
 	}
 
 	p {
