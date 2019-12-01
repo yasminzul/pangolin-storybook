@@ -12,31 +12,12 @@ body {
   overflow: overlay;
 }
 
-section {
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-/*#pinContainer {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-}
-    #slideContainer {
-    width: 400%;
-    height: 100%;
-    position: absolute;
-}*/
-
-
 p, .soundcite {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1vw;
+    line-height: 1.5em;
 }
 
 .drop-cap {
@@ -211,6 +192,7 @@ p, .soundcite {
       width: 100%;
       line-height: 2.5vh;
       padding-bottom: 2.5vh;
+      opacity: 70%;
     }
 
 
