@@ -156,6 +156,7 @@ svg {
 .map-text {
 	position: absolute;
     text-align: left;
+    width:25%;
 }
 
 .map-title {
@@ -298,34 +299,41 @@ svg {
 		display: none;
 	}
 
-	.map-text {
-		background-color: #ffffff5e;
-		padding: 5px;
-	}
-
-	.map-title {
-		font-family: franklin-gothic-urw, sans-serif;
-		font-size: 13px;
-   		font-weight: 400;
-    	line-height: 8px;
-	}
-
-  .swiper-slide.mobile.text img {
-    opacity: 0.2;
+  .map-title {
+    font-size: 0.7em;
   }
 
+  .mobile.map-text {
+    width: 25%;
+    top: 33%;
+  }
+
+  .left {
+    top: 2%;
+    left: 2%;
+  }
+  .bottom {
+    top: 33%;
+    left: 2%;
+  }
+
+  .right {
+    bottom: 30%;
+    right: 2%;
+  }
+ 
 	#open-slider {
 		left: 16%;
     	width: 23%;
 	}
 
-	#overlay-text {
+/*	#overlay-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffffc4;
     padding: 20px;
-	}
+	}*/
 
   .before-label {
     width: 35%;
