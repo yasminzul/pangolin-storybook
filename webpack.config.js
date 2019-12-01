@@ -50,6 +50,7 @@ module.exports = {
     compress: true,
     port: 9000
   },
+    mode: 'development',
   module: {
     rules: [
       {
