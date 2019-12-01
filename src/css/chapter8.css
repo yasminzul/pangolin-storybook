@@ -159,7 +159,7 @@ svg {
     width:25%;
 }
 
-.map-title {
+.map-title, .route-legend {
 	font-size: 1em;
 	font-family: 'Averia Serif Libre', cursive;
   line-height: 25px;
@@ -204,16 +204,14 @@ svg {
 }
 
 .route-legend {
-	position: absolute;
-    background-color: #ffffff5e;
+	  position: absolute;
     padding: 5px;
-    font-family: franklin-gothic-urw, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 19px;
     width: 30%;
-    bottom: 27%;
-    left: 6%;
+    bottom: 15%;
+    left: 2%;
     text-transform: uppercase;
 }
 
