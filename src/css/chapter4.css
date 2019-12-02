@@ -76,10 +76,6 @@ p, a, .drop-cap, .soundcite {
 	display: none;
 }
 
-.mobile img {
-	height: 100vh;
-}
-
 
 .route-legend {
 	position: absolute;
@@ -108,25 +104,13 @@ p, a, .drop-cap, .soundcite {
   z-index: 600;
 }
 
-.route-btn{
-	position: absolute;
-    display: grid;
-    right: 0;
-    top: 45px;
-}
-
-.route-btn button {
-    background-color: #ef6737;
-    height: 30px;
-    width: 30px;
-    margin: 7px;
-    border-radius: 50%;
-    color: #fff;
-    border: 2px solid #fff;
+.route-btn {
+  display: none;
 }
 
 
-.desktop {
+
+.all {
 	display: block;
     background-color: #f3f4f6;
     border: none;
@@ -137,7 +121,7 @@ p, a, .drop-cap, .soundcite {
     left: 0;
 }
 
-svg {
+/*svg {
 	position: fixed;
     top: 15%;
     left: 25%;
@@ -145,7 +129,54 @@ svg {
     margin-left: -250px;
 	height: 100vh;
 	width: auto;
+}*/
+
+/*pulse*/
+
+.route-btn button {
+    background-color: #ef6737;
+    height: 30px;
+    width: 30px;
+    margin: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+  }
+
+.route-btn button {
+    animation: animate-pulse 3s linear infinite;
+    cursor: pointer;
+} 
+
+#_1-bg {
+  animation: svg-pulse 2s linear infinite;
 }
+
+@keyframes svg-pulse{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+       opacity: 1;
+    }
+   }
+
+
+@keyframes animate-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.7),  0 0 0 0 rgba(255,109,74,0.7);
+    }
+    50%{
+        box-shadow: 0 0 0 10px rgba(255,109,74,0.0),  0 0 0 0 rgba(255,109,74,0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 10px rgba(255,109,74,0);
+    }
+   } 
+
 
 .p-text {
 	display: none;
@@ -163,7 +194,7 @@ svg {
     top: 10%;
   }
 
-  .mobile {
+  .all {
   	display: block;
   }
 
@@ -175,6 +206,15 @@ svg {
   .desktop {
 	display: none;
   }
-  
 
+  .route-btn{
+    position: absolute;
+    display: grid;
+    right: 0;
+    top: 45px;
+  }
+
+  #_1-bg {
+  animation: none;
+  }
 }
