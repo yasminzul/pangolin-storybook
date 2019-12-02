@@ -64,15 +64,8 @@ body {
     color: #fff;
 }
 
-.mobile {
-	display: none;
-}
 
-.mobile img {
-	height: 100vh;
-}
-
-.desktop {
+.all {
 	display: block;
     background-color: #f3f4f6;
     border: none;
@@ -83,60 +76,71 @@ body {
     left: 0;
 }
 
-.route-legend {
-	position: absolute;
-    background-color: #ffffffcc;
-    padding: 5px;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 19px;
-    width: 30%;
-    bottom: 27%;
-    left: 1%;
-    /*text-transform: uppercase;*/
+.route-btn {
+  display: none;
 }
 
-.route-btn{
-	position: absolute;
-    display: grid;
-    right: 0;
-    top: 45px;
-}
+/*pulse*/
 
 .route-btn button {
     background-color: #ef6737;
     height: 30px;
     width: 30px;
     margin: 7px;
+    border: 2px solid #fff;
     border-radius: 50%;
     color: #fff;
-    border: 2px solid #fff;
+  }
+
+.route-btn button {
+    animation: animate-pulse 3s linear infinite;
+    cursor: pointer;
+} 
+
+#_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg  {
+  animation: svg-pulse 2s linear infinite;
 }
 
-#five, #six {
-	background-color: #2e44f0;
+#_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg  {
+  display: block;
 }
 
-
-/*desktop svg*/
-
-svg {
-	position: fixed;
-    top: 15%;
-    left: 25%;
-    margin-top: -108px;
-    margin-left: -250px;
-	height: 100vh;
-	width: auto;
+#_1, #_2, #_3, #_4, #_5, #_6, #_7  {
+  display: block;
 }
+
+@keyframes svg-pulse{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+       opacity: 1;
+    }
+   }
+
+
+@keyframes animate-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.7),  0 0 0 0 rgba(255,109,74,0.7);
+    }
+    50%{
+        box-shadow: 0 0 0 10px rgba(255,109,74,0.0),  0 0 0 0 rgba(255,109,74,0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 10px rgba(255,109,74,0);
+    }
+   } 
+
 
 .ww-text {
-	display: none;
+  display: none;
 }
 
 .active {
-	display: block;
+  display: block !important;
 }
 
 /*#text-1, #text-2, #text-3, #text-4, #text-5, #text-6 {
@@ -157,15 +161,23 @@ svg {
 		position: fixed;
 	}
 
-	.mobile {
-		display: block;
-    	background-color: #f3f4f6;
-    	border: none;
-	}
-
 	.desktop {
 		display: none;
 	}
+
+   .route-btn{
+    position: absolute;
+    display: grid;
+    right: 0;
+    top: 45px;
+  }
+
+  #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg {
+    display: none !important;
+  }
+   #_1, #_2, #_3, #_4, #_5, #_6, #_7 {
+    display: none;
+  }
 
 
 }
