@@ -223,7 +223,7 @@ p, a, .drop-cap, .soundcite {
   }
 
   #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg {
-    display: none;
+    display: none !important;
   }
    #_1, #_2, #_3, #_4, #_5 {
     display: none;
