@@ -152,6 +152,14 @@ p, a, .drop-cap, .soundcite {
   animation: svg-pulse 2s linear infinite;
 }
 
+#_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg  {
+  display: block;
+}
+
+#_1, #_2, #_3, #_4, #_5  {
+  display: block;
+}
+
 @keyframes svg-pulse{
     0%{
         opacity: 0.2;
@@ -183,7 +191,7 @@ p, a, .drop-cap, .soundcite {
 }
 
 .active {
-	display: block;
+	display: block !important;
 }
 
 /* mobile and tablet */
@@ -215,6 +223,9 @@ p, a, .drop-cap, .soundcite {
   }
 
   #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg {
+    display: none;
+  }
+   #_1, #_2, #_3, #_4, #_5 {
     display: none;
   }
 }

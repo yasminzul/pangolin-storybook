@@ -45,7 +45,6 @@ $(".close").on("click", function(e) {
 // desktop popup
 
 $("#_1").click(function () {
-    console.log('click');
     $(".p-text").removeClass("active");
     $('#text-1').addClass("active");   
 });
@@ -68,5 +67,44 @@ $("#_4").click(function () {
 $("#_5").click(function () {
     $(".p-text").removeClass("active");
     $('#text-5').addClass("active");   
+});
+
+
+// mobile popup
+
+$("#one").click(function () {
+    console.log('click');
+    $(".p-text").removeClass("active");
+    $('#text-1').addClass("active");   
+    $('#_1').addClass("active"); 
+    $('#_1-bg').addClass("active"); 
+});
+
+$("#two").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-2').addClass("active");
+    $('#_2').addClass("active"); 
+    $('#_2-bg').addClass("active");    
+});
+
+$("#three").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-3').addClass("active");
+    $('#_3').addClass("active"); 
+    $('#_3-bg').addClass("active");    
+});
+
+$("#four").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-4').addClass("active");
+    $('#_4').addClass("active"); 
+    $('#_4-bg').addClass("active");    
+});
+
+$("#five").click(function () {
+    $(".p-text").removeClass("active");
+    $('#text-5').addClass("active"); 
+    $('#_5').addClass("active"); 
+    $('#_5-bg').addClass("active");   
 });
 
