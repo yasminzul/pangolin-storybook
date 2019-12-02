@@ -18,7 +18,7 @@ svg {
 }
 
 .map-wrapper {
-	background-image: url(../gfx/ch-5/follow-main.jpg);
+	background-image: url(../gfx/route-map/main-img.png);
 	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -121,7 +121,7 @@ svg {
 .left{
     position: absolute;
     width: 25%;
-    top: 35px;
+    top: 5%;
     left: 5%;
 }
 
@@ -159,7 +159,7 @@ svg {
     width:25%;
 }
 
-.map-title, .route-legend {
+.map-title {
 	font-size: 1em;
 	font-family: 'Averia Serif Libre', cursive;
   line-height: 25px;
@@ -207,12 +207,17 @@ svg {
 	  position: absolute;
     padding: 5px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 19px;
     width: 30%;
-    bottom: 15%;
-    left: 2%;
+    top: 5%;
     text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+}
+
+.lgnd {
+  top: 80%;
+  line-height: 13px;
 }
 
 .prev-next-btn
@@ -307,8 +312,9 @@ svg {
   }
 
   .left {
-    top: 2%;
-    left: 2%;
+    bottom: 2%;
+    left: 5%;
+    top: 60%;
   }
   .bottom {
     top: 33%;
