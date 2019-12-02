@@ -21,7 +21,16 @@ p, .drop-cap {
 }
 
 
-/*youtube video*/
+.border {
+    text-align: center;
+    border: 10px double #fff;
+}
+
+.border p {
+    font-size: 1em;
+    color: #fff;
+}
+
 
 /*youtube video*/
 
