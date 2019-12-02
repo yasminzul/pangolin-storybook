@@ -18,7 +18,7 @@ svg {
 }
 
 .map-wrapper {
-	background-image: url(../gfx/map-main-img/main-img.png);
+	background-image: url(../gfx/route-map/main-img.png);
 	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -121,7 +121,7 @@ svg {
 .left{
     position: absolute;
     width: 25%;
-    top: 35px;
+    top: 5%;
     left: 5%;
 }
 
@@ -137,6 +137,11 @@ svg {
 	width: 25%;
 	right: 5%;
 	top: 8%;
+}
+
+.left-top {
+  left: 5%;
+  top: 5%;
 }
 
 .right-center {
@@ -156,6 +161,7 @@ svg {
 .map-text {
 	position: absolute;
     text-align: left;
+    width:25%;
 }
 
 .map-title {
@@ -203,17 +209,20 @@ svg {
 }
 
 .route-legend {
-	position: absolute;
-    background-color: #ffffff5e;
+	  position: absolute;
     padding: 5px;
-    font-family: franklin-gothic-urw, sans-serif;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 19px;
     width: 30%;
-    bottom: 27%;
-    left: 6%;
+    top: 5%;
     text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+}
+
+.lgnd {
+  top: 80%;
+  line-height: 13px;
 }
 
 .prev-next-btn
@@ -279,6 +288,61 @@ svg {
     background-color: #fff !important;
 }
 
+#b-img {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+#a-img {
+  position: absolute;
+  right: 19%;
+  top: 35%;
+}
+
+#a-img, #b-img {
+  background-color: #362f2d;
+  width: 12%;
+  padding: 15px;
+  border-radius: 2.5px;
+  border: none;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+
+}
+
+#bm-img {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+#am-img {
+  position: absolute;
+  right: 19%;
+  top: 35%;
+}
+
+#am-img, #bm-img {
+  background-color: #362f2d;
+  width: 12%;
+  padding: 15px;
+  border-radius: 2.5px;
+  border: none;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+
+}
+
+#b-img:focus, #bm-img:focus, #a-img:focus, #am-img:focus {
+  opacity: 0.5;
+
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
@@ -298,39 +362,66 @@ svg {
 		display: none;
 	}
 
-	.map-text {
-		background-color: #ffffff5e;
-		padding: 5px;
-	}
-
-	.map-title {
-		font-family: franklin-gothic-urw, sans-serif;
-		font-size: 13px;
-   		font-weight: 400;
-    	line-height: 8px;
-	}
-
-  .swiper-slide.mobile.text img {
-    opacity: 0.2;
+  .map-title {
+    font-size: 0.7em;
   }
 
+  .mobile.map-text {
+    width: 28%;
+    top: 33%;
+  }
+
+  .left {
+    left: 5%;
+    top: 47%;
+  }
+  .bottom {
+    top: 33%;
+    left: 2%;
+  }
+
+  .right {
+    bottom: 30%;
+    right: 2%;
+  }
+
+  .top {
+    top: 3%;
+    right: 2%;
+  }
+
+  #am-img {
+    right: 19%;
+    top: 46%;
+  }
+
+  #bm-img{
+    right: 2%;
+    top: 46%;
+  }
+
+  #am-img, #bm-img {
+    width: 14%;
+    padding: 13px;
+  }
+ 
 	#open-slider {
 		left: 16%;
     	width: 23%;
 	}
 
-	#overlay-text {
+/*	#overlay-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffffc4;
     padding: 20px;
-	}
+	}*/
 
   .before-label {
     width: 35%;
-    left: 64%;
-    top: 11%;
+    left: 25%;
+    top: 3%;
   }
 
 	.before-text {

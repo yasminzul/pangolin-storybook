@@ -39,17 +39,31 @@ body {
 .main-content button
 {
   width: 25vw;
-  height: 5vh;
+  height: 9vh;
   margin: 1vh 5vw;
   text-transform: uppercase;
   border-radius: 5px;
 }
 
-#orangasli-btn
+#orangasli-btn:hover
 {
   border: solid 3px #ffffff;
   background-color: #ffffff;
   color: #000;
+}
+
+#expert-btn:hover
+{
+  border: solid 3px #ffffff;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#orangasli-btn
+{
+  border: solid 3px #ffffff;
+  background-color: transparent;
+  color: #fff;
 }
 
 #expert-btn
