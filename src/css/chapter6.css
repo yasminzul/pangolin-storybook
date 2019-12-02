@@ -80,6 +80,11 @@ body {
   display: none;
 }
 
+#five, #six, #seven {
+  background-color: #2d44f0;
+  animation: animate-b-pulse 3s linear infinite;
+}
+
 /*pulse*/
 
 .route-btn button {
@@ -131,6 +136,18 @@ body {
     }
     100%{
         box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 10px rgba(255,109,74,0);
+    }
+   } 
+
+@keyframes animate-b-pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(45,68,240,0.7),  0 0 0 0 rgba(45,68,240,0.7);
+    }
+    50%{
+        box-shadow: 0 0 0 10px rgba(45,68,240,0.0),  0 0 0 0 rgba(45,68,240,0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(45,68,240,0.0),  0 0 0 10px rgba(45,68,240,0);
     }
    } 
 
