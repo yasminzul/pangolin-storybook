@@ -283,6 +283,15 @@ svg {
     background-color: #fff !important;
 }
 
+#b-img {
+  position: absolute;
+}
+
+#a-img {
+  position: absolute;
+  left: 20%;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
