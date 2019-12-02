@@ -10,13 +10,13 @@ var $ = require("jquery");
 $("#open-trail").on("click", function() {
   $('.popup').css('display','block');
   var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      mousewheel: true,
+      keyboard: {
+        enabled: true
       },
     });
 });

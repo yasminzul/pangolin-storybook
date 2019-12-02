@@ -26,6 +26,10 @@ $("#furuncle-btn").on("click", function() {
         el: '.swiper-pagination',
         clickable: true,
       },
+      mousewheel: true,
+      keyboard: {
+        enabled: true
+      },
     });
 });
 
@@ -35,6 +39,10 @@ $("#arthritis-btn").on("click", function() {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      mousewheel: true,
+      keyboard: {
+        enabled: true
       },
     });
 
