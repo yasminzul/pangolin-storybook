@@ -18,7 +18,7 @@ section {
   box-sizing: border-box;
 }
 
-p, table, .row span, .top {
+.not-footer p, table, .not-footer span, .top {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -27,24 +27,40 @@ p, table, .row span, .top {
     line-height: 25px;
 }
 
-.row span {
+.not
+{
+  color: #000;
+  padding: 2vh 26vw;
+  margin: 5% auto;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.not-footer span {
 	padding: 2% 0;
 }
 
 .chapter-name {
-	width: 40%;
     margin: 4% auto;
     position: relative;
+    text-align: center;
 }
 
 .chapter-name img{
-  width: 100%;
+  width: 70%;
 }
 
-.row {
-    width: 55%;
-    margin: 5% auto;
+.not-footer {
+    padding: 2vh 26vw 50vh 26vw;
     position: relative;
+    background-image: url(../gfx/aboutthisproject.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #01011f;
+
 }
 
 .image {
@@ -76,10 +92,11 @@ th {
 }
 
 * {
-	margin:0; 
+	margin:0;
 	padding:0;
 }
-.role { 
+
+.role {
 	float: right;
 	padding-right: 5%;
 }
@@ -95,7 +112,7 @@ th {
 
 .credits-wrapper {
     position: relative;
-
+    margin: 10vh 0;
 }
 
 .top {
