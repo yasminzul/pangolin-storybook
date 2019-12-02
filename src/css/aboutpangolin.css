@@ -142,7 +142,7 @@ body {
 {
   position: absolute;
   width: 25vw;
-  top: 48vh;
+  top: 28vh;
   left: 15vw;
 }
 
@@ -305,6 +305,16 @@ body {
   .swiper-pagination-bullet-active {
     opacity: 1;
     background-color: #fff !important;
+}
+
+.footer
+{
+  position: absolute;
+  width: 30vw;
+  bottom: 20vh;
+  left: 8vw;
+  font-size: 1.5vh;
+  text-align: left !important;
 }
 
 
