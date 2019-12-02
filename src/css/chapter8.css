@@ -139,6 +139,11 @@ svg {
 	top: 8%;
 }
 
+.left-top {
+  left: 5%;
+  top: 5%;
+}
+
 .right-center {
 	position: absolute;
 	width: 25%;
@@ -286,11 +291,13 @@ svg {
 #b-img {
   position: absolute;
   right: 5%;
+  top: 35%;
 }
 
 #a-img {
   position: absolute;
-  right: 25%;
+  right: 19%;
+  top: 35%;
 }
 
 #a-img, #b-img {
@@ -303,6 +310,36 @@ svg {
   font-weight: 400;
   font-style: normal;
   color: #fff;
+
+}
+
+#bm-img {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+#am-img {
+  position: absolute;
+  right: 19%;
+  top: 35%;
+}
+
+#am-img, #bm-img {
+  background-color: #362f2d;
+  width: 12%;
+  padding: 15px;
+  border-radius: 2.5px;
+  border: none;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+
+}
+
+#b-img:focus, #bm-img:focus, #a-img:focus, #am-img:focus {
+  opacity: 0.5;
 
 }
 
@@ -330,14 +367,13 @@ svg {
   }
 
   .mobile.map-text {
-    width: 25%;
+    width: 28%;
     top: 33%;
   }
 
   .left {
-    bottom: 2%;
     left: 5%;
-    top: 60%;
+    top: 47%;
   }
   .bottom {
     top: 33%;
@@ -347,6 +383,26 @@ svg {
   .right {
     bottom: 30%;
     right: 2%;
+  }
+
+  .top {
+    top: 3%;
+    right: 2%;
+  }
+
+  #am-img {
+    right: 19%;
+    top: 46%;
+  }
+
+  #bm-img{
+    right: 2%;
+    top: 46%;
+  }
+
+  #am-img, #bm-img {
+    width: 14%;
+    padding: 13px;
   }
  
 	#open-slider {
