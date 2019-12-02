@@ -45,6 +45,7 @@ $(".close").on("click", function(e) {
 // desktop popup
 
 $("#_1").click(function () {
+    console.log('click');
     $(".p-text").removeClass("active");
     $('#text-1').addClass("active");   
 });
