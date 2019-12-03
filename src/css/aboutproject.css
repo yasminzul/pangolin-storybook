@@ -18,7 +18,7 @@ section {
   box-sizing: border-box;
 }
 
-.not-footer p, table, .not-footer span, .top {
+.not-footer p, table, .not-footer span, .top, .bottom {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -119,7 +119,16 @@ th {
 	position: relative;
 	width: 100%;
 	font-size: 1.4vw;
-	text-align: center
+	text-align: center;
+
+}
+
+.bottom {
+	position: relative;
+	width: 100%;
+	font-size: 1vw;
+	text-align: center;
+  top: 4vh;
 }
 
 /*logo*/
