@@ -17,9 +17,10 @@ body {
 .main-content
 {
   position: absolute;
-  top: 20vh;
+  top: 18vh;
   left: 35vw;
   width: 35vw;
+
 }
 
 .main-content p
@@ -28,7 +29,8 @@ body {
   text-align: center;
   margin: 5vh 0;
   line-height: 1.8;
-  font-family: franklin-gothic-urw, sans-serif;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 2vh;
 }
 
 .main-content img
@@ -39,10 +41,15 @@ body {
 .main-content button
 {
   width: 25vw;
-  height: 9vh;
+  height: 7.5vh;
   margin: 1vh 5vw;
   text-transform: uppercase;
   border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.75vh;
+  border: 3px solid #ffffff;
+  background-color: transparent;
 }
 
 #orangasli-btn:hover
@@ -59,19 +66,6 @@ body {
   color: #000;
 }
 
-#orangasli-btn
-{
-  border: solid 3px #ffffff;
-  background-color: transparent;
-  color: #fff;
-}
-
-#expert-btn
-{
-  border: solid 3px #ffffff;
-  background-color: transparent;
-  color: #fff;
-}
 
 .swiper-container {
   width: 100%;
@@ -148,7 +142,7 @@ body {
 
 .s2
 {
-  font-size: 3vh;
+  font-size: 2.7vh;
   font-family: franklin-gothic-urw, sans-serif;
   color: #fff;
 }
@@ -156,6 +150,8 @@ body {
 .s2 p
 {
   text-align: left;
+  border-bottom: 2px solid #F88401;
+  padding-bottom: 2vh;
 }
 
 .s2 p span
@@ -168,7 +164,7 @@ body {
 .s2-text1
 {
   position: absolute;
-  width: 20vw;
+  width: 18vw;
   top: 50vh;
   left: 20vw;
 }
@@ -192,7 +188,7 @@ body {
 .s2-text4
 {
   position: absolute;
-  width: 20vw;
+  width: 18vw;
   top: 25vh;
   left: 12vw;
 }
@@ -208,7 +204,7 @@ body {
 .s2-text6
 {
   position: absolute;
-  width: 36vw;
+  width: 34vw;
   top: 5vh;
   right: 32vw;
 }
@@ -217,7 +213,7 @@ body {
 {
   position: absolute;
   width: 25vw;
-  top: 23vh;
+  top: 20vh;
   right: 8vw;
 }
 
