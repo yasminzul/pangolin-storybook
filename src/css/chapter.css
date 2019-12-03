@@ -16,16 +16,44 @@ p, .soundcite {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.3em;
     line-height: 1.5em;
 }
 
 .drop-cap {
-    font-size: 4.2em;
+    font-size: 6.5em;
     float: left;
-    margin-top: .27em;
+    margin-top: .31em;
     margin-right: .15em;
     line-height: 0.7;
+}
+
+
+blockquote.white
+{
+  color: #ffffffbf;
+  font-family: 'Averia Serif Libre', cursive;
+  font-style: italic;
+  margin: 5vh 5vw 5vh 3vw;
+  padding-bottom: 2vh;
+  font-size: 1.8em;
+  border-bottom: 2px solid #F88401;
+}
+
+blockquote span
+{
+  display: block;
+}
+
+blockquote.black
+{
+  color: #000;
+  font-family: 'Averia Serif Libre', cursive;
+  font-style: italic;
+  margin: 5vh 5vw 5vh 3vw;
+  padding-bottom: 2vh;
+  font-size: 1.8em;
+  border-bottom: 2px solid #F88401;
 }
 
 /*chapter names*/
