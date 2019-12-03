@@ -9,7 +9,6 @@ p {
 	font-family: franklin-gothic-urw, sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	text-transform: uppercase;
 	font-size: 0.8em;
 }
 
@@ -112,7 +111,7 @@ svg {
     text-align: center;
     border-style: none;
     color: #fff;
-
+    font-size: 1em;
     font-family: franklin-gothic-urw, sans-serif;
   	font-weight: 700;
   	font-style: normal;
@@ -162,6 +161,7 @@ svg {
 	position: absolute;
     text-align: left;
     width:25%;
+    z-index: 1;
 }
 
 .map-title {
@@ -180,9 +180,8 @@ svg {
 
 .slide-footer {
     position: absolute;
-    width: 100%;
     bottom: 0;
-    left: 0;
+    right: 2%;
 }
 
 .before-label {
@@ -190,6 +189,7 @@ svg {
     width: 35%;
     top: 35px;
     left: 20%;
+    z-index: 1;
 }
 
 .before-label span {
@@ -288,6 +288,16 @@ svg {
     background-color: #fff !important;
 }
 
+
+.active {
+  display: block !important;
+  position: absolute;
+}
+
+#a, #b {
+  display: none;
+}
+
 #b-img {
   position: absolute;
   right: 5%;
@@ -310,6 +320,7 @@ svg {
   font-weight: 400;
   font-style: normal;
   color: #fff;
+  z-index: 1;
 
 }
 
