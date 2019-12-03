@@ -40,10 +40,12 @@ $('#a-img').click(function(){
     $('#a').addClass('active');
   });
 
-$('#bm-img').click(function(){
+$('#am-img').click(function(){
 	$(".before-text").html("240,558");
 	$(".before-label span").html("Pangolin seized jan 2017 - aug 2019");
-    // $('#b').attr('src', '3be0acde17e949987fc0644502669eda.jpg');
+    $('#cm').css('display','none');
+    $('#bm').removeClass('active');
+    $('#am').addClass('active');
   });
 
 
@@ -54,10 +56,12 @@ $('#b-img').click(function(){
     $('#b').addClass('active');
   });
 
-$('#am-img').click(function(){
+$('#bm-img').click(function(){
 	$(".before-text").html("101,166");
 	$(".before-label span").html("Pangolin seized jan 2009 - dec 2016");
-    // $('#b').attr('src', 'f8318dc26b1c01dd6e9afa8cf9fbacd7.jpg');
+    $('#cm').css('display','none');
+    $('#am').removeClass('active');
+    $('#bm').addClass('active');
   });
 
 // tap to find legend

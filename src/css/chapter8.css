@@ -324,6 +324,12 @@ svg {
 
 }
 
+#am, #bm {
+  display: none;
+  position: absolute;
+}
+
+
 #bm-img {
   position: absolute;
   right: 5%;
@@ -338,15 +344,15 @@ svg {
 
 #am-img, #bm-img {
   background-color: #362f2d;
-  width: 12%;
-  padding: 15px;
+  width: 14%;
+  padding: 13px;
   border-radius: 2.5px;
   border: none;
   font-family: franklin-gothic-urw, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #fff;
-
+  z-index: 1;
 }
 
 #b-img:focus, #bm-img:focus, #a-img:focus, #am-img:focus {
@@ -399,21 +405,6 @@ svg {
   .top {
     top: 3%;
     right: 2%;
-  }
-
-  #am-img {
-    right: 19%;
-    top: 46%;
-  }
-
-  #bm-img{
-    right: 2%;
-    top: 46%;
-  }
-
-  #am-img, #bm-img {
-    width: 14%;
-    padding: 13px;
   }
  
 	#open-slider {
