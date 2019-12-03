@@ -16,7 +16,7 @@ p, .soundcite {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.3em !important;
     line-height: 1.5em;
 }
 
