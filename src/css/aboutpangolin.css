@@ -317,8 +317,8 @@ body {
   position: absolute;
   width: 26vw;
   bottom: 10vh;
-  left: 4vw;
-  font-size: 1.5vh;
+  left: 15vw;
+  font-size: 1.25vh;
   text-align: left !important;
   opacity: 0.7;
 }
