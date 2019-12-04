@@ -33,26 +33,24 @@ body {
   font-size: 2vh;
 }
 
+
+#orangasli-btn, #expert-btn 
+{
+  cursor: pointer;
+  width: 49%;
+}
+
 .main-content img
 {
   width: 100%;
 }
 
-.main-content button
-{
-  width: 25vw;
-  height: 7.5vh;
-  margin: 1vh 5vw;
-  text-transform: uppercase;
-  border-radius: 5px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.75vh;
-  border: 3px solid #ffffff;
-  background-color: transparent;
+.accrd {
+  margin: 5%;
+  font-size: 1.5em;
 }
 
-#orangasli-btn:hover
+/*#orangasli-btn:hover
 {
   border: solid 3px #ffffff;
   background-color: #ffffff;
@@ -65,7 +63,7 @@ body {
   background-color: #ffffff;
   color: #000;
 }
-
+*/
 
 .swiper-container {
   width: 100%;
@@ -349,12 +347,8 @@ body {
 
   .main-content p
   {
-    color: #fff;
-    text-align: center;
-    margin: 5vh 0;
-    line-height: 1.5;
-    font-size: 3vh;
-    font-family: franklin-gothic-urw, sans-serif;
+    margin: 5%;
+    font-size: 3.2vh;
   }
 
   .main-content button

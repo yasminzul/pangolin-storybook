@@ -17,7 +17,7 @@ svg {
 }
 
 .map-wrapper {
-	background-image: url(../gfx/route-map/main-img.png);
+	background-image: url(../gfx/route-map/map-main.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -105,16 +105,9 @@ svg {
 	position: relative;
     left: 19%;
     width: 18%;
-    height: 40px;
+    height: 60px;
     margin-top: 3%;
-    background-color: #e89c00;
-    text-align: center;
-    border-style: none;
-    color: #fff;
-    font-size: 1em;
-    font-family: franklin-gothic-urw, sans-serif;
-  	font-weight: 700;
-  	font-style: normal;
+    /*background-color: #e89c00;*/
 }
 
 .left{
@@ -318,8 +311,8 @@ svg {
 
 #a-img, #b-img {
   background-color: #362f2d;
-  width: 12%;
-  padding: 15px;
+  width: 13%;
+  padding: 13px;
   border-radius: 2.5px;
   border: none;
   font-family: franklin-gothic-urw, sans-serif;
@@ -338,19 +331,19 @@ svg {
 
 #bm-img {
   position: absolute;
-  right: 5%;
-  top: 35%;
+  right: 2%;
+  top: 200px;
 }
 
 #am-img {
   position: absolute;
-  right: 19%;
-  top: 35%;
+  right: 20%;
+  top: 200px;
 }
 
 #am-img, #bm-img {
   background-color: #362f2d;
-  width: 14%;
+  width: 17%;
   padding: 13px;
   border-radius: 2.5px;
   border: none;
@@ -409,13 +402,13 @@ svg {
   }
 
   .top {
-    top: 3%;
+    top: 40px;
     right: 2%;
   }
 
 	#open-slider {
 		left: 16%;
-    	width: 23%;
+    width: 25%;
 	}
 
 /*	#overlay-text {
@@ -426,10 +419,11 @@ svg {
     padding: 20px;
 	}*/
 
+
   .before-label {
     width: 35%;
     left: 25%;
-    top: 3%;
+    top: 15px;
   }
 
 	.before-text {
