@@ -312,7 +312,7 @@ svg {
 
 #a-img, #b-img {
   background-color: #362f2d;
-  width: 12%;
+  width: 17%;
   padding: 15px;
   border-radius: 2.5px;
   border: none;
@@ -332,19 +332,19 @@ svg {
 
 #bm-img {
   position: absolute;
-  right: 5%;
-  top: 35%;
+  right: 2%;
+  top: 200px;
 }
 
 #am-img {
   position: absolute;
-  right: 19%;
-  top: 35%;
+  right: 20%;
+  top: 200px;
 }
 
 #am-img, #bm-img {
   background-color: #362f2d;
-  width: 14%;
+  width: 17%;
   padding: 13px;
   border-radius: 2.5px;
   border: none;
@@ -403,13 +403,13 @@ svg {
   }
 
   .top {
-    top: 3%;
+    top: 40px;
     right: 2%;
   }
  
 	#open-slider {
 		left: 16%;
-    	width: 23%;
+    width: 25%;
 	}
 
 /*	#overlay-text {
@@ -423,7 +423,7 @@ svg {
   .before-label {
     width: 35%;
     left: 25%;
-    top: 3%;
+    top: 15px;
   }
 
 	.before-text {
