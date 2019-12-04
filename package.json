@@ -31,6 +31,7 @@
     "html-webpack-plugin": "^3.2.0",
     "scrollmagic": "^2.0.7",
     "style-loader": "^1.0.1",
+    "web-dev-server": "^1.6.7",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
