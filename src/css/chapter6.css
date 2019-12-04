@@ -60,15 +60,25 @@ body {
 }
 
 #open-slider {
-	position: relative;
-    margin: 0 auto;
-    display: block;
-    height: 40px;
-    background-color: #e89c00;
-    text-align: center;
-    border-style: none;
-    color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3%;
+  display: inline-block;
+  background-color: #e89c00;
+  text-align: center;
+  border-style: none;
+  color: #fff;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
 }
+
+#open-slider img {
+  width: 100%;
+}
+
 
 
 .all {
