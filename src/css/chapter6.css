@@ -10,13 +10,13 @@ p, a, .drop-cap {
 
 .chapter-name {
 	top: 13%;
-  left: 21%;
+  left: 25%;
+  width: 30%;
 }
 
 .chapter-name img {
-	width: 70%;
+  width: 50% !important;
 }
-
 
 body {
     width: 100vw;
@@ -185,7 +185,7 @@ body {
 @media only screen and (max-width: 900px) {
 
 	.chapter-name {
-		left: 20%;
+		left: 22%;
 	}
 
 
