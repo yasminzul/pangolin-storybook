@@ -17,7 +17,7 @@ svg {
 }
 
 .map-wrapper {
-	background-image: url(../gfx/route-map/main-img.png);
+	background-image: url(../gfx/route-map/map-main.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
 }
