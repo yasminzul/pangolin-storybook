@@ -10,11 +10,11 @@ p, a, .drop-cap {
 
 .chapter-name {
 	top: 13%;
-    left: 24%;
+  left: 21%;
 }
 
 .chapter-name img {
-	width: 45% !important;
+	width: 70%;
 }
 
 
@@ -37,6 +37,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.court-doc {
+  margin: 0 10%;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
 }
 
 .close {
