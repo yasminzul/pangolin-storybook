@@ -144,9 +144,15 @@ blockquote.black
     	width: 100%;
     }
 
+    .prev-next-btn span
+    {
+      display: block;
+      font-size: 0.5em;
+    }
+
     #prev-chapter
     {
-    	height: 5vh;
+    	height: 6.5vh;
     	background-image: url(../gfx/previous-button.svg);
     	background-repeat: no-repeat;
     	background-size: 3vh auto;
@@ -166,7 +172,7 @@ blockquote.black
 
     #next-chapter
     {
-    	height: 5vh;
+    	height: 6.5vh;
     	background-image: url(../gfx/next-button.svg);
     	background-repeat: no-repeat;
     	background-size: 3vh auto;
