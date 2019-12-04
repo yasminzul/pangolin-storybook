@@ -312,8 +312,8 @@ svg {
 
 #a-img, #b-img {
   background-color: #362f2d;
-  width: 17%;
-  padding: 15px;
+  width: 13%;
+  padding: 13px;
   border-radius: 2.5px;
   border: none;
   font-family: franklin-gothic-urw, sans-serif;
@@ -419,6 +419,7 @@ svg {
     background-color: #ffffffc4;
     padding: 20px;
 	}*/
+
 
   .before-label {
     width: 35%;
