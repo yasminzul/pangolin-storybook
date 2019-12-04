@@ -47,19 +47,11 @@ body
 
 .story-btn
 {
-  height: 7.5vh;
-  width: 13vw;
-  border-radius: 1vh;
-  margin: 2vh 0.5vw;
-
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.75vh;
-  color: #fff;
-  background-color: transparent;
-  border: #fff solid 2px;
+  width: 49%;
   cursor: pointer;
+  height: 8.5vh;
 }
+
 
 #Title
 {
