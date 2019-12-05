@@ -82,9 +82,9 @@ $('#blue-blackbellied_Image').on('click', function (){
 	$('.route-legend span').text("Black-bellied Pangolin/Long-tailed Pangolin (vulnerable)");
 });
 
-$('#red-giantground_Image').on('click', function (){
-	$('.route-legend span').text("Giant Ground Pangolin (extinct)");
-});
+// $('#red-giantground_Image').on('click', function (){
+// 	$('.route-legend span').text("Giant Ground Pangolin (extinct)");
+// });
 
 $('#violet-indian_Image').on('click', function (){
 	$('.route-legend span').text("Indian Pangolin (endangered)");
@@ -95,9 +95,9 @@ $('#orange-chinese_Image').on('click', function (){
 });
 
 $('#pink-philippine_Image').on('click', function (){
-	$('.route-legend span').text("Philippine Pangolin (endangered)");
+	$('.route-legend span').text("Sunda Pangolin (critically endangered)");
 });
 
 $('#green-sunda_Image').on('click', function (){
-	$('.route-legend span').text("Sunda Pangolin (critically endangered)");
+	$('.route-legend span').text("Philippine Pangolin (endangered)");
 });
