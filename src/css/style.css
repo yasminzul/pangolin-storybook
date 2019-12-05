@@ -18,6 +18,20 @@ body
   width: 95%;
 }
 
+.logos {
+  position: absolute;
+  top: 1%;
+  right: 0;
+  opacity: 0.5;
+  width: 30%;
+}
+
+.logos img {
+  width: 25%;
+  height: 4vh;
+  padding: 5px;
+}
+
 .main-intro
 {
   color: #fff;
@@ -58,6 +72,10 @@ body
   {
     margin: 0 0 10vh 0;
     width: 80%;
+  }
+
+  .logos {
+    right: 3%;
   }
 
   .pangolin-btn

@@ -60,6 +60,10 @@ p {
   font-size: 0.5em;
 }
 
+.quiz {
+	cursor: no-drop;
+}
+
 #prev-chapter
 {
    	height: 6.5vh;
@@ -74,7 +78,7 @@ p {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
-
+	margin-left: 1vw;
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -94,7 +98,7 @@ p {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
-
+	margin-right: 1vw;
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;

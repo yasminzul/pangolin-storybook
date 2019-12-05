@@ -32,7 +32,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 <tr>
   <td><a href=chapter-15.html><img src=/menu/forest@3x.png></a></td>
   <td><a href=about-project.html><img src=/menu/aboutproject@3x.png></a></td>
-  <td><a href=quiz.html><img src=/menu/quiz@3x.png></a></td>
+  <td><img src=/menu/quiz@3x.png></td>
   <td><a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><img src=/menu/globalstory@3x.png></a></td>
   <td><img src=/menu/share@3x.png></td>
 </tr>
