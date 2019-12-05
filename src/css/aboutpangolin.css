@@ -342,6 +342,7 @@ body {
     top: 15vh;
     left: 35vw;
     width: 35vw;
+    z-index: 1;
   }
 
   .main-content p
@@ -382,7 +383,7 @@ body {
   .s1-text4, .s1-text6
   {
     width: 33vw;
-    top: 12vh;
+    top: 4vh;
     left: 8vw;
   }
 
@@ -403,7 +404,7 @@ body {
   .s1-text10
   {
     width: 32vw;
-    top: 25vh;
+    top: 18vh;
     left: 10vw;
   }
 
@@ -458,6 +459,12 @@ body {
     width: 30vw;
     top: 10vh;
     right: 5vw;
+  }
+
+  .footer{
+    left: 10vw;
+    bottom: 1vh;
+    font-size: 0.9vw;
   }
 
   .prev-next-btn

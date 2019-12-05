@@ -28,6 +28,12 @@ $(".close").on("click", function() {
   $("#orangasli-popup").css('display','none');
 });
 
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('#orangasli-popup').css('display','none');
+  }
+});
+
 
 //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
 $("#expert-btn").on("click", function() {
@@ -49,3 +55,12 @@ $("#expert-btn").on("click", function() {
 $(".close").on("click", function() {
   $("#expert-popup").css('display','none');
 });
+
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('#expert-popup').css('display','none');
+  }
+});
+
+
+

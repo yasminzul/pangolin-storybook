@@ -133,6 +133,12 @@ svg {
 .left-top {
   left: 5%;
   top: 5%;
+  width: 29% !important;
+}
+
+.middle {
+  bottom: 16%;
+  right: 5%;
 }
 
 .right-center {
@@ -157,10 +163,9 @@ svg {
 }
 
 .map-title {
-	font-size: 1em;
-	font-family: 'Averia Serif Libre', cursive;
-  line-height: 25px;
-  font-weight: 300;
+    font-family: 'Averia Serif Libre', serif;
+    color: #000;
+    font-size: 1em;
 }
 
 .mobile {
@@ -208,6 +213,7 @@ svg {
     line-height: 19px;
     width: 30%;
     top: 5%;
+    left: 1%;
     text-transform: uppercase;
     font-family: franklin-gothic-urw, sans-serif;
 }
@@ -335,7 +341,7 @@ svg {
 #am-img {
   position: absolute;
   right: 2%;
-  top: 200px;
+  top: 250px;
   cursor: pointer;
 
 }
@@ -343,7 +349,7 @@ svg {
 #bm-img {
   position: absolute;
   right: 20%;
-  top: 200px;
+  top: 250px;
   cursor: pointer;
 
 }
@@ -386,7 +392,7 @@ svg {
 	}
 
   .map-title {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .mobile.map-text {
@@ -396,11 +402,12 @@ svg {
 
   .left {
     left: 5%;
-    top: 47%;
+    top: 38%;
   }
   .bottom {
     top: 33%;
     left: 2%;
+    width: 30%;;
   }
 
   .right {
@@ -411,6 +418,7 @@ svg {
   .top {
     top: 40px;
     right: 2%;
+    width: 30%;
   }
 
 	#open-slider {
