@@ -1,9 +1,9 @@
-.wrapper
+body
 {
   background-image: url(../gfx/chapter-titles/theforest.svg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 p, .drop-cap {
@@ -44,7 +44,7 @@ p, .drop-cap {
         background: #000;
         margin: 5px;
     }
-    
+
     .youtube-player iframe {
         position: absolute;
         top: 0;
@@ -54,7 +54,7 @@ p, .drop-cap {
         z-index: 100;
         background: transparent;
     }
-    
+
     .youtube-player img {
         bottom: 0;
         display: block;
@@ -72,11 +72,11 @@ p, .drop-cap {
         -moz-transition: .4s all;
         transition: .4s all;
     }
-    
+
     .youtube-player img:hover {
         -webkit-filter: brightness(75%);
     }
-    
+
     .youtube-player .play {
         height: 72px;
         width: 72px;

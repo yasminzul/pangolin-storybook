@@ -2,7 +2,7 @@ p, .drop-cap {
   color: #fff;
 }
 
-.wrapper {
+body {
   background: url(../gfx/chapter-titles/boatman.svg) no-repeat fixed;
   background-size: cover;
 }
