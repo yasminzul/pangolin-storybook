@@ -24,9 +24,9 @@ body {
     margin: 0;
 }
 
-/*svg {
-	width: 100vw;
-}*/
+svg {
+	height: 100vh;
+}
 
 .popup {
   display: none;
@@ -110,8 +110,8 @@ body {
 
 .route-btn button {
     background-color: #ef6737;
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
     margin: 7px;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -211,7 +211,7 @@ body {
    .route-btn{
     position: absolute;
     display: grid;
-    right: 0;
+    right: 1%;
     top: 45px;
   }
 
