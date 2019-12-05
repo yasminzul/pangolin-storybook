@@ -1,10 +1,5 @@
-body {
-    width: 100vw;
-    overflow: hidden;
-    margin: 0;
-}
 
-.wrapper {
+body {
   background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
   background-size: cover;
 }
@@ -157,7 +152,7 @@ p, a, .drop-cap, .soundcite {
 .route-btn button {
     animation: animate-pulse 3s linear infinite;
     cursor: pointer;
-} 
+}
 
 #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg  {
   animation: svg-pulse 2s linear infinite;
@@ -194,7 +189,7 @@ p, a, .drop-cap, .soundcite {
     100%{
         box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 10px rgba(255,109,74,0);
     }
-   } 
+   }
 
 
 .p-text {

@@ -1,9 +1,9 @@
-.wrapper
+body
 {
   background-image: url(../gfx/chapter-titles/hunters.svg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 p, .drop-cap {

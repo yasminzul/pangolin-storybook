@@ -3,6 +3,9 @@ body {
     overflow: hidden;
     margin: 0;
     background-color: #a1a686;
+    background-image: url(../gfx/route-map/map-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p {
@@ -16,11 +19,6 @@ svg {
 	width: 100vw;
 }
 
-.map-wrapper {
-	background-image: url(../gfx/route-map/map-main.jpg);
-	background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .swiper-container {
   width: 100%;
