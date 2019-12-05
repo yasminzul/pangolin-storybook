@@ -407,5 +407,25 @@ body
 		padding: 0 27vw;
 	}
 
+	#prev-chapter
+	{
+		height: 8.5vh;
+		background-size: 4.75vh auto;
+		background-position: 5% center;
+		padding: 1.5vh 2vh 1.5vh 9vh;
+		border-radius: 5px;
+		font-size: 1.75vw;
+	}
+
+	#next-chapter
+	{
+		height: 8.5vh;
+		background-size: 4.75vh auto;
+		background-position: 93% center;
+		padding: 1.5vh 9vh 1.5vh 2vh;
+		border-radius: 5px;
+		font-size: 1.75vw;
+	}
+
 
 }

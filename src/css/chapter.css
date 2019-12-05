@@ -28,32 +28,36 @@ p, .soundcite {
     line-height: 0.7;
 }
 
-
-blockquote.white
+blockquote
 {
-  color: #ffffffbf;
   font-family: 'Averia Serif Libre', cursive;
+  font-weight: 300;
   font-style: italic;
   margin: 5vh 5vw 5vh 3vw;
   padding-bottom: 2vh;
   font-size: 1.8em;
   border-bottom: 2px solid #F88401;
+}
+
+
+blockquote.white
+{
+  color: #ffffffbf;
 }
 
 blockquote span
 {
   display: block;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.5em;
+  margin-top: 1vh;
 }
 
 blockquote.black
 {
   color: #000000bf;
-  font-family: 'Averia Serif Libre', cursive;
-  font-style: italic;
-  margin: 5vh 5vw 5vh 3vw;
-  padding-bottom: 2vh;
-  font-size: 1.8em;
-  border-bottom: 2px solid #F88401;
 }
 
 /*chapter names*/
@@ -170,6 +174,26 @@ blockquote.black
     	font-style: normal;
     }
 
+    #prev-chapter-one
+    {
+      height: 6.5vh;
+      background-image: url(../gfx/previous-button.svg);
+      background-repeat: no-repeat;
+      background-size: 3vh auto;
+      background-position: 5% center;
+      float: left;
+      padding: 2vh 2vh 2vh 6vh;
+      box-sizing: border-box;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      border-radius: 5px;
+
+      font-family: franklin-gothic-urw, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
     #next-chapter
     {
     	height: 6.5vh;
@@ -249,18 +273,54 @@ blockquote.black
     font-size: 2vh;
   }
 
+  blockquote
+  {
+    font-size: 3vw;
+  }
+
+
   .drop-cap {
-      font-size: 4em;
+      font-size: 3.8em;
       float: left;
-      margin-top: .26em;
-      margin-right: .15em;
-      line-height: 0.8;
+      margin-top: .3em;
+      margin-right: .1em;
+      line-height: 0.7;
   }
 
   .slide-caption p {
     font-size: 1.6vw;
     line-height: 1.2;
     padding-bottom: 5vh;
+  }
+
+  #prev-chapter
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 1.5vh 2vh 1.5vh 8vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #prev-chapter-one
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 2.5vh 2vh 2.5vh 9vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter
+  {
+    height: 8.5vh;
+    background-size: 5vh auto;
+    background-position: 93% center;
+    padding: 1.5vh 9vh 1.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
   }
 
 }
