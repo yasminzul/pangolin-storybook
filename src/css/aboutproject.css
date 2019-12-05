@@ -13,7 +13,6 @@ section {
     font-weight: 300;
     font-size: 1em;
     color: #fff;
-    line-height: 25px;
 }
 
 .not
@@ -109,7 +108,7 @@ th {
 .top {
 	position: relative;
 	width: 100%;
-	font-size: 1.4vw;
+	font-size: 1em;
 	text-align: center;
 
 }
@@ -117,7 +116,7 @@ th {
 .bottom {
 	position: relative;
 	width: 100%;
-	font-size: 1vw;
+	font-size: 1em;
 	text-align: center;
   top: 4vh;
 }
@@ -149,6 +148,10 @@ th {
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+
+	body {
+		font-size: 0.7em;
+	}
 
 	table {
 		line-height: 20px;

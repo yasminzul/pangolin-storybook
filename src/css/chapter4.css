@@ -43,10 +43,19 @@ p, a, .drop-cap, .soundcite {
   position: fixed;
   right: 0;
   top: 0;
+  margin-right: 3vw;
+  margin-top: 5vh;
   z-index: 800;
   width: 45px;
   background-color: #ffffff00;
   border: none;
+  width: 37px;
+  font-size: 30px;
+  color: #000;
+  border-radius: 50%;
+  background-color: #00000038;
+  border: none;
+   cursor: pointer;
 }
 
 .close i {
@@ -71,7 +80,7 @@ p, a, .drop-cap, .soundcite {
 #open-slider span {
   color: #fff;
   display: inline-block;
-  width: 50%;
+  width: 41%;
   position: absolute;
   top: 25%;
   right: 3%;
