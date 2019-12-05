@@ -13,7 +13,6 @@ section {
     font-weight: 300;
     font-size: 1em;
     color: #fff;
-    line-height: 25px;
 }
 
 .not
@@ -69,6 +68,11 @@ section {
   box-sizing: border-box;
 }
 
+.logo div {
+	text-align: center;
+	font-family: franklin-gothic-urw, sans-serif;
+}
+
 
 /*credits*/
 
@@ -109,7 +113,7 @@ th {
 .top {
 	position: relative;
 	width: 100%;
-	font-size: 1.4vw;
+	font-size: 1em;
 	text-align: center;
 
 }
@@ -117,9 +121,13 @@ th {
 .bottom {
 	position: relative;
 	width: 100%;
-	font-size: 1vw;
+	font-size: 1em;
 	text-align: center;
   top: 4vh;
+}
+.icon {
+	font-size: 25px;
+	padding: 3px;
 }
 
 /*logo*/
@@ -149,6 +157,10 @@ th {
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+
+	body {
+		font-size: 0.7em;
+	}
 
 	table {
 		line-height: 20px;
