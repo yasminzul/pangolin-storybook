@@ -1,6 +1,8 @@
 body
 {
-  background-image: url(../gfx/chapter-titles/theforest.svg) no-repeat fixed;
+  background-image: url(../gfx/chapter-titles/theforest.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
