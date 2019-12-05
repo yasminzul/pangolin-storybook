@@ -159,45 +159,46 @@ p, .drop-cap {
 
 #prev-chapter
 {
-	height: 6.5vh;
-	background-image: url(../gfx/previous-button.svg);
-	background-repeat: no-repeat;
-	background-size: 3vh auto;
-	background-position: 5% center;
-	float: left;
-	padding: 1.5vh 2vh 1.5vh 6vh;
-	margin-left: 1vw;
-	box-sizing: border-box;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.3);
-	text-transform: uppercase;
-	border-radius: 5px;
+  height: 6.5vh;
+  background-image: url(../gfx/previous-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 5% center;
+  float: left;
+  padding: 1.5vh 2vh 1.5vh 6vh;
+  margin-left: 1vw;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
 
   font-family: franklin-gothic-urw, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #next-chapter
 {
-	height: 6.5vh;
-	background-image: url(../gfx/next-button.svg);
-	background-repeat: no-repeat;
-	background-size: 3vh auto;
-	background-position: 93% center;
-	float: right;
-	padding: 1.5vh 6vh 1.5vh 2vh;
-	margin-right: 1vw;
-	box-sizing: border-box;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.3);
-	text-transform: uppercase;
-	border-radius: 5px;
+  height: 6.5vh;
+  background-image: url(../gfx/next-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 93% center;
+  float: right;
+  padding: 1.5vh 6vh 1.5vh 2vh;
+  margin-right: 1vw;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
 
   font-family: franklin-gothic-urw, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
+
 
 .swiper-pagination-bullet {
     width: 9px;
@@ -226,6 +227,26 @@ p, .drop-cap {
   {
     width: 100%;
     font-size: 2vh;
+  }
+
+  #prev-chapter
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 1.5vh 2vh 1.5vh 9vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 93% center;
+    padding: 1.5vh 9vh 1.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
   }
 
 }

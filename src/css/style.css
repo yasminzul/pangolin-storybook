@@ -14,40 +14,26 @@ body
 
 .title
 {
-  margin: 0 0 8vh 0;
+  margin: 0 0 18vh 0;
+  width: 95%;
 }
 
 .main-intro
 {
   color: #fff;
-  margin: 5vh 32vw;
   font-size: 2vh;
   text-align: center;
   font-weight: 300;
   position: absolute;
-  bottom: 12vh;
+  top: 0;
+  height: 100vh;
+  padding: 10vh 32vw;
 }
 
 .main-intro p
 {
   line-height: 1.3;
   opacity: 0.75;
-}
-
-.pangolin-btn
-{
-  height: 7.5vh;
-  width: 13vw;
-  border-radius: 1vh;
-  margin: 2vh 0.5vw;
-
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.75vh;
-  color: #fff;
-  background-color: transparent;
-  border: #fff solid 2px;
-  cursor: pointer;
 }
 
 .story-btn
@@ -58,35 +44,20 @@ body
 }
 
 
-#Title
-{
-
-}
-
-#pangolin_eye_Image
-{
-
-}
-
-#redeye-01_Image, #redeye-02_Image, #redeye-03_Image, #redeye-04_Image, #redeye-05_Image,
-#redeye-06_Image, #redeye-07_Image, #redeye-08_Image, #redeye-09_Image, #redeye-10_Image,
-{
-
-}
-
-#leaves_02_Image-2
-{
-
-}
 
 @media only screen and (max-width: 900px) {
 
   .main-intro
   {
     color: #fff;
-    margin: 5vh 25vw;
     font-size: 2.45vh;
-    bottom: 4vh;
+    padding: 10vh 25vw;
+  }
+
+  .title
+  {
+    margin: 0 0 10vh 0;
+    width: 80%;
   }
 
   .pangolin-btn
