@@ -54,11 +54,12 @@ section {
 }
 
 .not-footer {
-    padding: 2vh 26vw 50vh 26vw;
+    padding: 2vh 26vw 30vh 26vw;
     position: relative;
     background-image: url(../gfx/aboutthisproject.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: contain;
     background-color: #01011f;
 
 }

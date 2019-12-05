@@ -10,13 +10,13 @@ p, a, .drop-cap {
 
 .chapter-name {
 	top: 13%;
-    left: 24%;
+  left: 25%;
+  width: 30%;
 }
 
 .chapter-name img {
-	width: 45% !important;
+  width: 50% !important;
 }
-
 
 body {
     width: 100vw;
@@ -39,6 +39,12 @@ body {
   left: 0;
 }
 
+.court-doc {
+  margin: 0 10%;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+}
+
 .close {
   position: fixed;
   right: 0;
@@ -54,15 +60,25 @@ body {
 }
 
 #open-slider {
-	position: relative;
-    margin: 0 auto;
-    display: block;
-    height: 40px;
-    background-color: #e89c00;
-    text-align: center;
-    border-style: none;
-    color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3%;
+  display: inline-block;
+  background-color: #e89c00;
+  text-align: center;
+  border-style: none;
+  color: #fff;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
 }
+
+#open-slider img {
+  width: 100%;
+}
+
 
 
 .all {
@@ -169,7 +185,7 @@ body {
 @media only screen and (max-width: 900px) {
 
 	.chapter-name {
-		left: 20%;
+		left: 22%;
 	}
 
 
