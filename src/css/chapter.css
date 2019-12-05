@@ -208,6 +208,26 @@ blockquote.black
       font-style: normal;
     }
 
+    #next-chapter-one
+    {
+      height: 6.5vh;
+      background-image: url(../gfx/next-button.svg);
+      background-repeat: no-repeat;
+      background-size: 3vh auto;
+      background-position: 93% center;
+      float: right;
+      padding: 2vh 6vh 2vh 2vh;
+      box-sizing: border-box;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      border-radius: 5px;
+
+      font-family: franklin-gothic-urw, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
     /*swiper*/
 
     .swiper-container {
@@ -313,6 +333,16 @@ blockquote.black
     background-size: 5vh auto;
     background-position: 93% center;
     padding: 1.5vh 9vh 1.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter-one
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 93% center;
+    padding: 2.5vh 9vh 2.5vh 2vh;
     border-radius: 5px;
     font-size: 1.75vw;
   }
