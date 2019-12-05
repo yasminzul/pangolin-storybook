@@ -166,11 +166,16 @@ body
   width: 100vw;
   margin: 0;
   z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block !important;
 }
 
-.animsition
+.full-orientation img
 {
-  display: none;
+  width: 100%;
 }
+
 
 }

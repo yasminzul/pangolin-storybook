@@ -40,7 +40,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </div>`;
 
 
-let orientation = "<div class=full-orientation></div>";
+let orientation = `<div class="full-orientation"><img src=/menu/rotate.gif></div>`;
 
 $( window ).on( "load", function() {
   $('body').append(menu);
