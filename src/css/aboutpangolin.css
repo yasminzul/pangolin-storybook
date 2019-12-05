@@ -38,6 +38,12 @@ body {
   width: 49%;
 }
 
+#orangasli-btn:hover , #expert-btn:hover
+{
+  -webkit-filter: hue-rotate(10deg);
+  filter: hue-rotate(10deg);
+}
+
 .main-content img
 {
   width: 100%;
