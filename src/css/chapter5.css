@@ -25,6 +25,14 @@ p, .drop-cap {
   width: 100%;
 }
 
+ .swipe {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    border: none !important;
+    color: #000;
+  }
+
 #open-trail {
   cursor: pointer;
   width: 49%;
@@ -233,6 +241,10 @@ p, .drop-cap {
 	.trail-text {
 		top: 12%;
 	}
+
+  .swipe {
+    bottom: 6%;
+  }
 
   .chapter-name {
   	  top: 18%;

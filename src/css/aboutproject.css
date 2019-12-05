@@ -68,6 +68,11 @@ section {
   box-sizing: border-box;
 }
 
+.logo div {
+	text-align: center;
+	font-family: franklin-gothic-urw, sans-serif;
+}
+
 
 /*credits*/
 
@@ -119,6 +124,10 @@ th {
 	font-size: 1em;
 	text-align: center;
   top: 4vh;
+}
+.icon {
+	font-size: 25px;
+	padding: 3px;
 }
 
 /*logo*/
