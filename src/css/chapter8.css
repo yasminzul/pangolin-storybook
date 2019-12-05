@@ -291,13 +291,13 @@ svg {
   display: none;
 }
 
-#b-img {
+#a-img {
   position: absolute;
   right: 5%;
   top: 45%;
 }
 
-#a-img {
+#b-img {
   position: absolute;
   right: 19%;
   top: 45%;
@@ -323,13 +323,13 @@ svg {
 }
 
 
-#bm-img {
+#am-img {
   position: absolute;
   right: 2%;
   top: 200px;
 }
 
-#am-img {
+#bm-img {
   position: absolute;
   right: 20%;
   top: 200px;
