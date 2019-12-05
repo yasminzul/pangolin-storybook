@@ -84,27 +84,8 @@ body
 {
 	width: 40%;
 	height: 16vh;
-	margin: 5vh auto;
-}
-
-#lactation-btn {
-	/* margin-top: -30%; */
-	/*background-color: #362f2d;*/
-}
-
-#furuncle-btn {
-	/* margin-top: -25%; */
-	/*background-color: #934a0d;*/
-}
-
-#arthritis-btn {
-	/* margin-top: -20%; */
-	/*background-color: #754c24;*/
-}
-
-#detox-btn {
-	/* margin-top: -15%; */
-	/*background-color: #a57b4a;*/
+	margin: 3vh auto;
+	cursor: pointer;
 }
 
 .close
@@ -161,6 +142,7 @@ body
 	font-family: franklin-gothic-urw, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	text-align: center;
 }
 
 .note-text {
@@ -169,7 +151,7 @@ body
 	font-weight: 400;
 	line-height: 1.5;
 	text-align: center;
-	width: 80%;
+	width: 40%;
     margin: 0 auto;
 
 }
@@ -350,36 +332,25 @@ body
 	.center-bottom {
 		margin: 0 auto;
 		position: relative;
-		margin-top: 5%;
+		margin-top: 2%;
 		right: 0;
 		bottom: 0;
-		margin-bottom: 5%;
+		margin-bottom: 2%;
 	}
 
-	.button-cluster button {
-		width: 25vw;
-		height: 10vh;
-		float: right;
-		border-style: none;
-		outline: 0;
-		z-index: 600;
-		margin: 1vh 1vw;
-
-		font-size: 10px;
-		padding: 1vw;
-		border-radius: 2.75px;
-		font-family: franklin-gothic-urw, sans-serif;
-		font-size: 700;
-		color: #fff;
-		text-transform: uppercase;
-	}
 
 	.button-cluster
 	{
-		width: 55vw;
+		width: 40%;
 		height: 30vh;
-		margin: 0 22.5vw;
+		margin: 0 auto;
 		position: static;
+	}
+
+	.button-cluster img {
+		width: 49%;
+		height: 11.5vh;
+		margin: 0 auto;
 	}
 
 	.prev-next-btn

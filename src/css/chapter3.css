@@ -1,5 +1,5 @@
 body {
-  background: url(../gfx/chapter-titles/smuggler.svg) no-repeat fixed;
+  background: url(../gfx/chapter-titles/smuggler.jpg) no-repeat fixed;
   background-size: cover;
 }
 
@@ -17,11 +17,11 @@ p, .drop-cap, .soundcite, .photo-caption {
 }
 
 .soundcite-play:before {
-	border-left: 0.75em solid white !important;
+	border-left: 0.95em solid white !important;
 }
 
 .soundcite-pause:before {
-	border-left: .75em double white !important;
+	border-left: .95em double white !important;
 }
 
 .caption{

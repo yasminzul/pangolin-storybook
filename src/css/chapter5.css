@@ -3,7 +3,7 @@ body {
     width: 100vw;
     overflow: hidden;
     margin: 0;
-    background: url(../gfx/chapter-titles/followthetrail.svg) no-repeat fixed;
+    background: url(../gfx/chapter-titles/followthetrail.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -146,7 +146,7 @@ p, .drop-cap {
 
 
 .trail-text p {
-	font-family: 'IM Fell Double Pica SC', serif;
+	font-family: 'Averia Serif Libre', serif;
 	color: #000;
 	font-size: 1.5em;
 }

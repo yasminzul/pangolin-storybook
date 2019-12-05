@@ -1,6 +1,6 @@
 
 body {
-  background: url(../gfx/chapter-titles/thepoliceman.svg) no-repeat fixed;
+  background: url(../gfx/chapter-titles/thepoliceman.jpg) no-repeat fixed;
   background-size: cover;
 }
 
@@ -18,11 +18,11 @@ p, a, .drop-cap, .soundcite {
 }
 
 .soundcite-play:before {
-	border-left: 0.75em solid white !important;
+	border-left: 0.95em solid white !important;
 }
 
 .soundcite-pause:before {
-	border-left: .75em double white !important;
+	border-left: .95em double white !important;
 }
 
 

@@ -9,7 +9,7 @@ body {
 {
   height: 100vh;
   overflow: overlay;
-  background-image: url(../gfx/chapter-titles/rainiessong.svg);
+  background-image: url(../gfx/chapter-titles/rainiessong.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -37,10 +37,10 @@ p {
 }
 
 .chapter-name {
-    width: 20%;
+    width: 22%;
     position: absolute;
     top: 3%;
-    right: 24%;
+    right: 23%;
 }
 
 .chapter-name img {
@@ -60,6 +60,10 @@ p {
   font-size: 0.5em;
 }
 
+.quiz {
+	cursor: no-drop;
+}
+
 #prev-chapter
 {
    	height: 6.5vh;
@@ -74,7 +78,7 @@ p {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
-
+	margin-left: 1vw;
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -94,7 +98,7 @@ p {
 	background-color: rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	border-radius: 5px;
-
+	margin-right: 1vw;
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -105,17 +109,24 @@ p {
 @media only screen and (max-width: 900px) {
 
 	.row {
-		margin-top: 10%;
+		margin-top: 5%;
+		width: 45%;
+		padding: 10px 15px;
 	}
 
-	.right {
+/*	.right {
 		margin-right: 16%;
-	}
+	}*/
 
 	p {
 		margin: 0;
-		font-size: 0.9em;
-    	line-height: 16px;
+		font-size: 0.8em;
+    	line-height: 12px;
+	}
+
+	.chapter-name {
+		width: 20%;
+		right: 27%;
 	}
 
   .prev-next-btn
