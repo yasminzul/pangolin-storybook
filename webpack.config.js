@@ -17,7 +17,6 @@ module.exports = {
     chapter4: './src/js/chapter4.js',
     chapter5: './src/js/chapter5.js',
     chapter6: './src/js/chapter6.js',
-    chapter7: './src/js/chapter7.js',
     chapter8: './src/js/chapter8.js',
     chapter9: './src/js/chapter9.js',
     chapter10: './src/js/chapter10.js',
@@ -135,12 +134,6 @@ module.exports = {
         inject: true,
         chunks: ['chapter6','view','chapter'],
         filename: 'chapter-6.html'
-    }),
-    new HtmlWebpackPlugin({
-        template: './src/chapter-7.html',
-        inject: true,
-        chunks: ['chapter7','view','chapter'],
-        filename: 'chapter-7.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-8.html',
