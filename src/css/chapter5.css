@@ -28,6 +28,12 @@ p, .drop-cap {
 #open-trail {
   cursor: pointer;
   width: 49%;
+  margin: 5% 28% 0 23%;
+}
+
+#open-trail:hover {
+  -webkit-filter: hue-rotate(10deg);
+  filter: hue-rotate(10deg);
 }
 
 .trail-btn {
@@ -224,6 +230,12 @@ p, .drop-cap {
 	.trail-text {
 		top: 12%;
 	}
+
+  .chapter-name {
+  	  top: 18%;
+      left: 12%;
+      width: 40%;
+  }
 
   .prev-next-btn
   {
