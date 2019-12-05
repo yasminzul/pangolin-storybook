@@ -18,6 +18,12 @@ $(".close").on("click", function(e) {
   $(this).closest('.popup').css('display','none');
 });
 
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('.popup').css('display','none');
+  }
+});
+
 
 // desktop popup
 

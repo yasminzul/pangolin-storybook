@@ -41,6 +41,12 @@ $(".close").on("click", function(e) {
 // });
 
 
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('.popup').css('display','none');
+  }
+});
+
 
 // desktop popup
 
