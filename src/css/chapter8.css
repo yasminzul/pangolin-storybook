@@ -19,6 +19,15 @@ svg {
 	width: 100vw;
 }
 
+ .swipe {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    border: none !important;
+    color: #000;
+    font-family: 'Averia Serif Libre', serif;
+  }
+
 
 .swiper-container {
   width: 100%;
@@ -393,6 +402,10 @@ svg {
 	.desktop {
 		display: none;
 	}
+  
+  .swipe {
+    bottom: 6%;
+  }
 
   .map-title {
     font-size: 0.9em;

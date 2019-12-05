@@ -19,6 +19,15 @@ body
 	width: 100vw;
 }
 
+ .swipe {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    border: none !important;
+    color: #000;
+    font-family: 'Averia Serif Libre', serif;
+  }
+
 
 .swiper-container {
   min-width: 100vw;
@@ -285,6 +294,11 @@ body
 		height: 100vh;
 		width: auto;
 		float: right;
+	}
+
+	.swipe {
+	    bottom: 1%;
+	    font-size: 0.8em;
 	}
 
 	.desktop {
