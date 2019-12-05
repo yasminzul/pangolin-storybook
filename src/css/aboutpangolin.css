@@ -1,11 +1,4 @@
 body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.main-page
-{
   background-image: url(../gfx/aboutpangolin.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +6,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
 
 .main-content
 {
@@ -34,7 +28,7 @@ body {
 }
 
 
-#orangasli-btn, #expert-btn 
+#orangasli-btn, #expert-btn
 {
   cursor: pointer;
   width: 49%;

@@ -1,15 +1,7 @@
-
 body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-}
-.wrapper
-{
+  overflow-y: scroll;
   height: 100vh;
   width: 100vw;
-  overflow: overlay;
 }
 
 p, .soundcite {

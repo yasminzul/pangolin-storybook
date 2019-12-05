@@ -1,4 +1,4 @@
-.wrapper {
+body {
   background: url(../gfx/chapter-titles/socialmediastar.svg) no-repeat fixed;
   background-size: cover;
 }
@@ -58,7 +58,7 @@ p, a, .drop-cap {
         background: #000;
         margin: 5px;
     }
-    
+
     .youtube-player iframe {
         position: absolute;
         top: 0;
@@ -68,7 +68,7 @@ p, a, .drop-cap {
         z-index: 100;
         background: transparent;
     }
-    
+
     .youtube-player img {
         bottom: 0;
         display: block;
@@ -86,11 +86,11 @@ p, a, .drop-cap {
         -moz-transition: .4s all;
         transition: .4s all;
     }
-    
+
     .youtube-player img:hover {
         -webkit-filter: brightness(75%);
     }
-    
+
     .youtube-player .play {
         height: 72px;
         width: 72px;
@@ -102,7 +102,7 @@ p, a, .drop-cap {
         background: url("//i.imgur.com/TxzC70f.png") no-repeat;
         cursor: pointer;
     }
-    
+
 
 /* mobile and tablet */
 
