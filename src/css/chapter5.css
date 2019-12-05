@@ -17,15 +17,21 @@ p, .drop-cap {
 }
 
 .chapter-name {
-	top: 18%;
+	  top: 18%;
     left: 12%;
     position: absolute;
     width: 35%;
+    text-align: center;
 }
 
 .chapter-name img
 {
   width: 100%;
+}
+
+#open-trail {
+  cursor: pointer;
+  width: 49%;
 }
 
 .trail-btn {
