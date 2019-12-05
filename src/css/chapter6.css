@@ -81,7 +81,7 @@ body {
   position: absolute;
   top: 25%;
   right: 1%;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 
@@ -215,12 +215,12 @@ body {
     top: 45px;
   }
 
-  #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg {
+/*  #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg {
     display: none !important;
   }
    #_1, #_2, #_3, #_4, #_5, #_6, #_7 {
     display: none;
-  }
+  }*/
 
 
 }
