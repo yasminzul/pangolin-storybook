@@ -1,18 +1,13 @@
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  margin: 0;
-  background-color: #86c483;
-}
-.wrapper
-{
-  height: 100vh;
-  overflow: overlay;
   background-image: url(../gfx/chapter-titles/rainiessong.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-size: 110%;
+  background-position: top right;
+  margin: 0;
+  background-color: #86c483;
 }
 
 
@@ -114,9 +109,25 @@ p {
 		padding: 10px 15px;
 	}
 
-/*	.right {
-		margin-right: 16%;
-	}*/
+  #prev-chapter
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 1.5vh 2vh 1.5vh 9vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter
+  {
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 93% center;
+    padding: 1.5vh 9vh 1.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
 
 	p {
 		margin: 0;
