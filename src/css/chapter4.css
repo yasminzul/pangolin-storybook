@@ -62,20 +62,25 @@ p, a, .drop-cap, .soundcite {
 	position: relative;
   margin: 0 auto;
   width: 100%;
-  padding: 3%;
   display: inline-block;
-  background-color: #e89c00;
-  text-align: center;
-  border-style: none;
-  color: #fff;
-  font-family: franklin-gothic-urw, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   cursor: pointer;
+  border: none;
+  background-color: #ffffff00;
 }
 
 #open-slider img {
-  width: 100%;
+  width: 50%;
+  float: left;
+}
+
+#open-slider span {
+  color: #fff;
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  font-size: 1.8em;
 }
 
 .mobile {
@@ -210,6 +215,11 @@ p, a, .drop-cap, .soundcite {
 
   .all {
   	display: block;
+  }
+
+  #open-slider span{
+    right: 0%;
+    font-size: 1em;
   }
 
   .popup {
