@@ -25,6 +25,13 @@ p, a, .drop-cap, .soundcite {
 	border-left: .95em double white !important;
 }
 
+svg {
+  height: 100vh;
+  right: 0;
+  position: absolute;
+
+}
+
 
 /*map*/
 

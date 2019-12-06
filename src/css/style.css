@@ -7,8 +7,8 @@ body
 
 .title
 {
-  margin: 0 0 18vh 0;
-  width: 95%;
+  margin: 0 0 15vh 0;
+  width: 85%;
 }
 
 .logos {
@@ -33,7 +33,7 @@ body
   position: absolute;
   top: 0;
   height: 100vh;
-  padding: 7vh 30vw;
+  padding: 7vh 30vw 4vh 30vw;
   font-family: 'Averia Serif Libre', cursive;
   font-style: normal;
   font-weight: 300;
@@ -44,6 +44,8 @@ body
 {
   line-height: 1.3;
   opacity: 0.75;
+  margin: 0;
+  font-size: 1em;
 }
 
 .story-btn
