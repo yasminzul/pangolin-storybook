@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import '../css/font.css';
 import css from '../css/style.css';
 var $ = require("jquery");
 

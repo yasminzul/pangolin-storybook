@@ -40,9 +40,10 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </div>`;
 
 
-let orientation = "<div class=full-orientation></div>";
+let orientation = `<div class="full-orientation"><img src=/menu/rotate.gif></div>`;
+// let loader = `<div class="loader"><img src=/menu/rainie-sleeping.png></div>`;
 
-$( window ).on( "load", function() {
+$( window ).on('load',function() {
   $('body').append(menu);
   $('body').append(orientation);
 
@@ -51,4 +52,8 @@ $( window ).on( "load", function() {
     $('.menu').toggleClass('open-menu');
   });
 
-})
+});
+
+$(window).on('load', function () {
+    $(".loader").fadeOut("slow");
+  });
