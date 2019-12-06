@@ -18,6 +18,11 @@ body:before {
 
 }
 
+body {
+  background-color: #358285;
+}
+
+
 .accrd {
   margin: 5% !important;
   font-size: 1.5em;

@@ -8,9 +8,7 @@ import TweenLite from 'TweenLite';
 import TimelineMax from 'TimelineMax';
 import TimelineLite from 'TimelineLite';
 
-// plain text toggle
-
-
+// plain text button toggle
 
 $(".plain-text").on("click", function(e) {
   $('.landscape').addClass('hide');

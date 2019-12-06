@@ -181,6 +181,10 @@ tr
   display: block;
 }
 
+.full-orientation {
+  display: none;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
@@ -223,7 +227,6 @@ tr
 body
 {
   background-color: #161640 !important;
-  background-image: none;
 }
 
 .menu, #burger-icon
