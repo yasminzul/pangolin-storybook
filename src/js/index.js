@@ -13,15 +13,20 @@ import TimelineLite from 'TimelineLite';
 
 
 $(".plain-text").on("click", function(e) {
-  $('.landscape').css('display','none');
-  $('.full-orientation').css('display','none');
-  $('.portrait').css('display','block');
+  $('.landscape').addClass('hide');
+  $('.full-orientation').removeClass('active');
+  $('.full-orientation').addClass('hide');
+  $('.portrait').addClass('active');
+  $('.portrait').removeClass('hide');
 });
 
 $(window).on("orientationchange", function(){
-	$('.landscape').css('display', 'block');
-	$('.portrait').css('display', 'none');
-	// $('.full-orientation').css('display', 'block');
+	$('.landscape').removeClass('hide');
+	$('.landscape').addClass('active');
+	$('.portrait').removeClass('active');
+	$('.portrait').addClass('hide');
+	$('.full-orientation').removeClass('hide');
+	$('.full-orientation').addClass('active');
 	
 });
 

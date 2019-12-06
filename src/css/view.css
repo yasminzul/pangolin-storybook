@@ -34,10 +34,7 @@ no-js #loader { display: none;  }
     }
 }
 
-.full-orientation
-{
-  display: none;
-}
+
 
 /* menu */
 
@@ -176,6 +173,14 @@ tr
   /* right: 52%; */
 }
 
+.hide {
+  display: none !important;
+}
+
+.active {
+  display: block;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
@@ -202,6 +207,10 @@ tr
     display: block;
   }
 
+  .full-orientation {
+    display: none;
+  }
+
 
 
 
@@ -220,6 +229,11 @@ body
 .menu, #burger-icon
 {
   display: none;
+}
+
+.full-orientation.active
+{
+  display: block;
 }
 
 .full-orientation
