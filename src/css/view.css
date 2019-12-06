@@ -89,6 +89,10 @@ tr
   display: block;
 }
 
+.portrait {
+  display: none;
+}
+
 /* burger icon */
 
 #burger-icon
@@ -194,6 +198,10 @@ tr
     top: 40vh;
 	}
 
+  .landscape {
+    display: block;
+  }
+
 
 
 
@@ -224,7 +232,7 @@ body
   position: fixed;
   top: 0;
   left: 0;
-  display: block !important;
+  display: block;
 }
 
 .full-orientation img
@@ -239,7 +247,7 @@ body
   background: #ef6436;
   width: 70%;
   color: #fff;
-  bottom: 5%;
+  bottom: 18%;
   left: 16%;
   font-family: franklin-gothic-urw, sans-serif;
   padding: 20px;

@@ -8,6 +8,25 @@ import TweenLite from 'TweenLite';
 import TimelineMax from 'TimelineMax';
 import TimelineLite from 'TimelineLite';
 
+// plain text toggle
+
+
+
+$(".plain-text").on("click", function(e) {
+  $('.landscape').css('display','none');
+  $('.full-orientation').css('display','none');
+  $('.portrait').css('display','block');
+});
+
+$(window).on("orientationchange", function(){
+	$('.landscape').css('display', 'block');
+	$('.portrait').css('display', 'none');
+	// $('.full-orientation').css('display', 'block');
+	
+});
+
+
+
 var tlPangolin = new TimelineMax({repeat:-1, repeatDelay:0.5});
 tlPangolin.from("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut})
           .to("#pangolin_eye_Image", 0.2, {scale:0, ease:Power1.easeInOut}, "+=3");
