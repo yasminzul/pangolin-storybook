@@ -2,7 +2,7 @@ body
 {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .title
@@ -34,10 +34,10 @@ body
   top: 0;
   height: 100vh;
   padding: 7vh 30vw;
-  overflow-y: scroll;
   font-family: 'Averia Serif Libre', cursive;
   font-style: normal;
   font-weight: 300;
+  z-index: 200;
 }
 
 .main-intro p
@@ -59,6 +59,11 @@ body
 
 }
 
+svg
+{
+  position: fixed;
+  z-index: 0;
+}
 
 @media only screen and (max-width: 900px) {
 

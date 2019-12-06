@@ -125,7 +125,7 @@ p, .drop-cap {
 }
 
 .swiper-slide img {
-  height: 100%;
+  width: 100%;
 }
 
 .popup {
