@@ -1,7 +1,16 @@
-
-body {
-  background: url(../gfx/chapter-titles/thepoliceman.jpg) no-repeat fixed;
+body:before {
+  background: url(../gfx/chapter-titles/thepoliceman.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+body
+{
+  background-color: #020a40;
 }
 
 .chapter-name {

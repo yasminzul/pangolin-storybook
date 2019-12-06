@@ -2,10 +2,20 @@ p, .drop-cap {
   color: #fff;
 }
 
-body {
-  background: url(../gfx/chapter-titles/boatman.jpg) no-repeat fixed;
-  background-size: 110%;
-  background-position: left;
+body:before {
+  background: url(../gfx/chapter-titles/boatman.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body
+{
+  background-color: #112582;
 }
 
 .chapter-name {

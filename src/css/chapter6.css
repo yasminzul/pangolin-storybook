@@ -1,8 +1,17 @@
-body {
-  background: url(../gfx/chapter-titles/waitingwife.jpg) no-repeat fixed;
+body:before {
+  background: url(../gfx/chapter-titles/waitingwife.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
+body
+{
+  background-color: #907a78;
+}
 
 p, a, .drop-cap {
 	color: #fff;
