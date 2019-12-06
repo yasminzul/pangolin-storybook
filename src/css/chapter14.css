@@ -77,6 +77,9 @@ p {
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
+    position: fixed;
+    left: 0;
+    bottom: 3%;
 }
 
 #next-chapter
@@ -97,6 +100,9 @@ p {
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
+    position: fixed;
+    right: 0;
+    bottom: 3%;
 }
 
 /* mobile and tablet */
@@ -104,7 +110,7 @@ p {
 @media only screen and (max-width: 900px) {
 
 	.row {
-		margin-top: 5%;
+		margin-top: 8%;
 		width: 45%;
 		padding: 10px 15px;
 	}
@@ -130,14 +136,14 @@ p {
   }
 
 	p {
-		margin: 0;
-		font-size: 0.8em;
-    	line-height: 12px;
+    margin: 0;
+    font-size: 1em;
+    line-height: 27px;
 	}
 
 	.chapter-name {
-		width: 20%;
-		right: 27%;
+    width: 25%;
+    right: 25%;
 	}
 
   .prev-next-btn

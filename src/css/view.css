@@ -1,3 +1,8 @@
+html {
+  padding: env(safe-area-inset);
+  -webkit-text-size-adjust: 100%;
+}
+
 no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 0; top: 0; }
 .loader {
@@ -177,12 +182,19 @@ tr
     display: block;
   }
 
+  .open-icon {
+    top: 2vh !important;
+  }
+
 	#burger-icon
 	{
 	  width: 30px;
 	  height: 30px;
 		padding: 6px;
+    top: 40vh;
 	}
+
+
 
 
 }
@@ -204,11 +216,11 @@ body
 
 .full-orientation
 {
-  background-color: #161640;
+  background-color: #010733;
   height: 100vh;
   width: 100vw;
   margin: 0;
-  z-index: 1000;
+  z-index: 900;
   position: fixed;
   top: 0;
   left: 0;
@@ -218,6 +230,21 @@ body
 .full-orientation img
 {
   width: 100%;
+  position: absolute;
+}
+
+.plain-text {
+  z-index: 1000;
+  position: absolute;
+  background: #ef6436;
+  width: 70%;
+  color: #fff;
+  bottom: 5%;
+  left: 16%;
+  font-family: franklin-gothic-urw, sans-serif;
+  padding: 20px;
+  font-size: 1em;
+  border: none;
 }
 
 

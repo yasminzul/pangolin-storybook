@@ -1,11 +1,21 @@
-body {
+
+body:before {
+  content: "";
   background-image: url(../gfx/aboutpangolin.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  backgrond-position: center;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .accrd {
@@ -19,6 +29,8 @@ body {
   top: 18vh;
   left: 35vw;
   width: 35vw;
+  height: 100vh;
+  /*display: none;*/
 
 }
 
@@ -237,8 +249,9 @@ body {
   margin: 0;
   height:100vh;
   z-index: 700;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
 }
 
 .close {
@@ -248,7 +261,9 @@ body {
   margin-right: 3vw;
   margin-top: 5vh;
   z-index: 800;
-  width: 37px;
+  padding: 2px 11px;
+/*  width: 37px;
+  height: 37px;*/
   font-size: 30px;
   color: #fff;
   border-radius: 50%;
@@ -350,16 +365,24 @@ body {
   .main-content
   {
     position: absolute;
-    top: 15vh;
-    left: 30vw;
-    width: 45vw;
+    top: 35vh;
+    left: 25vw;
+    width: 55vw;
     z-index: 1;
   }
 
   .main-content p
   {
     margin: 5%;
-    font-size: 3.2vh;
+    font-size: 1em;
+  }
+
+  #title-name {
+    margin-bottom: 50%;
+  }
+
+  .main-content img {
+    margin-bottom: 9%;
   }
 
   .main-content button
