@@ -177,6 +177,14 @@ tr
     display: block;
   }
 
+	#burger-icon
+	{
+	  width: 30px;
+	  height: 30px;
+		padding: 6px;
+	}
+
+
 }
 
 /* mobile and tablet */

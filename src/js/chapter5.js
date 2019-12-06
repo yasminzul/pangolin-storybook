@@ -6,6 +6,17 @@ import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 var $ = require("jquery");
 
+var winHeight = $(window).height();
+
+$('body').css({
+  'height' : winHeight,
+});
+
+$(window).resize(function (){
+  $('body').css({
+    'height' : winHeight,
+  });
+});
 
 $("#open-trail").on("click", function() {
   $('.popup').css('display','block');
@@ -26,8 +37,8 @@ $(".close").on("click", function(e) {
   $(this).closest('.popup').css('display','none');
 });
 
-$(document).keydown(function(event) { 
-  if (event.keyCode == 27) { 
+$(document).keydown(function(event) {
+  if (event.keyCode == 27) {
     $('.popup').css('display','none');
   }
 });
