@@ -91,13 +91,17 @@ tr
 
 /* burger icon */
 
+.open-icon {
+  top: 2vh !important;
+}
+
 #burger-icon
 {
   width: 50px;
   height: 50px;
   position: fixed;
   right: 1vw;
-  top: 2vh;
+  top: 40vh;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
