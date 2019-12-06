@@ -194,7 +194,49 @@ tr
     top: 40vh;
 	}
 
+  #prev-chapter
+  {
+    content: "";
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 1.5vh 2vh 1.5vh 8vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
 
+  #prev-chapter-one
+  {
+    content: "";
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 5% center;
+    padding: 2.5vh 2vh 2.5vh 9vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter
+  {
+    content: "";
+    height: 8.5vh;
+    background-size: 5vh auto;
+    background-position: 93% center;
+    padding: 1.5vh 9vh 1.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
+
+  #next-chapter-one
+  {
+    content: "";
+    height: 8.5vh;
+    background-size: 4.75vh auto;
+    background-position: 93% center;
+    padding: 2.5vh 9vh 2.5vh 2vh;
+    border-radius: 5px;
+    font-size: 1.75vw;
+  }
 
 
 }
