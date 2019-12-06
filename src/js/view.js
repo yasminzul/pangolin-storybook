@@ -40,12 +40,12 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </div>`;
 
 
-let orientation = `<div class="full-orientation"><img src=/menu/rotate.gif></div>`;
+// let orientation = `<div class="full-orientation"><img src=/menu/rotate.gif><button class="plain-text">OR READ PLAIN-TEXT VIEW</button></div>`;
 // let loader = `<div class="loader"><img src=/menu/rainie-sleeping.png></div>`;
 
 $( window ).on('load',function() {
   $('body').append(menu);
-  $('body').append(orientation);
+  // $('body').append(orientation);
 
   $('#burger-icon').on('click', function(e){
     $(this).toggleClass('open-icon');
