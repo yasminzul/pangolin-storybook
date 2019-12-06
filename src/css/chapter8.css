@@ -1,12 +1,14 @@
 body {
+  height: 100%; /* Fallback for browsers that do not support Custom Properties */
     width: 100vw;
     overflow: hidden;
     margin: 0;
+    background-size: cover;
     background-color: #a1a686;
     background-image: url(../gfx/route-map/map-main.jpg);
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: right;
+    background-size: auto 110vh;
+    background-position: right top;
 }
 
 p {
