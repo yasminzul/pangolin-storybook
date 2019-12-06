@@ -5,6 +5,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .accrd {
@@ -350,8 +351,8 @@ body {
   {
     position: absolute;
     top: 15vh;
-    left: 35vw;
-    width: 35vw;
+    left: 30vw;
+    width: 45vw;
     z-index: 1;
   }
 

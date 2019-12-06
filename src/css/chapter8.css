@@ -5,7 +5,8 @@ body {
     background-color: #a1a686;
     background-image: url(../gfx/route-map/map-main.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 110%;
+    background-position: right;
 }
 
 p {
@@ -408,7 +409,7 @@ svg {
   }
 
   .map-title {
-    font-size: 0.9em;
+    font-size: 0.9em !important;
   }
 
   .mobile.map-text {
