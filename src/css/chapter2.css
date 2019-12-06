@@ -4,7 +4,8 @@ p, .drop-cap {
 
 body {
   background: url(../gfx/chapter-titles/boatman.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 110%;
+  background-position: left;
 }
 
 .chapter-name {
