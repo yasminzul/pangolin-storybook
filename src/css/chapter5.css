@@ -31,6 +31,7 @@ p, .drop-cap {
     right: 5%;
     border: none !important;
     color: #000;
+    font-family: 'Averia Serif Libre', serif;
   }
 
 #open-trail {
@@ -77,6 +78,7 @@ p, .drop-cap {
     margin-top: 5vh;
     z-index: 800;
     width: 37px;
+    height: 37px;
     font-size: 30px;
     color: #000;
     border-radius: 50%;
@@ -243,10 +245,11 @@ p, .drop-cap {
 	
   }
   .trail-text p {
-    font-size: 1em;
+    font-size: 1.1em !important;
   }
   .swipe {
     bottom: 6%;
+    font-size: 0.8em;
   }
 
   .left {
