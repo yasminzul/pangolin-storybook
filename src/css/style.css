@@ -12,7 +12,7 @@ body
 }
 
 .logos {
-  position: absolute;
+  position: fixed;
   top: 1%;
   right: 0;
   opacity: 0.5;
@@ -34,7 +34,7 @@ body
   top: 0;
   height: 100vh;
   padding: 7vh 30vw;
-
+  overflow-y: scroll;
   font-family: 'Averia Serif Libre', cursive;
   font-style: normal;
   font-weight: 300;
@@ -65,14 +65,19 @@ body
   .main-intro
   {
     color: #fff;
-    font-size: 2.75vh;
+    font-size: 1em;
     padding: 6vh 22vw;
+  }
+
+  .main-intro p {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .title
   {
-    margin: 0 0 7vh 0;
-    width: 80%;
+    margin: 16% 0 30% 0;
+    width: 100%;
   }
 
   .logos {
@@ -95,8 +100,7 @@ body
     height: 9vh;
     width: 18vw;
     border-radius: 1vh;
-    margin: 2vh 0.5vw;
-
+    margin: 6% 0.5vw 20%;
     font-weight: 700;
     font-size: 2vh;
   }

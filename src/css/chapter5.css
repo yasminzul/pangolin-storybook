@@ -240,10 +240,17 @@ p, .drop-cap {
 
 	.trail-text {
 		top: 12%;
-	}
-
+	
+  }
+  .trail-text p {
+    font-size: 1em;
+  }
   .swipe {
     bottom: 6%;
+  }
+
+  .left {
+    left: 1%;
   }
 
   .chapter-name {
