@@ -1,5 +1,6 @@
 html {
   padding: env(safe-area-inset);
+  -webkit-text-size-adjust: 100%;
 }
 
 no-js #loader { display: none;  }

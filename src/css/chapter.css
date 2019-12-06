@@ -288,7 +288,7 @@ blockquote.black
 @media only screen and (max-width: 900px) {
 
   p, .soundcite {
-    font-size: 2vw;
+    font-size: 1em;
   }
 
   .photo-caption {
