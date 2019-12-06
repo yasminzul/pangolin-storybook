@@ -1,14 +1,30 @@
-body
-{
-	background-image: url(../gfx/marble-texture/marble-texture.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-		overflow-y: hidden;
-    background-color: #f9cb9c;
+body {
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+	background-color: #f9cb9c;
 }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+	background: url(../gfx/marble-texture/marble-texture.png);
+	background-repeat: no-repeat;
+	backgrond-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 .main-view
 {
