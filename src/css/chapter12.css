@@ -19,6 +19,15 @@ body
 	width: 100vw;
 }
 
+ .swipe {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    border: none !important;
+    color: #000;
+    font-family: 'Averia Serif Libre', serif;
+  }
+
 
 .swiper-container {
   min-width: 100vw;
@@ -62,16 +71,19 @@ body
 }
 
 .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 3vw;
-  margin-top: 5vh;
-  z-index: 800;
-  font-size: 30px;
-  color: #fff;
-  background-color: transparent;
-  border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    z-index: 800;
+    width: 37px;
+    font-size: 30px;
+    color: #000;
+    border-radius: 50%;
+    background-color: #00000038;
+    border: none;
+     cursor: pointer;
 }
 
 .button-cluster img {
@@ -86,12 +98,6 @@ body
 	height: 16vh;
 	margin: 3vh auto;
 	cursor: pointer;
-}
-
-.close
-{
-	background-color: transparent;
-	color: #000;
 }
 
 .top-left {
@@ -288,6 +294,11 @@ body
 		height: 100vh;
 		width: auto;
 		float: right;
+	}
+
+	.swipe {
+	    bottom: 1%;
+	    font-size: 0.8em;
 	}
 
 	.desktop {

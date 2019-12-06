@@ -6,12 +6,6 @@ body
   font-family: franklin-gothic-urw, sans-serif;
 }
 
-.animsition
-{
-  margin: 0;
-  padding: 0;
-}
-
 .title
 {
   margin: 0 0 18vh 0;
@@ -69,7 +63,7 @@ body
   .main-intro
   {
     color: #fff;
-    font-size: 2.45vh;
+    font-size: 2.8vh;
     padding: 10vh 25vw;
   }
 
