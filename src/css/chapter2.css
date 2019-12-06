@@ -41,6 +41,17 @@ body
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    background: url(../gfx/m-chapter-titles/m-boatman.jpg);
+    background-repeat: no-repeat;
+    backgrond-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
   .slider label img {
     width: 55px;
   }
@@ -50,7 +61,7 @@ body
   }
 
   .chapter-name {
-    top: 10%;
+    display: none;
   }
 
 

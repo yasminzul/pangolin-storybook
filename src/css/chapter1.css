@@ -39,9 +39,18 @@ p, .drop-cap, .soundcite {
 
 @media only screen and (max-width: 900px) {
 
+	body:before {
+	  background: url(../gfx/m-chapter-titles/m-middleman.jpg);
+	  background-repeat: no-repeat;
+	  backgrond-position: center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
 .chapter-name {
-	top: 10%;
-	left: 5%;
+	display: none
 	}
 
 }
