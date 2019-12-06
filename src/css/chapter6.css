@@ -52,10 +52,9 @@ svg {
   margin-right: 3vw;
   margin-top: 5vh;
   z-index: 800;
-  width: 45px;
+  padding: 0px 11px;
   background-color: #ffffff00;
   border: none;
-  width: 37px;
   font-size: 30px;
   color: #000;
   border-radius: 50%;
@@ -119,8 +118,7 @@ svg {
 
 .route-btn button {
     background-color: #ef6737;
-    height: 26px;
-    width: 26px;
+    padding: 5px 8px;
     margin: 7px;
     border: 2px solid #fff;
     border-radius: 50%;
