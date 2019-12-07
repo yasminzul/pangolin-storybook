@@ -58,13 +58,13 @@ svg {
   position: fixed;
   right: 0;
   top: 0;
-  margin-right: 3vw;
-  margin-top: 5vh;
+  margin-right: 2vw;
+  margin-top: 3vh;
   z-index: 800;
   background-color: #ffffff00;
   border: none;
-  padding: 0px 11px;
-  font-size: 30px;
+  padding: 1px 8px;
+  font-size: 25px;
   color: #000;
   border-radius: 50%;
   background-color: #00000038;
@@ -164,11 +164,12 @@ svg {
 
 .route-btn button {
     background-color: #ef6737;
-    padding: 5px 8px;
+    padding: 8px 11px;
     margin: 7px;
     border: 2px solid #fff;
     border-radius: 50%;
     color: #fff;
+    font-weight: 800;
   }
 
 .route-btn button {
@@ -268,8 +269,8 @@ svg {
   .route-btn{
     position: absolute;
     display: grid;
-    right: 0;
-    top: 45px;
+    right: 2%;
+    top: 20%;
     z-index: 8;
   }
 /*

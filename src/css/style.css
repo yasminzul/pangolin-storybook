@@ -88,7 +88,8 @@ svg
   }
 
   .logos {
-    right: 3%;
+    right: 0;
+    width: 23%;
   }
 
   .pangolin-btn
@@ -104,8 +105,8 @@ svg
 
   .story-btn
   {
-    height: 9vh;
-    width: 18vw;
+    height: 13vh;
+    width: 45%;
     border-radius: 1vh;
     margin: 6% 0.5vw 20%;
     font-weight: 700;

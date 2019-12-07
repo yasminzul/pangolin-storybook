@@ -517,6 +517,13 @@ body {
     font-size: 0.9vw;
   }
 
+  #orangasli-btn, #expert-btn
+{
+     width: 47%;
+    height: 16vh;
+    margin: 2vh 0.5px 9vh;
+}
+
   .prev-next-btn
   {
     bottom: 5vh;

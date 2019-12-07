@@ -260,7 +260,8 @@ p, .drop-cap {
   }
 
   .left {
-    left: 1%;
+    left: 4%;
+    width: 25%;
   }
 
   .chapter-name {
