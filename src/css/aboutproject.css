@@ -7,6 +7,10 @@ section {
   box-sizing: border-box;
 }
 
+a {
+	color: #000;
+}
+
 .not-footer p, table, .not-footer span, .top, .bottom {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
