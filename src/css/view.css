@@ -222,11 +222,11 @@ tr
   width: 90%;
   margin: 0 auto;
   /*text-align: center;*/
-  font-size: 1em;
 }
 
 .mobile-row p {
   font-family: franklin-gothic-urw, sans-serif !important;
+  font-size: 1em;
 }
 
 .mobile-row .soundcite {
@@ -245,9 +245,10 @@ tr
 }
 
 .mobile-footnote {
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-style: italic;
   font-family: franklin-gothic-urw, sans-serif !important;
+  padding-bottom: 10px;
 }
 
 
