@@ -37,6 +37,14 @@ body
     background-color: #fff !important;
 }
 
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #102985;
+  position: absolute;
+}
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {

@@ -105,6 +105,14 @@ p {
     bottom: 3%;
 }
 
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #6da447;
+  position: absolute;
+}
+
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
