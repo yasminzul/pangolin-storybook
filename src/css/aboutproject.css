@@ -166,10 +166,19 @@ th {
 
 @media only screen and (max-width: 900px) {
 
-	body {
-		font-size: 0.7em;
+	.mobile-row p {
+  		font-family: franklin-gothic-urw, sans-serif !important;
+  		font-size: 1em;
 	}
 
+	.mobile-row table {
+		font-size: 0.8em;
+	}
+
+/*	body {
+		font-size: 0.7em;
+	}
+*/
 	table {
 		line-height: 20px;
 	}

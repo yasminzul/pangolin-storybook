@@ -2,6 +2,8 @@ import _ from 'lodash';
 import '../css/font.css';
 import css from '../css/chapter15.css';
 import '../css/chapter.css';
+import '../css/swiper.min.css';
+import Swiper from './../js/plugin/swiper.min.js';
 var $ = require("jquery");
 
 // plain text button toggle
@@ -23,6 +25,14 @@ $(window).on("orientationchange", function(){
   $('.full-orientation').addClass('active');
   
 });
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+ });
+
 
 
 document.addEventListener("DOMContentLoaded",

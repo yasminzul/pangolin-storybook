@@ -220,7 +220,7 @@ tr
 
 .mobile-row  {
   width: 90%;
-  margin: 0 auto;
+  margin: 5% auto;
   /*text-align: center;*/
 }
 
@@ -236,8 +236,17 @@ tr
 .mobile-row.white p {
   color: #fff;
 }
+
+.white {
+  color: #fff;
+}
+
 .mobile-row.black p {
   color: #000 !important;
+}
+
+.black {
+  color: #000;
 }
 
 .mobile-row img {
