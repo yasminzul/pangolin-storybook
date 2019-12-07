@@ -88,6 +88,8 @@ tr
 
 .portrait {
   display: none;
+  position: fixed;
+  overflow-y: scroll;
 }
 
 /* burger icon */
@@ -215,6 +217,38 @@ tr
     display: none;
   }
 
+
+.mobile-row  {
+  width: 90%;
+  margin: 0 auto;
+  /*text-align: center;*/
+  font-size: 1em;
+}
+
+.mobile-row p {
+  font-family: franklin-gothic-urw, sans-serif !important;
+}
+
+.mobile-row .soundcite {
+  font-family: franklin-gothic-urw, sans-serif !important;
+}
+
+.mobile-row.white p {
+  color: #fff;
+}
+.mobile-row.black p {
+  color: #000 !important;
+}
+
+.mobile-row img {
+  width: 100%;
+}
+
+.mobile-footnote {
+  font-size: 0.6em;
+  font-style: italic;
+  font-family: franklin-gothic-urw, sans-serif !important;
+}
 
 
 

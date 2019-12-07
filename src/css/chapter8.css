@@ -82,7 +82,7 @@ svg {
     margin-right: 3vw;
     margin-top: 5vh;
     z-index: 800;
-    width: 37px;
+    padding: 2px 11px;
     font-size: 30px;
     color: #fff;
     border-radius: 50%;
