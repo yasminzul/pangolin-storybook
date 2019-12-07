@@ -1,12 +1,15 @@
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url(../gfx/chapter-titles/rainiessong.jpg);
+
+body:before {
+  background: url(../gfx/chapter-titles/rainiessong.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 110%;
-  background-position: top right;
-  margin: 0;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
   background-color: #6da447;
 }
 
@@ -24,6 +27,8 @@ p {
 	width: 40%;
     padding: 15px;
     margin-top: 5%;
+    display: block;
+    overflow-y: scroll;
 }
 
 .right {
@@ -36,6 +41,7 @@ p {
     position: absolute;
     top: 3%;
     right: 23%;
+    display: block;
 }
 
 .chapter-name img {
@@ -119,9 +125,13 @@ p {
 
 	.row {
 		margin-top: 8%;
-		width: 45%;
+		width: 57%;
 		padding: 10px 15px;
 	}
+
+  .right {
+    margin-right: 8%;
+  }
 
   #prev-chapter
   {
@@ -150,8 +160,9 @@ p {
 	}
 
 	.chapter-name {
-    width: 25%;
-    right: 25%;
+    width: 27%;
+    right: 22%;
+
 	}
 
   .prev-next-btn
