@@ -7,6 +7,27 @@ import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 
 
+// plain text button toggle
+
+$(".plain-text").on("click", function(e) {
+  $('.landscape').addClass('hide');
+  $('.full-orientation').removeClass('active');
+  $('.full-orientation').addClass('hide');
+  $('.portrait').addClass('active');
+  $('.portrait').removeClass('hide');
+});
+
+$(window).on("orientationchange", function(){
+  $('.landscape').removeClass('hide');
+  $('.landscape').addClass('active');
+  $('.portrait').removeClass('active');
+  $('.portrait').addClass('hide');
+  $('.full-orientation').removeClass('hide');
+  $('.full-orientation').addClass('active');
+  
+});
+
+
 // //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
@@ -43,32 +64,32 @@ $(".close").on("click", function(e) {
 $('#a-img').click(function(){
 	$(".before-text").html("240,558");
 	$(".before-label span").html("Pangolin seized jan 2017 - aug 2019");
-    $('#b').removeClass('active');
-    $('#a').addClass('active');
+    $('#b').removeClass('active-m');
+    $('#a').addClass('active-m');
   });
 
 $('#am-img').click(function(){
 	$(".before-text").html("240,558");
 	$(".before-label span").html("Pangolin seized jan 2017 - aug 2019");
     $('#cm').css('display','none');
-    $('#bm').removeClass('active');
-    $('#am').addClass('active');
+    $('#bm').removeClass('active-m');
+    $('#am').addClass('active-m');
   });
 
 
 $('#b-img').click(function(){
 	$(".before-text").html("101,166");
 	$(".before-label span").html("Pangolin seized jan 2009 - dec 2016");
-    $('#a').removeClass('active');
-    $('#b').addClass('active');
+    $('#a').removeClass('active-m');
+    $('#b').addClass('active-m');
   });
 
 $('#bm-img').click(function(){
 	$(".before-text").html("101,166");
 	$(".before-label span").html("Pangolin seized jan 2009 - dec 2016");
     $('#cm').css('display','none');
-    $('#am').removeClass('active');
-    $('#bm').addClass('active');
+    $('#am').removeClass('active-m');
+    $('#bm').addClass('active-m');
   });
 
 // tap to find legend

@@ -20,6 +20,13 @@ svg {
 	width: 100vw;
 }
 
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #a1a686;
+  position: absolute;
+}
+
  .swipe {
     position: absolute;
     bottom: 8%;
@@ -307,7 +314,7 @@ svg {
 }
 
 
-.active {
+.active-m {
   display: block !important;
   position: absolute;
 }

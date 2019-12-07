@@ -128,9 +128,7 @@ p, a, .drop-cap {
 }
 
   .chapter-name {
-    left: 5%;
-    top: 5%;
-    width: 50% !important;
+    display: none;
   }
 
   .ss

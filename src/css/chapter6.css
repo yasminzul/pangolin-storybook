@@ -39,6 +39,13 @@ svg {
   right: 0;
 }
 
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #907b78;
+  position: absolute;
+}
+
 .popup {
   display: none;
   width: 100%;
@@ -195,7 +202,7 @@ svg {
   display: none;
 }
 
-.active {
+.active-w {
   display: block !important;
 }
 
@@ -241,6 +248,7 @@ svg {
     display: grid;
     right: 1%;
     top: 45px;
+    z-index: 8;
   }
 
 /*  #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg, #_6-bg, #_7-bg {

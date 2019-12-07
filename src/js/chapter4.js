@@ -9,6 +9,26 @@ var $ = require("jquery");
 import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 
+// plain text button toggle
+
+$(".plain-text").on("click", function(e) {
+  $('.landscape').addClass('hide');
+  $('.full-orientation').removeClass('active');
+  $('.full-orientation').addClass('hide');
+  $('.portrait').addClass('active');
+  $('.portrait').removeClass('hide');
+});
+
+$(window).on("orientationchange", function(){
+  $('.landscape').removeClass('hide');
+  $('.landscape').addClass('active');
+  $('.portrait').removeClass('active');
+  $('.portrait').addClass('hide');
+  $('.full-orientation').removeClass('hide');
+  $('.full-orientation').addClass('active');
+  
+});
+
 
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
@@ -19,26 +39,6 @@ $("#open-slider").on("click", function() {
 $(".close").on("click", function(e) {
   $(this).closest('.popup').css('display','none');
 });
-
-// $('#one').on('click', function (){
-// 	$('.route-legend span').html("<strong>SEPT 2012:</strong><br> Police officer Mohammad Norazzuan Ahmad Zahari arrested at an unspecified location in Kedah, in possession of 18 live pangolins.");
-// });
-
-// $('#two').on('click', function (){
-// 	$('.route-legend span').html("<strong>NOV 2014:</strong><br> Police officer Mohammad Norazzuan Ahmad Zahari arrested again at the Bukit Kayu Hitam border checkpoint; 43 live pangolins found in the boot of his car.");
-// });
-
-// $('#three').on('click', function (){
-// 	$('.route-legend span').html("<strong>SEPT 2018:</strong><br> A police officer arrested with 81 live pangolins in a house rented under his name. The trial is ongoing.");
-// });
-
-// $('#four').on('click', function (){
-// 	$('.route-legend span').html("<strong>FEB 2019:</strong><br> Police officer Ahmad Nasrul Hafifi Mohamad arrested at Sadao customs checkpoint with 47 pangolins in his car, after passing Malaysian border checks.");
-// });
-
-// $('#five').on('click', function (){
-// 	$('.route-legend span').html("All three officers worked at the Kedah state police headquarters (IPK Kedah). Investigations suggest that there is a larger smuggling ring run by members of the police and officers from other enforcement agencies.");
-// });
 
 
 $(document).keydown(function(event) { 
@@ -51,28 +51,28 @@ $(document).keydown(function(event) {
 // desktop popup
 
 $("#_1").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-1').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-1').addClass("active-p");   
 });
 
 $("#_2").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-2').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-2').addClass("active-p");   
 });
 
 $("#_3").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-3').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-3').addClass("active-p");   
 });
 
 $("#_4").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-4').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-4').addClass("active-p");   
 });
 
 $("#_5").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-5').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-5').addClass("active-p");   
 });
 
 
@@ -80,37 +80,37 @@ $("#_5").click(function () {
 
 $("#one").click(function () {
     console.log('click');
-    $(".p-text").removeClass("active");
-    $('#text-1').addClass("active");   
-    $('#_1').addClass("active"); 
-    $('#_1-bg').addClass("active"); 
+    $(".p-text").removeClass("active-p");
+    $('#text-1').addClass("active-p");   
+    $('#_1').addClass("active-p"); 
+    $('#_1-bg').addClass("active-p"); 
 });
 
 $("#two").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-2').addClass("active");
-    $('#_2').addClass("active"); 
-    $('#_2-bg').addClass("active");    
+    $(".p-text").removeClass("active-p");
+    $('#text-2').addClass("active-p");
+    $('#_2').addClass("active-p"); 
+    $('#_2-bg').addClass("active-p");    
 });
 
 $("#three").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-3').addClass("active");
-    $('#_3').addClass("active"); 
-    $('#_3-bg').addClass("active");    
+    $(".p-text").removeClass("active-p");
+    $('#text-3').addClass("active-p");
+    $('#_3').addClass("active-p"); 
+    $('#_3-bg').addClass("active-p");    
 });
 
 $("#four").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-4').addClass("active");
-    $('#_4').addClass("active"); 
-    $('#_4-bg').addClass("active");    
+    $(".p-text").removeClass("active-p");
+    $('#text-4').addClass("active-p");
+    $('#_4').addClass("active-p"); 
+    $('#_4-bg').addClass("active-p");    
 });
 
 $("#five").click(function () {
-    $(".p-text").removeClass("active");
-    $('#text-5').addClass("active"); 
-    $('#_5').addClass("active"); 
-    $('#_5-bg').addClass("active");   
+    $(".p-text").removeClass("active-p");
+    $('#text-5').addClass("active-p"); 
+    $('#_5').addClass("active-p"); 
+    $('#_5-bg').addClass("active-p");   
 });
 
