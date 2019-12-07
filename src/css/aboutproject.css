@@ -130,6 +130,14 @@ th {
 	padding: 3px;
 }
 
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  /*background-color: #358285;*/
+  position: absolute;
+}
+
 /*logo*/
 
 .one img {
