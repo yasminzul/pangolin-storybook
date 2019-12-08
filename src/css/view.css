@@ -75,6 +75,11 @@ a i.icon
   text-align: center;
 }
 
+.menu ul
+{
+  display: none;
+}
+
 tr
 {
   width: 100%;
@@ -219,6 +224,7 @@ tr
   .open-icon {
     top: 2vh !important;
   }
+
 
 	#burger-icon
 	{
@@ -375,6 +381,16 @@ tr
 body
 {
   background-color: #161640 !important;
+}
+
+.menu ul
+{
+  display: block;
+}
+
+.menu table
+{
+  display: none;
 }
 
 #home-btn
