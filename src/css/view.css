@@ -386,11 +386,45 @@ body
 .menu ul
 {
   display: block;
+  list-style: none;
+  padding: 0;
+  margin-top: 5vh;
 }
 
 .menu table
 {
   display: none;
+}
+
+.menu li
+{
+  color: #000;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+  margin: 2.5vh;
+}
+
+.menu a
+{
+  text-decoration: none;
+}
+
+.menu-chapter
+{
+  list-style: none;
+  padding: 0;
+}
+
+.menu-chapter li
+{
+  color: #000;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+  margin: 5px 0;
 }
 
 #home-btn
