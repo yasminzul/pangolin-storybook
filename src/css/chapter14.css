@@ -123,10 +123,16 @@ p {
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    right: 12%;
+    left: unset;
+  }
+
 	.row {
-		margin-top: 8%;
+		margin-top: 12%;
 		width: 57%;
-		padding: 10px 15px;
+		padding: 17px 15px;
+    margin-bottom: 6%;
 	}
 
   .right {
@@ -157,15 +163,16 @@ p {
     font-size: 1.75vw;
   }
 
-	p {
+	.row p {
     margin: 0;
     font-size: 1em;
-    line-height: 27px;
+    line-height: 22px;
 	}
 
 	.chapter-name {
     width: 27%;
     right: 22%;
+    top: 14%;
 
 	}
 

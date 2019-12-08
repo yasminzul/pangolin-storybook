@@ -11,12 +11,19 @@ a {
 	color: #000;
 }
 
+.sh-logo .icon {
+	color: #000 !important;
+	padding: 3px;
+	margin: 4px;
+}
+
 .not-footer p, table, .not-footer span, .top, .bottom {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
     color: #fff;
+    line-height: 21px;
 }
 
 .not
@@ -36,17 +43,18 @@ a {
 }
 
 .chapter-name {
-    margin: 4% auto;
+    margin: 12% auto;
+    margin-bottom: 3%;
     position: relative;
     text-align: center;
 }
 
 .chapter-name img{
-  width: 70%;
+  width: 50%;
 }
 
 .not-footer {
-    padding: 2vh 26vw 30vh 26vw;
+    padding: 2vh 30vw 30vh 30vw;
     position: relative;
     background-image: url(../gfx/aboutthisproject.jpg);
     background-position: center bottom;
@@ -58,6 +66,7 @@ a {
 
 .image {
 	text-align: center;
+	margin: 7% 0 0 0;
 }
 
 .image img {
@@ -98,7 +107,10 @@ th {
 .role {
 	float: right;
 	padding-right: 5%;
+	font-weight: 600;
 }
+
+
 
 .name {
 	padding-left: 5%;
@@ -127,11 +139,12 @@ th {
 	width: 100%;
 	font-size: 1em;
 	text-align: center;
-  top: 4vh;
+  	bottom: 2vh;
 }
-.icon {
-	font-size: 25px;
-	padding: 3px;
+
+
+.sh-logo {
+	font-size: 12px;
 }
 
 
@@ -163,7 +176,12 @@ th {
 .two {
 	text-align: center;
 	margin: 0 auto;
-	width: 80%;
+	width: 93%;
+	margin-bottom: 2%;
+}
+
+.ion-logo-facebook  {
+	margin-left: 10px;
 }
 
 /* mobile and tablet */
@@ -183,8 +201,16 @@ th {
 		font-size: 0.7em;
 	}
 */
+	.chapter-name img{
+  		width: 70% ;
+	}
+
+	.credits-wrapper {
+		font-size: 0.8em;
+	}
+
 	table {
-		line-height: 20px;
+		line-height: 18px;
 	}
 
 	.one img {
@@ -196,5 +222,7 @@ th {
 		height: 40px;
 		margin: 2%;
 	}
+
+
 
 }
