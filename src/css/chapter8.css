@@ -1,12 +1,13 @@
 body {
+  height: 100%; /* Fallback for browsers that do not support Custom Properties */
     width: 100vw;
     overflow: hidden;
     margin: 0;
-    background-color: #a1a686;
     background-image: url(../gfx/route-map/map-main.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: right;
+    background-color: #a1a686;
+    background-size: cover;
 }
 
 p {
@@ -17,13 +18,35 @@ p {
 }
 
 svg {
-	width: 100vw;
+	/*min-width: 100vw;*/
+  height: 100vh;
+  float: right;
 }
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #adb67f;
+  position: absolute;
+}
+
+  .progress {
+    right: 7%;
+    top: 12%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #fff;
+  }
 
  .swipe {
     position: absolute;
     bottom: 8%;
-    right: 5%;
+    left: 5%;
+    font-size: 0.7em;
     border: none !important;
     color: #000;
     font-family: 'Averia Serif Libre', serif;
@@ -31,8 +54,8 @@ svg {
 
 
 .swiper-container {
-  width: 100%;
-  height: auto;
+  min-width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -65,7 +88,18 @@ svg {
 }
 
 .swiper-slide img {
-  width: 100%;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 100%;
+
+  /* Set up proportionate scaling */
+  width: auto;
+  height: 100vh;
+
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .close {
@@ -75,8 +109,8 @@ svg {
     margin-right: 3vw;
     margin-top: 5vh;
     z-index: 800;
-    width: 37px;
-    font-size: 30px;
+    padding: 2px 9px;
+    font-size: 25px;
     color: #fff;
     border-radius: 50%;
     background-color: #00000038;
@@ -116,18 +150,24 @@ svg {
 	position: relative;
     left: 19%;
     width: 18%;
-    height: 60px;
-    margin-top: 3%;
+    height: 72px;
+    margin-top: 2%;
   cursor: pointer;
     /*background-color: #e89c00;*/
+}
+
+.africa {
+  width: 24% !important;
 }
 
 .left{
     position: absolute;
     width: 25%;
-    top: 5%;
+    top: 8%;
     left: 5%;
 }
+
+
 
 .left-bottom {
 	  position: absolute;
@@ -140,11 +180,11 @@ svg {
 	position: absolute;
 	width: 25%;
 	right: 5%;
-	top: 8%;
+	top: 30%;
 }
 
 .left-top {
-  left: 2%;
+  left: 5%;
   top: 5%;
   width: 35% !important;
 }
@@ -158,7 +198,7 @@ svg {
 	position: absolute;
 	width: 25%;
 	right: 5%;
-	top: 30%;
+	top: 40%;
 }
 
 .legend {
@@ -178,7 +218,8 @@ svg {
 .map-title {
     font-family: 'Averia Serif Libre', serif;
     color: #000;
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 28px;
 }
 
 .mobile {
@@ -190,16 +231,20 @@ svg {
 
 .slide-footer {
     position: absolute;
-    bottom: 0;
-    right: 2%;
+    bottom: 7%;
+    right: 3%;
+    z-index: 700;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .before-label {
     position: absolute;
     width: 35%;
-    top: 35px;
-    left: 20%;
+    top: 85px;
+    left: 28%;
     z-index: 1;
+  
 }
 
 .before-label span {
@@ -208,9 +253,10 @@ svg {
     color: #fff;
 }
 
+
 .before-text {
-	height: 63px;
-    width: 210px;
+  height: 66px;
+    width: 313px;
     background-color: #720001;
     font-family: franklin-gothic-urw, sans-serif;
     color: #fff;
@@ -223,17 +269,19 @@ svg {
     padding: 5px;
     font-size: 13px;
     font-weight: 700;
-    line-height: 19px;
-    width: 30%;
+    line-height: 15px;
+    width: 25%;
     top: 5%;
-    left: 1%;
+    left: 5%;
     text-transform: uppercase;
     font-family: franklin-gothic-urw, sans-serif;
 }
 
 .lgnd {
-  top: 80%;
-  line-height: 13px;
+    top: 82%;
+    width: 25%;
+    line-height: 10px;
+    font-size: 0.6em;
 }
 
 .prev-next-btn
@@ -307,9 +355,15 @@ svg {
 }
 
 
-.active {
+.active-m {
   display: block !important;
   position: absolute;
+}
+
+.btn-wrapper {
+  width: 25%;
+  position: absolute;
+  right: 5%;
 }
 
 #a, #b {
@@ -318,14 +372,14 @@ svg {
 
 #a-img {
   position: absolute;
-  right: 5%;
+  right: 0%;
   top: 45%;
   cursor: pointer;
 }
 
 #b-img {
   position: absolute;
-  right: 19%;
+  right: 52%;
   top: 45%;
   cursor: pointer;
 
@@ -333,7 +387,7 @@ svg {
 
 #a-img, #b-img {
   background-color: #362f2d;
-  width: 13%;
+  width: 48%;
   padding: 13px;
   border-radius: 2.5px;
   border: none;
@@ -354,7 +408,7 @@ svg {
 #am-img {
   position: absolute;
   right: 2%;
-  top: 250px;
+  top: 225px;
   cursor: pointer;
 
 }
@@ -362,7 +416,7 @@ svg {
 #bm-img {
   position: absolute;
   right: 20%;
-  top: 250px;
+  top: 225px;
   cursor: pointer;
 
 }
@@ -397,19 +451,26 @@ svg {
 
 	.mobile {
 		display: block;
-		background-color: #b1b59d;
+		background-color: #cdd7a6;
 	}
 
 	.desktop {
 		display: none;
 	}
-  
+
   .swipe {
     bottom: 6%;
   }
 
+  .swiper-slide img {
+  /* Set rules to fill background */
+    min-height: unset;
+    min-width: unset;
+  } 
+
   .map-title {
     font-size: 0.9em !important;
+    line-height: 18px;
   }
 
   .mobile.map-text {
@@ -419,11 +480,11 @@ svg {
 
   .left {
     left: 5%;
-    top: 38%;
+    top: 28%;
   }
   .bottom {
     top: 33%;
-    left: 2%;
+    left: 5%;
     width: 37%;;
   }
 
@@ -433,15 +494,30 @@ svg {
   }
 
   .top {
-    top: 40px;
+    top: 50px;
     right: 2%;
     width: 35%;
   }
 
 	#open-slider {
-		left: 16%;
-    width: 25%;
+		left: 17%;
+    width: 21%;
+    height: 45px;
+    margin-top: 1%;
 	}
+
+  .before-text {
+  height: 46px;
+    width: 172px;
+    background-color: #720001;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    margin: 7px auto;
+    font-size: 2em;
+    margin-top: 8%;
+    margin-right: 16%;
+}
+
 
 /*	#overlay-text {
     top: 50%;
@@ -454,9 +530,32 @@ svg {
 
   .before-label {
     width: 35%;
-    left: 25%;
+    left: 17%;
     top: 15px;
   }
+
+  #resize-right {
+    min-width: unset;
+    max-width: unset;
+    width: 85%;
+    height: 100%;
+    left: unset;
+    right: 0;
+  }
+
+    #resize-left {
+    min-width: unset;
+    max-width: unset;
+    width: 85%;
+    height: 100%;
+    right: unset;
+    left: 0;
+  }
+
+  .slide-footer {
+    font-size: 0.6em;
+  }
+
 
 	.before-text {
 		margin: 0 auto;

@@ -1,6 +1,16 @@
-body {
-  background: url(../gfx/chapter-titles/smuggler.jpg) no-repeat fixed;
+body:before {
+  background: url(../gfx/chapter-titles/smuggler.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+body
+{
+  background-color: #1c1b1a;
 }
 
 p, .drop-cap, .soundcite, .photo-caption {
@@ -50,11 +60,30 @@ p, .drop-cap, .soundcite, .photo-caption {
     background-color: #fff !important;
 }
 
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #1b1a19;
+  position: absolute;
+}
+
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    background: url(../gfx/m-chapter-titles/m-smuggler.jpg);
+    background-repeat: no-repeat;
+    backgrond-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
+  .chapter-name {
+    display: none;
+  }
 
 }

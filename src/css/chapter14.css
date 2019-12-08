@@ -1,12 +1,15 @@
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url(../gfx/chapter-titles/rainiessong.jpg);
+
+body:before {
+  background: url(../gfx/chapter-titles/rainiessong.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 110%;
-  background-position: top right;
-  margin: 0;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
   background-color: #6da447;
 }
 
@@ -15,7 +18,7 @@ p {
 	font-family: 'Averia Serif Libre', cursive;
 	color: #000;
     font-size: 1em;
-    line-height: 11px;
+    line-height: 9px;
 	text-align: center;
 }
 
@@ -23,7 +26,9 @@ p {
 .row {
 	width: 40%;
     padding: 15px;
-    margin-top: 5%;
+    margin-top: 8%;
+    display: block;
+    overflow-y: scroll;
 }
 
 .right {
@@ -32,10 +37,12 @@ p {
 }
 
 .chapter-name {
-    width: 22%;
+    width: 16%;
     position: absolute;
     top: 3%;
-    right: 23%;
+    right: 25%;
+    display: block;
+    margin-top: 4%;
 }
 
 .chapter-name img {
@@ -77,6 +84,9 @@ p {
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
+    position: fixed;
+    left: 0;
+    bottom: 3%;
 }
 
 #next-chapter
@@ -97,17 +107,38 @@ p {
     font-family: franklin-gothic-urw, sans-serif;
     font-weight: 700;
     font-style: normal;
+    position: fixed;
+    right: 0;
+    bottom: 3%;
 }
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #6da447;
+  position: absolute;
+}
+
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    right: 12%;
+    left: unset;
+  }
+
 	.row {
-		margin-top: 5%;
-		width: 45%;
-		padding: 10px 15px;
+		margin-top: 12%;
+		width: 57%;
+		padding: 17px 15px;
+    margin-bottom: 6%;
 	}
+
+  .right {
+    margin-right: 8%;
+  }
 
   #prev-chapter
   {
@@ -117,10 +148,14 @@ p {
     padding: 1.5vh 2vh 1.5vh 9vh;
     border-radius: 5px;
     font-size: 1.75vw;
+    right: 0;
+    left: unset;
   }
 
   #next-chapter
   {
+
+    opacity: 0.3 !important;
     height: 8.5vh;
     background-size: 4.75vh auto;
     background-position: 93% center;
@@ -129,15 +164,17 @@ p {
     font-size: 1.75vw;
   }
 
-	p {
-		margin: 0;
-		font-size: 0.8em;
-    	line-height: 12px;
+	.row p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 22px;
 	}
 
 	.chapter-name {
-		width: 20%;
-		right: 27%;
+    width: 27%;
+    right: 22%;
+    top: 6%;
+
 	}
 
   .prev-next-btn

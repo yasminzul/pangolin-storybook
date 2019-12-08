@@ -7,8 +7,8 @@ body
 
 .title
 {
-  margin: 0 0 18vh 0;
-  width: 95%;
+  margin: 0 0 15vh 0;
+  width: 85%;
 }
 
 .logos {
@@ -20,7 +20,7 @@ body
 }
 
 .logos img {
-  width: 25%;
+  width: 28%;
   height: 4vh;
   padding: 5px;
 }
@@ -33,7 +33,7 @@ body
   position: absolute;
   top: 0;
   height: 100vh;
-  padding: 7vh 30vw;
+  padding: 7vh 30vw 4vh 30vw;
   font-family: 'Averia Serif Libre', cursive;
   font-style: normal;
   font-weight: 300;
@@ -44,6 +44,8 @@ body
 {
   line-height: 1.3;
   opacity: 0.75;
+  margin: 0;
+  font-size: 1em;
 }
 
 .story-btn
@@ -71,7 +73,7 @@ svg
   {
     color: #fff;
     font-size: 1em;
-    padding: 6vh 22vw;
+    padding: 0vh 22vw;
   }
 
   .main-intro p {
@@ -86,7 +88,12 @@ svg
   }
 
   .logos {
-    right: 3%;
+    right: 0;
+    width: 19%;
+  }
+
+  .logos img {
+    width: 38%;
   }
 
   .pangolin-btn
@@ -102,8 +109,8 @@ svg
 
   .story-btn
   {
-    height: 9vh;
-    width: 18vw;
+    height: 13vh;
+    width: 45%;
     border-radius: 1vh;
     margin: 6% 0.5vw 20%;
     font-weight: 700;

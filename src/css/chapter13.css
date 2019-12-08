@@ -1,9 +1,16 @@
+body:before {
+  background-image: url(../gfx/chapter-titles/hunters.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body
 {
-  background-image: url(../gfx/chapter-titles/hunters.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e1ae74;
 }
 
 p, .drop-cap {
@@ -43,9 +50,18 @@ p, .drop-cap {
     background-color: #000 !important;
 }
 
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #e1ae75;
+  position: absolute;
+}
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
+
 
   .chapter-name {
     left: 23%;

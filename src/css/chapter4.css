@@ -1,7 +1,16 @@
-
-body {
-  background: url(../gfx/chapter-titles/thepoliceman.jpg) no-repeat fixed;
+body:before {
+  background: url(../gfx/chapter-titles/thepoliceman.jpg);
+  background-repeat: no-repeat;
+  backgrond-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+body
+{
+  background-color: #020a40;
 }
 
 .chapter-name {
@@ -25,6 +34,13 @@ p, a, .drop-cap, .soundcite {
 	border-left: .95em double white !important;
 }
 
+svg {
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+}
 
 /*map*/
 
@@ -43,14 +59,13 @@ p, a, .drop-cap, .soundcite {
   position: fixed;
   right: 0;
   top: 0;
-  margin-right: 3vw;
-  margin-top: 5vh;
+  margin-right: 2vw;
+  margin-top: 3vh;
   z-index: 800;
-  width: 45px;
   background-color: #ffffff00;
   border: none;
-  width: 37px;
-  font-size: 30px;
+  padding: 1px 8px;
+  font-size: 25px;
   color: #000;
   border-radius: 50%;
   background-color: #00000038;
@@ -68,24 +83,27 @@ p, a, .drop-cap, .soundcite {
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  border: none;
+  padding: 0;
+  border: 1px solid #ffffff87;
   background-color: #ffffff00;
+  outline: none;
 }
 
 #open-slider img {
-  width: 50%;
+  width: 20%;
   float: left;
 }
 
 #open-slider span {
   color: #fff;
   display: inline-block;
-  width: 41%;
+  width: 85%;
   position: absolute;
-  top: 25%;
-  right: 3%;
+  top: 36%;
+  left: 22%;
   font-size: 1.5em;
 }
+
 
 .mobile {
 	display: none;
@@ -150,12 +168,12 @@ p, a, .drop-cap, .soundcite {
 
 .route-btn button {
     background-color: #ef6737;
-    height: 30px;
-    width: 30px;
+    padding: 8px 11px;
     margin: 7px;
     border: 2px solid #fff;
     border-radius: 50%;
     color: #fff;
+    font-weight: 800;
   }
 
 .route-btn button {
@@ -205,7 +223,14 @@ p, a, .drop-cap, .soundcite {
 	display: none;
 }
 
-.active {
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-color: #030b40;
+  position: absolute;
+}
+
+.active-p {
 	display: block !important;
 }
 
@@ -213,8 +238,18 @@ p, a, .drop-cap, .soundcite {
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    background: url(../gfx/m-chapter-titles/m-policeman.jpg);
+    background-repeat: no-repeat;
+    backgrond-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
   .chapter-name {
-    top: 10%;
+    display: none;
   }
 
   .all {
@@ -222,8 +257,14 @@ p, a, .drop-cap, .soundcite {
   }
 
   #open-slider span{
-    right: 0%;
+    left: 22%;
     font-size: 1em;
+    top: 42%;
+  }
+
+  #open-slider img {
+    width: 30%;
+    float: left;
   }
 
   .popup {
@@ -238,8 +279,9 @@ p, a, .drop-cap, .soundcite {
   .route-btn{
     position: absolute;
     display: grid;
-    right: 0;
-    top: 45px;
+    right: 2%;
+    top: 20%;
+    z-index: 8;
   }
 /*
   #_1-bg, #_2-bg, #_3-bg, #_4-bg, #_5-bg {
