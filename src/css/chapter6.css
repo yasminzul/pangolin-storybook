@@ -91,22 +91,24 @@ svg {
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  border: none;
+  padding: 0;
+  border: 1px solid #ffffff87;
   background-color: #ffffff00;
+  outline: none;
 }
 
 #open-slider img {
-  width: 50%;
+  width: 20%;
   float: left;
 }
 
 #open-slider span {
   color: #fff;
   display: inline-block;
-  width: 50%;
+  width: 75%;
   position: absolute;
-  top: 25%;
-  right: 1%;
+  top: 36%;
+  left: 22%;
   font-size: 1.5em;
 }
 
@@ -235,9 +237,15 @@ svg {
 		position: fixed;
 	}
 
-   #open-slider span{
-    right: 0%;
-    font-size: 1em;
+  #open-slider span{
+    left: 28%;
+    font-size: 0.9em;
+    top: 42%;
+  }
+
+  #open-slider img {
+    width: 30%;
+    float: left;
   }
 
 	.desktop {

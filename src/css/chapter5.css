@@ -25,6 +25,7 @@ p, .drop-cap {
   width: 100%;
 }
 
+
  .swipe {
     position: absolute;
     bottom: 8%;
@@ -291,6 +292,18 @@ p, .drop-cap {
   	  top: 18%;
       left: 12%;
       width: 40%;
+  }
+
+  .progress {
+    right: 7%;
+    top: 12%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #000;
   }
 
   .prev-next-btn

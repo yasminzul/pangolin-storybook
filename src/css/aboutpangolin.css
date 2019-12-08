@@ -261,6 +261,15 @@ body {
   right: 8vw;
 }
 
+#orangasli-btn {
+  margin-left: 15%;
+}
+
+#orangasli-btn, #expert-btn {
+  width: 35%;
+  height: 85px;
+}
+
 #orangasli-popup, #expert-popup {
   display: none;
   width: 100%;
@@ -435,7 +444,7 @@ body {
   {
     width: 25vw;
     top: 20vh;
-    left: 5vw;
+    left: 8vw;
   }
 
   .s1-text2, .s1-text3
@@ -540,7 +549,7 @@ body {
 {
     width: 35%;
     height: 13vh;
-    margin-left: 54px;
+    margin-left: 15%;
 }
 
 
