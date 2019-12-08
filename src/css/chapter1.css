@@ -5,7 +5,7 @@ body:before {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
 }
 
 body
@@ -49,6 +49,7 @@ p, .drop-cap, .soundcite {
 	  background: url(../gfx/m-chapter-titles/m-middleman.jpg);
 	  background-repeat: no-repeat;
 	  backgrond-position: center;
+    /*background-attachment: fixed;*/
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;

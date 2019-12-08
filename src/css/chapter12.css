@@ -166,9 +166,15 @@ body {
     text-align: center;
 }
 
-.center-middle img {
-	width: 65%;
-	margin: 10vh auto 3vh auto;
+#m-cn {
+	display: none;
+}
+
+#desk-cn  {
+    width: 70%;
+    padding: 10% 0 3% 0;
+    display: block;
+    margin-left: 15%;
 }
 
 .center-bottom {
@@ -371,9 +377,14 @@ body {
 	    width: 60%;
 	}
 
-	.center-middle img {
-	    margin: 20% 3% 50%;
+	#desk-cn {
+		display: none;
+	}
+
+	#m-cn {
+	    padding: 20% 10% 50%;
     	width: 80%;
+    	display: block;
 	}
 
 
