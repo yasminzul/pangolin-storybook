@@ -67,6 +67,10 @@ svg
   z-index: 0;
 }
 
+.scroll-arrow {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
 
   .main-intro
@@ -83,8 +87,15 @@ svg
 
   .title
   {
-    margin: 16% 0 30% 0;
-    width: 100%;
+    margin: 16% 0 35% 0;
+    width: 85%;
+  }
+
+  .scroll-arrow {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    right: 49%;
   }
 
   .logos {

@@ -144,6 +144,7 @@ svg {
 
 .main-map-title img {
 	width: 60%;
+  margin-left: 19%;
 }
 
 #open-slider {
@@ -439,6 +440,14 @@ svg {
 
 }
 
+ #cn-desk {
+    display: block;
+  }
+
+  #cn-m {
+    display: none;
+  }
+
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
@@ -457,6 +466,14 @@ svg {
 	.desktop {
 		display: none;
 	}
+
+    #cn-desk {
+    display: none;
+  }
+
+  #cn-m {
+    display: block;
+  }
 
   .swipe {
     bottom: 6%;
@@ -483,9 +500,9 @@ svg {
     top: 28%;
   }
   .bottom {
-    top: 33%;
+    top: 17%;
     left: 5%;
-    width: 37%;;
+    width: 31%;
   }
 
   .right {

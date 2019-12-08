@@ -62,9 +62,19 @@ p, .drop-cap {
 
 @media only screen and (max-width: 900px) {
 
+    body:before {
+    background: url(../gfx/m-chapter-titles/m-hunters.jpg);
+    background-repeat: no-repeat;
+    backgrond-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 
   .chapter-name {
-    left: 23%;
+    display: none;
   }
 
 }

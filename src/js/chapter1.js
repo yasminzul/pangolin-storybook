@@ -25,3 +25,26 @@ $(window).on("orientationchange", function(){
   $('.full-orientation').addClass('active');
   
 });
+
+
+
+  // $(window).on("orientationchange",function(){
+  //   if(window.orientation == 0)
+  //   {
+  //     console.log('portrait');
+  //       $('.full-orientation').removeClass('active');
+  //       $('.full-orientation').addClass('hide');
+  //       $('.portrait').addClass('active');
+  //       $('.portrait').removeClass('hide');
+  //   }
+  //   else
+  //   {
+  //     console.log('landscape');
+  //     $('.landscape').removeClass('hide');
+  //     $('.landscape').addClass('active');
+  //     $('.portrait').removeClass('active');
+  //     $('.portrait').addClass('hide');
+  //     $('.full-orientation').removeClass('hide');
+  //     $('.full-orientation').addClass('active');
+  //   }
+  // });                   
