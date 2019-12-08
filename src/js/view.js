@@ -5,13 +5,13 @@ import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 
-function createCookie(cookieName,cookieValue)
+function setCookie(cookieName,cookieValue)
     {
       var date = new Date();
       date.setTime(date.getTime()+(24*60*60*1000));
-      document.cookie = cookieName + "=" + cookieValue;
+      document.cookie = cookieName + "=" + cookieValue + ";path=/;" + "SameSite=None; Secure";
     }
-function accessCookie(cookieName)
+function getCookie(cookieName)
     {
       var name = cookieName + "=";
       var allCookieArray = document.cookie.split(';');
@@ -26,13 +26,34 @@ function accessCookie(cookieName)
 
 function checkCookie() {
   var choice = getCookie("chosen");
-  if (choice != "") {
-    alert("Welcome again " + choice);
+  console.log(choice);
+  if (choice != "true") {
+    $('.landscape').addClass('hide');
+    $('.full-orientation').removeClass('active');
+    $('.full-orientation').addClass('hide');
+    $('.portrait').addClass('active');
+    $('.portrait').removeClass('hide');
   }
   else {
-    choice = prompt("Please enter your name:", "");
+    $(window).on("orientationchange", function(){
+      $('.landscape').removeClass('hide');
+      $('.landscape').addClass('active');
+      $('.portrait').removeClass('active');
+      $('.portrait').addClass('hide');
+      $('.full-orientation').removeClass('hide');
+      $('.full-orientation').addClass('active');
+    });
     if (choice != "" && choice != null) {
-      setCookie("chosen", choice);
+
+      $(".plain-text").on("click", function(e) {
+        $('.landscape').addClass('hide');
+        $('.full-orientation').removeClass('active');
+        $('.full-orientation').addClass('hide');
+        $('.portrait').addClass('active');
+        $('.portrait').removeClass('hide');
+          setCookie("chosen", "true");
+      });
+
     }
   }
 }
