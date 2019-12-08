@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const PreloadWebpackPlugin = require('preload-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 var ghpages = require('gh-pages');
 ghpages.publish('dist', function(err) {});
@@ -25,7 +27,20 @@ module.exports = {
     chapter13: './src/js/chapter13.js',
     chapter14: './src/js/chapter14.js',
     chapter15: './src/js/chapter15.js',
-    view: './src/js/view.js'
+    view: './src/js/view.js',
+    loader: './src/js/loader.js'
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
   },
   output: {
     filename: '[name].main.js',
@@ -189,6 +204,10 @@ module.exports = {
         chunks: ['quiz','view'],
         filename: 'quiz.html'
     })
+    // new PreloadWebpackPlugin({
+    //   rel: 'preload',
+    //   include: ['loader']
+    // })
 ],
 
 };
