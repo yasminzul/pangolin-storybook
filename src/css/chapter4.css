@@ -35,9 +35,10 @@ p, a, .drop-cap, .soundcite {
 }
 
 svg {
-  height: 100vh;
-  right: 0;
-  position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    position: absolute;
 
 }
 
