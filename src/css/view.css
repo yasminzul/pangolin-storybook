@@ -225,14 +225,14 @@ tr
 	  width: 30px;
 	  height: 30px;
 		padding: 6px;
-    top: 10vh;
+    top: 25vh;
 	}
 
   #home-btn
   {
     width: 30px;
     height: 30px;
-    top: 79vh;
+    top: 64vh;
     padding: 7px;
     font-size: 1em;
 
@@ -299,7 +299,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 56vh;
+    top: 51vh;
     z-index: 400;
   }
 
@@ -313,7 +313,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 56vh;
+    top: 51vh;
     z-index: 400;
   }
 
@@ -327,7 +327,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 33vh;
+    top: 38vh;
     z-index: 400;
   }
 
@@ -341,7 +341,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 33vh;
+    top: 38vh;
     z-index: 400;
   }
 
