@@ -255,7 +255,7 @@ svg {
    .route-btn{
     position: absolute;
     display: grid;
-    right: 1%;
+    right: 8%;
     top: 11%;    
     z-index: 8;
   }

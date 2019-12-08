@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14.422" height="26.715" viewBox="0 0 14.422 26.715">
-    <defs>
-        <style>
-            .cls-1{fill:#fff;opacity:.7}
-        </style>
-    </defs>
-    <path id="scroll-down" d="M11.211 4L9.94 5.271l5.03 5.039H-8.293v1.8H14.97l-5.03 5.041 1.271 1.271 7.211-7.211z" class="cls-1" transform="rotate(90 5.064 13.357)"/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.38 37.87"><defs><style>.cls-1{fill:#fff;}</style></defs><title>scroll-down</title><path class="cls-1" d="M15.37,20.12a3,3,0,0,1-2.12-.88L.88,6.87A3,3,0,0,1,5.12,2.63l10.3,10.3L26.31,2.58a3,3,0,1,1,4.13,4.34l-13,12.37A3,3,0,0,1,15.37,20.12Z"/><path class="cls-1" d="M15.37,37.87A3,3,0,0,1,13.25,37L.88,24.62a3,3,0,0,1,4.24-4.25l10.3,10.31L26.31,20.32a3,3,0,1,1,4.13,4.35L17.44,37A3,3,0,0,1,15.37,37.87Z"/></svg>
