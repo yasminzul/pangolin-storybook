@@ -6,10 +6,11 @@ import './../js/plugin/swiper.min.js';
 var $ = require("jquery");
 
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
+<a href=index.html><div id=home-btn><i class="icon ion-md-home"></i></div></a>
 <div class=menu>
 <table>
 <tr>
-  <td><a href=index.html><img src=/menu/home@3x.png></a></td>
+  <td><a href=index.html><img src=menu/home@3x.png></a></td>
   <td><a href=about-pangolin.html><img src=menu/aboutpangolin@3x.png></a></td>
   <td><a href=chapter-1.html><img src=menu/middleman@3x.png></a></td>
   <td><a href=chapter-2.html><img src=menu/boatman@3x.png></a></td>

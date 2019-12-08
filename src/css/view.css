@@ -16,6 +16,11 @@ no-js #loader { display: none;  }
   padding: 30vh 40vw;
 }
 
+a i.icon
+{
+  color: #fff;
+}
+
 .loader img
 {
   animation-name: spin;
@@ -34,7 +39,21 @@ no-js #loader { display: none;  }
     }
 }
 
+#home-btn
+{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 1vw;
+  top: 10vh;
+  border-radius: 25px;
+	text-align: center;
+  padding: 10px;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.8em;
 
+}
 
 /* menu */
 
@@ -209,6 +228,17 @@ tr
     top: 10vh;
 	}
 
+  #home-btn
+  {
+    width: 30px;
+    height: 30px;
+    bottom: 10vh;
+    top: auto;
+    padding: 7px;
+    font-size: 1em;
+
+  }
+
   .landscape {
     display: block;
   }
@@ -348,9 +378,18 @@ body
   background-color: #161640 !important;
 }
 
-.menu, #burger-icon
+#home-btn
 {
-  display: none;
+  position: fixed;
+  top: 8.5vh;
+  bottom: auto;
+}
+
+#burger-icon
+{
+position: fixed;
+top: 2vh;
+bottom: auto;
 }
 
 .full-orientation.active
@@ -406,13 +445,13 @@ body
 
 #prev-chapter
 {
-  height: 5vh;
+  height: 10vw;
   background-image: url(../gfx/previous-button.svg);
   background-repeat: no-repeat;
   background-size: 3vh auto;
   background-position: 5% center;
   float: left;
-  padding: 1.75vw 2vw 1.75vw 8.5vw;
+  padding: 1.75vw 2vw 1.75vw 10vw;
   box-sizing: border-box;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -422,7 +461,7 @@ body
   font-family: franklin-gothic-urw, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5vh;
+  font-size: 3.45vw;
   top: 2vh;
   left: 3vw;
   margin-bottom: 5vh;
@@ -431,13 +470,13 @@ body
 
 #prev-chapter-one
 {
-  height: 5vh;
+  height: 10vw;
   background-image: url(../gfx/previous-button.svg);
   background-repeat: no-repeat;
   background-size: 3vh auto;
   background-position: 5% center;
   float: left;
-  padding: 2.5vw 2vw 2.5vw 8.5vw;
+  padding: 2.5vw 2vw 2.5vw 10vw;
   box-sizing: border-box;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -447,7 +486,7 @@ body
   font-family: franklin-gothic-urw, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5vh;
+  font-size: 3.45vw;
   top: 2vh;
   left: 3vw;
   margin-bottom: 5vh;
@@ -456,13 +495,13 @@ body
 
 #next-chapter
 {
-  height: 5vh;
+  height: 10vw;
   background-image: url(../gfx/next-button.svg);
   background-repeat: no-repeat;
   background-size: 3vh auto;
   background-position: 93% center;
   float: right;
-  padding: 1.75vw 8.5vw 1.75vw 2vw;
+  padding: 1.75vw 10vw 1.75vw 2vw;
   box-sizing: border-box;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -472,7 +511,7 @@ body
   font-family: franklin-gothic-urw, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5vh;
+  font-size: 3.45vw;
   top: 2vh;
   right: 3vw;
   margin-bottom: 5vh;
@@ -481,13 +520,13 @@ body
 
 #next-chapter-one
 {
-  height: 5vh;
+  height: 10vw;
   background-image: url(../gfx/next-button.svg);
   background-repeat: no-repeat;
   background-size: 3vh auto;
   background-position: 93% center;
   float: right;
-  padding: 2.5vw 8.5vw 2.5vw 2vw;
+  padding: 2.5vw 10vw 2.5vw 2vw;
   box-sizing: border-box;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -497,7 +536,7 @@ body
   font-family: franklin-gothic-urw, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5vh;
+  font-size: 3.45vw;
   top: 2vh;
   right: 3vw;
   margin-bottom: 5vh;
