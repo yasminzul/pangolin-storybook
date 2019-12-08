@@ -52,7 +52,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
     <a href=chapter-8.html><li>Chapter 7 : The Secret Pangolin Smuggling Routes Around The World</li></a>
     <a href=chapter-9.html><li>Chapter 8 : The Social Media Star</li></a>
     <a href=chapter-10.html><li>Chapter 9 : The Authorities</li></a>
-    <a href=hapter-11.html><li>Chapter 10 : The Two Doctors</li></a>
+    <a href=chapter-11.html><li>Chapter 10 : The Two Doctors</li></a>
     <a href=chapter-12.html><li>Chapter 11 : The No-Pangolin Recipes</li></a>
     <a href=chapter-13.html><li>Chapter 12 : The Hunters</li></a>
     <a href=chapter-15.html><li>Chapter 13 : The Forest</li></a>
