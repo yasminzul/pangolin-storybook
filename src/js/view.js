@@ -27,35 +27,43 @@ function getCookie(cookieName)
 function checkCookie() {
   var choice = getCookie("chosen");
   console.log(choice);
-  if (choice != "true") {
-    $('.landscape').addClass('hide');
-    $('.full-orientation').removeClass('active');
-    $('.full-orientation').addClass('hide');
-    $('.portrait').addClass('active');
-    $('.portrait').removeClass('hide');
-  }
-  else {
-    $(window).on("orientationchange", function(){
-      $('.landscape').removeClass('hide');
-      $('.landscape').addClass('active');
-      $('.portrait').removeClass('active');
-      $('.portrait').addClass('hide');
-      $('.full-orientation').removeClass('hide');
-      $('.full-orientation').addClass('active');
-    });
-    if (choice != "" && choice != null) {
+  if (choice != "true" || choice != "" || choice != null) {
+    $('.landscape').removeClass('hide');
+    $('.landscape').addClass('active');
+    $('.portrait').removeClass('active');
+    $('.portrait').addClass('hide');
+    $('.full-orientation').removeClass('hide');
+    $('.full-orientation').addClass('active');
 
-      $(".plain-text").on("click", function(e) {
-        $('.landscape').addClass('hide');
-        $('.full-orientation').removeClass('active');
-        $('.full-orientation').addClass('hide');
-        $('.portrait').addClass('active');
-        $('.portrait').removeClass('hide');
-          setCookie("chosen", "true");
+    $(".plain-text").on("click", function(e) {
+      $('.landscape').removeClass('active');
+      $('.landscape').addClass('hide');
+      $('.full-orientation').removeClass('active');
+      $('.full-orientation').addClass('hide');
+      $('.portrait').addClass('active');
+      $('.portrait').removeClass('hide');
+        setCookie("chosen", "true");
+    });
+  }
+    else if (choice == "true") {
+      $('.landscape').removeClass('active');
+      $('.landscape').addClass('hide');
+      $('.full-orientation').removeClass('active');
+      $('.full-orientation').addClass('hide');
+      $('.portrait').addClass('active');
+      $('.portrait').removeClass('hide');
+        setCookie("chosen", "false");
+    }
+
+      $(window).on("orientationchange", function(){
+        $('.landscape').removeClass('hide');
+        $('.landscape').addClass('active');
+        $('.portrait').removeClass('active');
+        $('.portrait').addClass('hide');
+        $('.full-orientation').removeClass('hide');
+        $('.full-orientation').addClass('active');
       });
 
-    }
-  }
 }
 
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
