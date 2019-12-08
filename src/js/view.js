@@ -61,7 +61,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </li>
   <li>Quiz: Which Pangolin Protector Are You?</li>
   <a href=about-project.html><li>About this project</li></a>
-  <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extenction</li></a>
+  <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extinction</li></a>
 </ul>
 </div>`;
 
