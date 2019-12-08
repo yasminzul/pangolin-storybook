@@ -75,6 +75,11 @@ a i.icon
   text-align: center;
 }
 
+.menu ul
+{
+  display: none;
+}
+
 tr
 {
   width: 100%;
@@ -220,19 +225,20 @@ tr
     top: 2vh !important;
   }
 
+
 	#burger-icon
 	{
 	  width: 30px;
 	  height: 30px;
 		padding: 6px;
-    top: 10vh;
+    top: 25vh;
 	}
 
   #home-btn
   {
     width: 30px;
     height: 30px;
-    top: 79vh;
+    top: 64vh;
     padding: 7px;
     font-size: 1em;
 
@@ -299,7 +305,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 56vh;
+    top: 51vh;
     z-index: 400;
   }
 
@@ -313,7 +319,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 56vh;
+    top: 51vh;
     z-index: 400;
   }
 
@@ -327,7 +333,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 33vh;
+    top: 38vh;
     z-index: 400;
   }
 
@@ -341,7 +347,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 33vh;
+    top: 38vh;
     z-index: 400;
   }
 
@@ -375,6 +381,50 @@ tr
 body
 {
   background-color: #161640 !important;
+}
+
+.menu ul
+{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-top: 5vh;
+}
+
+.menu table
+{
+  display: none;
+}
+
+.menu li
+{
+  color: #000;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+  margin: 2.5vh;
+}
+
+.menu a
+{
+  text-decoration: none;
+}
+
+.menu-chapter
+{
+  list-style: none;
+  padding: 0;
+}
+
+.menu-chapter li
+{
+  color: #000;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+  margin: 5px 0;
 }
 
 #home-btn
