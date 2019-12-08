@@ -25,8 +25,7 @@ module.exports = {
     chapter13: './src/js/chapter13.js',
     chapter14: './src/js/chapter14.js',
     chapter15: './src/js/chapter15.js',
-    view: './src/js/view.js',
-    credits: './src/js/credits.js'
+    view: './src/js/view.js'
   },
   output: {
     filename: '[name].main.js',
@@ -189,12 +188,6 @@ module.exports = {
         inject: true,
         chunks: ['quiz','view'],
         filename: 'quiz.html'
-    }),
-    new HtmlWebpackPlugin({
-        template: './src/credits.html',
-        inject: true,
-        chunks: ['credits','view'],
-        filename: 'credits.html'
     })
 ],
 
