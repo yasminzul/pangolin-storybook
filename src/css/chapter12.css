@@ -313,6 +313,10 @@ body {
     background-color: #000 !important;
 }
 
+.scroll-arrow {
+  display: none;
+}
+
 
 /* mobile and tablet */
 
@@ -338,6 +342,14 @@ body {
 		width: auto;
 		float: right;
 	}
+
+	 .scroll-arrow {
+	    display: block;
+	    position: absolute;
+	    bottom: 38%;
+	    right: 49%;
+	    height: 27px;
+  	}
 
 	.swipe {
 	    bottom: 1%;
@@ -382,7 +394,7 @@ body {
 	}
 
 	#m-cn {
-	    padding: 20% 10% 50%;
+	    padding: 10% 10% 50%;
     	width: 80%;
     	display: block;
 	}
