@@ -77,8 +77,8 @@ p, .drop-cap {
     margin-right: 3vw;
     margin-top: 5vh;
     z-index: 800;
-    padding: 2px 11px;
-    font-size: 30px;
+    padding: 2px 9px;
+    font-size: 25px;
     color: #000;
     border-radius: 50%;
     background-color: #00000038;
@@ -126,7 +126,7 @@ p, .drop-cap {
 .swiper-slide img {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 100%;
+  /*min-width: 100%;*/
 
   /* Set up proportionate scaling */
   width: auto;
@@ -154,7 +154,7 @@ p, .drop-cap {
 	position: absolute;
     text-align: center;
     font-size: 14px;
-    right: 5%;
+    right: 7%;
 	top: 35%;
 	width: 30%;
     z-index: 705;
@@ -166,7 +166,7 @@ p, .drop-cap {
 }
 
 .swiper-slide.right img {
-	float: right;
+	right: right;
 }
 
 
@@ -277,6 +277,12 @@ p, .drop-cap {
     left: 4%;
     width: 25%;
   }
+
+  .swiper-slide.right img {
+    right: 0 !important;
+    left: unset;
+  }
+
 
   .chapter-name {
   	  top: 18%;

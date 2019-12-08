@@ -206,7 +206,7 @@ tr
 	  width: 30px;
 	  height: 30px;
 		padding: 6px;
-    top: 40vh;
+    top: 10vh;
 	}
 
   .landscape {
@@ -269,8 +269,8 @@ tr
     margin: 0;
     background-color: transparent;
     position: fixed;
-    left: 1.4vw;
-    top: 25vh;
+    right: 1.4vw;
+    top: 56vh;
     z-index: 400;
   }
 
@@ -283,8 +283,8 @@ tr
     margin: 0;
     background-color: transparent;
     position: fixed;
-    left: 1.4vw;
-    top: 25vh;
+    right: 1.4vw;
+    top: 56vh;
     z-index: 400;
   }
 
@@ -298,7 +298,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 25vh;
+    top: 33vh;
     z-index: 400;
   }
 
@@ -312,7 +312,7 @@ tr
     background-color: transparent;
     position: fixed;
     right: 1.4vw;
-    top: 25vh;
+    top: 33vh;
     z-index: 400;
   }
 

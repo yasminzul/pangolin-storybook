@@ -18,8 +18,9 @@ p {
 }
 
 svg {
-	min-width: 100vw;
+	/*min-width: 100vw;*/
   height: 100vh;
+  float: right;
 }
 
 .portrait {
@@ -32,7 +33,8 @@ svg {
  .swipe {
     position: absolute;
     bottom: 8%;
-    right: 5%;
+    left: 5%;
+    font-size: 0.7em;
     border: none !important;
     color: #000;
     font-family: 'Averia Serif Libre', serif;
@@ -95,8 +97,8 @@ svg {
     margin-right: 3vw;
     margin-top: 5vh;
     z-index: 800;
-    padding: 2px 11px;
-    font-size: 30px;
+    padding: 2px 9px;
+    font-size: 25px;
     color: #fff;
     border-radius: 50%;
     background-color: #00000038;
@@ -210,16 +212,20 @@ svg {
 
 .slide-footer {
     position: absolute;
-    bottom: 0;
-    right: 2%;
+    bottom: 7%;
+    right: 3%;
+    z-index: 700;
+    font-size: 0.6em;
+    text-transform: uppercase;
 }
 
 .before-label {
     position: absolute;
     width: 35%;
-    top: 35px;
-    left: 20%;
+    top: 85px;
+    left: 28%;
     z-index: 1;
+  
 }
 
 .before-label span {
@@ -228,9 +234,10 @@ svg {
     color: #fff;
 }
 
+
 .before-text {
-	height: 63px;
-    width: 210px;
+  height: 66px;
+    width: 313px;
     background-color: #720001;
     font-family: franklin-gothic-urw, sans-serif;
     color: #fff;
@@ -243,7 +250,7 @@ svg {
     padding: 5px;
     font-size: 13px;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 15px;
     width: 25%;
     top: 5%;
     left: 5%;
@@ -252,8 +259,10 @@ svg {
 }
 
 .lgnd {
-  top: 80%;
-  line-height: 13px;
+    top: 82%;
+    width: 25%;
+    line-height: 10px;
+    font-size: 0.6em;
 }
 
 .prev-next-btn
@@ -365,6 +374,12 @@ svg {
 
 }
 
+#cm, #am, #bm {
+  width: 80%;
+  height: 85%;
+  min-height: unset;
+  min-width: unset;
+}
 #am, #bm {
   display: none;
   position: absolute;
@@ -374,7 +389,7 @@ svg {
 #am-img {
   position: absolute;
   right: 2%;
-  top: 250px;
+  top: 225px;
   cursor: pointer;
 
 }
@@ -382,7 +397,7 @@ svg {
 #bm-img {
   position: absolute;
   right: 20%;
-  top: 250px;
+  top: 225px;
   cursor: pointer;
 
 }
@@ -417,7 +432,7 @@ svg {
 
 	.mobile {
 		display: block;
-		background-color: #b1b59d;
+		background-color: #cdd7a6;
 	}
 
 	.desktop {
@@ -439,7 +454,7 @@ svg {
 
   .left {
     left: 5%;
-    top: 38%;
+    top: 28%;
   }
   .bottom {
     top: 33%;
@@ -453,7 +468,7 @@ svg {
   }
 
   .top {
-    top: 40px;
+    top: 50px;
     right: 2%;
     width: 35%;
   }
@@ -462,6 +477,19 @@ svg {
 		left: 16%;
     width: 25%;
 	}
+
+  .before-text {
+  height: 46px;
+    width: 172px;
+    background-color: #720001;
+    font-family: franklin-gothic-urw, sans-serif;
+    color: #fff;
+    margin: 7px auto;
+    font-size: 2em;
+    margin-top: 8%;
+    margin-right: 16%;
+}
+
 
 /*	#overlay-text {
     top: 50%;
@@ -474,9 +502,11 @@ svg {
 
   .before-label {
     width: 35%;
-    left: 25%;
+    left: 17%;
     top: 15px;
   }
+
+
 
 	.before-text {
 		margin: 0 auto;
