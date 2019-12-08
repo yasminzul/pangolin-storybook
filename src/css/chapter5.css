@@ -25,12 +25,15 @@ p, .drop-cap {
   width: 100%;
 }
 
+
  .swipe {
     position: absolute;
     bottom: 8%;
     right: 5%;
     border: none !important;
     color: #000;
+    z-index: 1000;
+
     font-family: 'Averia Serif Libre', serif;
   }
 
@@ -152,9 +155,8 @@ p, .drop-cap {
 
 .trail-text {
 	position: absolute;
-    text-align: center;
-    font-size: 14px;
-    right: 7%;
+  text-align: center;
+  right: 7%;
 	top: 35%;
 	width: 30%;
     z-index: 705;
@@ -166,16 +168,30 @@ p, .drop-cap {
 }
 
 .swiper-slide.right img {
-	right: right;
+	right: 0;
+  left: unset;
 }
 
 
 .trail-text p {
 	font-family: 'Averia Serif Libre', serif;
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.2em;
+  line-height: 25px;
 
 }
+
+.progress {
+    right: 7%;
+    top: 4%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #000;
+  }
 
 
 .prev-next-btn
@@ -266,7 +282,8 @@ p, .drop-cap {
 
   }
   .trail-text p {
-    font-size: 1.1em !important;
+    font-size: 0.9em !important;
+    line-height: 20px;
   }
   .swipe {
     bottom: 6%;
@@ -274,7 +291,7 @@ p, .drop-cap {
   }
 
   .left {
-    left: 4%;
+    left: 6%;
     width: 25%;
   }
 
@@ -288,6 +305,10 @@ p, .drop-cap {
   	  top: 18%;
       left: 12%;
       width: 40%;
+  }
+
+  .progress {
+    top: 12%;
   }
 
   .prev-next-btn

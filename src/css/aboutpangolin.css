@@ -25,8 +25,8 @@ body {
 
 
 .accrd {
-  margin: 5% !important;
-  font-size: 1.5em;
+  margin-top: 5% !important;
+  margin-bottom: 2% !important;
 }
 
 .main-content
@@ -35,7 +35,7 @@ body {
   top: 18vh;
   left: 35vw;
   width: 35vw;
-  height: 100vh;
+  /*height: 100vh;*/
   /*display: none;*/
 
 }
@@ -48,6 +48,11 @@ body {
   line-height: 1.8;
   font-family: 'Averia Serif Libre', cursive;
   font-size: 2vh;
+}
+
+#title-name {
+  width: 60%;
+  margin-left: 20%;
 }
 
 
@@ -87,6 +92,13 @@ body {
     position: absolute;
     bottom: 8%;
     left: 5%;
+    border: none !important;
+  }
+
+  .swipe-expert {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
     border: none !important;
   }
 
@@ -249,6 +261,15 @@ body {
   right: 8vw;
 }
 
+#orangasli-btn {
+  margin-left: 15%;
+}
+
+#orangasli-btn, #expert-btn {
+  width: 35%;
+  height: 85px;
+}
+
 #orangasli-popup, #expert-popup {
   display: none;
   width: 100%;
@@ -377,7 +398,7 @@ body {
   .main-content
   {
     position: absolute;
-    top: 35vh;
+    top: 18vh;
     left: 25vw;
     width: 55vw;
     z-index: 1;
@@ -390,7 +411,10 @@ body {
   }
 
   #title-name {
-    margin-bottom: 50%;
+    /*margin-bottom: 50%;*/
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 0;
   }
 
   .main-content img {
@@ -420,7 +444,7 @@ body {
   {
     width: 25vw;
     top: 20vh;
-    left: 5vw;
+    left: 8vw;
   }
 
   .s1-text2, .s1-text3
@@ -513,16 +537,22 @@ body {
 
   .footer{
     left: 10vw;
-    bottom: 1vh;
+    bottom: 4vh;
     font-size: 0.9vw;
+  }
+
+  #expert-btn {
+    margin-left: 0px !important;
   }
 
   #orangasli-btn, #expert-btn
 {
-     width: 47%;
-    height: 16vh;
-    margin: 2vh 0.5px 9vh;
+    width: 35%;
+    height: 13vh;
+    margin-left: 15%;
 }
+
+
 
   .prev-next-btn
   {

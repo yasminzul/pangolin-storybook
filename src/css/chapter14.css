@@ -18,7 +18,7 @@ p {
 	font-family: 'Averia Serif Libre', cursive;
 	color: #000;
     font-size: 1em;
-    line-height: 11px;
+    line-height: 9px;
 	text-align: center;
 }
 
@@ -26,7 +26,7 @@ p {
 .row {
 	width: 40%;
     padding: 15px;
-    margin-top: 5%;
+    margin-top: 8%;
     display: block;
     overflow-y: scroll;
 }
@@ -37,11 +37,12 @@ p {
 }
 
 .chapter-name {
-    width: 22%;
+    width: 16%;
     position: absolute;
     top: 3%;
-    right: 23%;
+    right: 25%;
     display: block;
+    margin-top: 4%;
 }
 
 .chapter-name img {
@@ -123,10 +124,16 @@ p {
 
 @media only screen and (max-width: 900px) {
 
+  body:before {
+    right: 12%;
+    left: unset;
+  }
+
 	.row {
-		margin-top: 8%;
+		margin-top: 12%;
 		width: 57%;
-		padding: 10px 15px;
+		padding: 17px 15px;
+    margin-bottom: 6%;
 	}
 
   .right {
@@ -141,10 +148,14 @@ p {
     padding: 1.5vh 2vh 1.5vh 9vh;
     border-radius: 5px;
     font-size: 1.75vw;
+    right: 0;
+    left: unset;
   }
 
   #next-chapter
   {
+
+    opacity: 0.3 !important;
     height: 8.5vh;
     background-size: 4.75vh auto;
     background-position: 93% center;
@@ -153,15 +164,16 @@ p {
     font-size: 1.75vw;
   }
 
-	p {
+	.row p {
     margin: 0;
     font-size: 1em;
-    line-height: 27px;
+    line-height: 22px;
 	}
 
 	.chapter-name {
     width: 27%;
     right: 22%;
+    top: 6%;
 
 	}
 

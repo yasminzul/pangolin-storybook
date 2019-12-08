@@ -48,10 +48,10 @@ a i.icon
   top: 10vh;
   border-radius: 25px;
 	text-align: center;
-  padding: 10px;
+  padding: 8px;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.8em;
+  font-size: 30px;
 
 }
 
@@ -239,8 +239,8 @@ tr
     width: 30px;
     height: 30px;
     top: 64vh;
-    padding: 7px;
-    font-size: 1em;
+    padding: 2px;
+    font-size: 22px;
 
   }
 
@@ -448,7 +448,7 @@ bottom: auto;
 
 .full-orientation
 {
-  background-color: #010733;
+  background-color: #020320;
   height: 100vh;
   width: 100vw;
   margin: 0;

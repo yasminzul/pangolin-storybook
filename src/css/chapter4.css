@@ -35,9 +35,10 @@ p, a, .drop-cap, .soundcite {
 }
 
 svg {
-  height: 100vh;
-  right: 0;
-  position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    position: absolute;
 
 }
 
@@ -82,24 +83,27 @@ svg {
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  border: none;
+  padding: 0;
+  border: 1px solid #ffffff87;
   background-color: #ffffff00;
+  outline: none;
 }
 
 #open-slider img {
-  width: 50%;
+  width: 20%;
   float: left;
 }
 
 #open-slider span {
   color: #fff;
   display: inline-block;
-  width: 41%;
+  width: 85%;
   position: absolute;
-  top: 25%;
-  right: 3%;
+  top: 36%;
+  left: 22%;
   font-size: 1.5em;
 }
+
 
 .mobile {
 	display: none;
@@ -253,8 +257,14 @@ svg {
   }
 
   #open-slider span{
-    right: 0%;
+    left: 22%;
     font-size: 1em;
+    top: 42%;
+  }
+
+  #open-slider img {
+    width: 30%;
+    float: left;
   }
 
   .popup {

@@ -30,6 +30,18 @@ svg {
   position: absolute;
 }
 
+  .progress {
+    right: 7%;
+    top: 12%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #fff;
+  }
+
  .swipe {
     position: absolute;
     bottom: 8%;
@@ -138,18 +150,24 @@ svg {
 	position: relative;
     left: 19%;
     width: 18%;
-    height: 60px;
+    height: 72px;
     margin-top: 2%;
   cursor: pointer;
     /*background-color: #e89c00;*/
 }
 
+.africa {
+  width: 24% !important;
+}
+
 .left{
     position: absolute;
     width: 25%;
-    top: 5%;
+    top: 8%;
     left: 5%;
 }
+
+
 
 .left-bottom {
 	  position: absolute;
@@ -162,11 +180,11 @@ svg {
 	position: absolute;
 	width: 25%;
 	right: 5%;
-	top: 8%;
+	top: 30%;
 }
 
 .left-top {
-  left: 2%;
+  left: 5%;
   top: 5%;
   width: 35% !important;
 }
@@ -180,7 +198,7 @@ svg {
 	position: absolute;
 	width: 25%;
 	right: 5%;
-	top: 30%;
+	top: 40%;
 }
 
 .legend {
@@ -200,7 +218,8 @@ svg {
 .map-title {
     font-family: 'Averia Serif Libre', serif;
     color: #000;
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 28px;
 }
 
 .mobile {
@@ -215,7 +234,7 @@ svg {
     bottom: 7%;
     right: 3%;
     z-index: 700;
-    font-size: 0.6em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -341,20 +360,26 @@ svg {
   position: absolute;
 }
 
+.btn-wrapper {
+  width: 25%;
+  position: absolute;
+  right: 5%;
+}
+
 #a, #b {
   display: none;
 }
 
 #a-img {
   position: absolute;
-  right: 5%;
+  right: 0%;
   top: 45%;
   cursor: pointer;
 }
 
 #b-img {
   position: absolute;
-  right: 19%;
+  right: 52%;
   top: 45%;
   cursor: pointer;
 
@@ -362,7 +387,7 @@ svg {
 
 #a-img, #b-img {
   background-color: #362f2d;
-  width: 13%;
+  width: 48%;
   padding: 13px;
   border-radius: 2.5px;
   border: none;
@@ -374,12 +399,6 @@ svg {
 
 }
 
-#cm, #am, #bm {
-  width: 80%;
-  height: 85%;
-  min-height: unset;
-  min-width: unset;
-}
 #am, #bm {
   display: none;
   position: absolute;
@@ -443,8 +462,15 @@ svg {
     bottom: 6%;
   }
 
+  .swiper-slide img {
+  /* Set rules to fill background */
+    min-height: unset;
+    min-width: unset;
+  } 
+
   .map-title {
     font-size: 0.9em !important;
+    line-height: 18px;
   }
 
   .mobile.map-text {
@@ -458,7 +484,7 @@ svg {
   }
   .bottom {
     top: 33%;
-    left: 2%;
+    left: 5%;
     width: 37%;;
   }
 
@@ -474,8 +500,10 @@ svg {
   }
 
 	#open-slider {
-		left: 16%;
-    width: 25%;
+		left: 17%;
+    width: 21%;
+    height: 45px;
+    margin-top: 1%;
 	}
 
   .before-text {
@@ -506,6 +534,27 @@ svg {
     top: 15px;
   }
 
+  #resize-right {
+    min-width: unset;
+    max-width: unset;
+    width: 85%;
+    height: 100%;
+    left: unset;
+    right: 0;
+  }
+
+    #resize-left {
+    min-width: unset;
+    max-width: unset;
+    width: 85%;
+    height: 100%;
+    right: unset;
+    left: 0;
+  }
+
+  .slide-footer {
+    font-size: 0.6em;
+  }
 
 
 	.before-text {
