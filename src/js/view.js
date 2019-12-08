@@ -102,7 +102,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 <ul>
 <a href=index.html><li>Home</li></a>
 <a href=about-pangolin.html><li>About The Pangolins</li></a>
-<li>All chapters
+<li>
   <ul class=menu-chapter>
     <a href=chapter-1.html><li>Chapter 1 : The Middleman</li></a>
     <a href=chapter-2.html><li>Chapter 2 : The Boatman</li></a>
@@ -122,7 +122,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </li>
   <li>Quiz: Which Pangolin Protector Are You?</li>
   <a href=about-project.html><li>About this project</li></a>
-  <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extenction</li></a>
+  <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extinction</li></a>
 </ul>
 </div>`;
 

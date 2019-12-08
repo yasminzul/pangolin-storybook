@@ -322,7 +322,9 @@ body {
 
 @media only screen and (max-width: 900px) {
 
-
+	.recipe {
+		font-family: franklin-gothic-urw, sans-serif;
+	}
 
 	.popup {
 		top: 0;
