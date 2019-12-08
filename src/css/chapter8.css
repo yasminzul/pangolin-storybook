@@ -144,12 +144,18 @@ svg {
     /*background-color: #e89c00;*/
 }
 
+.africa {
+  width: 24% !important;
+}
+
 .left{
     position: absolute;
     width: 25%;
     top: 8%;
     left: 5%;
 }
+
+
 
 .left-bottom {
 	  position: absolute;
@@ -180,7 +186,7 @@ svg {
 	position: absolute;
 	width: 25%;
 	right: 5%;
-	top: 30%;
+	top: 40%;
 }
 
 .legend {

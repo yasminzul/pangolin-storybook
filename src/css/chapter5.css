@@ -31,6 +31,8 @@ p, .drop-cap {
     right: 5%;
     border: none !important;
     color: #000;
+    z-index: 1000;
+
     font-family: 'Averia Serif Libre', serif;
   }
 
@@ -152,9 +154,8 @@ p, .drop-cap {
 
 .trail-text {
 	position: absolute;
-    text-align: center;
-    font-size: 14px;
-    right: 7%;
+  text-align: center;
+  right: 7%;
 	top: 35%;
 	width: 30%;
     z-index: 705;
@@ -166,14 +167,16 @@ p, .drop-cap {
 }
 
 .swiper-slide.right img {
-	right: right;
+	right: 0;
+  left: unset;
 }
 
 
 .trail-text p {
 	font-family: 'Averia Serif Libre', serif;
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.2em;
+  line-height: 25px;
 
 }
 
