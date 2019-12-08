@@ -282,7 +282,8 @@ p, .drop-cap {
 
   }
   .trail-text p {
-    font-size: 1.1em !important;
+    font-size: 0.9em !important;
+    line-height: 20px;
   }
   .swipe {
     bottom: 6%;
@@ -290,7 +291,7 @@ p, .drop-cap {
   }
 
   .left {
-    left: 4%;
+    left: 6%;
     width: 25%;
   }
 

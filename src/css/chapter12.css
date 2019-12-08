@@ -127,7 +127,7 @@ body {
 
 .button-cluster
 {
-	width: 40%;
+	width: 35%;
 	height: 16vh;
 	margin: 3vh auto;
 	cursor: pointer;
@@ -355,6 +355,11 @@ body {
 		margin: 5vh 0;
 	}
 
+	.recipe-text em {
+		font-size: 0.7em;
+		line-height: 12px;
+	}
+
 	/*main view*/
 
 	.mobile.main img {
@@ -367,7 +372,7 @@ body {
 	}
 
 	.center-middle img {
-	    margin: 28% 3% 50%;
+	    margin: 20% 3% 50%;
     	width: 80%;
 	}
 
@@ -381,14 +386,9 @@ body {
     	line-height: 18px;
 	}
 
-	.note-text {
-		width: 50%;
-	}
-
-
 	.button-cluster
 	{
-		width: 40%;
+		width: 55%;
 		height: 30vh;
 		margin: 0 auto;
 		position: static;
@@ -396,7 +396,7 @@ body {
 
 	.button-cluster img {
 		width: 49%;
-		height: 11.5vh;
+		height: 12.5vh;
 		margin: 0 auto;
 	}
 
@@ -413,7 +413,9 @@ body {
 	{
 		font-size: 0.7em;
 		line-height: 1.3;
-		padding: 0 27vw;
+		width: 50%;
+		height: 60px;
+		margin-bottom: 60px;
 	}
 
 	#prev-chapter
