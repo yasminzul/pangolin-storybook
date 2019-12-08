@@ -139,7 +139,7 @@ svg {
 .route-btn button {
     background-color: #ef6737;
     padding: 7px 10px;
-    margin: 7px;
+    margin: 5px;
     border: 2px solid #fff;
     border-radius: 50%;
     color: #fff;
@@ -256,7 +256,7 @@ svg {
     position: absolute;
     display: grid;
     right: 1%;
-    top: 13%;    
+    top: 11%;    
     z-index: 8;
   }
 

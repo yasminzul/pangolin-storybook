@@ -141,10 +141,14 @@ p {
     padding: 1.5vh 2vh 1.5vh 9vh;
     border-radius: 5px;
     font-size: 1.75vw;
+    right: 0;
+    left: unset;
   }
 
   #next-chapter
   {
+
+    opacity: 0.3 !important;
     height: 8.5vh;
     background-size: 4.75vh auto;
     background-position: 93% center;
