@@ -5,6 +5,38 @@ import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 
+function createCookie(cookieName,cookieValue)
+    {
+      var date = new Date();
+      date.setTime(date.getTime()+(24*60*60*1000));
+      document.cookie = cookieName + "=" + cookieValue;
+    }
+function accessCookie(cookieName)
+    {
+      var name = cookieName + "=";
+      var allCookieArray = document.cookie.split(';');
+      for(var i=0; i<allCookieArray.length; i++)
+      {
+        var temp = allCookieArray[i].trim();
+        if (temp.indexOf(name)==0)
+        return temp.substring(name.length,temp.length);
+      }
+      return "";
+    }
+
+function checkCookie() {
+  var choice = getCookie("chosen");
+  if (choice != "") {
+    alert("Welcome again " + choice);
+  }
+  else {
+    choice = prompt("Please enter your name:", "");
+    if (choice != "" && choice != null) {
+      setCookie("chosen", choice);
+    }
+  }
+}
+
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
 <a href=index.html><div id=home-btn><i class="icon ion-md-home"></i></div></a>
 <div class=menu>
@@ -18,7 +50,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </tr>
 <tr>
   <td><a href=chapter-5.html><img src=menu/followtrail@3x.png></a></td>
-  <td><a href=chapter-4.html><img src=menu/policeman@3x.png></a></td> 
+  <td><a href=chapter-4.html><img src=menu/policeman@3x.png></a></td>
   <td><a href=chapter-6.html><img src=menu/waitingwife@3x.png></a></td>
   <td><a href=chapter-8.html><img src=menu/routesmap@3x.png></a></td>
   <td><a href=chapter-9.html><img src=menu/socialmedia@3x.png></a></td>
@@ -82,4 +114,5 @@ $( window ).on('load',function() {
 
 $(window).on('load', function () {
     $(".loader").fadeOut("slow");
+    checkCookie()
   });
