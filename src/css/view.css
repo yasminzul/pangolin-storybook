@@ -392,5 +392,104 @@ body
   border: none;
 }
 
+#prev-chapter
+{
+  height: 6.5vh;
+  background-image: url(../gfx/previous-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 5% center;
+  float: left;
+  padding: 1.5vh 2vh 1.5vh 6vh;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: relative;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#prev-chapter-one
+{
+  height: 6.5vh;
+  background-image: url(../gfx/previous-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 5% center;
+  float: left;
+  padding: 2vh 2vh 2vh 6vh;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: relative;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#next-chapter
+{
+  height: 6.5vh;
+  background-image: url(../gfx/next-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 93% center;
+  float: right;
+  padding: 1.5vh 6vh 1.5vh 2vh;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: relative;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#next-chapter-one
+{
+  height: 6.5vh;
+  background-image: url(../gfx/next-button.svg);
+  background-repeat: no-repeat;
+  background-size: 3vh auto;
+  background-position: 93% center;
+  float: right;
+  padding: 2vh 6vh 2vh 2vh;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: relative;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#prev-chapter div
+{
+  display: block;
+}
+
+#prev-chapter-one div
+{
+  display: block;
+}
+
+#next-chapter div
+{
+  display: block;
+}
+
+#next-chapter-one div
+{
+  display: block;
+}
 
 }
