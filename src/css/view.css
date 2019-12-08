@@ -260,6 +260,81 @@ tr
   padding-bottom: 10px;
 }
 
+  #prev-chapter
+  {
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    padding: 1.5vh 2vh 1.5vh 2vh;
+    margin: 0;
+    background-color: transparent;
+    position: fixed;
+    left: 1.4vw;
+    top: 25vh;
+    z-index: 400;
+  }
+
+  #prev-chapter-one
+  {
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    padding: 2.5vh 2vh 2.5vh 2vh;
+    margin: 0;
+    background-color: transparent;
+    position: fixed;
+    left: 1.4vw;
+    top: 25vh;
+    z-index: 400;
+  }
+
+  #next-chapter
+  {
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    padding: 1.5vh 2vh 1.5vh 2vh;
+    margin: 0;
+    background-color: transparent;
+    position: fixed;
+    right: 1.4vw;
+    top: 25vh;
+    z-index: 400;
+  }
+
+  #next-chapter-one
+  {
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    padding: 2.5vh 2vh 2.5vh 2vh;
+    margin: 0;
+    background-color: transparent;
+    position: fixed;
+    right: 1.4vw;
+    top: 25vh;
+    z-index: 400;
+  }
+
+  #prev-chapter div
+  {
+    display: none;
+  }
+
+  #prev-chapter-one div
+  {
+    display: none;
+  }
+
+  #next-chapter div
+  {
+    display: none;
+  }
+
+  #next-chapter-one div
+  {
+    display: none;
+  }
 
 
 }

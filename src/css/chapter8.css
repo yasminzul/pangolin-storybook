@@ -1,12 +1,13 @@
 body {
+  height: 100%; /* Fallback for browsers that do not support Custom Properties */
     width: 100vw;
     overflow: hidden;
     margin: 0;
-    background-color: #a1a686;
     background-image: url(../gfx/route-map/map-main.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: right;
+    background-color: #a1a686;
+    background-size: cover;
 }
 
 p {
@@ -17,7 +18,8 @@ p {
 }
 
 svg {
-	width: 100vw;
+	min-width: 100vw;
+  height: 100vh;
 }
 
 .portrait {
@@ -72,7 +74,18 @@ svg {
 }
 
 .swiper-slide img {
-  width: 100%;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 100%;
+
+  /* Set up proportionate scaling */
+  width: auto;
+  height: 100vh;
+
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .close {
