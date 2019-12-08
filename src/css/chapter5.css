@@ -181,6 +181,18 @@ p, .drop-cap {
 
 }
 
+.progress {
+    right: 7%;
+    top: 4%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #000;
+  }
+
 
 .prev-next-btn
 {
@@ -295,15 +307,7 @@ p, .drop-cap {
   }
 
   .progress {
-    right: 7%;
     top: 12%;
-    position: absolute;
-    text-transform: uppercase;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.7em;
-    color: #000;
   }
 
   .prev-next-btn
