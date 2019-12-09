@@ -110,85 +110,85 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/chapter-2.html',
         inject: true,
-        chunks: ['chapter2','view','chapter'],
+        chunks: ['loader_head','chapter2','view','chapter'],
         filename: 'chapter-2.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-3.html',
         inject: true,
-        chunks: ['chapter3','view','chapter'],
+        chunks: ['loader_head','chapter3','view','chapter'],
         filename: 'chapter-3.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-4.html',
         inject: true,
-        chunks: ['chapter4','view','chapter'],
+        chunks: ['loader_head','chapter4','view','chapter'],
         filename: 'chapter-4.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-5.html',
         inject: true,
-        chunks: ['chapter5','view'],
+        chunks: ['loader_head','chapter5','view'],
         filename: 'chapter-5.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-6.html',
         inject: true,
-        chunks: ['chapter6','view','chapter'],
+        chunks: ['loader_head','chapter6','view','chapter'],
         filename: 'chapter-6.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-8.html',
         inject: true,
-        chunks: ['chapter8','view'],
+        chunks: ['loader_head','chapter8','view'],
         filename: 'chapter-8.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-9.html',
         inject: true,
-        chunks: ['chapter9','view','chapter'],
+        chunks: ['loader_head','chapter9','view','chapter'],
         filename: 'chapter-9.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-10.html',
         inject: true,
-        chunks: ['chapter10','view','chapter'],
+        chunks: ['loader_head','chapter10','view','chapter'],
         filename: 'chapter-10.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-11.html',
         inject: true,
-        chunks: ['chapter11','view','chapter'],
+        chunks: ['loader_head','chapter11','view','chapter'],
         filename: 'chapter-11.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-12.html',
         inject: true,
-        chunks: ['chapter12','view'],
+        chunks: ['loader_head','chapter12','view'],
         filename: 'chapter-12.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-13.html',
         inject: true,
-        chunks: ['chapter13','view','chapter'],
+        chunks: ['loader_head','chapter13','view','chapter'],
         filename: 'chapter-13.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-14.html',
         inject: true,
-        chunks: ['chapter14','view'],
+        chunks: ['loader_head','chapter14','view'],
         filename: 'chapter-14.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-15.html',
         inject: true,
-        chunks: ['chapter15','view','chapter'],
+        chunks: ['loader_head','chapter15','view','chapter'],
         filename: 'chapter-15.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/quiz.html',
         inject: true,
-        chunks: ['quiz','view'],
+        chunks: ['loader_head','quiz','view'],
         filename: 'quiz.html'
     }),
     new HtmlWebpackInjector()
