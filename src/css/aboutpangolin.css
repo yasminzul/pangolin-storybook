@@ -98,7 +98,7 @@ body {
   .swipe-expert {
     position: absolute;
     bottom: 8%;
-    left: 10%;
+    left: 20%;
     border: none !important;
   }
 
@@ -432,6 +432,10 @@ body {
 
   .swipe {
     bottom: 6%;
+  }
+
+  .swipe-expert {
+    left: 10%;
   }
 
   .s1

@@ -78,7 +78,7 @@ p, .drop-cap {
     right: 0;
     top: 0;
     margin-right: 3vw;
-    margin-top: 5vh;
+    margin-top: 11vh;
     z-index: 800;
     padding: 2px 9px;
     font-size: 25px;
@@ -271,11 +271,37 @@ p, .drop-cap {
   position: absolute;
 }
 
+ #cn-desk {
+    display: block;
+  }
+
+  #cn-m {
+    display: none;
+  }
+
 
 /* mobile and tablet */
 
 @media only screen and (max-width: 900px) {
 
+    body {
+    background: url(../gfx/m-chapter-titles/m-follow.jpg);
+    background-repeat: no-repeat;
+    backgrond-position: center;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #cn-desk {
+    display: none;
+  }
+
+  #cn-m {
+    display: block;
+  }
 
 	.trail-text {
 		top: 12%;

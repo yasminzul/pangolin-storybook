@@ -7,3 +7,4 @@ src/gfx/.DS_Store
 src/gfx/.DS_Store
 node_modules/.DS_Store
 *.icloud
+.DS_Store

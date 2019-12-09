@@ -189,6 +189,7 @@ tr
   {
     width: 100vw;
     display: block;
+    font-size: 0.9em;
   }
 
   .open-icon {
@@ -358,7 +359,7 @@ body
   display: block;
   list-style: none;
   padding: 0;
-  margin-top: 5vh;
+  /*margin-top: 5vh;*/
 }
 
 .menu table

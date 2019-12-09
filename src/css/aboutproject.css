@@ -11,13 +11,17 @@ a {
 	color: #000;
 }
 
+.mobile-row a {
+  color: #fff;
+}
+
 .sh-logo .icon {
 	color: #000 !important;
 	padding: 3px;
 	margin: 4px;
 }
 
-.not-footer p, table, .not-footer span, .top, .bottom {
+.not-footer p, .not-footer a, table, .not-footer span, .top, .bottom {
     font-family: franklin-gothic-urw, sans-serif;
     font-style: normal;
     font-weight: 300;

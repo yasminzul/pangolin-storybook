@@ -58,7 +58,7 @@ svg {
 .close {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 11vh;
   margin-right: 2vw;
   margin-top: 3vh;
   z-index: 800;
@@ -279,7 +279,7 @@ svg {
   .route-btn{
     position: absolute;
     display: grid;
-    right: 2%;
+    right: 8%;
     top: 20%;
     z-index: 8;
   }

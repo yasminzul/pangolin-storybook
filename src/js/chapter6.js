@@ -9,23 +9,23 @@ import Swiper from './../js/plugin/swiper.min.js';
 
 // plain text button toggle
 
-$(".plain-text").on("click", function(e) {
-  $('.landscape').addClass('hide');
-  $('.full-orientation').removeClass('active');
-  $('.full-orientation').addClass('hide');
-  $('.portrait').addClass('active');
-  $('.portrait').removeClass('hide');
-});
-
-$(window).on("orientationchange", function(){
-  $('.landscape').removeClass('hide');
-  $('.landscape').addClass('active');
-  $('.portrait').removeClass('active');
-  $('.portrait').addClass('hide');
-  $('.full-orientation').removeClass('hide');
-  $('.full-orientation').addClass('active');
-  
-});
+// $(".plain-text").on("click", function(e) {
+//   $('.landscape').addClass('hide');
+//   $('.full-orientation').removeClass('active');
+//   $('.full-orientation').addClass('hide');
+//   $('.portrait').addClass('active');
+//   $('.portrait').removeClass('hide');
+// });
+// 
+// $(window).on("orientationchange", function(){
+//   $('.landscape').removeClass('hide');
+//   $('.landscape').addClass('active');
+//   $('.portrait').removeClass('active');
+//   $('.portrait').addClass('hide');
+//   $('.full-orientation').removeClass('hide');
+//   $('.full-orientation').addClass('active');
+//
+// });
 
 $("#open-slider").on("click", function() {
   $('.popup').css('display','block');
@@ -38,8 +38,8 @@ $(".close").on("click", function(e) {
   $(this).closest('.popup').css('display','none');
 });
 
-$(document).keydown(function(event) { 
-  if (event.keyCode == 27) { 
+$(document).keydown(function(event) {
+  if (event.keyCode == 27) {
     $('.popup').css('display','none');
   }
 });
@@ -49,37 +49,37 @@ $(document).keydown(function(event) {
 
 $("#_1").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-1').addClass("active-w");   
+    $('#text-1').addClass("active-w");
 });
 
 $("#_2").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-2').addClass("active-w");   
+    $('#text-2').addClass("active-w");
 });
 
 $("#_3").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-3').addClass("active-w");   
+    $('#text-3').addClass("active-w");
 });
 
 $("#_4").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-4').addClass("active-w");   
+    $('#text-4').addClass("active-w");
 });
 
 $("#_5").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-5').addClass("active-w");   
+    $('#text-5').addClass("active-w");
 });
 
 $("#_6").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-6').addClass("active-w");   
+    $('#text-6').addClass("active-w");
 });
 
 $("#_7").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-7').addClass("active-w");   
+    $('#text-7').addClass("active-w");
 });
 
 
@@ -88,50 +88,49 @@ $("#_7").click(function () {
 $("#one").click(function () {
     console.log('click');
     $(".ww-text").removeClass("active-w");
-    $('#text-1').addClass("active-w");   
-    $('#_1').addClass("active-w"); 
-    $('#_1-bg').addClass("active-w"); 
+    $('#text-1').addClass("active-w");
+    $('#_1').addClass("active-w");
+    $('#_1-bg').addClass("active-w");
 });
 
 $("#two").click(function () {
     $(".ww-text").removeClass("active-w");
     $('#text-2').addClass("active-w");
-    $('#_2').addClass("active-w"); 
-    $('#_2-bg').addClass("active-w");    
+    $('#_2').addClass("active-w");
+    $('#_2-bg').addClass("active-w");
 });
 
 $("#three").click(function () {
     $(".ww-text").removeClass("active-w");
     $('#text-3').addClass("active-w");
-    $('#_3').addClass("active-w"); 
-    $('#_3-bg').addClass("active-w");    
+    $('#_3').addClass("active-w");
+    $('#_3-bg').addClass("active-w");
 });
 
 $("#four").click(function () {
     $(".ww-text").removeClass("active-w");
     $('#text-4').addClass("active-w");
-    $('#_4').addClass("active-w"); 
-    $('#_4-bg').addClass("active-w");    
+    $('#_4').addClass("active-w");
+    $('#_4-bg').addClass("active-w");
 });
 
 $("#five").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-5').addClass("active-w"); 
-    $('#_5').addClass("active-w"); 
-    $('#_5-bg').addClass("active-w");   
+    $('#text-5').addClass("active-w");
+    $('#_5').addClass("active-w");
+    $('#_5-bg').addClass("active-w");
 });
 
 $("#six").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-6').addClass("active-w"); 
-    $('#_6').addClass("active-w"); 
-    $('#_6-bg').addClass("active-w");   
+    $('#text-6').addClass("active-w");
+    $('#_6').addClass("active-w");
+    $('#_6-bg').addClass("active-w");
 });
 
 $("#seven").click(function () {
     $(".ww-text").removeClass("active-w");
-    $('#text-7').addClass("active-w"); 
-    $('#_7').addClass("active-w"); 
-    $('#_7-bg').addClass("active-w");   
+    $('#text-7').addClass("active-w");
+    $('#_7').addClass("active-w");
+    $('#_7-bg').addClass("active-w");
 });
-
