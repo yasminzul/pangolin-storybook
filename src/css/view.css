@@ -1,7 +1,11 @@
 html {
   padding: env(safe-area-inset);
   -webkit-text-size-adjust: 100%;
+/*  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);*/
+
 }
+
 
 a i.icon
 {
@@ -347,6 +351,7 @@ tr
 /* mobile and tablet */
 
 @media only screen and (orientation: portrait) {
+
 
 body
 {

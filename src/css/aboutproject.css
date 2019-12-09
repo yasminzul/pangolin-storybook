@@ -230,3 +230,11 @@ th {
 
 
 }
+
+@media only screen and (orientation: portrait) {
+
+	.sh-logo {
+		font-family: franklin-gothic-urw, sans-serif !important;
+	}
+
+}	

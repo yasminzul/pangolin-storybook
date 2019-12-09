@@ -8,6 +8,9 @@ body:before {
   background-size: cover;
 }
 
+
+
+
 body
 {
   background-color: #907a78;
@@ -226,6 +229,7 @@ svg {
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 	.chapter-name {
 		display: none;
