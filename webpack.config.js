@@ -190,7 +190,8 @@ module.exports = {
         inject: true,
         chunks: ['quiz','view'],
         filename: 'quiz.html'
-    })
+    }),
+    new HtmlWebpackInjector()
 ],
 
 };
