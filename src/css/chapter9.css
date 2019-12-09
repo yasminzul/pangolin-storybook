@@ -145,3 +145,13 @@ p, a, .drop-cap {
   }
 
 }
+
+
+@media only screen and (orientation: portrait) {
+  
+  #prev-chapter {
+    width: 50% !important;
+    height: 8vh !important;
+  }
+
+}

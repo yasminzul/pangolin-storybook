@@ -273,3 +273,13 @@ svg {
 
 
 }
+
+
+@media only screen and (orientation: portrait) {
+  
+  #next-chapter {
+    width: 50% !important;
+    height: 8vh !important;
+  }
+
+}
