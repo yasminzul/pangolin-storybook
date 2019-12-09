@@ -85,7 +85,7 @@ tr
 
 .portrait {
   display: none;
-  position: fixed;
+  /* position: fixed; */
   overflow-y: scroll;
 }
 
