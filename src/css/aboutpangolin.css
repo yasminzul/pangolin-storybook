@@ -23,6 +23,10 @@ body {
   margin: 0;
 }
 
+.full-orientation
+{
+  display: none !important;
+}
 
 .accrd {
   margin-top: 5% !important;
