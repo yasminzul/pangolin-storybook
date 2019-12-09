@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInjector = require('html-webpack-injector');
 
 var ghpages = require('gh-pages');
 ghpages.publish('dist', function(err) {});
@@ -25,7 +26,8 @@ module.exports = {
     chapter13: './src/js/chapter13.js',
     chapter14: './src/js/chapter14.js',
     chapter15: './src/js/chapter15.js',
-    view: './src/js/view.js'
+    view: './src/js/view.js',
+    loader_head: "./src/css/loader.css"
   },
   output: {
     filename: '[name].main.js',
@@ -84,25 +86,25 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/index.html',
         inject: true,
-        chunks: ['home','view'],
+        chunks: ['loader_head','home','view'],
         filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/about-pangolin.html',
         inject: true,
-        chunks: ['aboutpangolin','view'],
+        chunks: ['loader_head','aboutpangolin','view'],
         filename: 'about-pangolin.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/about-project.html',
         inject: true,
-        chunks: ['aboutproject','view'],
+        chunks: ['loader_head','aboutproject','view'],
         filename: 'about-project.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/chapter-1.html',
         inject: true,
-        chunks: ['chapter1','view','chapter'],
+        chunks: ['loader_head','chapter1','view','chapter'],
         filename: 'chapter-1.html'
     }),
     new HtmlWebpackPlugin({
