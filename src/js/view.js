@@ -44,8 +44,8 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
   <td><a href=chapter-14.html><img src=menu/rainies@3x.png></a></td>
   <td><img src=menu/quiz@3x.png></td>
   <td><a href=about-project.html><img src=menu/aboutproject@3x.png></a></td>
-  <td><a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><img src=menu/globalstory@3x.png></a></td>
-  <td><img src=menu/share@3x.png></td>
+  <td><a onclick class=btn-link data-clipboard-text=`+'https://www.rage.com.my/pangolin'+`><img src=menu/share@3x.png></a></td>
+  <td><a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><img src=menu/videos.png></a></td>
 </tr>
 </table>
 <ul>
