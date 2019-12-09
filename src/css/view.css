@@ -14,14 +14,14 @@ a i.icon
 
 #home-btn
 {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   position: fixed;
   right: 1vw;
   top: 10vh;
   border-radius: 25px;
 	text-align: center;
-  padding: 8px;
+  padding: 6px;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.5);
   font-size: 30px;
@@ -141,8 +141,8 @@ tr
 
 #burger-icon
 {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   position: fixed;
   right: 1vw;
   top: 2vh;
@@ -156,7 +156,7 @@ tr
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 600;
-	padding: 10px;
+	padding: 9px;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;

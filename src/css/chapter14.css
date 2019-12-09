@@ -33,7 +33,7 @@ p {
     padding: 15px;
     margin-top: 8%;
     display: block;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
 .right {
