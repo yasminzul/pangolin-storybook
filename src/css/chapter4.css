@@ -14,8 +14,9 @@ body
 }
 
 .chapter-name {
-	top: 5%;
-	left: 5%;
+	top: 12%;
+	left: 12%;
+  width: 30% !important;
 }
 
 p, a, .drop-cap, .soundcite {
