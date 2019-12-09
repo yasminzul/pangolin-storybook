@@ -5,66 +5,43 @@ import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 
-function setCookie(cookieName,cookieValue)
-    {
-      var date = new Date();
-      date.setTime(date.getTime()+(24*60*60*1000));
-      document.cookie = cookieName + "=" + cookieValue + ";path=/;" + "SameSite=None; Secure";
-    }
-function getCookie(cookieName)
-    {
-      var name = cookieName + "=";
-      var allCookieArray = document.cookie.split(';');
-      for(var i=0; i<allCookieArray.length; i++)
-      {
-        var temp = allCookieArray[i].trim();
-        if (temp.indexOf(name)==0)
-        return temp.substring(name.length,temp.length);
-      }
-      return "";
-    }
-
-function checkCookie() {
-  var choice = getCookie("chosen");
-  console.log(choice);
-  if (choice != "true" || choice != "" || choice != null) {
-    $('.landscape').removeClass('hide');
-    $('.landscape').addClass('active');
-    $('.portrait').removeClass('active');
-    $('.portrait').addClass('hide');
-    $('.full-orientation').removeClass('hide');
-    $('.full-orientation').addClass('active');
-
     $(".plain-text").on("click", function(e) {
-      $('.landscape').removeClass('active');
       $('.landscape').addClass('hide');
       $('.full-orientation').removeClass('active');
       $('.full-orientation').addClass('hide');
       $('.portrait').addClass('active');
       $('.portrait').removeClass('hide');
-        setCookie("chosen", "true");
     });
-  }
-    else if (choice == "true") {
-      $('.landscape').removeClass('active');
-      $('.landscape').addClass('hide');
-      $('.full-orientation').removeClass('active');
-      $('.full-orientation').addClass('hide');
-      $('.portrait').addClass('active');
-      $('.portrait').removeClass('hide');
-        setCookie("chosen", "false");
-    }
 
       $(window).on("orientationchange", function(){
-        $('.landscape').removeClass('hide');
-        $('.landscape').addClass('active');
-        $('.portrait').removeClass('active');
-        $('.portrait').addClass('hide');
-        $('.full-orientation').removeClass('hide');
-        $('.full-orientation').addClass('active');
+        if ($('.landscape').hasClass('active')) {
+          $('.landscape').removeClass('active');
+          $('.landscape').addClass('hide');
+          $('.full-orientation').removeClass('active');
+          $('.full-orientation').addClass('hide');
+          $('.portrait').addClass('active');
+          $('.portrait').removeClass('hide');
+        }
+        else {
+          $('.landscape').removeClass('hide');
+          $('.landscape').addClass('active');
+          $('.portrait').removeClass('active');
+          $('.portrait').addClass('hide');
+          $('.full-orientation').removeClass('hide');
+          $('.full-orientation').addClass('active');
+        }
       });
 
-}
+      if ($('.portrait').hasClass('active') && ($('.full-orientation').hasClass('hide')))
+      {
+        $('.landscape').removeClass('active');
+        $('.landscape').addClass('hide');
+        $('.full-orientation').removeClass('active');
+        $('.full-orientation').addClass('hide');
+        $('.portrait').addClass('active');
+        $('.portrait').removeClass('hide');
+      }
+
 
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
 <a href=index.html><div id=home-btn><i class="icon ion-md-home"></i></div></a>
@@ -143,5 +120,4 @@ $( window ).on('load',function() {
 
 $(window).on('load', function () {
     $(".loader").fadeOut("slow");
-    checkCookie()
   });
