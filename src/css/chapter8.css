@@ -44,13 +44,24 @@ svg {
 
  .swipe {
     position: absolute;
-    bottom: 8%;
+    top: 36%;
     left: 5%;
     font-size: 0.7em;
     border: none !important;
     color: #000;
     font-family: 'Averia Serif Libre', serif;
+    z-index: 1;
   }
+
+#move-right {
+  left: unset;
+  right: 0;
+}
+
+#move-left {
+  right: unset;
+  left: 0;
+}
 
 
 .swiper-container {
@@ -84,13 +95,13 @@ svg {
 
 .swiper-slide {
 	width: 100%;
-	background-color: #ffffff00;
+	background-color: #d0dcaa;
 }
 
 .swiper-slide img {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 100%;
+  /*min-width: 100%;*/
 
   /* Set up proportionate scaling */
   width: auto;
@@ -477,6 +488,7 @@ svg {
 
   .swipe {
     bottom: 12%;
+    top: unset;
   }
 
   .swiper-slide img {
