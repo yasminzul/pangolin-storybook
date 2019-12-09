@@ -25,11 +25,11 @@ body {
   overflow-y: scroll;
 }
 
-/*
-.main-view
+
+.full-orientation
 {
-	height: 100vh;
-} */
+  display: none !important;
+}
 
 
 .portrait {

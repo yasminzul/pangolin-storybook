@@ -17,6 +17,11 @@ p, a, .drop-cap {
 	color: #000;
 }
 
+.full-orientation
+{
+  display: none !important;
+}
+
 .chapter-name {
   left: 10%;
   top: 10%;

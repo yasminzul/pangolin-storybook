@@ -17,6 +17,12 @@ p, .drop-cap, .soundcite {
 	color: #fff;
 }
 
+
+.full-orientation
+{
+  display: none !important;
+}
+
 .soundcite-loaded {
 	background-color: #ffffff26 !important;
 }

@@ -17,6 +17,11 @@ p, .drop-cap, .soundcite, .photo-caption {
 	color: #fff;
 }
 
+.full-orientation
+{
+  display: none !important;
+}
+
 .chapter-name {
   bottom: 35%;
   left: 5%;

@@ -13,7 +13,7 @@ a {
 
 .full-orientation
 {
-  display: none;
+  display: none !important;
 }
 
 

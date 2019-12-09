@@ -18,6 +18,11 @@ body
   background-color: #112582;
 }
 
+.full-orientation
+{
+  display: none !important;
+}
+
 .chapter-name {
   top: 15%;
   left: 8%;

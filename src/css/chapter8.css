@@ -17,6 +17,12 @@ p {
 	font-size: 0.8em;
 }
 
+
+.full-orientation
+{
+  display: none !important;
+}
+
 svg {
 	/*min-width: 100vw;*/
   height: 100vh;
@@ -245,7 +251,7 @@ svg {
     top: 85px;
     left: 28%;
     z-index: 1;
-  
+
 }
 
 .before-label span {
@@ -483,7 +489,7 @@ svg {
   /* Set rules to fill background */
     min-height: unset;
     min-width: unset;
-  } 
+  }
 
   .map-title {
     font-size: 0.9em !important;

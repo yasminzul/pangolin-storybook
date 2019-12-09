@@ -14,6 +14,11 @@ body {
 }
 
 
+.full-orientation
+{
+  display: none !important;
+}
+
 p {
 	font-family: 'Averia Serif Libre', cursive;
 	color: #000;

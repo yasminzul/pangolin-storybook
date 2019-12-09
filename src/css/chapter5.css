@@ -20,6 +20,11 @@ p, .drop-cap {
     text-align: center;
 }
 
+.full-orientation
+{
+  display: none !important;
+}
+
 .chapter-name img
 {
   width: 100%;
