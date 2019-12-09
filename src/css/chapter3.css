@@ -92,3 +92,12 @@ p, .drop-cap, .soundcite, .photo-caption {
   }
 
 }
+
+@media only screen and (orientation: portrait) {
+  
+  #next-chapter {
+    width: 50% !important;
+    height: 8vh !important;
+  }
+
+}
