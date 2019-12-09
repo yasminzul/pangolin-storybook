@@ -49,6 +49,10 @@ body {
     font-family: 'Averia Serif Libre', serif;
   }
 
+.landscape {
+	overflow-y: hidden;
+}
+
 
 .swiper-container {
   min-width: 100vw;
@@ -129,7 +133,9 @@ body {
 {
 	width: 35%;
 	height: 16vh;
-	margin: 3vh auto;
+	margin: 0 auto;
+	margin-bottom: 4%;
+	margin-top: 1vh;
 	cursor: pointer;
 }
 
@@ -162,7 +168,7 @@ body {
 	position: relative;
     margin: 0 auto;
 
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
@@ -181,22 +187,25 @@ body {
 	position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 40%;
+    width: 50%;
 	font-family: 'Averia Serif Libre', serif;
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
-    line-height: 21px;
+    line-height: 18px;
+    font-size: 0.9em;
 }
 
 .note-text {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: #6c451f;
 	font-weight: 400;
-	line-height: 16px;
+	line-height: 12px;
 	text-align: center;
 	width: 40%;
     margin: 0 auto;
+
+    margin-bottom: 2%;
 
 }
 
@@ -334,6 +343,11 @@ body {
 	.progress {
 		top: 12%;
 	}
+
+	.landscape {
+		overflow-y: scroll;
+	}
+
 
 	.mobile {
 		display: block;

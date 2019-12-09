@@ -71,7 +71,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </li>
   <li>Quiz: Which Pangolin Protector Are You? (Coming Soon)</li>
   <a href=about-project.html><li>About this project</li></a>
-  <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extinction</li></a>
+  <a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><li>Watch the videos</li></a>
 </ul>
 </div>`;
 
