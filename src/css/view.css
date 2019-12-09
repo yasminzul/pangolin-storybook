@@ -404,6 +404,7 @@ tr
 body
 {
   background-color: #161640 !important;
+  overflow-y: scroll;
 }
 
 .menu ul
