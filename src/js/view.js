@@ -120,7 +120,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
     <a href=chapter-14.html><li>Rainie’s Song</li></a>
   </ul>
 </li>
-  <li>Quiz: Which Pangolin Protector Are You?</li>
+  <li>Quiz: Which Pangolin Protector Are You? (Coming Soon)</li>
   <a href=about-project.html><li>About this project</li></a>
   <a href=`+'https://globalstory.pangolinreports.com/'+` target=_blank><li>The Pangolin Reports: Trafficked to Extinction</li></a>
 </ul>
