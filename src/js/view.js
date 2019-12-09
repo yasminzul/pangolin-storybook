@@ -2,9 +2,18 @@ import _ from 'lodash';
 import css from '../css/view.css';
 import '../css/swiper.min.css';
 import './../js/plugin/swiper.min.js';
+import ClipboardJS from './../js/plugin/clipboard.min.js';
 
 var $ = require("jquery");
 
+var clipboard = new ClipboardJS('.btn-link');
+
+clipboard.on('success', function(e) {
+
+  alert("Link copied");
+
+  e.clearSelection();
+});
 
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
 <a href=index.html><div id=home-btn><i class="icon ion-md-home"></i></div></a>
