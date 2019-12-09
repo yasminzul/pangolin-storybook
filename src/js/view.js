@@ -5,6 +5,16 @@ import './../js/plugin/swiper.min.js';
 
 var $ = require("jquery");
 
+// if ($('.portrait').hasClass('active') && ($('.full-orientation').hasClass('hide')))
+// {
+//   $('.landscape').removeClass('active');
+//   $('.landscape').addClass('hide');
+//   $('.full-orientation').removeClass('active');
+//   $('.full-orientation').addClass('hide');
+//   $('.portrait').addClass('active');
+//   $('.portrait').removeClass('hide');
+// }
+
     $(".plain-text").on("click", function(e) {
       $('.landscape').addClass('hide');
       $('.full-orientation').removeClass('active');
@@ -32,15 +42,6 @@ var $ = require("jquery");
         }
       });
 
-      if ($('.portrait').hasClass('active') && ($('.full-orientation').hasClass('hide')))
-      {
-        $('.landscape').removeClass('active');
-        $('.landscape').addClass('hide');
-        $('.full-orientation').removeClass('active');
-        $('.full-orientation').addClass('hide');
-        $('.portrait').addClass('active');
-        $('.portrait').removeClass('hide');
-      }
 
 
 let menu = `<div id=burger-icon><span></span><span></span><span></span><span></span></div>
