@@ -38,6 +38,7 @@ body
   font-style: normal;
   font-weight: 300;
   z-index: 200;
+  box-sizing: border-box;
 }
 
 .main-intro p
