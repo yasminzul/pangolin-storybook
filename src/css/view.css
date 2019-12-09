@@ -3,40 +3,9 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 0; top: 0; }
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;
-  background-color: #161640;
-  padding: 30vh 40vw;
-}
-
 a i.icon
 {
   color: #fff;
-}
-
-.loader img
-{
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  width: 20vw;
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
 }
 
 #home-btn
