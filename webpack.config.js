@@ -90,100 +90,100 @@ module.exports = {
         filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/about-pangolin.html',
+        template: './src/rainie.html',
         inject: true,
         chunks: ['loader_head','aboutpangolin','view'],
-        filename: 'about-pangolin.html'
+        filename: 'rainie.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/about-project.html',
+        template: './src/about.html',
         inject: true,
         chunks: ['loader_head','aboutproject','view'],
-        filename: 'about-project.html'
+        filename: 'about.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-1.html',
+        template: './src/middleman.html',
         inject: true,
         chunks: ['loader_head','chapter1','view','chapter'],
-        filename: 'chapter-1.html'
+        filename: 'middleman.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-2.html',
+        template: './src/boatman.html',
         inject: true,
         chunks: ['loader_head','chapter2','view','chapter'],
-        filename: 'chapter-2.html'
+        filename: 'boatman.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-3.html',
+        template: './src/smuggler.html',
         inject: true,
         chunks: ['loader_head','chapter3','view','chapter'],
-        filename: 'chapter-3.html'
+        filename: 'smuggler.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-4.html',
+        template: './src/policeman.html',
         inject: true,
         chunks: ['loader_head','chapter4','view','chapter'],
-        filename: 'chapter-4.html'
+        filename: 'policeman.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-5.html',
+        template: './src/trail-malaysia.html',
         inject: true,
         chunks: ['loader_head','chapter5','view'],
-        filename: 'chapter-5.html'
+        filename: 'trail-malaysia.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-6.html',
+        template: './src/waitingwife.html',
         inject: true,
         chunks: ['loader_head','chapter6','view','chapter'],
-        filename: 'chapter-6.html'
+        filename: 'waitingwife.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-8.html',
+        template: './src/routes.html',
         inject: true,
         chunks: ['loader_head','chapter8','view'],
-        filename: 'chapter-8.html'
+        filename: 'routes.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-9.html',
+        template: './src/socialmedia-star.html',
         inject: true,
         chunks: ['loader_head','chapter9','view','chapter'],
-        filename: 'chapter-9.html'
+        filename: 'socialmedia-star.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-10.html',
+        template: './src/authorities.html',
         inject: true,
         chunks: ['loader_head','chapter10','view','chapter'],
-        filename: 'chapter-10.html'
+        filename: 'authorities.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-11.html',
+        template: './src/doctors.html',
         inject: true,
         chunks: ['loader_head','chapter11','view','chapter'],
-        filename: 'chapter-11.html'
+        filename: 'doctors.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-12.html',
+        template: './src/recipes.html',
         inject: true,
         chunks: ['loader_head','chapter12','view'],
-        filename: 'chapter-12.html'
+        filename: 'recipes.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-13.html',
+        template: './src/hunters.html',
         inject: true,
         chunks: ['loader_head','chapter13','view','chapter'],
-        filename: 'chapter-13.html'
+        filename: 'hunters.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-14.html',
+        template: './src/rainies-song.html',
         inject: true,
         chunks: ['loader_head','chapter14','view'],
-        filename: 'chapter-14.html'
+        filename: 'rainies-song.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/chapter-15.html',
+        template: './src/forest.html',
         inject: true,
         chunks: ['loader_head','chapter15','view','chapter'],
-        filename: 'chapter-15.html'
+        filename: 'forest.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/quiz.html',

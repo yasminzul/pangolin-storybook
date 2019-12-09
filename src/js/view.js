@@ -21,56 +21,56 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 <table>
 <tr>
   <td><a href=index.html><img src=menu/home@3x.png></a></td>
-  <td><a href=about-pangolin.html><img src=menu/aboutpangolin@3x.png></a></td>
-  <td><a href=chapter-1.html><img src=menu/middleman@3x.png></a></td>
-  <td><a href=chapter-2.html><img src=menu/boatman@3x.png></a></td>
-  <td><a href=chapter-3.html><img src=menu/smuggler@3x.png></a></td>
+  <td><a href=rainie.html><img src=menu/aboutpangolin@3x.png></a></td>
+  <td><a href=middleman.html><img src=menu/middleman@3x.png></a></td>
+  <td><a href=boatman.html><img src=menu/boatman@3x.png></a></td>
+  <td><a href=smuggler.html><img src=menu/smuggler@3x.png></a></td>
 </tr>
 <tr>
-  <td><a href=chapter-5.html><img src=menu/followtrail@3x.png></a></td>
-  <td><a href=chapter-4.html><img src=menu/policeman@3x.png></a></td>
-  <td><a href=chapter-6.html><img src=menu/waitingwife@3x.png></a></td>
-  <td><a href=chapter-8.html><img src=menu/routesmap@3x.png></a></td>
-  <td><a href=chapter-9.html><img src=menu/socialmedia@3x.png></a></td>
+  <td><a href=trail-malaysia.html><img src=menu/followtrail@3x.png></a></td>
+  <td><a href=policeman.html><img src=menu/policeman@3x.png></a></td>
+  <td><a href=waitingwife.html><img src=menu/waitingwife@3x.png></a></td>
+  <td><a href=routes.html><img src=menu/routesmap@3x.png></a></td>
+  <td><a href=socialmedia-star.html><img src=menu/socialmedia@3x.png></a></td>
 </tr>
 <tr>
-  <td><a href=chapter-10.html><img src=menu/authorities@3x.png></a></td>
-  <td><a href=chapter-11.html><img src=menu/twodoctors@3x.png></a></td>
-  <td><a href=chapter-12.html><img src=menu/recipe@3x.png></a></td>
-  <td><a href=chapter-13.html><img src=menu/hunters@3x.png></a></td>
-  <td><a href=chapter-15.html><img src=menu/forest@3x.png></a></td>
+  <td><a href=authorities.html><img src=menu/authorities@3x.png></a></td>
+  <td><a href=doctors.html><img src=menu/twodoctors@3x.png></a></td>
+  <td><a href=recipes.html><img src=menu/recipe@3x.png></a></td>
+  <td><a href=hunters.html><img src=menu/hunters@3x.png></a></td>
+  <td><a href=forest.html><img src=menu/forest@3x.png></a></td>
 </tr>
 <tr>
-  <td><a href=chapter-14.html><img src=menu/rainies@3x.png></a></td>
+  <td><a href=rainies-song.html><img src=menu/rainies@3x.png></a></td>
   <td><img src=menu/quiz@3x.png></td>
-  <td><a href=about-project.html><img src=menu/aboutproject@3x.png></a></td>
+  <td><a href=about.html><img src=menu/aboutproject@3x.png></a></td>
   <td><a id="modal-btn"><img src=menu/share@3x.png></a></td>
   <td><a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><img src=menu/videos.png></a></td>
 </tr>
 </table>
 <ul>
 <a href=index.html><li>Home</li></a>
-<a href=about-pangolin.html><li>About The Pangolins</li></a>
+<a href=rainie.html><li>About The Pangolins</li></a>
 <li>
   <ul class=menu-chapter>
-    <a href=chapter-1.html><li>Chapter 1 : The Middleman</li></a>
-    <a href=chapter-2.html><li>Chapter 2 : The Boatman</li></a>
-    <a href=chapter-3.html><li>Chapter 3 : The Smuggler</li></a>
-    <a href=chapter-5.html><li>Chapter 4 : Follow The Trail Of A Smuggled Pangolin in Malaysia</li></a>
-    <a href=chapter-4.html><li>Chapter 5 : The Policeman</li></a>
-    <a href=chapter-6.html><li>Chapter 6 : The Waiting Wife</li></a>
-    <a href=chapter-8.html><li>Chapter 7 : The Secret Pangolin Smuggling Routes Around The World</li></a>
-    <a href=chapter-9.html><li>Chapter 8 : The Social Media Star</li></a>
-    <a href=chapter-10.html><li>Chapter 9 : The Authorities</li></a>
-    <a href=chapter-11.html><li>Chapter 10 : The Two Doctors</li></a>
-    <a href=chapter-12.html><li>Chapter 11 : The No-Pangolin Recipes</li></a>
-    <a href=chapter-13.html><li>Chapter 12 : The Hunters</li></a>
-    <a href=chapter-15.html><li>Chapter 13 : The Forest</li></a>
-    <a href=chapter-14.html><li>Rainie’s Song</li></a>
+    <a href=middleman.html><li>Chapter 1 : The Middleman</li></a>
+    <a href=boatman.html><li>Chapter 2 : The Boatman</li></a>
+    <a href=smuggler.html><li>Chapter 3 : The Smuggler</li></a>
+    <a href=trail-malaysia.html><li>Chapter 4 : Follow The Trail Of A Smuggled Pangolin in Malaysia</li></a>
+    <a href=policeman.html><li>Chapter 5 : The Policeman</li></a>
+    <a href=waitingwife.html><li>Chapter 6 : The Waiting Wife</li></a>
+    <a href=routes.html><li>Chapter 7 : The Secret Pangolin Smuggling Routes Around The World</li></a>
+    <a href=socialmedia-star.html><li>Chapter 8 : The Social Media Star</li></a>
+    <a href=authorities.html><li>Chapter 9 : The Authorities</li></a>
+    <a href=doctors.html><li>Chapter 10 : The Two Doctors</li></a>
+    <a href=recipes.html><li>Chapter 11 : The No-Pangolin Recipes</li></a>
+    <a href=hunters.html><li>Chapter 12 : The Hunters</li></a>
+    <a href=forest.html><li>Chapter 13 : The Forest</li></a>
+    <a href=rainies-song.html><li>Rainie’s Song</li></a>
   </ul>
 </li>
   <li>Quiz: Which Pangolin Protector Are You? (Coming Soon)</li>
-  <a href=about-project.html><li>About this project</li></a>
+  <a href=about.html><li>About this project</li></a>
   <a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><li>Watch the videos</li></a>
 </ul>
 </div>`;
