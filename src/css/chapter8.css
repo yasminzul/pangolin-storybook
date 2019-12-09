@@ -274,7 +274,7 @@ svg {
     width: 25%;
     top: 5%;
     left: 5%;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: franklin-gothic-urw, sans-serif;
 }
 
@@ -476,7 +476,7 @@ svg {
   }
 
   .swipe {
-    bottom: -20%;
+    bottom: 12%;
   }
 
   .swiper-slide img {
@@ -497,7 +497,7 @@ svg {
 
   .left {
     left: 5%;
-    top: 28%;
+    top: 23%;
   }
   .bottom {
     top: 17%;

@@ -431,10 +431,12 @@ body {
   }
 
   .swipe {
-    bottom: 6%;
+    bottom: 15%;
+    left: 8%;
   }
 
   .swipe-expert {
+    bottom: 15%;
     left: 10%;
   }
 
