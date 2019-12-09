@@ -6,12 +6,26 @@ var $ = require("jquery");
 import '../css/swiper.min.css';
 import Swiper from './../js/plugin/swiper.min.js';
 
-$(document).ready(function () {
-  $('.landscape').removeClass('hide');
-  $('.landscape').addClass('active');
-  $('.portrait').removeClass('active');
-  $('.portrait').addClass('hide');
-});
+
+const mq = window.matchMedia( "(orientation: portrait)" );
+
+if (mq.matches) {
+
+  $(document).ready(function () {
+    $('.landscape').addClass('hide');
+    $('.landscape').removeClass('active');
+    $('.portrait').addClass('active');
+    $('.portrait').removeClass('hide');
+  });
+
+} else {
+    $(document).ready(function () {
+      $('.landscape').removeClass('hide');
+      $('.landscape').addClass('active');
+      $('.portrait').removeClass('active');
+      $('.portrait').addClass('hide');
+    });
+}
 
   $(window).on("orientationchange", function(){
     if ($('.landscape').hasClass('active')) {

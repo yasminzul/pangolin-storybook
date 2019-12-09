@@ -44,7 +44,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
   <td><a href=chapter-14.html><img src=menu/rainies@3x.png></a></td>
   <td><img src=menu/quiz@3x.png></td>
   <td><a href=about-project.html><img src=menu/aboutproject@3x.png></a></td>
-  <td><a onclick class=btn-link data-clipboard-text=`+'https://www.rage.com.my/pangolin'+`><img src=menu/share@3x.png></a></td>
+  <td><a id="modal-btn"><img src=menu/share@3x.png></a></td>
   <td><a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><img src=menu/videos.png></a></td>
 </tr>
 </table>
@@ -75,12 +75,26 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </ul>
 </div>`;
 
+let modalBox = `
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>SHARE</p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin" target="_blank"><i class="icon ion-logo-facebook"></i></i></a>
+    <a href="http://twitter.com/share?url=http%3A%2F%2Frage.com.my%2Fpangolin" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+    <a onclick class="btn-link" data-clipboard-text="http://www.rage.com.my/pangolin"><i class="icon ion-md-link"></i></i></a>
+  </div>
+
+</div>`
 
 // let orientation = `<div class="full-orientation"><img src=/menu/rotate.gif><button class="plain-text">OR READ PLAIN-TEXT VIEW</button></div>`;
 // let loader = `<div class="loader"><img src=/menu/rainie-sleeping.png></div>`;
 
 $( window ).on('load',function() {
+  $(".loader").fadeOut("slow");
   $('body').append(menu);
+  $('body').append(modalBox);
   // $('body').append(orientation);
 
   $('#burger-icon').on('click', function(e){
@@ -88,8 +102,12 @@ $( window ).on('load',function() {
     $('.menu').toggleClass('open-menu');
   });
 
-});
-
-$(window).on('load', function () {
-    $(".loader").fadeOut("slow");
+  $("#modal-btn").on('click', function (){
+      $('.modal').css('display', 'block');
   });
+
+  $('.close').on('click', function(){
+    $('.modal').css('display','none');
+  });
+
+});
