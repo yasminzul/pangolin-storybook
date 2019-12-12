@@ -10,7 +10,7 @@ import TimelineLite from 'TimelineLite';
 
 // plain text button toggle
 
-$(".plain-text").on("click", function(e) {
+$("#port").on("click", function(e) {
   $('.landscape').removeClass('active');
   $('.landscape').addClass('hide');
   $('.full-orientation').removeClass('active');
@@ -19,24 +19,34 @@ $(".plain-text").on("click", function(e) {
   $('.portrait').removeClass('hide');
 });
 
-  $(window).on("orientationchange", function(){
-    if ($('.landscape').hasClass('active')) {
-      $('.landscape').addClass('hide');
-      $('.landscape').removeClass('active');
-      $('.portrait').addClass('active');
-      $('.portrait').removeClass('hide');
-      $('.full-orientation').removeClass('active');
-      $('.full-orientation').addClass('hide');
-    }
-    else if ($('.landscape').hasClass('hide')) {
-      $('.landscape').removeClass('hide');
-      $('.landscape').addClass('active');
-      $('.portrait').removeClass('active');
-      $('.portrait').addClass('hide');
-      $('.full-orientation').removeClass('active');
-      $('.full-orientation').addClass('hide');
-    }
-  });
+$("#land").on("click", function(e) {
+  $('.landscape').addClass('active');
+  $('.landscape').removeClass('hide');
+  $('.full-orientation').removeClass('active');
+  $('.full-orientation').addClass('hide');
+  $('.portrait').removeClass('active');
+  $('.portrait').addClass('hide');
+  $('body').css({'transform':'rotate(-90deg)', 'transform-origin':'left top', 'width': '100vh', 'overflow-x':'scroll', 'position':'absolute', 'top': '100%', 'left': '0'});
+});
+
+  // $(window).on("orientationchange", function(){
+  //   if ($('.landscape').hasClass('active')) {
+  //     $('.landscape').addClass('hide');
+  //     $('.landscape').removeClass('active');
+  //     $('.portrait').addClass('active');
+  //     $('.portrait').removeClass('hide');
+  //     $('.full-orientation').removeClass('active');
+  //     $('.full-orientation').addClass('hide');
+  //   }
+  //   else if ($('.landscape').hasClass('hide')) {
+  //     $('.landscape').removeClass('hide');
+  //     $('.landscape').addClass('active');
+  //     $('.portrait').removeClass('active');
+  //     $('.portrait').addClass('hide');
+  //     $('.full-orientation').removeClass('active');
+  //     $('.full-orientation').addClass('hide');
+  //   }
+  // });
 
 
 

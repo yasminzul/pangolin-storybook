@@ -237,6 +237,7 @@ tr
 
 @media only screen and (max-width: 900px) {
 
+
   .open-menu
   {
     width: 100vw;
@@ -406,6 +407,7 @@ tr
 
 body
 {
+
   background-color: #161640 !important;
   overflow-y: scroll;
 }
@@ -484,27 +486,25 @@ bottom: auto;
   top: 0;
   left: 0;
   display: block;
+  text-align: center;
 }
 
 .full-orientation img
 {
-  width: 90%;
-  margin-left: 17px;
-  position: absolute;
+  width: 70%;
+  margin-top: 2vh;
 }
 
 .plain-text {
   z-index: 1000;
-  position: absolute;
   background: #ef6436;
   width: 70%;
   color: #fff;
-  bottom: 16%;
-  left: 16%;
   font-family: franklin-gothic-urw, sans-serif;
   padding: 8px;
   font-size: 1em;
   border: none;
+  margin: 1vh;
 }
 
 .prev-next-btn

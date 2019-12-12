@@ -79,6 +79,11 @@ svg
 
 @media only screen and (max-width: 900px) {
 
+html
+{
+
+}
+
   .main-intro
   {
     color: #fff;
