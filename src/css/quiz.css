@@ -20,7 +20,7 @@ body {
 .welcome p
 {
   font-family: 'Averia Serif Libre', serif;
-  font-size: 2.6vh;
+  font-size: 2.3vh;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -48,46 +48,77 @@ margin: 2vh;
     height: 50vh;
     margin: 25vh 20vw;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 21px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
     display: none;
     box-sizing: border-box;
+    position: relative;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
+/* image */
 
+.survey-image
+{
+  height: 100%;
+  float: left;
+}
+
+.survey-image img
+{
+  height: 100%;
+}
 
 /* HEADER */
 
-
-
 .survey-header {
     min-height: 50px;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 20px 10px 20px;
+    padding: 35px 35px 0 35px;
+    font-weight: bold;
     display: flex;
-    align-items: center;
+     line-height: 1.54;
 }
 
 .survey-num {
-    font-weight: bold;
     font-size: 15px;
-    font-size: 18px;
-    margin-right: 8px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 5px;
 }
 
 .survey-question {
     font-size: 15px;
 }
 
+.correct
+{
+  text-transform: uppercase;
+  color: #0c9d00;
+}
+
+.wrong
+{
+  text-transform: uppercase;
+  color: #ff0000;
+}
 
 
 /* BODY */
-
+.survey-body
+{
+  margin-right: 30px;
+}
 
 .choices {
-    padding: 20px;
+    padding: 1vh 20px;
     display: flex;
     flex-direction: column;
+}
+
+.correct-answer , .reason-why
+{
+    margin-left: 20px;
+    line-height: 1.5;
 }
 
 .question-row {
@@ -110,7 +141,6 @@ margin: 2vh;
 
 .label input[type="checkbox"] {
     vertical-align: sub;
-    margin-right: 10px;
     align-self: center;
     visibility: hidden;
 }
@@ -123,18 +153,25 @@ margin: 2vh;
 /* FOOTER */
 
 .survey-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
     padding: 20px;
     padding-top: 0;
+    box-sizing: border-box;
 }
 
 .nav-button {
     padding: 3px 12px;
-    border-radius: 5px;
     border:none;
-    background: #fff;
     margin-right: 7px;
+    width: 85px;
+ height: 30.5px;
+ border-radius: 15.5px;
+ background-color: #fb991e;
     cursor: pointer;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6)
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
 }
 
 .nav-button.next {

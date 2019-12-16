@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import '../css/font.css';
 import css from '../css/quiz.css';
 var $ = require("jquery");
 
@@ -244,11 +245,11 @@ const getAnswer = () => {
     //validate answer here
     if (survey[surveyState.currentQuestion-1].answer == survey[surveyState.currentQuestion-1].correctAnswer)
     {
-      return 'Correct!'
+      return '<p class="correct">Correct <i class="icon ion-md-checkmark"></i></p>'
     }
     else if (survey[surveyState.currentQuestion-1].answer !== null && survey[surveyState.currentQuestion-1].answer != survey[surveyState.currentQuestion-1].correctAnswer)
     {
-      return 'Wrong!'
+      return '<p class="wrong">Wrong <i class="icon ion-md-close"></i></p>'
     }
 }
 
@@ -269,7 +270,7 @@ const renderQuestion = (question) => {
     choicesEl.innerHTML = ''
     buttonEl.innerHTML = ''
     // Render question and question id
-    surveyNumEl.textContent = question.id + ' )'
+    surveyNumEl.textContent = question.id + ')'
     questionEl.textContent = question.question
     // Render choices
     question.choices.forEach(choice => {
@@ -334,7 +335,7 @@ const renderAnswer = (answer) => {
     // <p class="results-info"> ${answer.statement}</p>`
     const questionResult = getAnswer()
     surveyNumEl.innerHTML = ''
-    choicesEl.innerHTML = `<p>${answer.correctAnswer}</p><p>${answer.statement}</p>`
+    choicesEl.innerHTML = `<p class="correct-answer">${answer.correctAnswer}</p><p class="reason-why">${answer.statement}</p>`
     buttonEl.innerHTML = ''
     surveyNumEl.textContent = ''
     questionEl.innerHTML = `${questionResult}`
