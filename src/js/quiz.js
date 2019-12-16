@@ -13,6 +13,7 @@ const surveyNumEl = document.querySelector('.survey-num')
 const choicesEl = document.querySelector('.choices')
 const buttonEl = document.querySelector('.nav-buttons')
 const containerEl = document.querySelector('.container')
+const imgEl = document.querySelector('.survey-image')
 
 const survey = [
     {
@@ -20,14 +21,16 @@ const survey = [
         question: 'How many pangolin species are there?',
         choices: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
         correctAnswer: 'C. 8',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q1.png>'
     },
     {
         id: 2,
         question: 'All commercial trade of pangolins has been illegal since 2017. However, the International Union for Conservation of Nature (IUCN) estimates that this number of pangolins have been hunted since the ban was enforced:',
         choices: ['A. 300,000', 'B. 500,000', 'C. 700,000', 'D. 42 billion'],
         correctAnswer: 'B. 500,000',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q6.png>'
     },
     {
         id: 3,
@@ -269,7 +272,9 @@ const renderQuestion = (question) => {
     surveyNumEl.innerHTML = ''
     choicesEl.innerHTML = ''
     buttonEl.innerHTML = ''
+    imgEl.innerHTML = ''
     // Render question and question id
+    imgEl.innerHTML = question.picture
     surveyNumEl.textContent = question.id + ')'
     questionEl.textContent = question.question
     // Render choices
