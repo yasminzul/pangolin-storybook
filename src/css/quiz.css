@@ -1,19 +1,59 @@
 body {
-    height: 100vh;
-    background: #645d67;
+    width: 100vw;
+    background-color: #161640;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome
+{
+  height: 100vh;
+  width: 100vw;
+  padding: 25vh 25vw;
+  margin: 0;
+  z-index: 200;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.welcome p
+{
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 2.6vh;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.start-btn
+{
+  width: 8vw;
+height: 4vh;
+border-radius: 15.5px;
+background-color: #fb991e;
+font-family: 'Averia Serif Libre', serif;
+font-size: 2vh;
+font-weight: bold;
+text-transform: uppercase;
+margin: 2vh;
 }
 
 .container {
-    width: 60%;
-    height: 400px;
+    width: 60vw;
+    height: 50vh;
+    margin: 25vh 20vw;
     background: #fff;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 50%);
     border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    box-sizing: border-box;
 }
+
 
 
 /* HEADER */
@@ -51,16 +91,17 @@ body {
 }
 
 .question-row {
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 .question-choice {
 	width: 100%;
 	text-align: left;
+  padding: 10px;
 }
 
 .question-choice:hover {
-	background-color: yellow;
+	background-color: #fcc178;
 }
 
 .label {
@@ -75,7 +116,7 @@ body {
 }
 
 .label input[type="checkbox"]:checked+span {
-	background-color: lightblue;
+	background-color: #fb991e;
 }
 
 

@@ -2,12 +2,16 @@ import _ from 'lodash';
 import css from '../css/quiz.css';
 var $ = require("jquery");
 
+$('.start-btn').on('click', function(){
+  $('.welcome').css('display','none');
+  $('.container').css('display','block');
+});
+
 const questionEl = document.querySelector('.survey-question')
 const surveyNumEl = document.querySelector('.survey-num')
 const choicesEl = document.querySelector('.choices')
 const buttonEl = document.querySelector('.nav-buttons')
 const containerEl = document.querySelector('.container')
-
 
 const survey = [
     {
@@ -265,7 +269,7 @@ const renderQuestion = (question) => {
     choicesEl.innerHTML = ''
     buttonEl.innerHTML = ''
     // Render question and question id
-    surveyNumEl.textContent = question.id + '-'
+    surveyNumEl.textContent = question.id + ' )'
     questionEl.textContent = question.question
     // Render choices
     question.choices.forEach(choice => {
