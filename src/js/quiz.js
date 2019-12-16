@@ -30,15 +30,15 @@ const survey = [
         choices: ['A. 300,000', 'B. 500,000', 'C. 700,000', 'D. 42 billion'],
         correctAnswer: 'B. 500,000',
         answer: null,
-        picture: '<img src=quiz/pangolin-q6.png>'
+        picture: '<img src=quiz/pangolin-q2.png>'
     },
     {
         id: 3,
         question: 'Pangolins have defence mechanisms to protect against natural predators. Which of these is not a method used by pangolins?',
         choices: ['A. Curl up into a tight ball', 'B. Its tough and overlapping scales provide a layer of protection', 'C. Bite with its sharp teeth', 'D. Climb trees to take shelter'],
         correctAnswer: 'C. Bite with its sharp teeth',
-        answer: null
-
+        answer: null,
+        picture: '<img src=quiz/pangolin-q3.png>'
 
     },
     {
@@ -46,22 +46,24 @@ const survey = [
         question: 'Which pangolin species is endemic to Malaysia?',
         choices: ['A. Sunda pangolin', 'B. Temminck’s ground pangolin', 'C. Long-tailed pangolin', 'D. The garlic and ginger stir-fried pangolin'],
         correctAnswer: 'A. Sunda pangolin',
-        answer: null
-
+        answer: null,
+        picture: '<img src=quiz/pangolin-q4.png>'
     },
     {
     	id: 5,
         question: 'Which of the following are not recommended measures to curb pangolin smuggling?',
         choices: ['A. Avoid consuming medicinal products containing pangolins and its parts', 'B. Choose alternative ingredients in traditional Chinese medicine', 'C. Avoid consuming pangolin flesh', 'D. Volunteer to babysit a pangolin at a conservation centre'],
         correctAnswer: 'D. Volunteer to babysit a pangolin at a conservation centre',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q5.png>'
     },
     {
     	id: 6,
         question: 'Pangolins play an important role in keeping a balanced ecosystem. Which of these does not describe their role as a “forest protector”?',
         choices: ['A. Pangolins dig burrows that help aerate the forest soil', 'B. Pangolins feed on pollen and help plants to propagate', 'C. Other animals use abandoned pangolin burrows as shelter', 'D. Pangolins are a natural pest control, and eat up to 20,000 ants or termites a day'],
         correctAnswer: 'B. Pangolins feed on pollen and help plants to propagate',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q6.png>'
     },
     {
     	id: 7,
