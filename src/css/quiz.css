@@ -9,12 +9,20 @@ body {
 {
   height: 100vh;
   width: 100vw;
-  padding: 25vh 25vw;
+  padding: 40vh 25vw 10vh 25vw;
   margin: 0;
   z-index: 200;
-  background: #fff;
+  background-image: url(../gfx/quiz/quiz-landing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   box-sizing: border-box;
   text-align: center;
+}
+
+.welcome h1 img
+{
+  width: 47%;
 }
 
 .welcome p
@@ -41,12 +49,13 @@ font-size: 2vh;
 font-weight: bold;
 text-transform: uppercase;
 margin: 2vh;
+border:none;
 }
 
 .container {
     width: 60vw;
-    height: 50vh;
-    margin: 25vh 20vw;
+    height: 60vh;
+    margin: 20vh 20vw;
     background: #fff;
     border-radius: 21px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
@@ -166,12 +175,13 @@ margin: 2vh;
     border:none;
     margin-right: 7px;
     width: 85px;
- height: 30.5px;
- border-radius: 15.5px;
- background-color: #fb991e;
+    height: 30.5px;
+    border-radius: 15.5px;
+    background-color: #fb991e;
     cursor: pointer;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
 .nav-button.next {
@@ -180,39 +190,186 @@ margin: 2vh;
 
 /* TEST COMPLETE */
 
+.result-img
+{
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+
+.result-img img
+{
+  height: 70%;
+  display: block;
+  margin-top: 10px;
+}
+
+.result-img a
+{
+  color: #000;
+  cursor: pointer;
+}
+
+.result-text
+{
+  padding: 12px 60px;
+  text-align: center;
+}
+
 h1.test-completed {
-    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1.test-completed img{
+    width: 26.5%;
+}
+
+h2.test-score {
+    opacity: 0.55;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
     text-align: center;
     margin-top: 50px;
     font-weight: 400;
 }
 
-.tick {
-    position: relative;
-    display: block;
-    margin: 20px auto;
-    /* margin-top: 30px; */
-    border: 1px solid green;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.tick::before {
-    content: '';
-    position: absolute;
-    top: 16%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    width: 16px;
-    height: 32px;
-    border-style: solid;
-    border-color: green;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
-}
-
 .results-info {
     text-align: center;
     margin-top: 20px;
+    line-height: 1.5;
+}
+
+.end-btn
+{
+  border-radius: 15.5px;
+  background-color: #fb991e;
+  padding: 9px 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Averia Serif Libre', cursive;
+  border:none;
+  margin: 10px 5px;
+}
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 900px) {
+
+  .welcome
+  {
+    padding: 45vh 22vw 12vh 22vw;
+    overflow-y: scroll;
+  }
+
+  .welcome h1 img
+  {
+    width: 75%;
+    margin-bottom: 50vh;
+  }
+
+  .welcome p
+  {
+    font-size: 3vh;
+    line-height: 1.5;
+  }
+
+  .start-btn
+  {
+    width: 10vw;
+  height: 6vh;
+  font-size: 3vh;
+  }
+
+  .container {
+      width: 80vw;
+      height: 80vh;
+      margin: 10vh 10vw;
+      border-radius: 21px;
+  }
+
+  .survey-header {
+      padding: 15px 15px 0 15px;
+      min-height: 10px;
+  }
+
+  .survey-num {
+    margin-top: 11.5px;
+      font-size: 11.5px;
+  }
+
+  .survey-question {
+      font-size: 11.5px;
+  }
+
+  .choices {
+      padding: 1vh 0;
+      font-size: 11.5px;
+  }
+
+  .question-choice {
+    padding: 10px 0;
+  }
+
+  .correct-answer , .reason-why
+  {
+      margin: 3px 0 3px 20px;
+      line-height: 1.5;
+  }
+
+  .wrong , .correct
+  {
+    margin: 0;
+  }
+
+  /* TEST COMPLETE */
+
+
+  .result-text
+  {
+    padding: 7px 35px;
+    text-align: center;
+  }
+
+  h1.test-completed {
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 12px;
+  }
+
+  h1.test-completed img{
+      width: 29%;
+  }
+
+  h2.test-score {
+      opacity: 0.55;
+      text-transform: uppercase;
+      font-size: 9.5px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 400;
+  }
+
+  .results-info {
+      text-align: center;
+      margin-top: 8px;
+      line-height: 1.5;
+      font-size: 11.5px;
+  }
+
+  .end-btn
+  {
+    border-radius: 15.5px;
+    background-color: #fb991e;
+    padding: 9px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Averia Serif Libre', cursive;
+    border:none;
+    margin: 10px 5px;
+  }
+
+
 }

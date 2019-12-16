@@ -70,42 +70,48 @@ const survey = [
         question: 'Pangolins are the most trafficked mammal in the world. Which of the following is not a reason for the high global demand for pangolins?',
         choices: ['A. Its scales are used for traditional Chinese medicine', 'B. Its meat is served as a status symbol delicacy', 'C. They are popularly kept as pets', 'D. Its scales are used for leather products'],
         correctAnswer: 'C. They are popularly kept as pets',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q7.png>'
     },
     {
     	id: 8,
         question: 'The indigenous communities in Malaysia tell a folklore about an animal that is said to be afraid of pangolins. What is the animal in this tale?',
-        choices: ['A. Tiger', 'B. Sang Kancil', 'C. Dragon', 'D. Elephant'],
+        choices: ['A. Butterfly', 'B. Sang Kancil', 'C. Monkey', 'D. Elephant'],
         correctAnswer: 'D. Elephant',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q8.png>'
     },
     {
     	id: 9,
         question: 'The pangolin derives its name from a Malay word. What is the Malay word?',
         choices: ['A. Menggulung', 'B. Pengguling', 'C. Gulungan', 'D. Pokémon'],
         correctAnswer: 'B. Pengguling',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q9.png>'
     },
     {
     	id: 10,
         question: 'Pangolins are popularly trafficked for its scales. Which of these aren’t characteristics of pangolin scales?',
         choices: ['A. They are made of keratin and are chemically similar to human fingernails', 'B. They are commonly used in traditional Chinese medicine', 'C. Pangolin scales are light, sharp and overlaps like an armour to prevent anything inserted in between them', 'D. Pangolins can regrow scales if they break off'],
         correctAnswer: 'D. Pangolins can regrow scales if they break off',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q10.png>'
     },
     {
     	id: 11,
         question: 'In the global pangolin smuggling trade, Malaysia is usually...',
         choices: ['A. A source country, where pangolins are hunted and smuggled abroad.', 'B. A transit country, where smuggled pangolins are sent on to other countries.', 'C. A destination country, where smuggled pangolins are bought and consumed.', 'D. Both a source and transit country.'],
         correctAnswer: 'D. Both a source and transit country.',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q11.png>'
     },
     {
     	id: 12,
         question: 'What are some of the measures that authorities and experts are proposing to curb pangolin smuggling?',
         choices: ['A. CCTV cameras to detect smuggling activities, along with an online reporting system.', 'B. Education to bring awareness to the public, together with legislative change that allows for broader enforcement powers and stiffer penalties.', 'C. Creating a safe space for pangolins to voice out against their traffickers.', 'D. Market pangolins as cute and adorable, so that people will empathise with them.'],
         correctAnswer: 'B. Education to bring awareness to the public, together with legislative change that allows for broader enforcement powers and stiffer penalties.',
-        answer: null
+        answer: null,
+        picture: '<img src=quiz/pangolin-q12.png>'
     }
 
 ]
@@ -223,23 +229,67 @@ const getResults = () => {
 
     if (correctAnswerCount >= 10 && correctAnswerCount <= 12)
     {
-      containerEl.innerHTML = `<h1 class="test-completed">You are a Pangolin Guardian</h1>
-       <p class="results-info">Congratulations! You have excellent knowledge of pangolins and their role in our ecosystem. You have been granted the ultimate pangolin guardian status for your effort. The pangolins are grateful.</p>`
+      containerEl.innerHTML = `
+      <div class="result-img">
+        <img src="quiz/pangolin-guardian.png">
+        <a href="quiz/result-pangolin-guardian.jpg" download>Save your result</a>
+      </div>
+      <div class="result-text">
+        <h2 class="test-score">You scored 10-12</h2>
+        <h1 class="test-completed"><img src="quiz/guardian-title.svg"></h1>
+        <p class="results-info">Congratulations! You have excellent knowledge of pangolins and their role in our ecosystem. You have been granted the ultimate pangolin guardian status for your effort. The pangolins are grateful.</p>
+        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
+        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
+      </div>`
+      $('.container').css('background-color','#6fb0ff');
     }
     else if (correctAnswerCount >= 7 && correctAnswerCount <= 9)
     {
-      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Advocate</h1>
-       <p class="results-info">Your knowledge of pangolins and the trafficking trade is commendable – well done! As a pangolin advocate, we hope you will use your knowledge to create an impact and spread the word about these important animals.</p>`
+      containerEl.innerHTML = `
+      <div class="result-img">
+        <img src="quiz/pangolin-advocate.png">
+        <a href="quiz/result-pangolin-advocate.jpg" download>Save your result</a>
+      </div>
+      <div class="result-text">
+        <h2 class="test-score">You scored 7-9</h2>
+        <h1 class="test-completed"><img src="quiz/advocate-title.svg"></h1>
+        <p class="results-info">Your knowledge of pangolins and the trafficking trade is commendable – well done! As a pangolin advocate, we hope you will use your knowledge to create an impact and spread the word about these important animals.</p>
+        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
+        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
+      </div>`
+      $('.container').css('background-color','#f8bf97');
     }
     else if (correctAnswerCount >= 4 && correctAnswerCount <= 6)
     {
-      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Defender</h1>
-       <p class="results-info">Good job, pangolin defender! You have proven to have a fair amount of knowledge of pangolins and the trafficking trade, and every bit helps to protect these endangered species. A little refresher wouldn’t hurt though, so head to rage.my/pangolins to learn more.</p>`
+      containerEl.innerHTML = `
+      <div class="result-img">
+        <img src="quiz/pangolin-defender.png">
+        <a href="quiz/result-pangolin-defender.jpg" download>Save your result</a>
+      </div>
+      <div class="result-text">
+        <h2 class="test-score">You scored 4-6</h2>
+        <h1 class="test-completed"><img src="quiz/defender-title.svg"></h1>
+        <p class="results-info">Good job, pangolin defender! You have proven to have a fair amount of knowledge of pangolins and the trafficking trade, and every bit helps to protect these endangered species. A little refresher wouldn’t hurt though, so head to rage.my/pangolins to learn more.</p>
+        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
+        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
+      </div>`
+      $('.container').css('background-color','#e4c482');
     }
     else if (correctAnswerCount >= 0 && correctAnswerCount <= 3)
     {
-      containerEl.innerHTML = `<h1 class="test-completed">Pangolin Ranger</h1>
-       <p class="results-info">Hey pangolin ranger, you can do better! The more people know about these endangered animals, the easier it is to help stop the consumption and illegal trafficking. Go to rage.my/pangolins to learn more about them.</p>`
+      containerEl.innerHTML = `
+      <div class="result-img">
+        <img src="quiz/pangolin-ranger.png">
+        <a href="quiz/result-pangolin-ranger.jpg" download>Save your result</a>
+      </div>
+      <div class="result-text">
+        <h2 class="test-score">You scored 0-3</h2>
+        <h1 class="test-completed"><img src="quiz/ranger-title.svg"></h1>
+        <p class="results-info">Hey pangolin ranger, you can do better! The more people know about these endangered animals, the easier it is to help stop the consumption and illegal trafficking. Go to rage.my/pangolins to learn more about them.</p>
+        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
+        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
+      </div>`
+      $('.container').css('background-color','#b2ce6b');
     }
 
     return
