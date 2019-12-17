@@ -14,6 +14,7 @@ const choicesEl = document.querySelector('.choices')
 const buttonEl = document.querySelector('.nav-buttons')
 const containerEl = document.querySelector('.container')
 const imgEl = document.querySelector('.survey-image')
+const modalEl = document.querySelector('.modal-content')
 
 const survey = [
     {
@@ -108,8 +109,8 @@ const survey = [
     {
     	id: 12,
         question: 'What are some of the measures that authorities and experts are proposing to curb pangolin smuggling?',
-        choices: ['A. CCTV cameras to detect smuggling activities, along with an online reporting system.', 'B. Education to bring awareness to the public, together with legislative change that allows for broader enforcement powers and stiffer penalties.', 'C. Creating a safe space for pangolins to voice out against their traffickers.', 'D. Market pangolins as cute and adorable, so that people will empathise with them.'],
-        correctAnswer: 'B. Education to bring awareness to the public, together with legislative change that allows for broader enforcement powers and stiffer penalties.',
+        choices: ['A. CCTV cameras to detect smuggling activities, along with an online reporting system.', 'B. Education for public awareness and legislative change calling for broader enforcement powers and stiffer penalties.', 'C. Creating a safe space for pangolins to voice out against their traffickers.', 'D. Market pangolins as cute and adorable, so that people will empathise with them.'],
+        correctAnswer: 'B. Education for public awareness and legislative change calling for broader enforcement powers and stiffer penalties.',
         answer: null,
         picture: '<img src=quiz/pangolin-q12.png>'
     }
@@ -207,6 +208,9 @@ const navigateToQuestion = (e) => {
 
 }
 
+const navigateToRetake = (e) => {
+        location.reload();
+}
 
 
 const checkBoxHandler = (e, question) => {
@@ -232,15 +236,19 @@ const getResults = () => {
       containerEl.innerHTML = `
       <div class="result-img">
         <img src="quiz/pangolin-guardian.png">
-        <a href="quiz/result-pangolin-guardian.jpg" download>Save your result</a>
+        <a href="quiz/result-pangolin-guardian.jpg" target="_blank" download>Save your result</a>
       </div>
       <div class="result-text">
-        <h2 class="test-score">You scored 10-12</h2>
-        <h1 class="test-completed"><img src="quiz/guardian-title.svg"></h1>
+        <h3 class="test-score">You scored ${correctAnswerCount} out of 12</h3>
+        <h2 class="test-completed"><img src="quiz/guardian-title.svg"></h2>
         <p class="results-info">Congratulations! You have excellent knowledge of pangolins and their role in our ecosystem. You have been granted the ultimate pangolin guardian status for your effort. The pangolins are grateful.</p>
-        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
-        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
       </div>`
+      modalEl.innerHTML =`
+      <span class="close">&times;</span>
+      <p>SHARE YOUR RESULT</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2quiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></i></a>
+      <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html%2F&text=I%20got%20${correctAnswerCount}%20out%20of%2012%20correct%21That%20makes%20me%20a%20Pangolin%20Guardian%21%20What%20about%20you?" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="icon ion-logo-instagram"></i></a>`
       $('.container').css('background-color','#6fb0ff');
     }
     else if (correctAnswerCount >= 7 && correctAnswerCount <= 9)
@@ -248,15 +256,19 @@ const getResults = () => {
       containerEl.innerHTML = `
       <div class="result-img">
         <img src="quiz/pangolin-advocate.png">
-        <a href="quiz/result-pangolin-advocate.jpg" download>Save your result</a>
+        <a href="quiz/result-pangolin-advocate.jpg" target="_blank" download>Save your result</a>
       </div>
       <div class="result-text">
-        <h2 class="test-score">You scored 7-9</h2>
-        <h1 class="test-completed"><img src="quiz/advocate-title.svg"></h1>
+        <h3 class="test-score">You scored ${correctAnswerCount} out of 12</h3>
+        <h2 class="test-completed"><img src="quiz/advocate-title.svg"></h2>
         <p class="results-info">Your knowledge of pangolins and the trafficking trade is commendable – well done! As a pangolin advocate, we hope you will use your knowledge to create an impact and spread the word about these important animals.</p>
-        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
-        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
       </div>`
+      modalEl.innerHTML =`
+      <span class="close">&times;</span>
+      <p>SHARE YOUR RESULT</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2quiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html%2F&text=I%20got%20${correctAnswerCount}%20out%20of%2012%20correct%21I'm%20a%20Pangolin%20Advocate%21%20What%20about%20you?" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="icon ion-logo-instagram"></i></a>`
       $('.container').css('background-color','#f8bf97');
     }
     else if (correctAnswerCount >= 4 && correctAnswerCount <= 6)
@@ -264,15 +276,19 @@ const getResults = () => {
       containerEl.innerHTML = `
       <div class="result-img">
         <img src="quiz/pangolin-defender.png">
-        <a href="quiz/result-pangolin-defender.jpg" download>Save your result</a>
+        <a href="quiz/result-pangolin-defender.jpg" target="_blank" download>Save your result</a>
       </div>
       <div class="result-text">
-        <h2 class="test-score">You scored 4-6</h2>
-        <h1 class="test-completed"><img src="quiz/defender-title.svg"></h1>
+        <h3 class="test-score">You scored ${correctAnswerCount} out of 12</h3>
+        <h2 class="test-completed"><img src="quiz/defender-title.svg"></h2>
         <p class="results-info">Good job, pangolin defender! You have proven to have a fair amount of knowledge of pangolins and the trafficking trade, and every bit helps to protect these endangered species. A little refresher wouldn’t hurt though, so head to rage.my/pangolins to learn more.</p>
-        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
-        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
       </div>`
+      modalEl.innerHTML =`
+      <span class="close">&times;</span>
+      <p>SHARE YOUR RESULT</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Frage.com.my%2Fpangolin%2quiz.html%2F&text=I%20got%20${correctAnswerCount}%20out%20of%2012%20correct%21I'm%20a%20Pangolin%20Defender%21%20What%20about%20you?" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="icon ion-logo-instagram"></i></a>`
       $('.container').css('background-color','#e4c482');
     }
     else if (correctAnswerCount >= 0 && correctAnswerCount <= 3)
@@ -280,19 +296,52 @@ const getResults = () => {
       containerEl.innerHTML = `
       <div class="result-img">
         <img src="quiz/pangolin-ranger.png">
-        <a href="quiz/result-pangolin-ranger.jpg" download>Save your result</a>
+        <a href="quiz/result-pangolin-ranger.jpg" target="_blank" download>Save your result</a>
       </div>
       <div class="result-text">
-        <h2 class="test-score">You scored 0-3</h2>
-        <h1 class="test-completed"><img src="quiz/ranger-title.svg"></h1>
+        <h3 class="test-score">You scored ${correctAnswerCount} out of 12</h3>
+        <h2 class="test-completed"><img src="quiz/ranger-title.svg"></h2>
         <p class="results-info">Hey pangolin ranger, you can do better! The more people know about these endangered animals, the easier it is to help stop the consumption and illegal trafficking. Go to rage.my/pangolins to learn more about them.</p>
-        <button class="end-btn"><i class="icon ion-md-refresh"></i> Retake the quiz</button>
-        <button class="end-btn"><i class="icon ion-md-share-alt"></i> Share</button>
       </div>`
+      modalEl.innerHTML =`
+      <span class="close">&times;</span>
+      <p>SHARE YOUR RESULT</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2quiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html%2F&text=I%20got%20${correctAnswerCount}%20out%20of%2012%20correct,%20which%20makes%20me%20a%20Pangolin%20Ranger%21%20What%20about%20you?" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="icon ion-logo-instagram"></i></a>`
       $('.container').css('background-color','#b2ce6b');
     }
 
-    return
+    retakeOrShare()
+}
+
+const retakeOrShare = () => {
+
+  const retakeButton = document.createElement('button')
+  retakeButton.classList.add('end-btn')
+  retakeButton.id = 'end-retake'
+  retakeButton.innerHTML = `<i class="icon ion-md-refresh"></i> Retake the quiz`
+  retakeButton.addEventListener('click', navigateToRetake)
+
+  const shareButton = document.createElement('button')
+  shareButton.classList.add('end-btn')
+  shareButton.id = 'end-share'
+  shareButton.innerHTML = `<i class="icon ion-md-share-alt"></i> Share`
+  // shareButton.addEventListener('click', navigateToRetake)
+
+  const resultEl = document.querySelector('.result-text')
+
+  resultEl.appendChild(retakeButton)
+  resultEl.appendChild(shareButton)
+
+  $("#end-share").on('click', function (){
+      $('#share-modal').css('display', 'block');
+  });
+
+  $('.close').on('click', function(){
+    $('#share-modal').css('display','none');
+  });
+
 }
 
 
@@ -387,7 +436,7 @@ const renderAnswer = (answer) => {
     const lastAnswer = reply[reply.length - 1]
 
     // Clean innerHTML before append
-    // containerEl.innerHTML = `<h1 class="test-completed">Good Job! You have completed the mini quiz</h1>
+    // containerEl.innerHTML = `<h2 class="test-completed">Good Job! You have completed the mini quiz</h2>
     // <p class="results-info"> ${answer.correctAnswer}</p>
     // <p class="results-info"> ${answer.statement}</p>`
     const questionResult = getAnswer()

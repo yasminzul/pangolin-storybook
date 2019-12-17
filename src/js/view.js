@@ -42,7 +42,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
 </tr>
 <tr>
   <td><a href=rainies-song.html><img src=menu/rainies@3x.png></a></td>
-  <td><img src=menu/quiz@3x.png></td>
+  <td><a href=quiz.html><img src=menu/quiz.jpg></a></td>
   <td><a href=about.html><img src=menu/aboutproject@3x.png></a></td>
   <td><a id="modal-btn"><img src=menu/share@3x.png></a></td>
   <td><a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><img src=menu/videos.png></a></td>
@@ -69,7 +69,7 @@ let menu = `<div id=burger-icon><span></span><span></span><span></span><span></s
     <a href=rainies-song.html><li>Rainie’s Song</li></a>
   </ul>
 </li>
-  <li>Quiz: Which Pangolin Protector Are You? (Coming Soon)</li>
+  <a href=quiz.html><li>Quiz: Which Pangolin Protector Are You?</li></a>
   <a href=about.html><li>About this project</li></a>
   <a href=`+'https://www.youtube.com/playlist?list=PLbewG9OWqkEkepA5Cadc112nD7e8FpcRo'+` target=_blank><li>Watch the videos</li></a>
 </ul>
@@ -103,11 +103,11 @@ $( window ).on('load',function() {
   });
 
   $("#modal-btn").on('click', function (){
-      $('.modal').css('display', 'block');
+      $('#myModal').css('display', 'block');
   });
 
   $('.close').on('click', function(){
-    $('.modal').css('display','none');
+    $('#myModal').css('display','none');
   });
 
 });
