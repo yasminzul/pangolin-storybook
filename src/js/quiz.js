@@ -246,7 +246,7 @@ const getResults = () => {
       modalEl.innerHTML =`
       <span class="close">&times;</span>
       <p>SHARE YOUR RESULT</p>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html" target="_blank"><i class="icon ion-logo-facebook"></i></a>
       <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Frage.com.my%2Fpangolin%2Fquiz.html%2F&text=I%20got%20${correctAnswerCount}%20out%20of%2012%20correct%21That%20makes%20me%20a%20Pangolin%20Guardian%21%20What%20about%20you?" target="_blank"><i class="icon ion-logo-twitter"></i></a>
       <a href="http://www.instagram.com" target="_blank"><i class="icon ion-logo-instagram"></i></a>`
       $('.container').css('background-color','#6fb0ff');
